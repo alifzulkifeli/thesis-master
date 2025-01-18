@@ -1,0 +1,131 @@
+%=====================%
+% uitmthesis Settings %
+%=====================%
+
+%==========================%
+% For measuring length     %
+% Disable when not needed! %
+%==========================%
+% \usepackage[showframe,pass]{geometry}
+% \usepackage[grid,
+%  gridcolor=red!20,
+%  subgridcolor=green!20,
+%  gridunit=mm]{eso-pic}
+% % Add lipsum dummy text.
+\usepackage{lipsum}
+
+%% Mathematics related
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+
+%% Images
+\usepackage{graphicx}
+% define images locations.
+\graphicspath{{mainmatter/images/},{appendices/images/}}
+\usepackage{subcaption}
+\usepackage{float}
+%% References Type
+%\usepackage[numbers]{natbib} % enable to use IEEEtran, disable for apalike2
+%\usepackage{natbib} % enable to use apalike2, disable for IEEEtran
+%% To use IEEEtran, in settings.tex, use \usepackage[numbers]{natbib}
+%% To use IEEEtran, need to replace \citet to \cite or \citep everywhere.
+\bibliographystyle{apalike2} %IEEEtran,apalike2.
+%\bibliographystyle{IEEEtran}
+%\setlength{\bibhang}{0.5in} % set the length of the bibliography hanging indent
+\usepackage{csquotes}
+%% APA7: style=apa; IEEE: style=ieee
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{references/myref.bib}
+
+\usepackage{memhfixc} % add memhfixc to use hyperref package
+\usepackage[bookmarksnumbered,bookmarksdepth=4,hidelinks,bookmarks=true,bookmarksopen=true]{hyperref}
+\usepackage[numbered]{bookmark}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    language=Python,            % Language of the code
+    basicstyle=\ttfamily\footnotesize, % Basic font size
+    keywordstyle=\color{blue},  % Keywords in blue
+    stringstyle=\color{red},    % Strings in red
+    commentstyle=\color{gray},  % Comments in gray
+    numbers=left,               % Line numbers on the left
+    numberstyle=\tiny\color{gray}, % Line numbers style
+    stepnumber=1,               % Number every line
+    showstringspaces=false,     % Don't show spaces in strings
+    frame=single,               % Frame around the code
+    rulecolor=\color{black},    % Frame color
+}
+
+
+%==================================================================%
+% Theorem, corollary, lemma, remark, definition, example, solution %
+%==================================================================%
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+%\theoremstyle{remark}
+\newtheorem{remark}{Remark}[chapter]
+\theoremstyle{definition}\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[chapter]
+%% Solution environment
+% from https://tex.stackexchange.com/a/19948/2405
+\newenvironment{solution}{%
+    \let\oldqedsymbol=\qedsymbol%
+    \def\@addpunct##1{}%
+    \renewcommand{\qedsymbol}{$\blacktriangleleft$}%
+    \begin{proof}[\bfseries\upshape Solution]}%
+    {\end{proof}%
+    \renewcommand{\qedsymbol}{\oldqedsymbol}}
+            
+%====================================%
+% Settings. Please edit accordingly. %
+%====================================%
+\title{Comparative Analysis of Speech Detection Models with a Focus on the Japanese Language}
+\author{Muhammad Aliff Aiman Bin Zolkifeli}
+\date{March 2025}
+\datesubmit{July 3, 2025} % viva date for postgraduate / submission date for FYP
+\supervisor{Prof. Dr. The Great Supervisor}
+\university{Universiti Teknologi MARA}
+
+%% Report (for fyp) / Thesis (for master/phd) / Dissertation
+%% Important: Case sensitive!!!
+%\reportType{Report} % for FYP
+\reportType{Dissertation} % for postgraduate coursework / mixed mode
+% \reportType{Thesis} % for postgraduate by research
+
+%% BSc,MSc,MA,MACT,MBA,MIBF,MAS,DBA,PhD,MMus,MEd,LL.M, etc,
+%% Important: Case sensitive!!!
+%\degreeAcronym{BSc}
+%\degreeAcronym{DBA}
+%\degreeAcronym{MBA}
+\degreeAcronym{MSc}
+% \degreeAcronym{PhD}
+
+%% Programme
+% \programmeCode{CS952}\programme{Doctor of Philosophy}\programmeT{Mathematics}
+%\programmeCode{CS248}\programme{Bachelor of Science (Hons.)}\programmeT{Management Mathematics}
+%\programmeCode{CS953}\programme{Doctor of Philosophy}\programmeT{Statistics}
+\programmeCode{CDCS707}\programme{Master of Computer Science}\programmeT{Computer Science}
+% \programmeCode{CDCS707}\programme{Master of Computer Science}\programmeT{Mathematics}
+%\programmeCode{AA901}\programme{Doctor of Business Administration}\programmeT{Educational Management and Leadership}
+
+%% GENDER. male, female i<- important: lowercase!
+%\gender{female}
+\gender{male}
+
+%% MISC
+\studentid{2024152027}
+\faculty{Faculty of Computer and Mathematical Sciences}
+
+%============================%
+% PDF metadata with hyperref %
+%============================%
+\makeatletter
+\hypersetup{
+    pdfinfo={
+        Title={\@title},
+        Author={\@author},
+    }
+}
+\makeatother

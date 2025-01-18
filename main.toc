@@ -1,0 +1,60 @@
+\changetocdepth {3}
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{ABSTRACT}{i}{chapter*.1}%
+\contentsline {chapter}{ACKNOWLEDGEMENT}{ii}{chapter*.2}%
+\contentsline {chapter}{TABLE OF CONTENTS}{iii}{section*.3}%
+\contentsline {chapter}{LIST OF TABLES}{vi}{section*.4}%
+\contentsline {chapter}{LIST OF FIGURES}{vii}{section*.5}%
+\vspace {1.7cm}
+\contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Research Background}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Problem Statement}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Research Objectives}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Research Questions}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Scope of Study}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Significance of Study}{4}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Conclusion}{4}{section.1.7}%
+\contentsline {chapter}{\chapternumberline {2}LITERATURE REVIEW}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Challenges in Japanese Speech Detection}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Complexity of Japanese Writing System and Characters}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Acoustic Modeling Difficulties}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Dialect Variations}{8}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Phonetic and Allophonic Variations}{9}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Training and Data Requirements}{9}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Traditional Speech Detection Models }{10}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Gaussian Mixture Models (GMM)}{10}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Hidden Markov Models (HMM)}{11}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}The GMM-HMM Combination}{12}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Modern Deep Learning Approaches}{12}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Deep Neural Networks (DNN)}{12}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Convolutional Neural Networks (CNN)}{13}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Recurrent Neural Networks (RNN)}{14}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Transformer-based Models}{15}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}State of the art Models in Japanese Speech Recognition}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Whisper by OpenAI}{15}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}wav2vec 2.0 by Facebook AI Research}{17}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}ChirpV2: an Universal speech model from Google}{17}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Current Comparative Analysis of Japanese ASR Models}{18}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Gaps in Literature}{19}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Conclusion}{20}{section.2.8}%
+\contentsline {chapter}{\chapternumberline {3}RESEARCH METHODOLOGY}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Research Design}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Data Collection}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Dataset Selection}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Data Pre-processing}{21}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Model Selection}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Model Testing and Evaluation}{23}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Testing Environment}{23}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Performance Metrics}{24}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Test Procedure}{24}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Challenges and Limitations}{25}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Ethical Considerations}{25}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Summary}{26}{section.3.8}%
+\contentsline {chapter}{REFERENCES}{27}{section*.10}%
+\contentsline {chapter}{APPENDICES}{33}{section*.11}%
+\global \c@tocdepth -1\relax 
+\vspace {1.7cm}
+\contentsline {appendix}{\chapternumberline {A}THE DATA}{34}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}THE CODING}{35}{appendix.B}%
