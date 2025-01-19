@@ -1,0 +1,27 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[88] biber-darwin:340> INFO - === Sun Jan 19, 2025, 08:48:34
+[111] Biber.pm:419> INFO - Reading 'main.bcf'
+[265] Biber.pm:979> INFO - Found 54 citekeys in bib section 0
+[296] Biber.pm:4419> INFO - Processing section 0
+[309] Biber.pm:4610> INFO - Looking for bibtex file 'references/myref.bib' for section 0
+[315] bibtex.pm:1713> INFO - LaTeX decoding ...
+[395] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
+[1072] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1072] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1072] Biber.pm:4239> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1073] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1216] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1216] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1216] Biber.pm:4239> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1216] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1296] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1413] bbl.pm:763> INFO - Output to main.bbl
+[1413] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/08/xjy1xfpj7tj3y25s01hbfrx00000gn/T/biber_tmp_D8eA/791e559347c7f027f49328e019ff3066_64643.utf8, line 4, warning: 113 characters of junk seen at toplevel
+[1414] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/08/xjy1xfpj7tj3y25s01hbfrx00000gn/T/biber_tmp_D8eA/791e559347c7f027f49328e019ff3066_64643.utf8, line 29, warning: 5 characters of junk seen at toplevel
+[1414] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/08/xjy1xfpj7tj3y25s01hbfrx00000gn/T/biber_tmp_D8eA/791e559347c7f027f49328e019ff3066_64643.utf8, line 50, warning: 117 characters of junk seen at toplevel
+[1414] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/08/xjy1xfpj7tj3y25s01hbfrx00000gn/T/biber_tmp_D8eA/791e559347c7f027f49328e019ff3066_64643.utf8, line 73, warning: 224 characters of junk seen at toplevel
+[1414] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/08/xjy1xfpj7tj3y25s01hbfrx00000gn/T/biber_tmp_D8eA/791e559347c7f027f49328e019ff3066_64643.utf8, line 115, warning: 3 characters of junk seen at toplevel
+[1414] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/08/xjy1xfpj7tj3y25s01hbfrx00000gn/T/biber_tmp_D8eA/791e559347c7f027f49328e019ff3066_64643.utf8, line 298, warning: 5 characters of junk seen at toplevel
+[1414] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/08/xjy1xfpj7tj3y25s01hbfrx00000gn/T/biber_tmp_D8eA/791e559347c7f027f49328e019ff3066_64643.utf8, line 357, warning: 5 characters of junk seen at toplevel
+[1414] Biber.pm:133> INFO - WARNINGS: 7
