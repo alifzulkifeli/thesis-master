@@ -3,7 +3,6 @@
 
 \section{Research Background}
 \label{sec:intro-bg}
-% Section~\ref{sec:intro-bg} on page~\pageref{sec:intro-bg}. The data is on Appendix~\ref{app:data} on page~\pageref{app:data}. Chapter~\ref{ch:litreview}. Section~\ref{sec:intro-bg} Chapter~\ref{ch:conclusion}. Appendix~\ref{app:coding} on \pageref{app:coding}. Appendix~\ref{app:data} on \pageref{app:data}. Theorem~\ref{tm:great}
 
 The way we interact with computer has changed rapidly throughout the history. We start by sending instruction to computer using punch card and nowadays we are able to instruct computer using our own voice. This advancement is made possible by using speech-to-text technology that converting the spoken language into text format \parencite{Xu}. Speech-to-text technologies has already exist in industries such as customer service and medicine. But with the advancement of the machine learning and artificial intelligence, it has made the speech-to-text technology to become more precise and faster \parencite{latif2020}. These advancements have enabled its application across many areas, including transcription services and the development of inclusive tools for individuals with disabilities \parencite{Koenecke2020}.
 
@@ -17,48 +16,11 @@ Only a few studies is comparing the Japanese speech recognition systems which cr
 
 \section{Problem Statement}
 
-% \begin{theorem}\label{tm:great}
-%     A great theorem with no name.
-% \end{theorem}
-
 Current speech-to-text model are trained on standardized language which might not capture the complexities of Japanese language dialect and informal expression \parencite{imaizumi2022}. This has led to the models cannot perform well when transcribing the conversational Japanese especially when informal words or dialects is being used. Despite the advancements of AI, which significantly increase the quality of text-to-speech model \parencite{Karita2021}, there is still lack of comprehensive evaluation between these models performance with Japanese language. 
 
 
 The lack of effective speech-to-text solution that tailored for Japanese language has its implication in industries. Industries that relying on speech-to-text technology such as telecommunication, education, technology, may face a problem because ineffective speech recognition can resulting in problems such as misunderstandings and will diminished the user satisfaction \parencite{Sztahó2023}. Additionally, the speech detection technology will not be adopted in industries if it fails to accurately capture the full spectrum of the language, limiting usability and accessibility. Because of that, a study focused on Japanese speech recognition quality is important not only to improve practical outcome but also supports the ongoing advancement in AI field. 
 
-
-
-% \begin{theorem}[The great theorem]
-%     \label{tm:moregreat}
-%     The great theorem.
-% \end{theorem}
-
-% \begin{proof}
-% This is the proof for \ref{tm:moregreat}.
-% \end{proof}
-
-% And a consequence of theorem \ref{tm:moregreat} is the statement in the next 
-% corollary.
-
-% \begin{corollary}
-% The corollary $\ldots$.
-% \end{corollary}
-
-% \begin{lemma}
-% A lemma. The number follows theorem.
-% \end{lemma}
-
-% \begin{remark}
-% This is a remark. It's true.
-% \end{remark}
-
-% \begin{example}
-% This is an example.
-% \end{example}
-
-% \begin{solution}
-% The solution
-% \end{solution}
 
 \section{Research Objectives}
 \begin{enumerate}
@@ -66,7 +28,7 @@ The lack of effective speech-to-text solution that tailored for Japanese languag
     
     \item To analyze which of the technique is the most efficient to improve the WER(Word Error Rate) and the transcription latency of speech-to-text models that target Japanese language.
 
-    \item To evaluate the WER(Word Error Rate) and the transcription latency of different speech-to-text model when transcribing Japanese formal and informal language
+    \item To evaluate the WER(Word Error Rate) and the transcription latency of different speech-to-text model when transcribing Japanese formal and informal language.
 \end{enumerate}
 
 \section{Research Questions}
@@ -82,20 +44,18 @@ The lack of effective speech-to-text solution that tailored for Japanese languag
 \section{Scope of Study}
 This study will be focusing on examining the effectiveness of large language model(LLM) for Japanese language speech-to-text technology. The key model is Whisper from Open Ai, wav2vec2 from Facebook's fined-tuned XLSR large language model, and the third model is ALMA-7B model that fine-tuned based on the Google's gemma large language models. In this study we will analyze the specific linguistic challenges that is unique in the Japanese language. 
 
-Some of the challenges is Japanese language using Syllable-based word formation that created many words that have same sounds but different meaning, which is crucial for the LLM to distinguish which word is being used based on the context of the sentence. On top of that, Japanese language also using three distinct writing system that can be used in one sentence. So it is also important to see how accurately the LLM transcribe the correct character from the speech. 
+Some of the challenges is Japanese language using Syllable-based word formation that created many words that have same sounds but different meaning, which is crucial for the LLM to distinguish which word is being used based on the context of the sentence. On top of that, Japanese language also using three distinct writing system that can be used in one sentence. So it is also important to see how accurate the LLM transcribe the correct character from the speech. 
 
-After that we will Evaluate each model performance based on how well it  transcribing both formal and informal Japanese language. Formal language is the language that is usually being used in professional setting where informal language is used in the daily life conversation. We will also evaluate the models performance based on its performance transcribing the different Japanese dialect. 
+After that we will evaluate each model performance based on how well it  transcribing both formal and informal Japanese language. Formal language is the language that is usually being used in professional setting where informal language is used in the daily life conversation. We will also evaluate the models performance based on its performance transcribing the different Japanese dialect. 
 
 Aside from the model accuracy, in this study also will be comparing the speed of the model to complete the transcription task. Speed is also one of the important aspect when the model is being used in real-time application where any delay will cause impact on the user experience. By evaluating both the accuracy and processing speed of the model, this study aims to identify which model is high in performance with minimal latency.  
 
 
 \section{Significance of Study}
-This study is aim to addresses the gap of effective speech-to-text solution that focusing on Japanese language. Most of the developed LLM is focusing in English language or a generic transcribe model that is developed for multi-language. In this study we want to highlight the industry implication that caused by the inefficiency in speech to text technology in industries such as telecommunication and technology. 
+This study is aim to address the gap of effective speech-to-text solution that focusing on Japanese language. Most of the developed LLM is focusing in English language or a generic transcribe model that is developed for multi-language. In this study we want to highlight the industry implication that caused by the inefficiency in speech to text technology in industries such as telecommunication and technology. 
 
-This paper also contribute to the research by identify the current gaps in speech to text LLM, mainly in complex structured language like Japanese. This is achieved by offering a comparative analysis on which model is the best performance that can guide future improvement and innovation. This paper aims to increase the effective speech to text adoption thus enhance the real world application that rely on efficient transcription. 
-
-
+This paper also contribute to the research by identify the current gaps in speech to text LLM, mainly in complex structured language like Japanese. This is achieved by offering a comparative analysis on which model is the best performance that can guide future improvement and innovation. This paper aims to increase the effectiveness of speech to text adoption thus enhance the real world application that rely on efficient transcription. 
 
 \section{Conclusion}
-In this chapter we discuss that the advancement in machine learning and artificial intelligence has made the computer can understand us better by improving the Speech To Text model accuracy and speed. However, there is still challenges to transcribe a language that has complex structure like Japanese that include syllable-based formation and the use of multiple writing systems. Because of this, a study to find which implementation and which model is the most performance for handling Japanese language. The finding from this study is very important to answer the question of which model is the best for speech-to-text solution in Japanese language. By  identifying the specific linguistic challenges and comparing these models, this study will provide a valuable information that will be able to guide future advancements in speech-to-text technology in Japanese language and ultimately be able to support its broader application across the industries that rely heavily on precise and efficient transcription.
+In this chapter, we discuss that the advancement in machine learning and artificial intelligence has made the computer can understand us better by improving the Speech To Text model accuracy and speed. However, there is still challenges to transcribe a language that has complex structure like Japanese that include syllable-based formation and the use of multiple writing systems. Because of this, a study to find which implementation and which model is the most performance for handling Japanese language. The finding from this study is very important to answer the question of which model is the best for speech-to-text solution in Japanese language. By  identifying the specific linguistic challenges and comparing these models, this study will provide a valuable information that will be able to guide future advancements in speech-to-text technology in Japanese language and ultimately will be able to support its broader application across the industries that rely heavily on precise and efficient transcription.
 
