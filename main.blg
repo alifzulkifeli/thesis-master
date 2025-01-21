@@ -1,27 +1,27 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[183] biber-MSWIN64:340> INFO - === 
-[223] Biber.pm:420> INFO - Reading 'main.bcf'
-[405] Biber.pm:994> INFO - Found 54 citekeys in bib section 0
-[433] Biber.pm:4463> INFO - Processing section 0
-[447] Biber.pm:4654> INFO - Looking for bibtex file 'references/myref.bib' for section 0
-[513] bibtex.pm:1713> INFO - LaTeX decoding ...
-[604] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
-[1208] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1209] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1211] Biber.pm:4283> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[1211] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[1394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1394] Biber.pm:4283> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[1394] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[1486] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1597] bbl.pm:779> INFO - Output to main.bbl
-[1597] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_NcVx\791e559347c7f027f49328e019ff3066_22088.utf8, line 4, warning: 113 characters of junk seen at toplevel
-[1597] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_NcVx\791e559347c7f027f49328e019ff3066_22088.utf8, line 29, warning: 5 characters of junk seen at toplevel
-[1597] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_NcVx\791e559347c7f027f49328e019ff3066_22088.utf8, line 50, warning: 117 characters of junk seen at toplevel
-[1597] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_NcVx\791e559347c7f027f49328e019ff3066_22088.utf8, line 73, warning: 224 characters of junk seen at toplevel
-[1598] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_NcVx\791e559347c7f027f49328e019ff3066_22088.utf8, line 115, warning: 3 characters of junk seen at toplevel
-[1598] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_NcVx\791e559347c7f027f49328e019ff3066_22088.utf8, line 298, warning: 5 characters of junk seen at toplevel
-[1598] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_NcVx\791e559347c7f027f49328e019ff3066_22088.utf8, line 357, warning: 5 characters of junk seen at toplevel
-[1598] Biber.pm:133> INFO - WARNINGS: 7
+[130] biber-MSWIN64:340> INFO - === 
+[173] Biber.pm:420> INFO - Reading 'main.bcf'
+[357] Biber.pm:994> INFO - Found 53 citekeys in bib section 0
+[386] Biber.pm:4463> INFO - Processing section 0
+[399] Biber.pm:4654> INFO - Looking for bibtex file 'references/myref.bib' for section 0
+[468] bibtex.pm:1713> INFO - LaTeX decoding ...
+[555] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
+[1128] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1128] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1128] Biber.pm:4283> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1128] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1304] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1304] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1304] Biber.pm:4283> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1304] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1396] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1503] bbl.pm:779> INFO - Output to main.bbl
+[1503] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_6mMt\791e559347c7f027f49328e019ff3066_23076.utf8, line 4, warning: 113 characters of junk seen at toplevel
+[1503] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_6mMt\791e559347c7f027f49328e019ff3066_23076.utf8, line 29, warning: 5 characters of junk seen at toplevel
+[1503] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_6mMt\791e559347c7f027f49328e019ff3066_23076.utf8, line 50, warning: 117 characters of junk seen at toplevel
+[1503] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_6mMt\791e559347c7f027f49328e019ff3066_23076.utf8, line 73, warning: 224 characters of junk seen at toplevel
+[1503] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_6mMt\791e559347c7f027f49328e019ff3066_23076.utf8, line 115, warning: 3 characters of junk seen at toplevel
+[1503] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_6mMt\791e559347c7f027f49328e019ff3066_23076.utf8, line 285, warning: 5 characters of junk seen at toplevel
+[1503] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\alifz\AppData\Local\Temp\biber_tmp_6mMt\791e559347c7f027f49328e019ff3066_23076.utf8, line 344, warning: 5 characters of junk seen at toplevel
+[1504] Biber.pm:133> INFO - WARNINGS: 7

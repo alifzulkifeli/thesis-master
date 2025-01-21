@@ -1,4 +1,5 @@
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Literature Review Mind Map\relax }}{6}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Whisper WER\relax }}{16}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Testing procedure \relax }}{24}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Literature Review Mind Map}}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Whisper WER according taken from \blx@tocontentsinit {0}\cite {radford2023robust}}}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}}{25}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Testing procedure }}{31}{figure.caption.17}%

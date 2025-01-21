@@ -21,40 +21,40 @@
 \contentsline {subsection}{\numberline {2.2.2}Acoustic Modeling Difficulties}{7}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Dialect Variations}{8}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Phonetic and Allophonic Variations}{9}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Training and Data Requirements}{9}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.5}Training and Data Requirements}{10}{subsection.2.2.5}%
 \contentsline {section}{\numberline {2.3}Traditional Speech Detection Models }{10}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Gaussian Mixture Models (GMM)}{10}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Hidden Markov Models (HMM)}{11}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}The GMM-HMM Combination}{12}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Modern Deep Learning Approaches}{12}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Deep Neural Networks (DNN)}{12}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.4}Modern Deep Learning Approaches}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Deep Neural Networks (DNN)}{13}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Convolutional Neural Networks (CNN)}{13}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Recurrent Neural Networks (RNN)}{14}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Transformer-based Models}{15}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}State of the art Models in Japanese Speech Recognition}{15}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Whisper by OpenAI}{15}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.5}State of the art Models in Japanese Speech Recognition}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Whisper by OpenAI}{16}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}wav2vec 2.0 by Facebook AI Research}{17}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}ChirpV2: an Universal speech model from Google}{17}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Current Comparative Analysis of Japanese ASR Models}{18}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Gaps in Literature}{19}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Conclusion}{20}{section.2.8}%
-\contentsline {chapter}{\chapternumberline {3}RESEARCH METHODOLOGY}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Research Design}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Data Collection}{21}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Dataset Selection}{21}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Data Pre-processing}{21}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Model Selection}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Model Testing and Evaluation}{23}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Testing Environment}{23}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Performance Metrics}{24}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Test Procedure}{24}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}Challenges and Limitations}{25}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Ethical Considerations}{25}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Summary}{26}{section.3.8}%
-\contentsline {chapter}{REFERENCES}{27}{section*.10}%
-\contentsline {chapter}{APPENDICES}{33}{section*.11}%
+\contentsline {subsection}{\numberline {2.5.3}ChirpV2: an Universal speech model from Google}{18}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Current Comparative Analysis of Japanese ASR Models}{19}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Gaps in Literature}{20}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Conclusion}{21}{section.2.8}%
+\contentsline {chapter}{\chapternumberline {3}RESEARCH METHODOLOGY}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Research Design}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Data Collection}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Dataset Selection}{23}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Data Pre-processing}{24}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Model Selection}{26}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Model Testing and Evaluation}{28}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Testing Environment}{28}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Performance Metrics}{29}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Test Procedure}{30}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Challenges and Limitations}{31}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Ethical Considerations}{32}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Summary}{32}{section.3.8}%
+\contentsline {chapter}{REFERENCES}{33}{section*.19}%
+\contentsline {chapter}{APPENDICES}{39}{section*.20}%
 \global \c@tocdepth -1\relax 
 \vspace {1.7cm}
-\contentsline {appendix}{\chapternumberline {A}THE DATA}{34}{appendix.A}%
-\contentsline {appendix}{\chapternumberline {B}THE CODING}{35}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {A}THE DATA}{40}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {B}THE CODING}{41}{appendix.B}%

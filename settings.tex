@@ -24,11 +24,11 @@
 \usepackage{subcaption}
 \usepackage{float}
 %% References Type
-%\usepackage[numbers]{natbib} % enable to use IEEEtran, disable for apalike2
-%\usepackage{natbib} % enable to use apalike2, disable for IEEEtran
+%\usepackage[numbers]{natbib} % enable to use IEEEtran, disable for 
+%\usepackage{natbib} % enable to use , disable for IEEEtran
 %% To use IEEEtran, in settings.tex, use \usepackage[numbers]{natbib}
 %% To use IEEEtran, need to replace \citet to \cite or \citep everywhere.
-\bibliographystyle{apalike2} %IEEEtran,apalike2.
+\bibliographystyle{apalike2} 
 %\bibliographystyle{IEEEtran}
 %\setlength{\bibhang}{0.5in} % set the length of the bibliography hanging indent
 \usepackage{csquotes}
@@ -36,12 +36,20 @@
 \usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{references/myref.bib}
 
-\usepackage{memhfixc} % add memhfixc to use hyperref package
+\usepackage{memhfixc} % add  to use hyperref package
 \usepackage[bookmarksnumbered,bookmarksdepth=4,hidelinks,bookmarks=true,bookmarksopen=true]{hyperref}
 \usepackage[numbered]{bookmark}
 
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{caption}
+\captionsetup[table]{
+    justification=centering,  % center the caption text
+    singlelinecheck=false,    % do not left-align a short caption
+    labelsep=colon            % use a colon after "Table X"
+}
+\usepackage{makecell}
 
 \lstset{
     language=Python,            % Language of the code
@@ -94,7 +102,7 @@
 \reportType{Dissertation} % for postgraduate coursework / mixed mode
 % \reportType{Thesis} % for postgraduate by research
 
-%% BSc,MSc,MA,MACT,MBA,MIBF,MAS,DBA,PhD,MMus,MEd,LL.M, etc,
+
 %% Important: Case sensitive!!!
 %\degreeAcronym{BSc}
 %\degreeAcronym{DBA}
