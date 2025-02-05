@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {2.5.2}wav2vec 2.0 by Facebook AI Research}{16}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}ChirpV2: an Universal speech model from Google}{17}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Current Comparative Analysis of Japanese ASR Models}{17}{section.2.6}%
-\contentsline {section}{\numberline {2.7} Dataset and Tools }{19}{section.2.7}%
+\contentsline {section}{\numberline {2.7} Datasets and Tools }{19}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Datasets}{19}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}Python Moviepy}{20}{subsection.2.7.2}%
 \contentsline {subsection}{\numberline {2.7.3}Hugging Face}{20}{subsection.2.7.3}%

@@ -1,9 +1,9 @@
 \babel@toc {english}{}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces WER and CER performance of Whisper models. Reproduced from \blx@tocontentsinit {0}\cite {bajo2024efficient}.}}{15}{table.caption.6}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces WER on Librispeech dev/test sets using 10 minutes of labeled data and different unlabeled data setups.}}{16}{table.caption.7}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Word Error Rate (WER) Comparison of ASR Models}}{17}{table.caption.8}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Character error rates on CSJ dev/eval1/eval2/eval3 sets cited from \blx@tocontentsinit {0}\cite {Karita2021}.}}{18}{table.caption.9}%
-\contentsline {table}{\numberline {2.5}{\ignorespaces Comparison of ASR accuracy on two datasets, Standard Japanese (CSJ) and Japanese dialects (COJADS) cited from \blx@tocontentsinit {0}\cite {takahashi2024comparison}.}}{19}{table.caption.10}%
-\contentsline {table}{\numberline {3.1}{\ignorespaces Overview of the Research Methodology Plan}}{23}{table.caption.11}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Dataset Audio Duration}}{24}{table.caption.12}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Architecture Comparison of Traditional, Modern, and Transformer-based Models based on Literature Review}}{27}{table.caption.14}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces WER and CER performance of Whisper models. Reproduced from \blx@tocontentsinit {0}\cite {bajo2024efficient}.\relax }}{15}{table.caption.6}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces WER on Librispeech dev/test sets using 10 minutes of labeled data and different unlabeled data setups.\relax }}{16}{table.caption.7}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Word Error Rate (WER) Comparison of ASR Models\relax }}{17}{table.caption.8}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Character error rates on CSJ dev/eval1/eval2/eval3 sets cited from \blx@tocontentsinit {0}\cite {Karita2021}.\relax }}{18}{table.caption.9}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Comparison of ASR accuracy on two datasets, Standard Japanese (CSJ) and Japanese dialects (COJADS) cited from \blx@tocontentsinit {0}\cite {takahashi2024comparison}.\relax }}{19}{table.caption.10}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Overview of the Research Methodology Plan\relax }}{23}{table.caption.11}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Dataset Audio Duration\relax }}{24}{table.caption.12}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Architecture Comparison of Traditional, Modern, and Transformer-based Models based on Literature Review\relax }}{27}{table.caption.14}%
