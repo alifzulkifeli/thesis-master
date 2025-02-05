@@ -19,6 +19,75 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{Afouras}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e02033561beee55daf6882333cea72c7}{%
+           family={Afouras},
+           familyi={A\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e02033561beee55daf6882333cea72c7}
+      \strng{fullhash}{e02033561beee55daf6882333cea72c7}
+      \strng{fullhashraw}{e02033561beee55daf6882333cea72c7}
+      \strng{bibnamehash}{e02033561beee55daf6882333cea72c7}
+      \strng{authorbibnamehash}{e02033561beee55daf6882333cea72c7}
+      \strng{authornamehash}{e02033561beee55daf6882333cea72c7}
+      \strng{authorfullhash}{e02033561beee55daf6882333cea72c7}
+      \strng{authorfullhashraw}{e02033561beee55daf6882333cea72c7}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lrs3-ted: a large-scale dataset for visual speech recognition}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.48550/arxiv.1809.00496
+      \endverb
+    \endentry
+    \entry{Andos}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7cf5d4a4c185281b61d82341c015c607}{%
+           family={Ando},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cfb2671b6a5d4dfb2102c2337fd6bcae}{%
+           family={Fujihara},
+           familyi={F\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{fullhash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{fullhashraw}{0f3562d3640d65a7934921c272f8c531}
+      \strng{bibnamehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authorbibnamehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authornamehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authorfullhash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authorfullhashraw}{0f3562d3640d65a7934921c272f8c531}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Construction of a large-scale japanese asr corpus on tv recordings}
+      \field{year}{2021}
+      \field{pages}{6948\bibrangedash 6952}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/icassp39728.2021.9413425
+      \endverb
+    \endentry
     \entry{ando2021}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=43fb4328909f1ab1d3cd000ad33bf084}{%
@@ -45,11 +114,12 @@
       \strng{authornamehash}{5a3766fcae5ce216d17425d887db8dac}
       \strng{authorfullhash}{5a3766fcae5ce216d17425d887db8dac}
       \strng{authorfullhashraw}{5a3766fcae5ce216d17425d887db8dac}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
@@ -57,39 +127,6 @@
       \field{year}{2021}
       \field{pages}{6948\bibrangedash 6952}
       \range{pages}{5}
-    \endentry
-    \entry{ardestani2024study}{thesis}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=27b1a3b98912c66ffad0b38efc587f24}{%
-           family={Ardestani},
-           familyi={A\bibinitperiod},
-           given={Mohammadreza},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Lethbridge, Alta.: University of Lethbridge, Dept. of Mathematics and~…}%
-      }
-      \strng{namehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{fullhash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{fullhashraw}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{bibnamehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authorbibnamehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authornamehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authorfullhash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authorfullhashraw}{5c4e749590d0b08187ae55e1af57c7d5}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A study of text summarization with graph attention networks}
-      \field{type}{phdthesis}
-      \field{year}{2024}
     \endentry
     \entry{baevski2020wav2vec}{article}{}{}
       \name{author}{4}{}{%
@@ -185,6 +222,51 @@
       \field{journaltitle}{arXiv preprint arXiv:2412.10705}
       \field{title}{Efficient Adaptation of Multilingual Models for Japanese ASR}
       \field{year}{2024}
+    \endentry
+    \entry{boishakhi2021multi}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=94fc0e5ccb626bdad3a83504e8a3650b}{%
+           family={Boishakhi},
+           familyi={B\bibinitperiod},
+           given={Fariha\bibnamedelima Tahosin},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be0438cf3e9ed917017e97f888e03e5c}{%
+           family={Shill},
+           familyi={S\bibinitperiod},
+           given={Ponkoj\bibnamedelima Chandra},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ae81f19fe64a6831830684743aa5796}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Md\bibnamedelima Golam\bibnamedelima Rabiul},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f1bc56003e53f74d5f134ef9acb21517}
+      \strng{fullhash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{fullhashraw}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{bibnamehash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{authorbibnamehash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{authornamehash}{f1bc56003e53f74d5f134ef9acb21517}
+      \strng{authorfullhash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{authorfullhashraw}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2021 IEEE International Conference on Big Data (Big Data)}
+      \field{title}{Multi-modal hate speech detection using machine learning}
+      \field{year}{2021}
+      \field{pages}{4496\bibrangedash 4499}
+      \range{pages}{4}
     \endentry
     \entry{curtin2020japanese}{misc}{}{}
       \name{author}{1}{}{%
@@ -390,45 +472,47 @@
       \field{pages}{195\bibrangedash 304}
       \range{pages}{110}
     \endentry
-    \entry{glasmachers17a}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4874e13f7817a49d297988fd81545e53}{%
-           family={Glasmachers},
+    \entry{Gergen}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8ffae770b1117afc91b80b0af0760b89}{%
+           family={Gergen},
            familyi={G\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7868f6383f0cb9721c70628e3f281ab}{%
+           family={Zeiler},
+           familyi={Z\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4682564ea516102da3f1a9ad753d0c2e}{%
+           family={Abdelaziz},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dba21c49669705fdc1e4970c5dab131}{%
+           family={Nickel},
+           familyi={N\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb2dc34f76ba00258276ec00c3b85718}{%
+           family={Kolossa},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \name{editor}{2}{}{%
-        {{hash=acd98f83dff73c7fb671bbcb6f325ece}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Min-Ling},
-           giveni={M\bibinithyphendelim L\bibinitperiod}}}%
-        {{hash=6c178b2789668695fe7103f9cece305a}{%
-           family={Noh},
-           familyi={N\bibinitperiod},
-           given={Yung-Kyun},
-           giveni={Y\bibinithyphendelim K\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Yonsei University, Seoul, Republic of Korea}%
-      }
-      \list{publisher}{1}{%
-        {PMLR}%
-      }
-      \strng{namehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{fullhash}{4874e13f7817a49d297988fd81545e53}
-      \strng{fullhashraw}{4874e13f7817a49d297988fd81545e53}
-      \strng{bibnamehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authorbibnamehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authornamehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authorfullhash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authorfullhashraw}{4874e13f7817a49d297988fd81545e53}
-      \strng{editorbibnamehash}{acc545bc1c6fd46a8086bbb5965ea6e2}
-      \strng{editornamehash}{acc545bc1c6fd46a8086bbb5965ea6e2}
-      \strng{editorfullhash}{acc545bc1c6fd46a8086bbb5965ea6e2}
-      \strng{editorfullhashraw}{acc545bc1c6fd46a8086bbb5965ea6e2}
+      \strng{namehash}{54cbfa64d3ba1df26a686439a69e7805}
+      \strng{fullhash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{fullhashraw}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{bibnamehash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{authorbibnamehash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{authornamehash}{54cbfa64d3ba1df26a686439a69e7805}
+      \strng{authorfullhash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{authorfullhashraw}{75b94d2bf5de1f947ee10d84d606c460}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -436,50 +520,11 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the Ninth Asian Conference on Machine Learning}
-      \field{month}{11}
-      \field{series}{Proceedings of Machine Learning Research}
-      \field{title}{Limits of End-to-End Learning}
-      \field{volume}{77}
-      \field{year}{2017}
-      \field{pages}{17\bibrangedash 32}
-      \range{pages}{16}
-      \verb{file}
-      \verb http://proceedings.mlr.press/v77/glasmachers17a/glasmachers17a.pdf
+      \field{title}{Dynamic stream weighting for turbo-decoding-based audiovisual asr}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.21437/interspeech.2016-166
       \endverb
-      \verb{urlraw}
-      \verb https://proceedings.mlr.press/v77/glasmachers17a.html
-      \endverb
-      \verb{url}
-      \verb https://proceedings.mlr.press/v77/glasmachers17a.html
-      \endverb
-    \endentry
-    \entry{halpern2008role}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=93ae203df276c98fb6e1917ac5fc3b9e}{%
-           family={Halpern},
-           familyi={H\bibinitperiod},
-           given={Jack},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{fullhash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{fullhashraw}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{bibnamehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authorbibnamehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authornamehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authorfullhash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authorfullhashraw}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{THE ROLE OF PHONETICS AND PHONETIC DATABASES IN JAPANESE SPEECH TECHNOLOGY}
-      \field{year}{2008}
     \endentry
     \entry{hojo2018dnn}{article}{}{}
       \name{author}{3}{}{%
@@ -944,6 +989,48 @@
       \verb{doi}
       \verb 10.21437/INTERSPEECH.2021-775
       \endverb
+    \endentry
+    \entry{kibe2018intonational}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a90a96ccd5f7582fd7c577d58b44d476}{%
+           family={Kibe},
+           familyi={K\bibinitperiod},
+           given={Nobuko},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d06df226836d696c1a4b15ba08fbddc8}{%
+           family={Otsuki},
+           familyi={O\bibinitperiod},
+           given={Tomoyo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa08ce3eba2fc771deecc14ee627e5c4}{%
+           family={Sato},
+           familyi={S\bibinitperiod},
+           given={Kumiko},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{49a1d8980105176542ba4b615198b83d}
+      \strng{fullhash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{fullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{bibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{authorbibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{authornamehash}{49a1d8980105176542ba4b615198b83d}
+      \strng{authorfullhash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{authorfullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedfings of the LREC 2018 Special Speech Sessions}
+      \field{title}{Intonational variations at the end of interrogative sentences in Japanese dialects: From the “Corpus of Japanese Dialects”}
+      \field{year}{2018}
+      \field{pages}{21\bibrangedash 28}
+      \range{pages}{8}
     \endentry
     \entry{Koenecke2020}{article}{}{}
       \name{author}{10}{}{%
@@ -1476,52 +1563,6 @@
       \field{year}{2020}
       \field{pages}{218644\bibrangedash 218657}
       \range{pages}{14}
-    \endentry
-    \entry{Nguyen2002ModelingFA}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=fc9cda915b5727994997ce4fd7b52cd3}{%
-           family={Nguyen},
-           familyi={N\bibinitperiod},
-           given={Long},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3305e7cd9c0aeacc866b71a9a26367d6}{%
-           family={Guo},
-           familyi={G\bibinitperiod},
-           given={Xuefeng},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=be711c1d20e2f962368bf225974dc978}{%
-           family={Makhoul},
-           familyi={M\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{edc03636e7a438e2971a18e572c6f53a}
-      \strng{fullhash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{fullhashraw}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{bibnamehash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{authorbibnamehash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{authornamehash}{edc03636e7a438e2971a18e572c6f53a}
-      \strng{authorfullhash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{authorfullhashraw}{cd65eade497fac4b5b4b1159eaee1d85}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Interspeech}
-      \field{title}{Modeling frequent allophones in Japanese speech recognition}
-      \field{year}{2002}
-      \verb{urlraw}
-      \verb https://api.semanticscholar.org/CorpusID:7693997
-      \endverb
-      \verb{url}
-      \verb https://api.semanticscholar.org/CorpusID:7693997
-      \endverb
     \endentry
     \entry{noda2014lipreading}{article}{}{}
       \true{moreauthor}
@@ -2269,12 +2310,12 @@
            given={Akihiro},
            giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=aabbd95f6ea3393a5d1d2ba6c9a1bf59}{%
+        {{un=0,uniquepart=base,hash=aabbd95f6ea3393a5d1d2ba6c9a1bf59}{%
            family={Yasuda},
            familyi={Y\bibinitperiod},
            given={Keiji},
            giveni={K\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \strng{namehash}{7d0634a6970c3bfb68aff68bae61e90a}
       \strng{fullhash}{8f929ef9c79113900d84443d443e8d11}
@@ -2409,6 +2450,50 @@
       \verb 10.1080/10447318.2022.2041900
       \endverb
     \endentry
+    \entry{widyana}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1718497be0c5d3aae25396c3b2d43284}{%
+           family={Widyana},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0adbc16ca757e873e88035ce59e8b91b}{%
+           family={Jerusalem},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7072c90e36a14b387b0e5e994de164a}{%
+           family={Yumechas},
+           familyi={Y\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f487ed4a000bcfd514f4dfad7f11713}
+      \strng{fullhash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{fullhashraw}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{bibnamehash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{authorbibnamehash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{authornamehash}{2f487ed4a000bcfd514f4dfad7f11713}
+      \strng{authorfullhash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{authorfullhashraw}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{the application of text-to-speech technology in language learning}
+      \field{year}{2022}
+      \field{pages}{85\bibrangedash 92}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.2991/978-2-494069-91-6_14
+      \endverb
+    \endentry
     \entry{xu2023recent}{article}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=3d46dc554749beb726f383a678f5e798}{%
@@ -2535,48 +2620,6 @@
       \field{year}{2019}
       \field{pages}{1\bibrangedash 5}
       \range{pages}{5}
-    \endentry
-    \entry{yasuda2022}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=fc6eaaed96f37c82216a4909dae620a9}{%
-           family={Yasuda},
-           familyi={Y\bibinitperiod},
-           given={Yusuke},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=d0fb328bc36d1a9a42b9a721d7909992}{%
-           family={Toda},
-           familyi={T\bibinitperiod},
-           given={Tomoki},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{fullhash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{fullhashraw}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{bibnamehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authorbibnamehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authornamehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authorfullhash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authorfullhashraw}{2292711a5851f57f0a10bf73c22176aa}
-      \field{sortinit}{Y}
-      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Journal of Selected Topics in Signal Processing}
-      \field{number}{6}
-      \field{title}{Investigation of Japanese PnG BERT Language Model in Text-to-Speech Synthesis for Pitch Accent Language}
-      \field{volume}{16}
-      \field{year}{2022}
-      \field{pages}{1319\bibrangedash 1328}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/JSTSP.2022.3190672
-      \endverb
-      \keyw{Self-supervised learning;Feature extraction;Syntactics;Predictive models;PnG BERT;text-to-speech;Japanese;pitch accent;self-supervised learning}
     \endentry
     \entry{Kida2016LSTM}{article}{}{}
       \true{moreauthor}
@@ -2698,6 +2741,75 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
+    \entry{Afouras}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e02033561beee55daf6882333cea72c7}{%
+           family={Afouras},
+           familyi={A\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e02033561beee55daf6882333cea72c7}
+      \strng{fullhash}{e02033561beee55daf6882333cea72c7}
+      \strng{fullhashraw}{e02033561beee55daf6882333cea72c7}
+      \strng{bibnamehash}{e02033561beee55daf6882333cea72c7}
+      \strng{authorbibnamehash}{e02033561beee55daf6882333cea72c7}
+      \strng{authornamehash}{e02033561beee55daf6882333cea72c7}
+      \strng{authorfullhash}{e02033561beee55daf6882333cea72c7}
+      \strng{authorfullhashraw}{e02033561beee55daf6882333cea72c7}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lrs3-ted: a large-scale dataset for visual speech recognition}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.48550/arxiv.1809.00496
+      \endverb
+    \endentry
+    \entry{Andos}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7cf5d4a4c185281b61d82341c015c607}{%
+           family={Ando},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cfb2671b6a5d4dfb2102c2337fd6bcae}{%
+           family={Fujihara},
+           familyi={F\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{fullhash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{fullhashraw}{0f3562d3640d65a7934921c272f8c531}
+      \strng{bibnamehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authorbibnamehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authornamehash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authorfullhash}{0f3562d3640d65a7934921c272f8c531}
+      \strng{authorfullhashraw}{0f3562d3640d65a7934921c272f8c531}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Construction of a large-scale japanese asr corpus on tv recordings}
+      \field{year}{2021}
+      \field{pages}{6948\bibrangedash 6952}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/icassp39728.2021.9413425
+      \endverb
+    \endentry
     \entry{ando2021}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=43fb4328909f1ab1d3cd000ad33bf084}{%
@@ -2724,11 +2836,12 @@
       \strng{authornamehash}{5a3766fcae5ce216d17425d887db8dac}
       \strng{authorfullhash}{5a3766fcae5ce216d17425d887db8dac}
       \strng{authorfullhashraw}{5a3766fcae5ce216d17425d887db8dac}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
@@ -2736,39 +2849,6 @@
       \field{year}{2021}
       \field{pages}{6948\bibrangedash 6952}
       \range{pages}{5}
-    \endentry
-    \entry{ardestani2024study}{thesis}{}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=27b1a3b98912c66ffad0b38efc587f24}{%
-           family={Ardestani},
-           familyi={A\bibinitperiod},
-           given={Mohammadreza},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{institution}{1}{%
-        {Lethbridge, Alta.: University of Lethbridge, Dept. of Mathematics and~…}%
-      }
-      \strng{namehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{fullhash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{fullhashraw}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{bibnamehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authorbibnamehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authornamehash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authorfullhash}{5c4e749590d0b08187ae55e1af57c7d5}
-      \strng{authorfullhashraw}{5c4e749590d0b08187ae55e1af57c7d5}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{A study of text summarization with graph attention networks}
-      \field{type}{phdthesis}
-      \field{year}{2024}
     \endentry
     \entry{baevski2020wav2vec}{article}{}{}
       \name{author}{4}{}{%
@@ -2864,6 +2944,51 @@
       \field{journaltitle}{arXiv preprint arXiv:2412.10705}
       \field{title}{Efficient Adaptation of Multilingual Models for Japanese ASR}
       \field{year}{2024}
+    \endentry
+    \entry{boishakhi2021multi}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=94fc0e5ccb626bdad3a83504e8a3650b}{%
+           family={Boishakhi},
+           familyi={B\bibinitperiod},
+           given={Fariha\bibnamedelima Tahosin},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be0438cf3e9ed917017e97f888e03e5c}{%
+           family={Shill},
+           familyi={S\bibinitperiod},
+           given={Ponkoj\bibnamedelima Chandra},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ae81f19fe64a6831830684743aa5796}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Md\bibnamedelima Golam\bibnamedelima Rabiul},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f1bc56003e53f74d5f134ef9acb21517}
+      \strng{fullhash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{fullhashraw}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{bibnamehash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{authorbibnamehash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{authornamehash}{f1bc56003e53f74d5f134ef9acb21517}
+      \strng{authorfullhash}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \strng{authorfullhashraw}{b1eab991a3dd6a30fc576310aa2bc1ea}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2021 IEEE International Conference on Big Data (Big Data)}
+      \field{title}{Multi-modal hate speech detection using machine learning}
+      \field{year}{2021}
+      \field{pages}{4496\bibrangedash 4499}
+      \range{pages}{4}
     \endentry
     \entry{curtin2020japanese}{misc}{}{}
       \name{author}{1}{}{%
@@ -3069,45 +3194,47 @@
       \field{pages}{195\bibrangedash 304}
       \range{pages}{110}
     \endentry
-    \entry{glasmachers17a}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4874e13f7817a49d297988fd81545e53}{%
-           family={Glasmachers},
+    \entry{Gergen}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=8ffae770b1117afc91b80b0af0760b89}{%
+           family={Gergen},
            familyi={G\bibinitperiod},
-           given={Tobias},
-           giveni={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b7868f6383f0cb9721c70628e3f281ab}{%
+           family={Zeiler},
+           familyi={Z\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4682564ea516102da3f1a9ad753d0c2e}{%
+           family={Abdelaziz},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dba21c49669705fdc1e4970c5dab131}{%
+           family={Nickel},
+           familyi={N\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb2dc34f76ba00258276ec00c3b85718}{%
+           family={Kolossa},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
            givenun=0}}%
       }
-      \name{editor}{2}{}{%
-        {{hash=acd98f83dff73c7fb671bbcb6f325ece}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Min-Ling},
-           giveni={M\bibinithyphendelim L\bibinitperiod}}}%
-        {{hash=6c178b2789668695fe7103f9cece305a}{%
-           family={Noh},
-           familyi={N\bibinitperiod},
-           given={Yung-Kyun},
-           giveni={Y\bibinithyphendelim K\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Yonsei University, Seoul, Republic of Korea}%
-      }
-      \list{publisher}{1}{%
-        {PMLR}%
-      }
-      \strng{namehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{fullhash}{4874e13f7817a49d297988fd81545e53}
-      \strng{fullhashraw}{4874e13f7817a49d297988fd81545e53}
-      \strng{bibnamehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authorbibnamehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authornamehash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authorfullhash}{4874e13f7817a49d297988fd81545e53}
-      \strng{authorfullhashraw}{4874e13f7817a49d297988fd81545e53}
-      \strng{editorbibnamehash}{acc545bc1c6fd46a8086bbb5965ea6e2}
-      \strng{editornamehash}{acc545bc1c6fd46a8086bbb5965ea6e2}
-      \strng{editorfullhash}{acc545bc1c6fd46a8086bbb5965ea6e2}
-      \strng{editorfullhashraw}{acc545bc1c6fd46a8086bbb5965ea6e2}
+      \strng{namehash}{54cbfa64d3ba1df26a686439a69e7805}
+      \strng{fullhash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{fullhashraw}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{bibnamehash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{authorbibnamehash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{authornamehash}{54cbfa64d3ba1df26a686439a69e7805}
+      \strng{authorfullhash}{75b94d2bf5de1f947ee10d84d606c460}
+      \strng{authorfullhashraw}{75b94d2bf5de1f947ee10d84d606c460}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
@@ -3115,50 +3242,11 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the Ninth Asian Conference on Machine Learning}
-      \field{month}{11}
-      \field{series}{Proceedings of Machine Learning Research}
-      \field{title}{Limits of End-to-End Learning}
-      \field{volume}{77}
-      \field{year}{2017}
-      \field{pages}{17\bibrangedash 32}
-      \range{pages}{16}
-      \verb{file}
-      \verb http://proceedings.mlr.press/v77/glasmachers17a/glasmachers17a.pdf
+      \field{title}{Dynamic stream weighting for turbo-decoding-based audiovisual asr}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.21437/interspeech.2016-166
       \endverb
-      \verb{urlraw}
-      \verb https://proceedings.mlr.press/v77/glasmachers17a.html
-      \endverb
-      \verb{url}
-      \verb https://proceedings.mlr.press/v77/glasmachers17a.html
-      \endverb
-    \endentry
-    \entry{halpern2008role}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=93ae203df276c98fb6e1917ac5fc3b9e}{%
-           family={Halpern},
-           familyi={H\bibinitperiod},
-           given={Jack},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{fullhash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{fullhashraw}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{bibnamehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authorbibnamehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authornamehash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authorfullhash}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \strng{authorfullhashraw}{93ae203df276c98fb6e1917ac5fc3b9e}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{THE ROLE OF PHONETICS AND PHONETIC DATABASES IN JAPANESE SPEECH TECHNOLOGY}
-      \field{year}{2008}
     \endentry
     \entry{hojo2018dnn}{article}{}{}
       \name{author}{3}{}{%
@@ -3623,6 +3711,48 @@
       \verb{doi}
       \verb 10.21437/INTERSPEECH.2021-775
       \endverb
+    \endentry
+    \entry{kibe2018intonational}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a90a96ccd5f7582fd7c577d58b44d476}{%
+           family={Kibe},
+           familyi={K\bibinitperiod},
+           given={Nobuko},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d06df226836d696c1a4b15ba08fbddc8}{%
+           family={Otsuki},
+           familyi={O\bibinitperiod},
+           given={Tomoyo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa08ce3eba2fc771deecc14ee627e5c4}{%
+           family={Sato},
+           familyi={S\bibinitperiod},
+           given={Kumiko},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{49a1d8980105176542ba4b615198b83d}
+      \strng{fullhash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{fullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{bibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{authorbibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{authornamehash}{49a1d8980105176542ba4b615198b83d}
+      \strng{authorfullhash}{6a08e3c99b622d3adce13e8eff246ca9}
+      \strng{authorfullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedfings of the LREC 2018 Special Speech Sessions}
+      \field{title}{Intonational variations at the end of interrogative sentences in Japanese dialects: From the “Corpus of Japanese Dialects”}
+      \field{year}{2018}
+      \field{pages}{21\bibrangedash 28}
+      \range{pages}{8}
     \endentry
     \entry{Koenecke2020}{article}{}{}
       \name{author}{10}{}{%
@@ -4155,52 +4285,6 @@
       \field{year}{2020}
       \field{pages}{218644\bibrangedash 218657}
       \range{pages}{14}
-    \endentry
-    \entry{Nguyen2002ModelingFA}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=fc9cda915b5727994997ce4fd7b52cd3}{%
-           family={Nguyen},
-           familyi={N\bibinitperiod},
-           given={Long},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3305e7cd9c0aeacc866b71a9a26367d6}{%
-           family={Guo},
-           familyi={G\bibinitperiod},
-           given={Xuefeng},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=be711c1d20e2f962368bf225974dc978}{%
-           family={Makhoul},
-           familyi={M\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{edc03636e7a438e2971a18e572c6f53a}
-      \strng{fullhash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{fullhashraw}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{bibnamehash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{authorbibnamehash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{authornamehash}{edc03636e7a438e2971a18e572c6f53a}
-      \strng{authorfullhash}{cd65eade497fac4b5b4b1159eaee1d85}
-      \strng{authorfullhashraw}{cd65eade497fac4b5b4b1159eaee1d85}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Interspeech}
-      \field{title}{Modeling frequent allophones in Japanese speech recognition}
-      \field{year}{2002}
-      \verb{urlraw}
-      \verb https://api.semanticscholar.org/CorpusID:7693997
-      \endverb
-      \verb{url}
-      \verb https://api.semanticscholar.org/CorpusID:7693997
-      \endverb
     \endentry
     \entry{noda2014lipreading}{article}{}{}
       \true{moreauthor}
@@ -4948,12 +5032,12 @@
            given={Akihiro},
            giveni={A\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=aabbd95f6ea3393a5d1d2ba6c9a1bf59}{%
+        {{un=0,uniquepart=base,hash=aabbd95f6ea3393a5d1d2ba6c9a1bf59}{%
            family={Yasuda},
            familyi={Y\bibinitperiod},
            given={Keiji},
            giveni={K\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \strng{namehash}{7d0634a6970c3bfb68aff68bae61e90a}
       \strng{fullhash}{8f929ef9c79113900d84443d443e8d11}
@@ -5088,6 +5172,50 @@
       \verb 10.1080/10447318.2022.2041900
       \endverb
     \endentry
+    \entry{widyana}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1718497be0c5d3aae25396c3b2d43284}{%
+           family={Widyana},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0adbc16ca757e873e88035ce59e8b91b}{%
+           family={Jerusalem},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7072c90e36a14b387b0e5e994de164a}{%
+           family={Yumechas},
+           familyi={Y\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f487ed4a000bcfd514f4dfad7f11713}
+      \strng{fullhash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{fullhashraw}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{bibnamehash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{authorbibnamehash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{authornamehash}{2f487ed4a000bcfd514f4dfad7f11713}
+      \strng{authorfullhash}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \strng{authorfullhashraw}{8aafb5ce772ccb96c41c91ae586c2b74}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{the application of text-to-speech technology in language learning}
+      \field{year}{2022}
+      \field{pages}{85\bibrangedash 92}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.2991/978-2-494069-91-6_14
+      \endverb
+    \endentry
     \entry{xu2023recent}{article}{}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=3d46dc554749beb726f383a678f5e798}{%
@@ -5214,48 +5342,6 @@
       \field{year}{2019}
       \field{pages}{1\bibrangedash 5}
       \range{pages}{5}
-    \endentry
-    \entry{yasuda2022}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=fc6eaaed96f37c82216a4909dae620a9}{%
-           family={Yasuda},
-           familyi={Y\bibinitperiod},
-           given={Yusuke},
-           giveni={Y\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=d0fb328bc36d1a9a42b9a721d7909992}{%
-           family={Toda},
-           familyi={T\bibinitperiod},
-           given={Tomoki},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{fullhash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{fullhashraw}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{bibnamehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authorbibnamehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authornamehash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authorfullhash}{2292711a5851f57f0a10bf73c22176aa}
-      \strng{authorfullhashraw}{2292711a5851f57f0a10bf73c22176aa}
-      \field{sortinit}{Y}
-      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Journal of Selected Topics in Signal Processing}
-      \field{number}{6}
-      \field{title}{Investigation of Japanese PnG BERT Language Model in Text-to-Speech Synthesis for Pitch Accent Language}
-      \field{volume}{16}
-      \field{year}{2022}
-      \field{pages}{1319\bibrangedash 1328}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/JSTSP.2022.3190672
-      \endverb
-      \keyw{Self-supervised learning;Feature extraction;Syntactics;Predictive models;PnG BERT;text-to-speech;Japanese;pitch accent;self-supervised learning}
     \endentry
     \entry{Kida2016LSTM}{article}{}{}
       \true{moreauthor}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.8)  22 JAN 2025 00:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.8)  5 FEB 2025 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1165,16 +1165,6 @@ l.7 \begin
           {sloppypar} [1
 
 
-] (frontmatter/frontAbstract.tex) (frontmatter/frontAcknowledgement.tex
-
-[1
-
-
-
-])
-
-[2
-
 ] (main.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 3.
  (C:\Users\alifz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
@@ -1204,19 +1194,19 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 
 
-[3
+[1
+
+
 
 ])
 
-[4]
+[2] (main.lot)
 
-[5] (main.lot)
-
-[6
+[3
 
 ] (main.lof)
 
-[7
+[4
 
 ] (mainmatter/chapIntro.tex
 
@@ -1237,7 +1227,7 @@ l.12
 [4]) (mainmatter/chapLiterature.tex
 
 [5]
-<mainmatter//images/mindmap.png, id=227, 623.32875pt x 782.925pt>
+<mainmatter//images/mindmap.png, id=217, 623.32875pt x 782.925pt>
 File: mainmatter//images/mindmap.png Graphic file (type png)
 <use mainmatter//images/mindmap.png>
 Package pdftex.def Info: mainmatter//images/mindmap.png  used on input line 8.
@@ -1261,18 +1251,14 @@ Package pdftex.def Info: mainmatter//images/mindmap.png  used on input line 8.
 [12]
 
 [13]
-
-[14]
-
-[15]
-<mainmatter//images/image.png, id=372, 961.5925pt x 579.16376pt>
+<mainmatter//images/image.png, id=341, 961.5925pt x 579.16376pt>
 File: mainmatter//images/image.png Graphic file (type png)
 <use mainmatter//images/image.png>
 Package pdftex.def Info: mainmatter//images/image.png  used on input line 104.
 (pdftex.def)             Requested size: 367.19751pt x 221.16266pt.
 
 
-[16]
+[14]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 114.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
@@ -1281,19 +1267,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 114.
 
 
-[17 <./mainmatter//images/image.png (PNG copy)>]
+[15 <./mainmatter//images/image.png (PNG copy)>]
+
+[16]
+
+[17]
 
 [18]
-
-[19]
-Overfull \hbox (14.31856pt too wide) in paragraph at lines 195--207
+Overfull \hbox (13.51857pt too wide) in paragraph at lines 197--211
  [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+[19]
 
 [20]) (mainmatter/chapMethodology.tex
 
@@ -1373,7 +1360,7 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 
 
 [24]
-<mainmatter//images/bitrate.png, id=447, 1429.59094pt x 592.46344pt>
+<mainmatter//images/bitrate.png, id=434, 1429.59094pt x 592.46344pt>
 File: mainmatter//images/bitrate.png Graphic file (type png)
 <use mainmatter//images/bitrate.png>
 Package pdftex.def Info: mainmatter//images/bitrate.png  used on input line 131.
@@ -1381,83 +1368,78 @@ Package pdftex.def Info: mainmatter//images/bitrate.png  used on input line 131.
 
 
 [25 <./mainmatter//images/bitrate.png>]
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 186--186
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
 []|\T1/ptm/b/n/10.95 Traditional (GMM-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
-[]|\T1/ptm/b/n/10.95 Accuracy on
+Underfull \hbox (badness 2600) in paragraph at lines 150--150
+[]|\T1/ptm/b/n/10.95 Transformers Based
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
-[]|\T1/ptm/m/n/10.95 Limited, strug-gles
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
 []|\T1/ptm/m/n/10.95 High, de-signed for
  []
 
 
-Underfull \hbox (badness 5622) in paragraph at lines 188--188
+Underfull \hbox (badness 5622) in paragraph at lines 151--151
 \T1/ptm/m/n/10.95 mul-ti-lin-gual and di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--189
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []|\T1/ptm/b/n/10.95 Contextual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--189
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []|\T1/ptm/m/n/10.95 High, lever-ag-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []|\T1/ptm/m/n/10.95 High, par-tic-u-larly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 []|\T1/ptm/b/n/10.95 Computational
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 []|\T1/ptm/m/n/10.95 Moderate to High
  []
 
 
-Overfull \hbox (11.08578pt too wide) in paragraph at lines 184--194
+Overfull \hbox (11.08578pt too wide) in paragraph at lines 148--157
  [][] 
  []
 
 
 
+[26]
+
 [27]
 
 [28]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 232.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 195.
  (C:\Users\alifz\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 [29]
-<mainmatter//images/step.png, id=500, 613.29124pt x 153.57375pt>
+<mainmatter//images/step.png, id=491, 613.29124pt x 153.57375pt>
 File: mainmatter//images/step.png Graphic file (type png)
 <use mainmatter//images/step.png>
-Package pdftex.def Info: mainmatter//images/step.png  used on input line 269.
+Package pdftex.def Info: mainmatter//images/step.png  used on input line 232.
 (pdftex.def)             Requested size: 408.0pt x 102.16743pt.
 
 
-[30]
+[30 <./mainmatter//images/step.png>])
 
-[31 <./mainmatter//images/step.png>])
+[31]
 
 [32]
 
@@ -1474,18 +1456,6 @@ Package pdftex.def Info: mainmatter//images/step.png  used on input line 269.
 [37]
 
 [38]
-
-[39
-
-] (appendices/appData.tex) (appendices/appCoding.tex
-
-[40
-
-])
-
-[41
-
-]
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1505,17 +1475,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29814 strings out of 473577
- 517874 string characters out of 5716318
- 1582618 words of memory out of 5000000
- 52354 multiletter control sequences out of 15000+600000
- 621724 words of font info for 132 fonts, out of 8000000 for 9000
+ 29749 strings out of 473577
+ 515912 string characters out of 5716318
+ 1582525 words of memory out of 5000000
+ 52313 multiletter control sequences out of 15000+600000
+ 620617 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,107p,1571b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\alifz\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\alifz\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (50 pages, 467445 bytes).
+ 99i,12n,107p,1469b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\alifz\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/alifz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (44 pages, 450630 bytes).
 PDF statistics:
- 905 PDF objects out of 1000 (max. 8388607)
- 213 named destinations out of 1000 (max. 500000)
- 461 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 838 PDF objects out of 1000 (max. 8388607)
+ 206 named destinations out of 1000 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 
