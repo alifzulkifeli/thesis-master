@@ -1,0 +1,306 @@
+
+
+
+\chapter{Literature Review}
+\section{Introduction and Chapter Roadmap}
+
+  This chapter treats automatic speech recognition (ASR) as an \emph{audio$\rightarrow$text} pipeline for \textbf{formal Japanese} and reviews only the components actually used in this thesis. Conceptually, the pipeline comprises: (i) front-end \emph{pre-processing} (resampling, VAD/segmentation, denoising, CMVN), (ii) \emph{feature extraction} (MFCC or log-Mel), (iii) \emph{acoustic/sequence models} (GMM--HMM, CRDNN--CTC,  Whisper), (iv) \emph{decoding and language modeling} (WFST graphs with n\mbox{-}gram LMs where applicable), and (v) \emph{text post-processing} to obtain publishable formal text. The classical statistical underpinnings (e.g., HMMs) remain relevant for GMM--HMM systems, while neural front ends and transformers dominate recent work. 
+
+  Toolwise, we rely on \textbf{Kaldi} for GMM--HMM (WFST-based decoding via \textbf{OpenFst}) and \textbf{SRILM} for training n\mbox{-}gram language models; CRDNN--CTC and Whisper are implemented in \textbf{Python}/PyTorch. SpecAugment-style masking is considered for CRDNN to improve generalization. 
+
+\section{ASR Pipeline for Formal Japanese}\label{sec:asr-pipeline}
+
+We operationalize ASR as a modular pipeline with six stages: \emph{capture} $\rightarrow$ \emph{pre-processing} $\rightarrow$ \emph{features} $\rightarrow$ \emph{model} $\rightarrow$ \emph{decoding/LM} $\rightarrow$ \emph{text normalization}. This structure mirrors standard practice in hybrid and end-to-end systems and enables controlled comparisons of front-end choices independently of model capacity. 
+
+\paragraph{Capture}
+Formal-domain audio (lectures, talks, news-style speech) with transcripts is standardized to PCM, 16\,kHz, mono before any further processing.
+
+\paragraph{Pre-processing}
+We apply resampling and amplitude conditioning, \emph{voice activity detection} (Kaldi energy-based SAD) for non-speech removal and segmentation, light-weight denoising (spectral subtraction / Wiener filtering), and \emph{CMVN}. These steps reduce channel/noise variability and stabilize downstream modeling; CMVN is a widely used normalization improving robustness when applied with care. 
+
+\paragraph{Feature extraction}
+GMM--HMM uses \textbf{MFCC} ($13{+}\Delta{+}\Delta\Delta$ with liftering), a classic representation of speech spectra; neural systems use \textbf{log-Mel} filterbanks (80-d). For CRDNN--CTC, we optionally apply \emph{SpecAugment} (time/frequency masking) and frame stacking; Whisper uses its standard log-Mel frontend to remain distribution-compatible with pre-training. 
+
+\paragraph{Modeling}
+We compare three families: \emph{GMM--HMM} (Kaldi recipes: mono$\rightarrow$triphone, LDA--MLLT, SAT/fMLLR), \emph{CRDNN--CTC} (SpeechBrain/PyTorch), and \emph{Whisper} (transformer fine-tuning). 
+
+\paragraph{Decoding and language modeling}
+Kaldi uses WFST decoding (OpenFst) with lexicons and \textbf{SRILM} n\mbox{-}gram language models to compose HCLG graphs; CRDNN--CTC optionally integrates an n\mbox{-}gram LM in beam search; Whisper decoding is LM-free in this study. 
+
+\paragraph{Text normalization (formalization)}
+Outputs are normalized to formal text using tokenization/morphological analysis (MeCab), numeral and punctuation normalization, script consistency, and conservative filler removal. Japanese text commonly mixes \emph{kanji}, \emph{hiragana}, and \emph{katakana}; punctuation conventions (e.g., symbols) and numeral styles (Arabic vs.\ kanji forms in formal contexts) motivate explicit normalization policies. 
+
+
+\section{Pre-processing Used in This Thesis (RQ1)}\label{sec:preproc}
+
+This section defines the \emph{front-end} operations evaluated in RQ1. All steps are applied \emph{before} feature extraction and are held consistent across systems to enable fair comparison. GMM--HMM pre-processing runs inside \textbf{Docker}/Kaldi; equivalent transforms for CRDNN--CTC and Whisper fine-tuning are implemented in \textbf{Python} (torchaudio) on Google Colab so that parameters match across toolchains.
+
+\paragraph{Resampling and level conditioning}
+All audio is converted to linear PCM, \textbf{16\,kHz}, \textbf{mono}. Resampling is performed first to ensure a uniform time--frequency grid. We then apply conservative amplitude conditioning to avoid clipping and reduce gross level variation (peak-normalization with fixed headroom, followed by optional RMS leveling where needed). These choices stabilize downstream VAD and feature statistics.
+
+\paragraph{Voice activity detection (VAD) and segmentation}
+Non-speech is removed and long recordings are segmented using Kaldi’s \textbf{energy-based SAD}. Frame shift is aligned to the feature extractor (10\,ms). Short non-speech gaps are bridged to prevent over-fragmentation; segments are constrained to a practical duration range (minimum $\approx$0.5\,s; maximum $\approx$30\,s) to balance acoustic context with decoding latency. VAD parameters are fixed across experiments unless explicitly varied in Chapter~3.
+
+\paragraph{Noise handling (denoising options compared)}
+To reduce stationary noise and mild room effects while keeping the pipeline lightweight and reproducible, we compare two denoisers applied \emph{before} feature extraction:
+\begin{enumerate}
+  \item \textit{Spectral subtraction}: magnitude-spectrum subtraction with a noise estimate derived from VAD-identified non-speech (leading/trailing context where available) and flooring to limit musical noise.
+  \item \textit{Wiener filtering}: frequency-domain Wiener gain using a running noise power spectral density estimate.
+\end{enumerate}
+A \emph{no-denoise} baseline is included. The same options and parameters are mirrored in Kaldi (GMM--HMM) and Python (CRDNN/Whisper) implementations.
+
+\paragraph{Cepstral mean/variance normalization (CMVN)}
+Two CMVN policies are compared:
+\begin{itemize}
+  \item \textbf{Utterance-level CMVN}: statistics computed per utterance; robust to speaker changes and suitable for short segments/streaming.
+  \item \textbf{Speaker-level CMVN}: statistics pooled across utterances sharing a speaker ID (\texttt{spk2utt}); improves inter-utterance consistency when speaker metadata are reliable.
+\end{itemize}
+For GMM--HMM (MFCCs), CMVN follows standard Kaldi practice. For CRDNN--CTC and Whisper (log-Mel), numerically equivalent mean/variance normalization is applied to the feature tensors. Statistics are estimated on non-test data only to prevent leakage.
+
+\paragraph{Execution order, configuration, and logging}
+The canonical order is: \emph{resample} $\rightarrow$ \emph{VAD/segmentation} $\rightarrow$ \emph{denoise} $\rightarrow$ \emph{feature extraction} $\rightarrow$ \emph{CMVN}.\footnote{In Kaldi MFCC pipelines, CMVN is implemented as part of feature computation; for neural models it is applied to log-Mel tensors.} All flags, thresholds, and parameter values (VAD settings, denoiser type, CMVN policy) are stored in human-readable configs and logged to enable exact reproduction.
+
+\paragraph{Ablation plan for RQ1}
+RQ1 isolates the contribution of the front end by holding model training/decoding fixed while varying: (a) denoiser \{none, spectral subtraction, Wiener\}, (b) VAD on/off (with a fixed segmentation policy when on), and (c) CMVN policy \{utterance, speaker\}. Effects are reported primarily in \textbf{CER}, with \textbf{RTF} tracked to quantify computational overhead (Chapter~4).
+
+\vspace{1ex}
+\section{Feature Extraction Used (RQ2)}\label{sec:features}
+
+This section specifies the feature representations evaluated in RQ2. Pre-processing from Section~\ref{sec:preproc} is applied first; CMVN is then performed on the resulting features (utterance- or speaker-level, per RQ1). Parameters are chosen to reflect common practice and to align with the training recipes used in this thesis.
+
+\paragraph{MFCCs for GMM--HMM}
+For the GMM--HMM pipeline (Kaldi), we use \textbf{MFCC} features with standard settings:
+\begin{itemize}
+  \item 25\,ms analysis window and 10\,ms frame shift at 16\,kHz; Hamming window.
+  \item 23 Mel filter channels; cepstral truncation to 13 coefficients with $\Delta/\Delta\Delta$ (total 39\,D).
+  \item Liftering (Kaldi default) to de-emphasize higher-order cepstra.
+  \item Post-feature \textbf{CMVN} (utterance- or speaker-level) as specified in RQ1.
+\end{itemize}
+These MFCCs serve as the canonical input for mono$\rightarrow$triphone training, LDA--MLLT, and SAT/fMLLR where applicable.
+
+\paragraph{Log-Mel filterbanks for CRDNN--CTC and Whisper}
+Neural systems operate on \textbf{log-Mel filterbanks}:
+\begin{itemize}
+  \item 25\,ms window, 10\,ms hop, 16\,kHz sampling; Hamming window.
+  \item \textbf{80}-dimensional Mel filterbanks with energy flooring and $\log$ compression.
+  \item \textbf{CRDNN--CTC} (SpeechBrain/PyTorch): CMVN applied to log-Mel tensors; the encoder consumes the normalized features directly.
+  \item \textbf{Whisper fine-tuning}: the standard Whisper frontend (80-dim log-Mel and tokenizer) is used without altering time--frequency parameters to remain compatible with pre-training.
+\end{itemize}
+
+\paragraph{Augmentation and local context (CRDNN--CTC)}
+To improve generalization in the formal domain for CRDNN, we employ:
+\begin{itemize}
+  \item \textit{SpecAugment}: time- and frequency-masking applied to log-Mel features (mask widths and counts are specified in Chapter~3); time warping is omitted to keep alignment simple for CTC.
+  \item \textit{Frame stacking}: local context concatenation around each center frame (stack size defined in Chapter~3) to expose short-term dynamics to the encoder.
+\end{itemize}
+No augmentation is applied to Whisper features during fine-tuning to preserve compatibility with the pre-trained distribution; MFCCs for GMM--HMM are likewise left unaugmented.
+
+\paragraph{Ablation plan for RQ2}
+RQ2 compares \textbf{MFCC} ($13{+}\Delta{+}\Delta\Delta$) for GMM--HMM against \textbf{log-Mel} for neural models and, within the neural setting, tests the contribution of \textit{SpecAugment} and \textit{frame stacking} (CRDNN only). Effects are reported primarily in \textbf{CER}, with \textbf{WER} and \textbf{RTF} as secondary measures (Chapter~4).
+
+\section{Models Used}\label{sec:models}
+
+This section summarizes the three model families employed in this thesis. All models consume the pre-processed audio and features defined in Sections~\ref{sec:preproc}--\ref{sec:features}. To ensure portability and repeatability, the GMM--HMM pipeline is executed inside Docker (Kaldi toolchain), whereas the neural models (CRDNN--CTC and Whisper fine-tuning) are trained and evaluated on Google Colab using Python/PyTorch with GPU acceleration.
+
+\subsection{GMM--HMM with Kaldi}
+
+\paragraph{Training recipe}
+We use a classical Kaldi recipe: \emph{monophone} initialization, followed by \emph{triphone} modeling with decision-tree state tying. Feature-space transformations include \textbf{LDA--MLLT} to decorrelate/whiten features and improve Gaussian modeling, and (where applicable) \textbf{SAT/fMLLR} to adapt features per speaker. Supervision is obtained via iterative alignment/refinement cycles. The input features are \textbf{MFCC} ($13{+}\Delta{+}\Delta\Delta$) with \textbf{CMVN} as specified in Section~\ref{sec:features}; utterance segmentation is provided by the VAD pipeline in Section~\ref{sec:preproc}.
+
+\paragraph{Rationale}
+This configuration provides a well-understood baseline with strong inductive biases for pronunciation and context modeling. It also exposes the sensitivity of classical systems to front-end choices such as VAD policy, denoising, and CMVN.
+
+\subsection{CRDNN--CTC with SpeechBrain (Python/PyTorch)}
+
+\paragraph{Architecture and objective}
+The CRDNN encoder combines a small stack of temporal convolutional layers (to capture local spectral dynamics) with recurrent layers (e.g., bidirectional LSTM/GRU) and a fully connected projection to label posteriors. The system is trained with the \textbf{CTC} objective to align frame-level posteriors to symbol sequences without explicit framewise supervision. Inputs are \textbf{log-Mel} filterbanks with CMVN; optional \textit{SpecAugment} and \textit{frame stacking} are applied as defined in Section~\ref{sec:features}.
+
+\paragraph{Decoding}
+At inference, we use \emph{greedy} or \emph{beam-search} CTC decoding. Where stated in Chapter~3, an external n-gram LM may be integrated into the beam (shallow fusion) to assess language-model effects under matched conditions.
+
+\paragraph{Rationale}
+CRDNN--CTC offers a compute-efficient neural baseline that is sensitive to feature and augmentation choices, making it suitable for RQ2 ablations while remaining practical on Colab GPUs.
+
+\subsection{Whisper Fine-tuning (Transformer)}
+
+\paragraph{Fine-tuning regime}
+We fine-tune a Whisper checkpoint for Japanese \emph{transcribe} mode using the model’s standard \textbf{log-Mel} frontend. Depending on compute constraints, we employ either \emph{full fine-tuning} or parameter-efficient \emph{LoRA}-style adaptation (details in Chapter~3). Audio is chunked to the model’s expected window; training uses label smoothing and early stopping based on validation CER.
+
+\paragraph{Decoding settings for formal domain}
+Inference uses Whisper’s beam search with task and language fixed to Japanese transcription. We disable translation, set temperature/beam parameters for stability, and apply log-prob/length constraints appropriate for formal speech. No external LM is used to avoid distribution shift relative to pre-training.
+
+\paragraph{Rationale}
+Whisper provides a strong transformer baseline with robust pre-training. Fine-tuning tests whether front-end standardization and modest adaptation suffice to match or surpass the baselines above in the formal domain.
+
+% -------------------------------------------------------------
+
+\section{Decoding and Language Modeling Used}\label{sec:decoding-lm}
+
+\paragraph{WFST decoding in Kaldi (GMM--HMM)}
+We adopt Kaldi’s WFST-based decoder (OpenFst backend). The decoding graph \textbf{HCLG} is constructed by composing: acoustic model (\(H\)), context-dependency (\(C\)), lexicon/pronunciations (\(L\)), and an n-gram language model (\(G\)). Graph compilation, pruning, and beam parameters are kept fixed across experiments unless explicitly ablated. Lattices are generated for scoring and, where needed, lattice rescoring is performed with higher-order LMs.
+
+\paragraph{Language modeling with SRILM}
+We train \textbf{SRILM} n-gram models (orders and smoothing methods specified in Chapter~3) from the formal-domain text associated with our datasets. These LMs are integrated into HCLG for GMM--HMM decoding. Where applicable, the same n-gram LMs are used for CRDNN--CTC beam search (shallow fusion) to enable a controlled comparison of LM effects across model families.
+
+\paragraph{CTC decoding (CRDNN)}
+CRDNN uses greedy or beam-search decoding. When evaluating LM effects, an n-gram LM is incorporated via prefix beam search with tunable fusion weights. For fairness, non-decoding factors (features, segmentation, and CMVN) remain identical to those used by GMM--HMM and Whisper.
+
+\paragraph{Whisper decoding (no external LM)}
+Whisper decoding relies on the model’s internal decoder-only transformer with beam search. We fix task = \texttt{transcribe}, language = \texttt{ja}, and use conservative temperature, beam size, and length constraints suitable for formal speech. No external LM is attached.
+
+\paragraph{Reproducibility and measurement}
+All decoding flags (beams, lattice beams, prune thresholds, LM scales, and insertion penalties) are recorded in configuration files. For each system, we report \textbf{CER} (primary), \textbf{WER} (secondary), and \textbf{RTF}. RTF is computed from decoder logs and cross-checked against total wall-clock time divided by total audio duration, using the same hardware/software stack described in Chapter~3.
+
+
+\section{Text Post-processing and Formalization Used}\label{sec:postprocess}
+
+This stage converts raw ASR hypotheses into publishable \textit{formal} Japanese and ensures fair scoring. The same text processing is applied to system outputs and reference transcripts unless otherwise noted.
+
+\paragraph{Tokenization / morphological analysis}
+We tokenize with \textbf{MeCab} using the dictionary specified in Chapter~3. Tokenization is used for (i) WER computation, (ii) controlled normalization (token-aware rules), and (iii) error analysis. For CER, we work at the character level and do not require token boundaries, but we still apply the same normalization rules for consistency.
+
+\paragraph{Normalization policy (conservative)}
+We apply a small, deterministic set of rules designed to improve readability without altering meaning:
+\begin{itemize}
+  \item \textbf{Punctuation:} standardize Japanese punctuation (e.g.symbolss) and normalize mixed full-width/half-width forms; remove extraneous spaces around punctuation.
+  \item \textbf{Numerals:} adopt a single convention (stated in Chapter~3), e.g., Arabic digits for dates, times, and quantities; normalize kanji numerals to this convention.
+  \item \textbf{Script consistency:} resolve common kana/kanji variants to a preferred form when doing so does not change meaning; unify elongated vowels and small kana usage according to the chosen style guide.
+  \item \textbf{Casing and Latin tokens:} normalize ASCII case and width (e.g., full-width alphanumerics to half-width) for acronyms and imported terms.
+  \item \textbf{Whitespace:} collapse repeated spaces; remove stray spaces inserted by tokenizers.
+\end{itemize}
+
+\paragraph{Fillers and disfluencies}
+We remove frequent fillers conservatively (e.g., etoooanoo; romaji: \textit{eetoo, anoo}) and obvious hesitation markers when they are not required by the reference style. Disfluency removal is kept minimal to avoid deleting meaningful interjections. If references retain fillers, we score both \textit{with} and \textit{without} filler removal for transparency.
+
+\paragraph{Application order and artifacts}
+The canonical order is: \emph{tokenize (for rule context)} $\rightarrow$ \emph{normalize punctuation/numerals/script} $\rightarrow$ \emph{remove fillers (optional track)} $\rightarrow$ \emph{detokenize (for display)}. We export both the \texttt{raw} and \texttt{formal} transcripts and keep a change log to facilitate error analysis and reproducibility.
+
+\vspace{1ex}
+\section{Evaluation Practices Used}\label{sec:evaluation}
+
+\paragraph{Primary and secondary metrics}
+We report \textbf{Character Error Rate (CER)} as the primary metric and \textbf{Word Error Rate (WER)} and \textbf{Real-Time Factor (RTF)} as secondary measures.
+
+\paragraph{CER}
+CER is computed after applying the normalization in Section~\ref{sec:postprocess} to both hypothesis and reference. We use standard Levenshtein distance at the Unicode character level (insertions, deletions, substitutions), micro-averaged over all utterances. We also retain an auxiliary ``raw CER'' (before normalization) when needed to illustrate the effect of formalization.
+
+\paragraph{WER}
+For WER, both hypothesis and reference are tokenized with MeCab (dictionary as in Chapter~3). We compute Levenshtein distance at the token level and micro-average across utterances. Because Japanese tokenization is analyzer-dependent, we fix the tokenizer and dictionary across all systems and experiments.
+
+\paragraph{RTF}
+RTF is computed as total decoding wall-clock time divided by total audio duration. For Kaldi (GMM--HMM), we also extract per-job times and frame counts from decoder logs to cross-check RTF. For neural systems on Colab, we measure decode time using synchronized timers with warm-up excluded. All measurements are performed on the fixed hardware/software stack described in Chapter~3.
+
+\paragraph{Scoring protocol and reporting}
+We (i) score \texttt{formal} transcripts by default; (ii) report means with per-utterance micro-averaging; and (iii) include 95\% confidence intervals via bootstrap resampling when comparing systems. For ablations, we keep decoding settings fixed and report CER/WER/RTF deltas relative to the established baseline.
+
+\paragraph{Error analysis categories}
+We categorize prominent errors to guide discussion in Chapter~4:
+\begin{itemize}
+  \item \textbf{Substitutions:} homophones; long vowel and geminate consonant confusions; particle confusions (); numeric terms (digits vs.\ kanji).
+  \item \textbf{Script issues:} kanji$\leftrightarrow$kana variants; small kana/elongation normalization mismatches.
+  \item \textbf{Punctuation:} missing or spurious corner brackets (kakko) and quotation marks; Western vs.\ Japanese comma/period usage.
+  \item \textbf{Named entities/OOV:} person and place names; acronyms; domain-specific terminology.
+  \item \textbf{Segmentation effects:} VAD over/under-segmentation leading to truncation or duplicated text.
+  \item \textbf{Disfluencies:} residual fillers when the formal track expects removal.
+\end{itemize}
+We provide representative before/after examples and confusion summaries for each model family under matched front ends.
+
+\section{Tooling and Reproducibility Used}\label{sec:tooling}
+
+This section specifies the exact environments, tools, and practices used to ensure that all experiments can be replicated. Choices are limited to components actually used in this thesis.
+
+\subsection{Execution Environments}\label{sec:exec-envs}
+\begin{itemize}
+  \item \textbf{Docker for GMM--HMM/Kaldi.}
+  Kaldi and \textbf{SRILM} are built and executed inside a Docker container to guarantee stable toolchains and reproducible WFST builds. The image is based on a pinned Linux base (with fixed compiler and system libraries). Environment variables (\texttt{KALDI\_ROOT}, \texttt{SRILM}, \texttt{PATH}) are set in the Dockerfile. Experiments run with mounted volumes for \texttt{data/}, \texttt{exp/}, and \texttt{conf/}. The container image tag (or digest) is recorded alongside results.
+  \item \textbf{Google Colab for CRDNN--CTC and Whisper FT.}
+  Neural experiments are run on Colab with GPU runtime enabled. Notebooks include a reproducibility cell that pins Python packages, prints system/GPU details, and sets seeds. Google Drive is mounted for datasets, checkpoints, and logs. Each run records the GPU model, CUDA/cuDNN versions, and PyTorch/torchaudio versions.
+\end{itemize}
+
+\subsection{Core Tools}\label{sec:core-tools}
+\begin{itemize}
+  \item \textbf{Python} (PyTorch, torchaudio) for CRDNN and Whisper fine-tuning, plus data preparation and scoring scripts. SpeechBrain utilities are used for CRDNN training/decoding. Timing utilities are included for consistent RTF measurement.
+  \item \textbf{Kaldi} for GMM--HMM training/decoding and feature pipelines; \textbf{OpenFst} for compiling WFST graphs (HCLG).
+  \item \textbf{SRILM} to train n\mbox{-}gram language models used in decoding (orders/smoothing as defined in Chapter~3).
+\end{itemize}
+
+\subsection{Reproducibility Practices}\label{sec:reprod}
+\begin{itemize}
+  \item \textbf{Version pinning.} Dockerfile specifies base image and build steps for Kaldi/SRILM. Colab notebooks export \texttt{requirements.txt} via \texttt{pip freeze}. For each run, the commit hash (or notebook version), container tag, and package versions are saved to a \texttt{run\_manifest.yaml}.
+  \item \textbf{Seed control and determinism.} Fixed random seeds are set for Python/\texttt{numpy}/PyTorch. Where feasible, deterministic flags are enabled for PyTorch backends; any known non-deterministic ops are avoided or documented. Thread counts are fixed via \texttt{OMP\_NUM\_THREADS} and \texttt{MKL\_NUM\_THREADS} for CPU-bound steps.
+  \item \textbf{Configuration management.} All experiment knobs (pre-processing, features, model hyperparameters, decoding beams/LM scales) live in human-readable \texttt{.yaml} files under \texttt{conf/}. Every result folder copies the exact configs used (\texttt{conf/} snapshot) for traceability.
+  \item \textbf{Data splits and metadata.} Train/validation/test splits are generated with a fixed seed and, where available, are speaker-aware. Files \texttt{utt2spk}, \texttt{spk2utt}, and split manifests are versioned. Any text normalization dictionaries and MeCab dictionary choice are recorded.
+  \item \textbf{Logging and artifacts.} 
+    \begin{itemize}
+      \item \textit{Kaldi:} decoder/training logs (\texttt{exp/*/log/}) and compiled graphs (\texttt{HCLG.fst}) are archived. 
+      \item \textit{Neural:} training curves, checkpoints, and \texttt{metrics.json} are saved per run. 
+      \item \textit{Results:} hypotheses, formalized transcripts, and scoring outputs (CER/WER) are stored under \texttt{results/<model>/<exp\_id>/}.
+    \end{itemize}
+  \item \textbf{RTF measurement.} For Kaldi, RTF is parsed from decoder logs and cross-checked by dividing total wall-clock decode time by total audio duration. For Colab runs, synchronized wall-clock timers wrap the decode loop after a short warm-up. Hardware specs (GPU model, CPU info) are logged with each RTF.
+  \item \textbf{System provenance.} Each run stores a brief system report (\texttt{uname -a}, CPU info, memory summary, GPU name, CUDA/cuDNN versions) to aid replication on different machines.
+  \item \textbf{Naming and directory conventions.} A consistent layout is used: \texttt{data/} (corpora and manifests), \texttt{conf/} (YAML configs), \texttt{exp/} (intermediate training/decoding artifacts), and \texttt{results/} (final metrics and transcripts). Run IDs encode model, dataset, and key settings.
+\end{itemize}
+
+
+\section{Synthesis and Gap}\label{sec:synthesis-gap}
+
+The literature establishes strong baselines for individual ASR families and offers many incremental improvements to architectures and decoding. However, three recurring issues limit comparability for \textit{formal Japanese} transcription. First, front-end choices (VAD/segmentation, denoising, CMVN) and feature design (MFCC vs.\ log-Mel, augmentation) are rarely ablated \emph{side by side} \textit{across} multiple model families; most studies fix these settings per toolkit, making model gains indistinguishable from front-end effects. Second, evaluation practice is inconsistent: tokenization and normalization policies vary, and Real-Time Factor (RTF) is often reported without a standardized measurement protocol or hardware description. Third, reproducibility is uneven: differences in build environments, language-model training, and decoding flags (beams, LM scales) frequently go undocumented.
+
+This thesis addresses these gaps with a controlled, tool-anchored comparison that uses the \textbf{exact components and environments specified in this chapter} for all systems. GMM--HMM is run in Dockerized Kaldi with SRILM LMs and WFST decoding; CRDNN--CTC and Whisper fine-tuning are executed on Colab with pinned Python/PyTorch stacks. Pre-processing (resampling, VAD, denoising, CMVN) and feature settings (MFCC or log-Mel, with CRDNN augmentations) are \emph{matched} across experiments and explicitly ablated. Text is post-processed through a single, shared formalization pipeline. We report CER (primary), WER and RTF (secondary) with a transparent, repeatable RTF procedure and provide error taxonomies that reflect Japanese script and punctuation conventions. The result is an actionable recipe for formal Japanese transcription that cleanly separates front-end effects from model capacity.
+
+\section{Chapter Summary}\label{sec:chapter-summary}
+
+This chapter defined the ASR pipeline used in this thesis, detailed the specific pre-processing and feature representations under study, summarized the three model families and their decoding/LM setups, described the text formalization procedure, and established the tooling and reproducibility practices. Chapter~\ref{chap:methodology} (Methodology) now specifies the datasets (formal domain only), speaker-aware split strategy, all pre-processing parameters and feature configurations, model training schedules and decoding flags, the ablation design for RQ1--RQ2, and the evaluation protocol for CER/WER/RTF and error analysis. Together, these choices implement the controlled comparisons needed to answer the research questions posed in Chapter~1.
+
+
+\section{Current Comparative Analysis of Japanese ASR Models}
+A comparative analysis that carried out by \textcite{Karita2021} shows that Conformer-based models perform better than Conformer BLSTM architectures, as they obtained 4.1, 3.2, and 3.5 character error rates for CSJ in eval1, eval2, and eval3 tasks respectively. It is noted that both the BLSTM and Conformer models have character error rates below 7\% and the character error rate is lower when using Conformer Itself. Conformer encoders also offer increased accuracy and efficiency, with a throughput of 628.4 utterances processed per second and 430.0 for the BLSTM models. The scope of the work also emphasizes the importance of the analysis of the specific problem of training parameters optimization, noting the importance of the implementation of SpecAugment, exponential moving average (EMA) and variational noise (VN). The SpecAugment technique results in the largest shifts which affect the performance. The integration of the Conformer transducers with the described set of training approaches surpasses all existing solutions in Japanese ASR and open the path for further development \parencite{Karita2021}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Character error rates on CSJ dev/eval1/eval2/eval3 sets cited from \cite{Karita2021}.}
+    \begin{tabular}{l|l|c|c|c}
+    \hline
+    \textbf{Encoder}   & \textbf{Decoder}   & \textbf{Param} & \textbf{Utt/sec} & \textbf{CER [\%]} \\ \hline
+    BLSTM              & CTC               & 258M             & 430.0            & 3.9 / 5.2 / 3.7 / 4.0 \\ 
+    BLSTM              & attention         & 309M             & 365.5            & 3.8 / 5.3 / 3.7 / 3.7 \\ 
+    BLSTM              & transducer        & 274M             & 297.6            & 3.8 / 5.1 / 3.7 / 4.0 \\ 
+    Conformer          & CTC               & 117M             & \textbf{628.4}   & 3.1 / 4.1 / 3.2 / 3.5 \\ 
+    Conformer          & attention         & 124M             & 534.8            & 3.3 / 4.5 / 3.3 / 3.5 \\ 
+    Conformer          & transducer        & 120M             & 376.1            & \textbf{3.1 / 4.1 / 3.2 / 3.5} \\ \hline
+    \end{tabular}
+    \label{tab:cer_comparison}
+    \end{table}
+
+Another comparative analysis in the domain of the Japanese language is presented by \textcite{takahashi2024comparison}, focusing on the accuracy of speech recognition for different dialects. The study evaluates three models: Whisper, XLSR, and XLS-R, which are self-supervised learning frameworks. The Whisper model significantly underperformed for any Japanese outside of standard Japanese, recording a 4.1\% CER only after it has gone through fine tuning. However, when the accuracy is low when the language identification marker is absent where some instances of being higher than 100\%.This marks the weakness of Whisper in terms of its application for wide ranging applications in different dialects of Japanese. However, Whisperer and XLS-R both of which were trained on multilingual speech data show improvement in the recognition of Japanese dialects. These models apply multi-task learning paradigms such as DID and ASR to increase their efficiency. Multi tasking adds significantly to the dialect accuracy and a three-step efficient training of the models reduce the CER by 3-4\% relative to conventional transfer learning. Some dialects, especially those from Kyushu and Chubu, have larger CER than those spoken in Kanto, where there is a greater linguistic affinity \parencite{takahashi2024comparison}.
+
+Current comparative analysis from these studies shows that several challenges need to be addressed. A study to compare the state of the art models in Japanese ASR is needed because from previously mentioned paper it is clear that the performance of the models varies depending on the dataset and the task. The Whisper model is the most accurate in the Japanese language, but it is not as effective in dialectal speech. The XLSR and XLS-R models are more effective in dialectal speech, but they are not as accurate as the Whisper model in standard Japanese. The Conformer model is the most accurate in standard Japanese, but it is not as effective in dialectal speech\parencite{takahashi2024comparison}. The study will provide a comprehensive comparison of the state of the art models in Japanese ASR, which will help to identify the strengths and weaknesses of each model and to determine which model is the most effective for a given dataset and task.
+
+\begin{table}[H]
+    \centering
+    \caption{Comparison of ASR accuracy on two datasets, Standard Japanese (CSJ) and Japanese dialects (COJADS) cited from \cite{takahashi2024comparison}.}
+    \begin{tabular}{c|c|c|c}
+    % \begin{tabular}{p{2.7cm}|c|p{2cm}|p{2cm}}
+
+    \hline
+    \textbf{Pre-Trained Model Name} & \textbf{Adaptation Method} & \textbf{CER [\%] CSJ} & \textbf{CER [\%] COJADS} \\ \hline
+    Whisper-medium (zeroshot)       & -                              & 25.6*                 & 116.0*                   \\ \hline
+    Whisper-medium                  & full finetuning                & \textbf{4.1}          & 32.9                     \\ \hline
+    XLSR                            & full finetuning                & 6.5                   & 34.1                     \\ \hline
+    XLSR                            & 3-steps finetuning             & -                     & 30.0                     \\ \hline
+    XLS-R                           & full finetuning                & 6.1                   & 32.6                     \\ \hline
+    XLS-R                           & 3-steps finetuning             & -                     & \textbf{29.2}            \\ \hline
+    \multicolumn{4}{l}{\footnotesize *After post-processing with kanji-to-kana conversion.} \\
+    \end{tabular}
+    \label{tab:asr_comparison}
+\end{table}
+
+\section{ Dataset }
+The dataset that will be used in this study is JSUT corpus \parencite{jsut2017}. The JSUT corpus is a free large-scale Japanese speech corpus for end-to-end speech synthesis. It consists of 10 hours of reading-style speech data uttered by a single female speaker. The corpus contains 10 sub-corpora, each designed for different purposes, such as basic phoneme coverage, loanword pronunciation, and emotional speech. The dataset is suitable for training and evaluating ASR models due to its size and diversity of speech styles. The JSUT corpus is publicly available and can be accessed through the following link: \url{https://sites.google.com/site/shinnosuketakamichi/research-topics/jsut}.
+
+\section{Gaps in Literature}
+Based on the literature review, there are several gaps in the current research on Japanese ASR systems. Firstly, while there has been significant progress in developing ASR models for standard Japanese, there is a lack of research focused on dialectal variations and informal speech. Additionally, most studies have primarily utilized scripted speech datasets, which may not accurately represent real-world conversational scenarios. Furthermore, there is a need for more comprehensive evaluations of ASR systems in diverse acoustic environments and with various speaker demographics.
+
+\section{Conclusion}
+This chapter highlighted the challenges in Japanese ASR system that is its writing systems, phonetic variations, and dialectal diversity. The evolution of traditional ASR model to the cutting-edge technologies also has been highlighted in this chapter. Despite the advancements of the model and ASR framework, there is still a gap in adapting these models to Japanese-specific contexts, especially in handling informal speech and dialects. There is still work to be done to further refine the accuracy, speed, and dataset availability to advance Japanese ASR. This result can be used as a foundation for developing more effective and inclusive speech-to-text solutions tailored for Japanese language. For the dataset and tools, TED talks, CSJ, and COJADS are the most commonly used datasets for Japanese ASR research. To extract audio from video files, Python Moviepy is used and to access pre-trained models for Japanese ASR, the model will be obtain from Hugging Face. 
+

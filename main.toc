@@ -1,13 +1,13 @@
 \changetocdepth {3}
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{TABLE OF CONTENTS}{i}{section*.1}%
-\contentsline {chapter}{LIST OF TABLES}{iii}{section*.2}%
-\contentsline {chapter}{LIST OF FIGURES}{iv}{section*.3}%
+\contentsline {chapter}{LIST OF TABLES}{iv}{section*.2}%
+\contentsline {chapter}{LIST OF FIGURES}{v}{section*.3}%
 \vspace {1.7cm}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Research Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Research Objectives}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Research Objectives}{2}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Research Questions}{3}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Scope of Study}{3}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Significance of Study}{4}{section.1.6}%
@@ -16,41 +16,72 @@
 \contentsline {section}{\numberline {2.1}Introduction}{6}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Challenges in Japanese Speech Detection}{7}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Complexity of Japanese Writing System and Characters}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Dialect Variations}{7}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Traditional Speech Detection Models }{8}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Gaussian Mixture Models (GMM)}{8}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Hidden Markov Models (HMM)}{9}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}The GMM-HMM Combination}{10}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Modern Deep Learning Approaches}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Deep Neural Networks (DNN)}{11}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Convolutional Neural Networks (CNN)}{12}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Recurrent Neural Networks (RNN)}{12}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Transformer-based Models}{13}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}State of the art Models in Japanese Speech Recognition}{14}{section.2.5}%
+\contentsline {subsection}{\numberline {2.3.2}Hidden Markov Models (HMM)}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}The GMM-HMM Combination}{9}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Modern Deep Learning Approaches}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Deep Neural Networks (DNN)}{10}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Convolutional Neural Networks (CNN)}{11}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Recurrent Neural Networks (RNN)}{11}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Convolutional-Recurrent DNN with Connectionist Temporal Classification (CRDNN-CTC)}{12}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Transformer-based Models}{13}{subsection.2.4.5}%
+\contentsline {section}{\numberline {2.5}Transformers Models in Japanese Speech Recognition}{14}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Whisper by OpenAI}{14}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}wav2vec 2.0 by Facebook AI Research}{16}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}ChirpV2: an Universal speech model from Google}{17}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Current Comparative Analysis of Japanese ASR Models}{17}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Current Comparative Analysis of Japanese ASR Models}{18}{section.2.6}%
 \contentsline {section}{\numberline {2.7} Datasets and Tools }{19}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Datasets}{19}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}Python Moviepy}{20}{subsection.2.7.2}%
 \contentsline {subsection}{\numberline {2.7.3}Hugging Face}{20}{subsection.2.7.3}%
-\contentsline {section}{\numberline {2.8}Gaps in Literature}{20}{section.2.8}%
+\contentsline {section}{\numberline {2.8}Gaps in Literature}{21}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Conclusion}{21}{section.2.9}%
 \contentsline {chapter}{\chapternumberline {3}RESEARCH METHODOLOGY}{22}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{22}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Research Design}{22}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Data Collection}{23}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Dataset Selection}{23}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Data Pre-processing}{24}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Model Selection}{26}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Model Architecture Selection Criteria}{26}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Chosen Models}{27}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Model Testing and Evaluation}{28}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Testing Environment}{28}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Performance Metrics}{29}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Test Procedure}{30}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}Challenges and Limitations}{31}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Ethical Considerations}{31}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Summary}{31}{section.3.8}%
-\contentsline {chapter}{REFERENCES}{33}{section*.17}%
+\contentsline {section}{\numberline {3.3}Data Collection Pipeline}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Source Selection}{24}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}YouTube / TED Talk Scraping in Python}{24}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Transcript Cleaning and Normalization}{25}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Audio Segmentation}{26}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Resampling and Format Standardization}{26}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Train / Validation / Test Split}{27}{subsection.3.3.6}%
+\contentsline {section}{\numberline {3.4}Text Preparation for ASR Training}{28}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Lexicon and Token Units}{29}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Language Model Text for the GMM--HMM System}{30}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Final Reference Transcripts for Scoring}{31}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Feature Extraction and Front-End Processing}{32}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}MFCC with Cepstral Mean and Variance Normalization}{32}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Log-Mel Filterbank and Spectrogram-Derived Features}{33}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Data Augmentation}{35}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Model Family A: GMM--HMM (Kaldi-Style Hybrid Baseline)}{36}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Data Preparation for Kaldi}{36}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Acoustic Model Training Stages}{37}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Decoding Graph Construction}{38}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Inference and Decoding}{39}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Scoring and Metrics}{40}{subsection.3.6.5}%
+\contentsline {section}{\numberline {3.7}Model Family B: CRDNN--CTC (End-to-End, Non-Transformer)}{41}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Architecture and Rationale}{41}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Data Manifest and Supervision}{42}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Feature Pipeline}{43}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Training Procedure}{44}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.5}Decoding and Hypothesis Generation}{44}{subsection.3.7.5}%
+\contentsline {subsection}{\numberline {3.7.6}Post-Processing of Hypotheses}{45}{subsection.3.7.6}%
+\contentsline {subsection}{\numberline {3.7.7}Scoring and Metrics}{46}{subsection.3.7.7}%
+\contentsline {section}{\numberline {3.8}Model Family C: Whisper (Transformer Encoder--Decoder, Fine-Tuned)}{47}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Model Overview and Motivation}{47}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Dataset Formatting and Input Representation}{48}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Fine-Tuning Configuration and Optimization}{49}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Inference and Decoding Strategy}{50}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}Text Normalization and Style Consistency}{51}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}Scoring and Metrics}{52}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}Unified Evaluation Protocol}{53}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Error Metrics: CER and WER}{53}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Latency Metric: Real-Time Factor}{54}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Consistency and Comparability}{55}{subsection.3.9.3}%
+\contentsline {section}{\numberline {3.10}Ablation Studies and Controlled Comparisons}{55}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Challenges and Limitations}{57}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Ethical Considerations}{58}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Chapter Summary}{58}{section.3.13}%
+\contentsline {chapter}{REFERENCES}{60}{section*.14}%

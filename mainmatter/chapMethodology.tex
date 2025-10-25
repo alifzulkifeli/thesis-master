@@ -1,130 +1,125 @@
 \chapter{RESEARCH METHODOLOGY}
 
 \section{Introduction}
-This chapter will be discussed about the methodology for evaluating Japanese ASR on three pre-trained speech recognition model that is OpenAI’s Whisper, Meta’s wav2vec 2.0, and Google’s CHIRP Universal speech model (USM). This study will be focusing on comparing the Word Error Rate (WER) and transcription speed using formal (TED Talks) and informal (dialectal, COJADS) datasets. In this chapter, the data collection and data pre-processing steps such as audio conversion and resampling will be discussed. This chapter also will be discussing about the reason why the three model is selected and also the standardized testing environment. It concludes by discussing challenges, limitations, and ethical considerations relevant to the evaluation process.
+This chapter explains the methodology used to evaluate Japanese automatic speech recognition (ASR) across three model families: a traditional Kaldi-style GMM--HMM system, an end-to-end CRDNN--CTC model, and a fine-tuned transformer encoder--decoder model based on Whisper. These models were chosen to represent three major paradigms in ASR: classic hybrid acoustic modeling with an explicit lexicon, recurrent end-to-end modeling with CTC alignment, and large-scale pretrained transformer modeling. All systems are trained and tested on the same curated set of formal Japanese speech (lecture-style and TED-style talks). The audio is collected, cleaned, segmented into utterances, normalized, and converted to a consistent 16~kHz mono WAV format. Transcripts are also normalized to produce a publishable-style reference that is used consistently across all models.
+
+The evaluation focuses on both accuracy and usability. Accuracy is measured using Character Error Rate (CER) as the primary metric, with Word Error Rate (WER) as supporting context. Usability is measured using Real-Time Factor (RTF), which reflects how fast each model can decode speech relative to the length of the audio. The rest of this chapter describes the data pipeline (collection, cleaning, segmentation, and splits), the feature extraction and augmentation strategy, the training and decoding process for each model family, and the scoring protocol used to compute CER, WER, and RTF on the same held-out test set.
+
 
 \section{Research Design}
-This study is conducted in four phase that is Preparation, Data Collection, Analysis, and Discussion. The details for each phase is described in the Table \ref{tab:methodology_plan} below.
+This study is organised into four phases: Preparation, Data Collection, Analysis, and Discussion.  
+An overview of the phases, activities, methods, and expected deliverables is shown in Table~\ref{tab:methodology_plan}.
 
 \begin{table}[H]
     \centering
     \caption{Overview of the Research Methodology Plan}
     \label{tab:methodology_plan}
 
-    \begin{tabular}{ p{2cm}|p{4cm}|p{4cm}|p{4cm} }
+    \begin{tabular}{ p{2.5cm} | p{4.2cm} | p{4.2cm} | p{4.2cm} }
     \hline
-    \textbf{Phases} & \textbf{Activity} & \textbf{Methods} & \textbf{Deliverables} \\
+    \textbf{Phase} & \textbf{Activities} & \textbf{Methods} & \textbf{Deliverables} \\
+    \hline \hline
+
+    \textbf{Phase 1 --- Preparation} 
+    & Define research area  
+      \newline Define problem statement  
+      \newline Define research objectives, scope, questions, and significance  
+    & Review of related articles and journals  
+      \newline Discussion and guidance with supervisor  
+    & Approved research proposal  
+      \newline Completed Chapter~1 (Introduction) \\
     \hline
+
+    \textbf{Phase 2 --- Data Collection} 
+    & Study prior work on Automatic Speech Recognition (ASR)  
+      \newline Identify current challenges in Japanese ASR  
+      \newline Identify promising techniques for improving transcription accuracy and latency  
+      \newline Collect and prepare speech data  
+    & Literature review  
+      \newline Data collection from:
+      \newline \hspace*{1em}-- TED Talks (YouTube)  
+      \newline \hspace*{1em}-- COJADS dataset  
+      \newline Data preprocessing:
+      \newline \hspace*{1em}-- Audio segmentation  
+      \newline \hspace*{1em}-- Normalisation and cleaning of transcripts  
+      \newline \hspace*{1em}-- Train/validation/test split  
+    & Selection of target ASR models (GMM--HMM, CRDNN--CTC, Whisper)  
+      \newline Processed and standardised audio--text pairs  
+      \newline Experimental environment and training configuration \\
     \hline
-    
-    \textbf{Phase 1 -- Preparation}
-     & i. Define Area 
-       \newline ii. Define Problem Statement
-       \newline iii. Define Research Objectives, Scope, Questions, and Significance
-     & i. Review related articles and journals
-       \newline ii. Discussion with supervisor
-     & Research Proposal \newline \& Chapter 1 \\
+
+    \textbf{Phase 3 --- Analysis} 
+    & Train and evaluate the selected ASR models  
+      \newline Compute evaluation metrics  
+      \newline Compare models quantitatively  
+      \newline Analyse error patterns  
+    & Model training and inference on held-out test data  
+      \newline Performance measurement:
+      \newline \hspace*{1em}-- Character Error Rate (CER)  
+      \newline \hspace*{1em}-- Word Error Rate (WER)  
+      \newline \hspace*{1em}-- Real-Time Factor (RTF, transcription latency)  
+    & Quantitative comparison of GMM--HMM, CRDNN--CTC, and Whisper  
+      \newline Strengths, weaknesses, and trade-offs for each model  
+      \newline Analysis of accuracy vs.\ latency \\
     \hline
-    
-    \textbf{Phase 2 -- Data Collection} 
-     & i. Study in detail the articles on the area of Speech Recognition
-       \newline ii. Identify challenges in Japanese ASR
-       \newline iii. Identify the most efficient techniques for improving WER and transcription latency
-     & i. Literature Review
-       \newline ii. Data collection method:
-        \newline \hspace*{1em}a) TED Talks YouTube dataset
-        \newline \hspace*{1em}b) COJADS dataset
-        \newline iii. Data preprocessing
-     & i. Target model selection
-        \newline ii. Processed audio files
-        \newline iii. Test environment setup \\
+
+    \textbf{Phase 4 --- Discussion} 
+    & Interpret the results  
+      \newline Discuss limitations and challenges  
+      \newline Relate findings to the research objectives  
+      \newline Outline implications and future work  
+    & Synthesis of findings across all models  
+      \newline Identification of remaining gaps in Japanese ASR for formal speech  
+    & Final dissertation write-up  
+      \newline Chapters on discussion, conclusion, and future work \\
     \hline
-    
+
     \end{tabular}
-    \hfill
-    \begin{tabular}{ p{2cm}|p{4cm}|p{4cm}|p{4cm} }
-    
-    \textbf{Phase 3 -- Analysis} 
-        & i. Evaluate the performance of the selected models
-        \newline ii. Calculate WER and transcription latency
-        \newline iii. Compare the models based on the evaluation metrics
-        & i. Model testing and evaluation
-        \newline ii. Performance metrics calculation
-        & i. Performance comparison results
-          \newline ii. Analysis of the models' strengths and limitations \\
-    \hline
+\end{table} 
 
-    \textbf{Phase 4 -- Discussion} 
-        & i. Identify challenges and limitations
-        \newline ii. Summarize the research findings
-        & i. Challenges and limitations identification
-        \newline ii. Research findings summary
-        & i. Dissertation research report \\
-    \hline
-    
-    \end{tabular}
-\end{table}
+\section{Data Collection Pipeline}
+\label{sec:data_collection}
 
+This section describes how the speech and transcript data used in this study were collected and prepared. The objective of the pipeline is to obtain high-quality formal Japanese speech together with aligned reference text that can be used consistently across all three model families evaluated in this thesis (GMM--HMM, CRDNN--CTC, and fine-tuned Whisper). The pipeline begins with source selection, continues through automated scraping of audio and transcripts from online talks, and proceeds through transcript cleaning, audio segmentation, audio standardization, and dataset splitting. The final output of this pipeline is a set of speaker-independent train, validation, and test partitions with aligned audio--text pairs that are suitable for training and evaluating automatic speech recognition (ASR) systems and for computing Word Error Rate (WER), Character Error Rate (CER), and Real-Time Factor (RTF).
 
-\section{Data Collection}
-\subsection{Dataset Selection}
-To evaluate the performance of the models, this study will be using two sources of data. The first dataset is from Ted Talk Youtube dataset which will be responsible for formal speech with clear pronunciation completes with rich and diverse vocabulary. The second dataset is the Corpus of Japanese Dialects (COJADS) which will be responsible as the input for informal speech which categorized based on regional accent and expression. The COJADS dataset only can be obtain from National Institute for Japanese Language and Linguistics (NINJAL). Both of the dataset duration will be around 6 hours where duration for COJADS will be 1 hours for each dialect sum up to 6 hours for dialectical speech. The duration of the dataset can be seen in Table \ref{tab:dataset_length}.
+\subsection{Source Selection}
+\label{subsec:source_selection}
 
-\begin{table}[H]
-    \centering
-    \caption{Dataset Audio Duration}
-    \label{tab:dataset_length}
-    \begin{tabular}{p{3.5cm}|p{2.5cm}|p{2cm}}
-    \hline
-    \textbf{Dataset} & \textbf{Dialect} & \textbf{Duration} \\
-    \hline
-    TED Talks (YouTube) & Formal & 6 hours \\
-    \hline
-    \multirow{5}{*}{COJADS} 
-        & Tōhoku & 1 hours \\
-        & Kantō & 1 hours \\
-        & Chūbu & 1 hours \\
-        & Kansai & 1 hours \\
-        & Shikoku & 1 hours \\
-        & Okinawa & 1 hours \\
-    \hline
-    \multicolumn{2}{c|}{\textbf{Total}} & \textbf{12 hours} \\
-    \hline
-    \end{tabular}
-\end{table}
+The first step is to identify material that matches the target domain of this thesis, which is formal, planned, and relatively careful spoken Japanese. Rather than using spontaneous conversational audio, telephone speech, entertainment media, or noisy street recordings, this work focuses on lecture-style speech such as TED and TEDx talks, invited talks, conference-style presentations, public addresses, and university lectures. Speech in these settings is typically delivered in a polite or semi-formal register, often with deliberate pacing and clear articulation. This style is also closer to professional transcription use cases, such as captioning for broadcast, academic archiving, and government documentation, where clarity and correctness of formal Japanese are prioritized.
 
+Candidate videos are screened manually to ensure that the spoken language is Japanese throughout the relevant portion, that there is a single primary speaker rather than overlapping dialogue, and that the audio is not dominated by background music, excessive reverberation, or heavy compression artifacts. Very short clips are avoided because they provide too little material, and extremely long multi-hour recordings are also avoided because they complicate processing; talks on the order of ten minutes or longer are preferred. Only videos that satisfy these criteria move forward to the scraping stage.
 
-\subsection{Data Pre-processing}
-The pre-processing steps is the first step in doing the model comparison. This step will be focusing in preparing the datasets to be use as input into the selected speech recognition models. For the TED Talks YouTube dataset, the audio files will be extracted from video recordings and transcribed using Python Moviepy library into Waveform Audio File Format (WAV) format.
-\begin{lstlisting}[caption={Python code to convert video to WAV format using moviepy}]
-    def convert_video_to_wav(video_path, output_wav_path):
-    try:
-        video_clip = VideoFileClip(video_path)
-        audio_path = output_wav_path\
-            .replace(".wav", "_temp_audio.mp3")
-        video_clip.audio.write_audiofile(audio_path)
-        return audio_path
-    
-    except Exception as e:
-        return None
-\end{lstlisting}
-After that, each audio file was converted to the standardized 16 kHz format to ensure the data is compatible with the ASR models. Then the text will be manually transcribed and aligned with the corresponding audio to create accurate transcriptions for evaluation phase later.
+\subsection{YouTube / TED Talk Scraping in Python}
+\label{subsec:scraping}
 
-For the COJADS dataset, the data is in MP4 format and the audio files will be extracted to wav using the same method as the TED Talks YouTube dataset. Then the audio files will be resampled to the 16 kHz format using Pydub library from Python.
+After identifying suitable talks, a Python-based scraping script is used to download both the audio tracks and any available Japanese subtitles. The script maintains a list of pre-screened YouTube URLs (or video IDs), each corresponding to a single talk. For every video in this list, the script retrieves metadata such as the title of the talk, the channel or speaker name, the upload date, and the total duration. This metadata is stored so that each audio segment can always be traced back to its source.
 
-\begin{lstlisting}[caption={Python code to resample audio to 16 kHz using pydub}]
-    def resample_audio(input_audio_path, output_audio_path,\
-        target_sample_rate=16000):
-    try:
-        audio = AudioSegment.from_file(input_audio_path)
-        audio = audio.set_frame_rate(target_sample_rate)
-        audio.export(output_audio_path, format="wav")
-        
-        print(f"Resampled audio saved to {output_audio_path}")
-    except Exception as e:
-        print(f"Error during audio resampling: {e}")
-\end{lstlisting}
-The reason for resampling the audio into 16 kHz is that many modern ASR models are trained on and optimized for audio data sampled at this rate \parencite{Gergen}. By standardizing the sample rate, the input data compatibility with the expected model parameters can be ensured, thus helping to avoid potential performance issues due to mismatched sample rates or quality. Additionally, a 16 kHz sampling rate provides a good balance between audio quality and computational efficiency, making the ASR systems both accurate and faster to process. Image \ref{fig:resampling} shows audio before and after resampling.
+The audio is then downloaded in high quality (for example, as \texttt{.m4a} or \texttt{.webm}) and kept in its original form temporarily. In a later stage (Section~\ref{subsec:standardization}), the audio will be converted into a consistent WAV format for all experiments. At the same time, the script attempts to extract Japanese subtitles. When human-curated Japanese captions are available, they are preferred. If they are not available, automatically generated Japanese captions are used instead. In both cases, the subtitles are obtained as a sequence of time-stamped segments, where each segment has a start time, an end time, and a corresponding text string.
+
+For each subtitle segment, the script stores the source video identifier, the start and end timestamps in seconds, and the raw subtitle text exactly as provided by YouTube. By the end of this scraping stage, we have two aligned views of the same talk: a long-form audio file and a set of short text segments with timing information that serve as initial, noisy transcriptions.
+
+\subsection{Transcript Cleaning and Normalization}
+\label{subsec:transcript_cleaning}
+
+The raw subtitle text is not directly suitable as training or evaluation data. Subtitles often include non-speech annotations such as ``[applause]'' or ``[laughter]'', stage directions, or musical cues. They may also contain line breaks that exist only for on-screen readability, repeated punctuation, or stylistic conventions that do not correspond exactly to what was spoken. In addition, numerical expressions, symbols, and punctuation may appear in inconsistent forms across videos.
+
+To address this, each subtitle segment is passed through a text normalization stage. During normalization, non-speech annotations and audience reactions are removed so that only the intended spoken content remains. Redundant symbols and subtitle-line formatting are stripped out. Numbers and symbols are converted into a consistent written form according to a policy that matches the target of this thesis: formal, publishable Japanese rather than raw conversational disfluency. Where appropriate, filled pauses and hesitation markers such as elongated vowels (for example, eeeee or ``anooo'') may be reduced or removed, so that the transcript reflects what a professional transcription service might deliver to a client.
+
+The output of this stage is a cleaned transcript for each time span covered by the subtitle timestamps. This cleaned transcript becomes the reference text for evaluation. In particular, it is the text against which Character Error Rate (CER) is computed, and it is also used when training the end-to-end systems such as CRDNN--CTC and the fine-tuned Whisper model. Applying the same normalization rules consistently across the entire dataset is critical, because all downstream comparisons between models rely on having a single canonical ground truth.
+
+\subsection{Audio Segmentation}
+\label{subsec:segmentation}
+
+Lecture-style recordings are typically long, sometimes tens of minutes, but most ASR toolchains operate on short utterances paired with short text segments. The time stamps provided in the subtitle data create natural cut points that can be used to break a long recording into manageable clips. After the audio for a given talk has been downloaded, it is aligned with the subtitle segments obtained during scraping. For each subtitle segment, the corresponding region of the audio is extracted using the start and end timestamps.
+
+If a single subtitle segment covers an unusually long span, that span may be further split so that no resulting audio clip exceeds a chosen maximum duration, for example around 15 seconds. When splitting, natural pauses or silence regions are preferred boundaries so that words are not cut mid-utterance. Leading and trailing silence is reduced where possible, but care is taken not to truncate the actual spoken content at the edges.
+
+Each resulting audio clip is assigned a unique utterance identifier that encodes both its source video and its local segment index. This identifier forms the backbone of the dataset: it links the audio clip to its cleaned transcript, to its timing information, and later to any speaker label or talk label. This same identifier will also be used in Kaldi-style data directories for the GMM--HMM pipeline and in JSON or CSV manifests for the neural models.
+
+\subsection{Resampling and Format Standardization}
+\label{subsec:standardization}
+
+After segmentation, all clips are converted to a consistent audio format so that different model families can be trained and evaluated under the same acoustic conditions. In this work, every utterance-level clip is resampled (if necessary) to 16~kHz, converted to mono, and stored as 16-bit PCM WAV. Standardizing at this stage has two main benefits. First, traditional hybrid systems such as GMM--HMM in Kaldi commonly assume 16~kHz WAV input. Second, by storing all clips in an identical format, end-to-end neural systems such as CRDNN--CTC and Whisper can operate directly on the same files without requiring model-specific resampling or channel conversion later.
 
 \begin{figure}[H]
     \centering
@@ -133,117 +128,343 @@ The reason for resampling the audio into 16 kHz is that many modern ASR models a
     \label{fig:resampling}
 \end{figure}
 
+Alongside the WAV files, machine-readable metadata is generated. For each utterance ID, the metadata records the path to the audio file, the audio duration, the cleaned transcript text from Section~\ref{subsec:transcript_cleaning}, and basic information about the speaker or the talk. For the GMM--HMM experiments, these fields are also exported into the conventional Kaldi-style files \texttt{wav.scp}, \texttt{text}, \texttt{utt2spk}, and \texttt{spk2utt}. For the CRDNN--CTC and Whisper pipelines, the same information is exported into JSON or CSV manifests, which are the common input format for modern end-to-end ASR training recipes.
 
-\section{Model Selection}
-\subsection{Model Architecture Selection Criteria}
-Based on the findings from Literature review, the traditional GMM and HMM were not selected because of their limitations when dealing with the complex structure of Japanese language. GMMs are computationally inefficient and have trouble scaling for Japanese phonetics, dialects, and informal speech, even if they perform well when handling temporal variability and pitch accents. Similar to this, HMMs lack the flexibility and capabilities of contemporary deep learning models and are only useful for sequential data. 
+\subsection{Train / Validation / Test Split}
+\label{subsec:split}
 
-Large datasets and strong feature extraction enable DNN to greatly increase recognition accuracy. However, without intensive pretraining, they are unable to handle contextual dependencies and dialectical fluctuations. RNN, specifically Bidirectional LSTMs (BLSTM), are excellent at modelling sequential data and fixing pitch accent difficulties, but their scalability is limited by their computational inefficiency and potential for vanishing gradient concerns. In similar fashion, CNN are effective at recognizing time-frequency features and acoustic patterns, but they are deficient in contextual awareness for longer sequences and a variety of Japanese dialects. However, CCN is still used in wav2vec 2.0 model for feature extraction. 
+The final step in the data collection pipeline is to partition the utterances into training, validation, and test sets. This split is constructed to satisfy two requirements. First, it is speaker-independent: the same speaker should not appear in both the training data and the evaluation data. Enforcing this separation prevents the system from overfitting to a particular voice and then benefiting from that familiarity at test time, which would give an unrealistically optimistic error rate. Second, the split is fixed and stable. The test set is defined once and is not touched during model development. A smaller validation set is used for tasks such as early stopping and hyperparameter tuning, while the training set contains the majority of the available material and is used to learn model parameters.
 
-Transformer-based models have a very good performance in ASR due to their ability to process long sequences with attention mechanisms. In Japanese ASR tasks, conformer models especially perform more effectively than conventional and older neural network models. Because of this, transformer-based model has been chosen as the target models for this study. .
+In practical terms, utterances are first grouped by talk (or by speaker, when the talk and speaker are effectively the same). Entire talks are then assigned to either train, validation, or test. The resulting structure is saved on disk using a consistent directory layout, for example \texttt{data/train}, \texttt{data/valid}, and \texttt{data/test}, each of which contains the audio clips and the corresponding transcripts or manifests. Because every model family in this thesis---the GMM--HMM baseline, the CRDNN--CTC model, and the fine-tuned Whisper model---is always trained and evaluated on these same splits, their performance can be compared directly.
 
-\begin{table}[H]
-    \centering
-    \caption{Architecture Comparison of Traditional, Modern, and Transformer-based Models based on Literature Review} 
-    \begin{tabular}{p{2.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}}
-    \hline
-    \textbf{Criteria} & \textbf{Traditional (GMM-HMM)} & \textbf{Modern (DNN, RNN, CNN)} & \textbf{Transformers Based Models} \\ \hline
-    \textbf{Scalability} & Low & Moderate & High, designed for multilingual and diverse inputs \\ \hline
-    \textbf{Contextual Understanding} & Poor & Moderate to High & High, leveraging large-scale pretraining datasets \\ \hline
-    \textbf{Adaptability to Dialects} & Low & Moderate & High, particularly with wav2vec 2.0 and CHIRP \\ \hline
-    \textbf{Computational Efficiency} & Low & Moderate & Moderate to High (Whisper and CHIRP optimized) \\ \hline
-    \end{tabular}
-    \label{tab:comparison_models}
-\end{table}  
+The held-out test split defined here is the only data used when reporting objective metrics in later chapters. Specifically, Word Error Rate (WER), Character Error Rate (CER), and Real-Time Factor (RTF) are computed on this test set and only on this test set. By keeping the test set untouched during training and tuning, the reported scores in Chapter~4 reflect generalization to unseen speakers and unseen audio, rather than memorization of the training material.
 
-\subsection{Chosen Models}
-For this study, three transformer-based models have been selected based on their state-of-the-art technology and performance in speech recognition. These models also has been selected based on their compatibility with the research objectives. The first selected model is Whisper from OpenAI for its ability to perform very well in multilingual and multitask environments using large-scale weak supervision \parencite{radford2023robust}. The architecture that based on simple encoder-decoder transformers has increase its performance transcription across various languages. The whisper model has been trained by using over 680,000 hours of audio. This makes it a very suitable model for addressing the issue of context-based syllable recognition and complex script systems in Japanese ASR \parencite{bajo2024efficient}. 
- 
-The second model that has been selected is Meta’s wav2vec 2.0. This model has been selected because of its innovative self-supervised learning approach where only small amount of labelled data is needed to train this model \parencite{baevski2020wav2vec}. It also has the ability to learn speech representations directly from raw audio, followed by fine-tuning on smaller labelled datasets, makes it particularly suitable for handling low-resource languages and diverse dialects. Because of that, wav2vec is very suitable to handle  regional dialects and informal speech  in Japanese language \parencite{miwa2023dialect}. 
+\section{Text Preparation for ASR Training}
+\label{sec:text_prep}
 
-The third selected model is CHIRP that build based on Universal Speech Model was chosen for its emphasis on multilingual scalability. This model has been trained on an extensive dataset encompassing 300 languages. Its BEST-RQ pretraining framework and innovative chunk-wise attention mechanism offer significant advantages in processing long audio sequences and handling diverse linguistic inputs \parencite{zhang2023google}. Its superior performance in low-resource languages positions it as a strong contender for addressing Japanese speech recognition challenges, including phonetic ambiguities and dialectical diversity.
+After collecting and segmenting the audio data, the next step is to prepare the corresponding text so that it can be used consistently across all model families in this thesis. This involves three main tasks. First, we must define the basic text units that each acoustic model will predict: phonetic units for the GMM--HMM system, character or subword units for the CRDNN--CTC system, and tokenizer units for Whisper. Second, we construct any additional text resources needed by specific model families, such as the pronunciation lexicon and language model text for the GMM--HMM pipeline. Third, we produce a final, normalized reference transcript for each utterance. This final reference is the single source of truth that will later be used to compute Character Error Rate (CER), Word Error Rate (WER), and Real-Time Factor (RTF). The goal is to make sure that every model is evaluated against the same canonical text under the same normalization rules.
 
+\subsection{Lexicon and Token Units}
+\label{subsec:tokens}
 
-\section{Model Testing and Evaluation}
-\subsection{Testing Environment}
-The model testing will be using the Hugging Face platform, which is a widely used and versatile framework for deploying and testing Machine Learning models. Hugging Face provides out of the box integration with the chosen speech recognition models. This is the example of the code to load and run the Whisper model from Hugging Face by using python pytorch and transformers library.
+Different ASR model families represent ``text'' in different ways. The GMM--HMM system follows a traditional hybrid ASR design in which there is an explicit pronunciation lexicon and an explicit phone (or phoneme-like) inventory. In this setting, each written unit that appears in the transcript is mapped to one or more pronunciations, and each pronunciation is represented as a sequence of phones. The acoustic model is trained to predict these phones (or context-dependent phone states), and decoding proceeds by searching over phone sequences consistent with both the lexicon and the language model. Preparing this system therefore requires defining a consistent phone set for Japanese, determining which symbols count as silence or noise, and producing a lexicon that links each lexical item in the transcript to its allowed pronunciations. This lexicon becomes part of the standard Kaldi-style \texttt{lang/} directory and is later used to construct the decoding graph.
 
-\begin{lstlisting}[caption={Python code to load Whisper model from Hugging Face}]
-    import torch
-    from transformers import pipeline
+In contrast, the CRDNN--CTC model does not depend on an externally defined pronunciation dictionary. Instead, it is trained to map acoustic features directly to character-like units using the Connectionist Temporal Classification (CTC) loss. In this work, these prediction targets are typically Japanese characters or subword units derived from the cleaned transcripts described in Section~\ref{sec:data_collection}. Because CTC training does not require frame-level alignments, the model can learn the alignment between audio and text implicitly. This simplifies the preparation pipeline: once the final normalized transcript text is available for each utterance, it can be used directly as the target sequence, and there is no need to define or maintain an explicit pronunciation lexicon.
 
-    whisper = pipeline("automatic-speech-recognition",\
-        model="openai whisper-large-v3")
-    transcription = whisper("Sample_audio.mp3",\
-        chunk_length_s=30)
-    print(transcription["text"][:500])
-\end{lstlisting}
+The fine-tuned Whisper model follows yet another strategy. Whisper is a transformer encoder--decoder model that uses a multilingual tokenizer to represent text as a sequence of subword tokens. These tokens are not simple characters; instead, they are learned units from Whisper's large-scale pretraining, which cover Japanese along with many other languages. During fine-tuning, the model is optimized to continue predicting these tokenizer units, conditioned on the input audio and any decoding settings (e.g., ``transcribe'' mode without translation). As a result, for Whisper there is no need to design a new token set. However, it is important that the transcripts fed into Whisper fine-tuning are formatted in a way that matches Whisper's expectations: consistent script usage, stable punctuation rules, and no inserted tags that Whisper would never naturally emit. Any mismatch between training-time targets and Whisper's decoding style can cause degraded performance.
 
-To provide better and more consistent evaluations, the testing environments for all models will be standardized. The sample will be prepared using the same preprocessed method for audio files which are sampled at 16 kHz standard. This will make sure all the input data will be compatible with the models then the test will be conducted in the same environment to provide identical hardware and software configurations, so the results of the models can be compared. 
+Although these three model families operate on different units (phones, raw characters, or subword tokens), they must all remain aligned to the same semantic content. A polite form such as saseteitadakimasu, for example, should not be normalized away in one system and kept in another, because that would make direct comparison of CER and WER unreliable. For this reason, the transcript normalization policy described in Section~\ref{sec:data_collection} is applied globally before any model-specific tokenization is carried out.
+
+\subsection{Language Model Text for the GMM--HMM System}
+\label{subsec:lm_text}
+
+The GMM--HMM pipeline uses a separate language model (LM) during decoding to constrain which word sequences are likely. Preparing this component requires assembling a clean text corpus that reflects the type of Japanese we expect the system to transcribe. The starting point for this text corpus is the set of cleaned transcripts obtained from the scraping and normalization steps. Because these transcripts come from formal, presentation-style speech, they are already well matched to the target domain of this thesis.
+
+Depending on the experiment configuration, additional external text may also be incorporated to improve language coverage. For example, publicly available written Japanese in a similar register (conference abstracts, formal articles, lecture summaries, or encyclopedic prose) can be added to increase lexical diversity and provide better coverage of technical vocabulary or polite forms. When such external data is used, it is subjected to the same normalization rules as the in-domain transcripts to keep punctuation, numerals, and stylistic conventions consistent. The goal is not to build a large, general-purpose language model for arbitrary Japanese text, but rather to model the specific style of well-structured, mostly single-speaker public speech.
+
+Once the text corpus is prepared, it is tokenized according to the unit definition adopted for the GMM--HMM decoding stage. In many Japanese ASR recipes, ``words'' may be approximated using segmentation heuristics or morphological analyzers, since Japanese does not naturally separate words with spaces. Whatever segmentation strategy is chosen, it must remain stable from training through evaluation, because WER depends directly on how ``word boundaries'' are defined. The processed text is then used to train an $n$-gram language model. This language model, together with the lexicon and the phone set described above, is compiled into the decoding graph (often represented in Kaldi as \texttt{HCLG.fst}) that will be used at inference time.
+
+\subsection{Final Reference Transcripts for Scoring}
+\label{subsec:scoring_text}
+
+All reported evaluation metrics in this thesis --- including Character Error Rate (CER), Word Error Rate (WER), and Real-Time Factor (RTF) --- are computed against a single, consistent set of reference transcripts. These reference transcripts come from the normalized text produced in the data collection stage (Section~\ref{sec:data_collection}), after cleaning, disfluency handling, and punctuation standardization. No model is allowed to ``see'' a different or more favorable version of the truth. This is important for fairness: the GMM--HMM, the CRDNN--CTC model, and the fine-tuned Whisper model must all be judged against exactly the same textual target for each utterance in the held-out test set.
+
+For CER, the reference transcript is converted into the agreed-upon character sequence. This sequence typically includes kanji, hiragana, and katakana, with punctuation either retained or removed according to a fixed scoring policy. CER reflects substitutions, insertions, and deletions at the character level, and is especially meaningful for Japanese because spaces are not required between words. For WER, the same reference transcript is segmented into word-like units using a consistent segmentation procedure. Although Japanese does not naturally include whitespace boundaries, defining an explicit segmentation allows us to report WER in a way that is at least internally consistent across experiments. WER is treated as a supporting metric in this thesis, while CER is treated as the primary metric.
+
+It is worth emphasizing that text normalization and scoring policy are tightly connected. For example, if numbers are spoken aloud and then replaced in the transcript by Arabic numerals, a model that outputs the spoken form will be penalized even if it is ``correct'' from a speech perception point of view. To avoid this ambiguity, numerals and similar constructs are normalized to a stable written form before any model is trained, and that same written form is used everywhere in evaluation. Likewise, non-speech events such as laughter or applause are removed from the transcripts entirely, so that systems are not punished for failing to output tokens that they were never supposed to predict.
+
+Finally, Real-Time Factor (RTF) is computed using the same test set and the same reference transcripts, but it is conceptually different: RTF measures how fast the model produces its hypothesis relative to the length of the audio, rather than how accurate that hypothesis is. By tying CER, WER, and RTF to the same held-out speakers and the same canonical reference text, this thesis ensures that downstream comparisons between traditional hybrid models, end-to-end recurrent models, and transformer-based models remain meaningful and reproducible.
 
 
-\subsection{Performance Metrics}
-To evaluate the performance of the selected speech recognition models, these key metrics will be used:
+\section{Feature Extraction and Front-End Processing}
+\label{sec:features}
 
-\begin{enumerate}
-    \item Word Error Rate: Measures the accuracy of transcriptions by calculating the percentage of words that incorrectly transcribed. This is a critical metric for assessing the overall precision of the models.
-    \[
-    \text{WER} = \frac{S + I + D}{N} \times 100\%,
-    \]
-    where:
-    \begin{itemize}
-        \item \(S\) = Number of substitutions
-        \item \(I\) = Number of insertions
-        \item \(D\) = Number of deletions
-        \item \(N\) = Total number of words in the \textbf{reference} transcription
-    \end{itemize}
+Before any acoustic model can be trained, the raw waveform for each utterance must be converted into a numeric representation that is suitable for learning. This section describes the feature extraction pipeline used in this thesis. Although the three model families --- GMM--HMM, CRDNN--CTC, and fine-tuned Whisper --- ultimately rely on different assumptions about how speech should be represented, they all begin from the standardized 16~kHz mono WAV clips described in Section~\ref{sec:data_collection}. The processing described here covers two main aspects: (i) how acoustic features are computed, normalized, and prepared for consumption by each model family; and (ii) how data augmentation is applied in a controlled way to improve robustness and allow fair comparison across systems.
 
-    \item Transcription Latency: Measures the time taken by each model to transcribe audio input, providing insight into their suitability for real-time applications.
-    \[
-    \text{Latency}_i = t_{\text{end}}(i) - t_{\text{start}}(i),
-    \]
-    where:
-    \begin{itemize}
-        \item \(t_{\text{start}}(i)\) = Timestamp when the model begins receiving or processing the \(i\)-th audio.
-        \item \(t_{\text{end}}(i)\) = Timestamp when the final transcription for the \(i\)-th audio is produced.
-    \end{itemize}
+\subsection{MFCC with Cepstral Mean and Variance Normalization}
+\label{subsec:mfcc_cmvn}
 
-    To compute the average latency over \(M\) utterances:
-    \[
-    \text{Average Latency} = \frac{1}{M} \sum_{i=1}^{M} \left( t_{\text{end}}(i) - t_{\text{start}}(i) \right).
-    \]
+The GMM--HMM system in this work uses Mel-Frequency Cepstral Coefficients (MFCCs) as its primary acoustic representation. MFCCs are a conventional hand-crafted feature set for ASR. The waveform is first divided into short, overlapping frames using a fixed frame length (for example, 25~ms) and a fixed frame shift (for example, 10~ms). For each frame, a short-time Fourier transform is computed. The resulting magnitude spectrum is then passed through a Mel-scaled filterbank that emphasizes perceptually relevant frequency regions. The log energies in these Mel bands are decorrelated using a discrete cosine transform, yielding a compact cepstral vector per frame. In many ASR recipes, first- and second-order temporal derivatives (deltas and delta-deltas) are appended to capture local dynamics. The final MFCC feature at a given frame therefore encodes both the short-term spectral shape and how that shape is changing over time.
 
-    \item Handling of Formal vs. Informal Language: Evaluates how well the models perform across different linguistic contexts, including formal speech and informal, dialectal speech.
-    \[
-    \text{WER}_{\text{informal}} = \frac{S_i + I_i + D_i}{N_i} \times 100\%,
-    \]
-    where:
-    \begin{itemize}
-        \item \(S_i, I_i, D_i\) = Substitutions, insertions, and deletions within the informal subset.
-        \item \(N_i\) = Total number of reference words in the informal subset.
-    \end{itemize}
-\end{enumerate}
+After MFCC extraction, Cepstral Mean and Variance Normalization (CMVN) is applied. The goal of CMVN is to reduce channel mismatch and long-term amplitude drift by forcing each feature dimension to have approximately zero mean and unit variance. In traditional GMM--HMM pipelines, CMVN can be computed per speaker, using all utterances from that speaker, or at minimum per utterance when speaker identity is not reliably known. In this thesis, because data is collected from multiple unrelated speakers and recording conditions, normalization is applied consistently across all clips so that the acoustic model sees features that are less sensitive to absolute loudness, microphone characteristics, or background coloration. This normalized MFCC representation is then used in all stages of the GMM--HMM acoustic training pipeline, including monophone training, triphone training, and subsequent alignment and re-alignment steps.
 
-\subsection{Test Procedure}
-The following step-by-step procedure was implemented to evaluate the models:
+The MFCC+CMVN front end is important not only for historical reasons, but also because it provides a baseline reference point when comparing more modern approaches. Later chapters report how this classical front end performs under the same Japanese speech data used by end-to-end models, which helps answer whether such ``older'' features are still competitive when the domain is formal, relatively clean speech.
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=1\textwidth]{mainmatter//images/step.png}
-    \caption{Testing procedure }
-\end{figure}
+\subsection{Log-Mel Filterbank and Spectrogram-Derived Features}
+\label{subsec:logmel}
 
-In order to make sure the audio input file to be consistence across the dataset, the model evaluation will be start by pre-processing all the input data. This will make sure that the input data is compatible with the targeted models. Then, the pre-processed data that did not have transcription ready will be transcribe manually. These data is usually come from Ted Talk Youtube dataset because all data from COJADS has its transcription ready.
+While MFCCs are well matched to GMM--HMM systems, contemporary neural ASR models tend to operate on less aggressively compressed representations such as log-Mel filterbanks or related spectrogram features. In this thesis, the CRDNN--CTC model is trained on features derived from the short-time magnitude spectrum computed over 16~kHz audio. The waveform is framed and windowed in a similar way (for example, 25~ms windows with 10~ms stride), and a Fourier transform is applied to obtain the frequency content over time. Instead of applying the discrete cosine transform to decorrelate these spectra into cepstral coefficients, the model directly consumes the log-scaled Mel filterbank energies or a closely related log-Mel time--frequency matrix. This preserves more fine-grained structure in the frequency domain, which is especially useful for convolutional front ends. Convolutional layers in CRDNN architectures benefit from two-dimensional structure (time $\times$ frequency) because they can learn local patterns such as formant transitions, onsets, and consonant bursts.
 
-After the input data is ready, the preparation for testing environment will be carried out. The testing environment will be using model that prepared by Hugging Face as the platform comes with controlled configuration. Then the selected model will be load from the Hugging Face platform input data will be fed into the models one by one automatically. After that, the output transcription will be compared with the benchmark transcription to evaluate the accuracy metric and to observe each model ability. 
+These log-Mel features are typically mean/variance normalized before being fed into the network. Normalization can be applied globally (for example, using statistics computed over the entire training set) or on a per-utterance basis. In practice, either approach reduces variation due to recording conditions and helps stabilize training. The CRDNN--CTC model then learns to map these normalized log-Mel features to character or subword predictions under the CTC loss. Because the model has recurrent or bidirectional recurrent layers on top of the convolutional stack, it is able to integrate long-range temporal information that goes well beyond a single frame.
+
+The Whisper model follows a similar but more specialized approach. Whisper's original pretraining uses a log-Mel spectrogram computed with a fixed configuration (for example, a particular FFT size, hop length, and Mel filterbank definition) and expects audio resampled to a specific rate. During fine-tuning in this thesis, Whisper continues to consume (and internally normalize) log-Mel spectrogram features consistent with its pretraining regime. This is a key difference from MFCC-based systems: in Whisper and other transformer encoder--decoder models, the learned encoder expects the raw spectral structure, not a hand-designed compact representation. As a result, it is important that the front end for Whisper remains faithful to the preprocessing used during its large-scale pretraining; deviating from this can harm downstream accuracy.
+
+Although MFCCs and log-Mel features share the same physical input (the standardized 16~kHz WAV clips), they embed different assumptions. MFCCs assume that a relatively low-dimensional, decorrelated cepstral space is best for a Gaussian mixture model with diagonal covariances. Log-Mel features assume that downstream neural layers will learn useful patterns directly from a higher-resolution time--frequency surface. One contribution of this thesis is to evaluate both styles of features under matched Japanese data and report how these front ends affect CER, WER, and real-time decoding speed.
+
+\subsection{Data Augmentation}
+\label{subsec:augmentation}
+
+In addition to extracting features, this work also considers controlled forms of data augmentation. Augmentation is useful because the dataset described in Section~\ref{sec:data_collection} is drawn from a limited number of speakers and recording setups. Without augmentation, a model might overfit to those specific voices, microphones, or rooms and then degrade noticeably on new speakers in the held-out test set.
+
+One common augmentation strategy is speed perturbation, where the audio waveform is played slightly faster or slower (for example, by factors such as 0.9$\times$, 1.0$\times$, and 1.1$\times$) without altering the pitch too aggressively. This produces additional training examples that mimic natural variations in speaking rate. Speed perturbation effectively changes both the temporal dynamics and the apparent formant trajectories, which encourages the acoustic model to become less sensitive to how quickly a speaker delivers each phrase. In traditional hybrid systems such as GMM--HMM, speed perturbation is often applied before MFCC extraction so that each perturbed version of the audio yields its own set of MFCC features. In end-to-end systems such as CRDNN--CTC, it is usually applied on the fly during training, so the model is repeatedly exposed to slightly different versions of the same utterance.
+
+Another augmentation strategy, more common in neural end-to-end models, is spectrogram masking (often referred to as SpecAugment). After computing log-Mel features, small contiguous time regions or frequency bands are randomly masked out during training. The CRDNN--CTC model can be trained with this kind of masking so that it learns to rely on context rather than any single narrowband cue. Time masking imitates short dropouts or pauses, while frequency masking imitates mild channel distortion or bandwidth limitations. The net effect is improved robustness to local corruption and noise.
+
+Additive noise or reverberation simulation can also be applied, although in this thesis the speech domain is relatively clean lecture-style audio rather than highly noisy conversational speech. For that reason, augmentation is chosen to be conservative: the goal is not to invent extreme background noise that does not exist in the target domain, but rather to introduce realistic variability in rate, bandwidth emphasis, and mild spectral dropouts. This approach keeps the augmented data close to the style of formal Japanese speech that this thesis aims to model.
+
+It is important to note that augmentation policies must be applied consistently when comparing model families. If CRDNN--CTC benefits from aggressive augmentation while the GMM--HMM system is trained only on clean audio, then any accuracy gap might reflect augmentation rather than architectural differences. In this work, augmentation is therefore documented alongside each model's training recipe, and its impact is evaluated explicitly in later chapters. The final reported WER, CER, and RTF values are always computed on the unmodified held-out test set, so that improvements in robustness do not come at the cost of unfair evaluation.
+
+\section{Model Family A: GMM--HMM (Kaldi-Style Hybrid Baseline)}
+\label{sec:gmm_hmm}
+
+This section documents the traditional hybrid baseline used in this thesis: a Gaussian Mixture Model -- Hidden Markov Model (GMM--HMM) acoustic model trained and decoded using a Kaldi-style recipe. Although more recent systems such as CRDNN--CTC and Whisper rely on end-to-end neural methods, the GMM--HMM approach is still widely used as a reference point in speech recognition research, especially for controlled experiments on pronunciation, lexicon design, and language modeling. In this work, the GMM--HMM system is trained on the same Japanese lecture-style speech described in Section~\ref{sec:data_collection}, and its output is evaluated with the same scoring protocol described in Section~\ref{sec:text_prep}. The goal is to obtain a strong, fully documented baseline that can be compared directly against the end-to-end systems.
+
+\subsection{Data Preparation for Kaldi}
+\label{subsec:gmm_data_prep}
+
+Kaldi expects data in a structured directory format. For each split (train, validation, and test), a data directory is created that explicitly describes the relationship between utterances, audio files, speakers, and transcripts. The core files are \texttt{wav.scp}, \texttt{text}, \texttt{utt2spk}, and \texttt{spk2utt}. The \texttt{wav.scp} file maps each unique utterance identifier to the path of the corresponding audio clip, which has already been standardized to 16~kHz mono WAV as described in Section~\ref{sec:data_collection}. The \texttt{text} file associates the same utterance identifiers with their cleaned, normalized transcripts. The \texttt{utt2spk} file maps each utterance to a speaker label, which may correspond to the talk-level speaker in a TED-style presentation. From \texttt{utt2spk}, Kaldi derives \texttt{spk2utt}, which lists for each speaker all utterances belonging to that speaker.
+
+In parallel with these data directories, a language directory is prepared. This includes a pronunciation lexicon, a list of silence and non-silence phones, and supporting phone-related mappings. The pronunciation lexicon links lexical units in the transcripts to their phone sequences in Japanese. Silence phones and noise markers are defined explicitly so that the model can distinguish between actual spoken content and pauses or background sounds. A language model (LM), typically trained on the cleaned transcripts described in Section~\ref{sec:text_prep}, is compiled alongside the lexicon. The output of this step is a Kaldi-compatible \texttt{lang/} directory containing symbol tables and finite-state transducers (FSTs) that encode how phones map to words and how the language model scores word sequences. Preparing these resources for Japanese requires careful handling of tokenization and pronunciation. Because Japanese does not include whitespace-delimited “words” in the same way as English, a consistent segmentation strategy must be applied so that the resulting units align with both the lexicon and the LM.
+
+Once the data directories and language resources are complete, Kaldi can align audio with text and begin acoustic model training.
+
+\subsection{Acoustic Model Training Stages}
+\label{subsec:gmm_training}
+
+Training proceeds in several stages of increasing complexity, following a standard Kaldi recipe. The process begins with a monophone model. At this stage, each phone is modeled without explicit left or right context, and acoustic frames are represented using MFCC features with cepstral mean and variance normalization (CMVN), as described in Section~\ref{sec:features}. The monophone system is relatively simple, but it provides the first set of alignments between the audio frames and the phone sequences derived from the transcripts.
+
+After the monophone system is trained, the next stage introduces context-dependent triphone models. Instead of treating each phone in isolation, the model now distinguishes phones based on their immediate phonetic context (for example, the same base phone may be modeled differently depending on what precedes and follows it). In Kaldi, this is often referred to as the \texttt{tri1} or ``deltas'' system, because the acoustic features typically include MFCCs plus first- and second-order temporal derivatives (deltas and delta-deltas). The alignments from the monophone system are used to initialize and train this first triphone system.
+
+Once the initial triphone system is available, Kaldi can perform forced alignment again and retrain more advanced triphone systems that include linear transforms such as Linear Discriminant Analysis (LDA) and Maximum Likelihood Linear Transform (MLLT). These transforms project the input features into a space that is more suitable for Gaussian modeling by reducing correlations and emphasizing dimensions that are most discriminative for phone classification. This stage is often referred to as \texttt{tri2} or \texttt{tri2+LDA+MLLT} in typical Kaldi workflows. The process continues with speaker adaptive training (SAT), sometimes referred to as \texttt{tri3}, where feature-space transforms (for example, feature-space Maximum Likelihood Linear Regression, or fMLLR) are estimated per speaker. SAT allows the acoustic model to compensate for systematic differences between speakers and microphones by warping features toward a canonical space.
+
+Throughout these stages, the training loop alternates between alignment and parameter estimation. The current model is used to force-align the audio to the phone sequences implied by the transcripts and lexicon. These alignments are then treated as supervision for re-estimating Gaussian mixture components and HMM transition probabilities. Each stage produces a refined acoustic model with improved context modeling and better speaker normalization. By the end of the triphone SAT stage, the system represents a strong GMM--HMM baseline for the domain.
+
+\subsection{Decoding Graph Construction}
+\label{subsec:gmm_graph}
+
+Decoding in Kaldi is performed by searching over a composite graph that encodes acoustic likelihoods, pronunciation constraints, and language model probabilities in a single weighted finite-state transducer (WFST). Conceptually, several components are composed together: the HMM topology for context-dependent phones (\texttt{H}), the context-dependent to context-independent phone mappings (\texttt{C}), the lexicon that maps phone sequences to words (\texttt{L}), and the language model over word sequences (\texttt{G}). The final result is commonly referred to as \texttt{HCLG.fst}.
+
+This decoding graph enforces several constraints at once. First, it ensures that the sequence of HMM states hypothesized by the decoder corresponds to a legal sequence of triphone states that the acoustic model knows how to score. Second, it ensures that these states correspond to a valid pronunciation path in the lexicon, so that arbitrary or impossible phone strings are not proposed as words. Third, it biases the search toward word sequences that are likely under the trained language model, which reflects the formal lecture-style Japanese in the training text. Beam search parameters and pruning thresholds are applied during decoding to keep the search tractable in real time. These parameters control how widely the decoder explores alternate hypotheses versus how aggressively it prunes unlikely paths.
+
+For Japanese, where word segmentation is less explicit than in languages that use whitespace, the lexicon and language model must agree on how text is tokenized. The same segmentation used to train the language model must also be reflected in the \texttt{text} transcripts in the Kaldi data directories; otherwise, decoding and scoring will not align.
+
+\subsection{Inference and Decoding}
+\label{subsec:gmm_decoding}
+
+Once the acoustic model and decoding graph are prepared, the system can be evaluated on the held-out test set. For each utterance in the test data directory, Kaldi loads the corresponding MFCC+CMVN features, feeds them frame by frame into the trained triphone SAT acoustic model, and computes the log-likelihood of each HMM state sequence allowed by the decoding graph. The decoder then performs a beam search over \texttt{HCLG.fst}, combining acoustic likelihoods with language model scores to find the most probable word sequence.
+
+The output of decoding is typically a lattice: a compact graph of alternative word sequences annotated with acoustic and language model scores. From this lattice, Kaldi can extract the single best path (the 1-best hypothesis) or compute confidence measures. The 1-best hypothesis is treated as the system's transcription for that utterance. These hypotheses are written out in a format parallel to the \texttt{text} files, using the same utterance identifiers so that scoring tools can match each decoded hypothesis with its reference transcript.
+
+Decoding time is also measured at this stage. Wall-clock decoding time for each utterance (or for the full test set) is compared against the total audio duration to compute the Real-Time Factor (RTF), which is later reported as part of the latency analysis. Measuring RTF at this point allows direct comparison with end-to-end systems, since all systems are evaluated on the same test audio.
+
+\subsection{Scoring and Metrics}
+\label{subsec:gmm_scoring}
+
+After decoding, the system's hypotheses are evaluated against the cleaned reference transcripts for the test set. The primary accuracy metric in this thesis is Character Error Rate (CER), which is well suited to Japanese because it does not rely on whitespace-delimited words. CER is computed by aligning the hypothesis and reference character sequences and counting substitutions, insertions, and deletions, then normalizing by the number of characters in the reference. Word Error Rate (WER) is also reported as a secondary metric. To compute WER, both the hypothesis and the reference are segmented into word-like units using the same segmentation procedure that was used during language model training; WER is then based on substitutions, insertions, and deletions at the word level.
+
+In Kaldi, scoring scripts handle normalization, alignment, and calculation of these error rates. These scripts apply the same normalization policy described earlier in Section~\ref{sec:text_prep}, so the comparison is fair: the GMM--HMM system is never penalized for failing to output tokens (for example, applause markers or bracketed stage directions) that were explicitly removed from the reference. The final step is to compute Real-Time Factor (RTF), defined as the ratio between the total time required for decoding and the total length of the processed audio. RTF provides a measure of practical usability: a system that is accurate but extremely slow may not be viable in settings such as live captioning or real-time broadcast subtitling.
+
+By reporting CER, WER, and RTF on exactly the same held-out test split that is later used for CRDNN--CTC and Whisper, this thesis treats the GMM--HMM system as a grounded baseline rather than an outdated artifact. The GMM--HMM results quantify how far a carefully tuned traditional pipeline can go on formal Japanese speech under well-controlled conditions. Subsequent sections will compare these baseline numbers to the performance and latency characteristics of modern end-to-end systems.
+
+
+\section{Model Family B: CRDNN--CTC (End-to-End, Non-Transformer)}
+\label{sec:crdnn_ctc}
+
+This section describes the end-to-end acoustic model used as the second major system in this thesis: a Convolutional Recurrent Deep Neural Network trained with the Connectionist Temporal Classification (CTC) loss, referred to here as CRDNN--CTC. Unlike the GMM--HMM system in Section~\ref{sec:gmm_hmm}, which relies on an explicit pronunciation lexicon, phone-level alignment, and a separately trained language model during decoding, the CRDNN--CTC model is trained to map acoustic features directly to character-level (or subword-level) transcriptions. There is no requirement for forced alignment between frames and labels. Instead, the model learns both acoustic modeling and alignment jointly, by optimizing the CTC objective on pairs of audio and transcripts drawn from the dataset described in Section~\ref{sec:data_collection}. The goal of including this model family is to represent a strong non-transformer baseline from the modern end-to-end ASR literature: it is neural, sequence-to-sequence in spirit, but still lighter and more conventional than large transformer encoder--decoder models such as Whisper.
+
+\subsection{Architecture and Rationale}
+\label{subsec:crdnn_arch}
+
+The CRDNN architecture used in this work follows a common structure: an initial stack of convolutional layers that operate on time--frequency features, followed by recurrent layers that model longer temporal dependencies, and finally one or more fully connected layers that project into the symbol inventory used for decoding (for example, Japanese characters). The convolutional front end consumes log-Mel filterbank or spectrogram-derived features of the type described in Section~\ref{sec:features}, and learns to detect local acoustic patterns such as consonant bursts, vowel formants, or transitions in place of hand-designed features. Because these convolutional layers typically subsample or stride over time, they also reduce the effective sequence length, which lowers the computational cost for later recurrent processing.
+
+On top of the convolutional stack, the model includes bidirectional recurrent layers, typically using gated units such as LSTMs or GRUs. These recurrent layers allow the network to integrate information over a longer time window than any single convolutional filter can see. Bidirectionality is important here because the task is offline transcription of pre-recorded speech rather than streaming recognition; the model is allowed to condition on both past and future frames when predicting the output sequence. After the recurrent block, a fully connected (feed-forward) projection layer maps each time step to a logit distribution over the output symbol set. In this thesis, the output symbols correspond directly to the normalized Japanese transcription units described in Section~\ref{sec:text_prep}, such as characters or subword units.
+
+The model is trained with the CTC loss. CTC introduces an additional special ``blank'' symbol and defines an objective that marginalizes over all possible frame-level alignments between the acoustic frames and the target label sequence. This removes the need for frame-aligned supervision or pre-computed phone boundaries. Conceptually, the CRDNN--CTC model learns both what to say (which character sequence best describes the utterance) and when to say it (how that sequence aligns in time), without external alignment steps. This property makes CRDNN--CTC attractive in low- and medium-resource setups, and it is one reason it is selected as a representative non-transformer end-to-end baseline in this thesis.
+
+\subsection{Data Manifest and Supervision}
+\label{subsec:crdnn_manifest}
+
+Training the CRDNN--CTC model requires a manifest that links each utterance-level audio clip to its cleaned transcript. For every utterance in the train split (as defined in Section~\ref{sec:data_collection}), the manifest records the absolute or relative path to the audio file, the duration of the clip, and the normalized reference transcript text. This transcript is exactly the same text that will later be used for scoring Character Error Rate (CER) and Word Error Rate (WER). The manifest may also include identifying information such as the talk or speaker label, which can be useful for diagnostic analysis and optional speaker-dependent normalization, but the core requirement is simply that each clip is paired with its target transcription.
+
+A parallel manifest is created for the validation split. The validation manifest is used during training to monitor overfitting and to select checkpoints. A third manifest is created for the test split, but the test data is not used for training or early stopping. By keeping these manifests aligned with the splits defined earlier, we ensure that the CRDNN--CTC model is evaluated under the same speaker-independent and talk-independent conditions as the GMM--HMM system, and later as the Whisper system.
+
+\subsection{Feature Pipeline}
+\label{subsec:crdnn_features}
+
+The CRDNN--CTC model operates on log-Mel or similar spectrogram-derived features extracted from the standardized 16~kHz mono WAV audio described in Section~\ref{sec:data_collection}. Each utterance is framed into short overlapping windows (for example, 25~ms frames with a 10~ms stride), transformed into the frequency domain, and projected onto a Mel-scaled filterbank. The log-Mel energies over time form a two-dimensional time--frequency representation. This representation is then normalized, typically through mean and variance normalization either per utterance or using global statistics computed over the training set.
+
+Unlike MFCCs, which are further decorrelated using a discrete cosine transform and reduced to a small number of cepstral coefficients, log-Mel features preserve local spectral structure. This is helpful for the convolutional front end, which expects a 2D ``image-like'' input and learns filters that can detect salient acoustic patterns directly. The combination of convolutional layers and log-Mel inputs also makes it straightforward to apply spectrogram-level data augmentation such as time masking and frequency masking. During training, segments of the time--frequency plane may be randomly masked so that the model is forced to rely on broader contextual cues instead of memorizing narrow, local spectral details. This masking strategy improves robustness to mild channel variation or short dropouts without requiring artificially heavy noise injection.
+
+In addition to masking, modest speed perturbation may be applied to the raw waveform before feature extraction. By slightly compressing or stretching the audio in time, the model is exposed to natural variations in speaking rate. This is particularly relevant for public talk data, where individual speakers may have different pacing styles. The goal is to increase generalization across speakers and recording conditions while keeping the augmented data realistic for the target domain.
+
+\subsection{Training Procedure}
+\label{subsec:crdnn_training}
+
+The CRDNN--CTC model is trained end to end using minibatch stochastic optimization. Each minibatch consists of multiple utterances drawn from the training manifest. Because utterances vary in length, batching typically uses padding and length-aware masking so that the loss is only computed over valid frames for each sequence. The optimizer (for example, Adam or a similar adaptive method) updates all model parameters jointly: convolutional front end, recurrent stack, and final projection layer. A learning rate schedule is used to gradually reduce the step size over time, which helps stabilize training once the model enters a lower-loss regime.
+
+Early stopping and checkpoint selection are based on the validation split. After some fixed number of optimization steps or epochs, the current model is evaluated on the validation manifest. The evaluation computes the CTC greedy transcription (described below) and measures CER on the validation references. The checkpoint that yields the best validation CER is kept as the final model for testing. This approach makes CER, rather than training loss alone, the main selection criterion, which aligns with how results are ultimately reported in Chapter~4.
+
+One important practical detail is that CTC training does not require external forced alignments, which simplifies the pipeline compared to GMM--HMM training. There is no alternating loop of alignment and re-estimation. Instead, once the manifests and normalized transcripts are prepared, training can proceed directly. This property is valuable when assembling domain-specific datasets like the Japanese formal speech used in this thesis, because it reduces the amount of manual supervision and specialized linguistic resources required.
+
+\subsection{Decoding and Hypothesis Generation}
+\label{subsec:crdnn_decoding}
+
+At inference time, the trained CRDNN--CTC model produces, for each time step, a probability distribution over the output symbols plus the special CTC blank symbol. The simplest decoding strategy is greedy decoding: at each frame, select the most likely symbol, then collapse repeated symbols and remove blanks. This produces a raw character sequence for the utterance without requiring any external language model. Greedy decoding is fast and has low computational overhead, which is useful when measuring the Real-Time Factor (RTF) of the system.
+
+A more accurate but slower alternative is beam search decoding with CTC. In a beam search, instead of keeping only the single most likely symbol at each time step, multiple partial hypotheses are maintained in parallel. These partial hypotheses are extended over time, and low-probability paths are pruned. Beam search can optionally incorporate an external character-level or subword-level language model, which biases the decoding toward sequences that are more plausible in well-formed Japanese. Such shallow fusion between the acoustic model (the CRDNN output probabilities) and the language model can reduce insertion/deletion noise and improve CER and WER, especially on longer utterances. Whether or not a language model is used, the decoding output is ultimately a sequence of Japanese characters or subword units that is intended to match the style of the normalized reference transcripts.
+
+In this thesis, decoding for evaluation on the test set is performed under controlled settings so that CER, WER, and RTF can be compared fairly across systems. The same test utterances used for GMM--HMM scoring are fed to the CRDNN--CTC model, and decoding is run in a consistent, documented configuration (for example, greedy versus beam). The wall-clock time required to decode the full test set is recorded so that RTF can later be computed in a comparable manner.
+
+\subsection{Post-Processing of Hypotheses}
+\label{subsec:crdnn_postproc}
+
+The raw output sequence from CTC decoding still requires light post-processing before it can be scored. First, CTC collapsing is applied: repeated characters that arise from the alignment structure of CTC are merged, and all blank symbols are removed. Second, the resulting character sequence is normalized so that it matches the same conventions used by the reference transcripts. This normalization includes applying the same punctuation policy, numeral formatting, and handling of formal expressions described in Section~\ref{sec:text_prep}. The goal is that what the model outputs and what the reference contains differ only because of recognition errors, not because of mismatched formatting rules.
+
+This step is important for fairness. If the CRDNN--CTC output preserved filler sounds or hesitations that were intentionally removed from the reference transcripts, the model would be penalized even when it correctly captured the spoken audio. By applying consistent normalization rules to the hypotheses, we ensure that CER and WER reflect genuine transcription quality rather than stylistic disagreements.
+
+\subsection{Scoring and Metrics}
+\label{subsec:crdnn_scoring}
+
+After post-processing, the CRDNN--CTC hypotheses for the held-out test set are scored using the same evaluation protocol as the GMM--HMM system. The primary metric is Character Error Rate (CER), computed by aligning the predicted and reference character sequences and counting substitutions, insertions, and deletions. CER is especially relevant for Japanese because it avoids ambiguities in word boundary definition. Word Error Rate (WER) is also reported for completeness. For WER, both the hypothesis and the reference are segmented into word-like units using the same segmentation method that was used to train and score the GMM--HMM system's language model. Although WER is less natural for Japanese than CER, it provides an additional point of comparison across model families.
+
+In addition to CER and WER, Real-Time Factor (RTF) is measured by timing the decoding process on the test set. RTF is defined as the ratio between the total wall-clock decoding time and the total audio duration. This gives an estimate of how practical the system would be in real or near-real-time transcription scenarios. Because CRDNN--CTC decoding can be done greedily without an expensive search graph, it can often achieve relatively low RTF compared to heavier transformer-based models. On the other hand, adding beam search and an external language model can increase accuracy at the cost of higher RTF.
+
+By evaluating CER, WER, and RTF on the same held-out speakers and the same test utterances used for the GMM--HMM baseline, this thesis is able to compare a traditional hybrid ASR pipeline against a modern end-to-end recurrent architecture under matched conditions. This comparison helps isolate which improvements in accuracy and latency come from architectural advances, which come from feature choices such as log-Mel versus MFCC, and which come from decoding strategies.
+
+
+\section{Model Family C: Whisper (Transformer Encoder--Decoder, Fine-Tuned)}
+\label{sec:whisper}
+
+This section describes the third model family evaluated in this thesis: a transformer-based encoder--decoder model derived from Whisper, fine-tuned on the Japanese formal speech data described in Section~\ref{sec:data_collection}. Whisper differs fundamentally from both the GMM--HMM system in Section~\ref{sec:gmm_hmm} and the CRDNN--CTC system in Section~\ref{sec:crdnn_ctc}. Unlike the GMM--HMM pipeline, Whisper does not require an explicit pronunciation lexicon, external language model, or pre-built decoding graph. Unlike CRDNN--CTC, it does not rely on CTC loss or a collapse step with blanks; instead, Whisper generates text autoregressively, one token at a time, using a decoder that is conditioned on a continuous acoustic representation learned by a transformer encoder. In this sense, Whisper can be seen as a sequence-to-sequence model trained to perform speech recognition directly as conditional generation.
+
+The motivation for including Whisper in this thesis is twofold. First, Whisper represents the current generation of large-scale, multilingual transformer ASR systems, pretrained on massive amounts of weakly supervised speech--text pairs. Second, by fine-tuning Whisper on the domain-specific, cleaned, formal Japanese lecture speech assembled in this work, we can measure how far such pretrained models can be adapted to narrow domains in terms of both accuracy and latency. The evaluation in later chapters therefore compares Whisper not only to a traditional ASR baseline (GMM--HMM) and a recurrent end-to-end baseline (CRDNN--CTC), but also to a high-capacity transformer model that arrives with strong prior knowledge of Japanese.
+
+\subsection{Model Overview and Motivation}
+\label{subsec:whisper_arch}
+
+Whisper consists of two main components: an encoder and a decoder, both implemented as transformer stacks. The encoder consumes a log-Mel spectrogram derived from the input waveform. The spectrogram is computed at a fixed sample rate and with a fixed short-time analysis configuration that Whisper expects from its original pretraining. The encoder processes this time--frequency representation and produces a sequence of high-level latent vectors that summarize the acoustic content of the utterance. These encoder outputs function as a learned representation of ``what was said'', abstracted away from raw waveform details such as pitch, microphone color, or background artifacts.
+
+The decoder then generates the transcription autoregressively, token by token, using cross-attention over the encoder outputs. At each decoding step, the model predicts the next subword token from Whisper's multilingual vocabulary. This vocabulary is based on a tokenizer learned during large-scale pretraining and is shared across many languages, including Japanese. The decoder behaves similarly to a standard transformer language model that happens to be conditioned on the speech representation from the encoder. Because decoding is autoregressive, Whisper is naturally able to insert punctuation, spacing, and other textual conventions it has learned during pretraining.
+
+From an ASR perspective, this architecture has several advantages. First, it does not require an explicit alignment between acoustic frames and text positions. The decoder implicitly learns alignment through attention, rather than through CTC-style monotonic constraints. Second, the output text is produced in its final form rather than as an intermediate symbol sequence that must later be post-processed. This makes Whisper especially suitable for domains where stylistic output (for example punctuation and polite forms) matters, such as captioning or archival transcription of public speech in Japanese. Finally, because Whisper is pretrained on large multilingual corpora, it already has prior exposure to Japanese orthography, polite speech markers, and common discourse patterns. Fine-tuning can then specialize this broad ability to the narrower register studied in this thesis.
+
+\subsection{Dataset Formatting and Input Representation}
+\label{subsec:whisper_data}
+
+Although Whisper comes pretrained, it still requires supervised fine-tuning data in a format that matches its expectations. The starting point for this data is the segmented, speaker-separated, 16~kHz mono audio prepared in Section~\ref{sec:data_collection}, together with the cleaned and normalized transcripts described in Section~\ref{sec:text_prep}. For each utterance in the training split, we create an entry that includes the absolute or relative file path to the audio clip, its duration, and the final reference transcript that will also be used during scoring. The transcript at this stage must follow a consistent style. For example, if the normalization policy removes explicit stage directions such as ``[applause]'' and regularizes numbers and punctuation to formal written Japanese, then the same policy is applied here so that Whisper is trained to output text in that style from the start.
+
+Whisper expects audio to be resampled to its canonical sample rate and transformed into a log-Mel spectrogram with the same FFT parameters and hop sizes used during its original pretraining. To avoid mismatches, the fine-tuning pipeline does not invent a new feature extractor; instead, it reuses Whisper's own front-end computation. In practice, this means that even though the dataset has already been standardized to 16~kHz WAV for compatibility with the other model families, Whisper may internally resample or reinterpret the audio according to its own specification before feeding it into the encoder. Keeping Whisper's front end intact is important: if the spectrogram differs from what the model saw during pretraining, performance can degrade sharply.
+
+The dataset is split into train, validation, and test using the same speaker-independent partitions introduced earlier. The validation portion is used to monitor fine-tuning progress and select the final checkpoint. The test portion is kept strictly held out and is used only for reporting CER, WER, and Real-Time Factor in later chapters, ensuring a fair comparison with the other systems.
+
+\subsection{Fine-Tuning Configuration and Optimization}
+\label{subsec:whisper_tuning}
+
+Fine-tuning Whisper on the in-domain Japanese speech involves updating some or all of the model's parameters using supervised learning on the train split. In practical terms, each training sample consists of the input spectrogram from one utterance and the corresponding transcript tokens in Whisper's subword vocabulary. The model is optimized to maximize the likelihood of generating the correct token sequence, conditioned on the audio. Because the decoder is autoregressive, this is equivalent to minimizing the cross-entropy between the predicted token distribution at each step and the ground truth token at that step.
+
+There are several design choices in fine-tuning. One choice is whether to update all layers of the encoder and decoder or to freeze some parts of the network and only train a subset of parameters. Freezing most of the encoder and training only higher layers can reduce memory usage and stabilize convergence on smaller datasets, but may also cap ultimate performance. Another choice is the effective batch size, which is limited by GPU memory because both the encoder activations and the decoder's autoregressive states must be stored for backpropagation. A learning rate schedule is typically applied so that the model takes relatively larger steps early in training and then gradually reduces the step size to refine accuracy.
+
+During training, performance on the validation split is monitored at regular intervals. The model generates transcriptions for the validation utterances using the decoding strategy described in Section~\ref{subsec:whisper_decoding}, and these hypotheses are scored against the cleaned reference text. Validation Character Error Rate (CER) is treated as the main early stopping signal. The checkpoint that achieves the best CER on the validation set is selected as the final model for evaluation on the held-out test set. This mirrors the procedure used for the CRDNN--CTC model in Section~\ref{sec:crdnn_ctc}, ensuring that both neural systems are chosen according to transcription quality rather than raw training loss alone.
+
+\subsection{Inference and Decoding Strategy}
+\label{subsec:whisper_decoding}
+
+At inference time, Whisper performs conditional text generation. The encoder first processes the log-Mel spectrogram of the input utterance and produces a sequence of latent acoustic embeddings. The decoder then generates the transcript token by token. Decoding can be done greedily (always selecting the most likely next token at each step) or using beam search (maintaining multiple candidate transcriptions in parallel and selecting the one with highest overall probability at the end). Greedy decoding is generally faster and is useful when measuring Real-Time Factor. Beam search typically improves accuracy, especially on longer or more formal utterances where punctuation and clause structure matter, but it also increases decoding cost.
+
+Whisper includes additional decoding controls such as temperature settings, repetition penalties, and suppression of unwanted tokens. For example, since Whisper is multilingual and can also perform translation in some modes, it is important during fine-tuning and evaluation to force the model into ``transcribe Japanese as Japanese'' mode rather than ``translate Japanese into another language.'' This is done by constraining the decoding setup so that the output language is fixed to Japanese and translation modes are disabled. Similarly, when the target domain expects well-formed written Japanese with standard punctuation, decoding parameters can be chosen to allow natural punctuation rather than aggressively stripping it.
+
+The output of decoding is a sequence of subword tokens from Whisper's tokenizer. These tokens are then detokenized back into Japanese text. Because Whisper was pretrained on large-scale multilingual data, it tends to produce well-structured sentences directly, including punctuation and spacing conventions that resemble written text rather than raw disfluency. This behavior is desirable in the present work, where the reference transcripts are also normalized toward a polished, publishable style.
+
+For evaluation, decoding is run on every utterance in the test split using a fixed configuration (for example, a specific beam size and temperature). Wall-clock decoding time is recorded for the full test set so that Real-Time Factor can be computed later. This procedure parallels the timing strategy for the GMM--HMM and CRDNN--CTC systems, enabling a fair comparison of latency.
+
+\subsection{Text Normalization and Style Consistency}
+\label{subsec:whisper_norm}
+
+Although Whisper often produces final-looking text, some light normalization is still applied before scoring. The goal is not to rewrite the model's output, but to make sure that formatting decisions do not artificially inflate error rates. The same normalization policy used for the reference transcripts in Sections~\ref{sec:data_collection} and~\ref{sec:text_prep} is applied to Whisper's hypotheses. For example, if the reference consistently writes numbers in a particular way, the hypothesis is converted to match that convention so that differences in numeral formatting are not counted as substitutions. Likewise, any non-speech tags or artifacts that Whisper may occasionally emit due to its pretraining (for example, language ID tokens or timestamp markers, depending on configuration) are removed if those elements were intentionally excluded from the reference transcripts.
+
+This normalization step has the same purpose here as the post-processing step described for CRDNN--CTC in Section~\ref{subsec:crdnn_postproc}: to ensure that CER and WER reflect real recognition errors rather than stylistic mismatches. Because Whisper is capable of inserting punctuation and discourse markers that resemble written Japanese prose, the normalization also checks that this punctuation policy aligns with the reference. The goal of the thesis is to compare transcription quality, not to penalize minor stylistic punctuation choices that fall within the range of acceptable formal Japanese.
+
+\subsection{Scoring and Metrics}
+\label{subsec:whisper_scoring}
+
+After normalization, the Whisper hypotheses for the held-out test set are evaluated using the same metrics applied to the other model families. The primary metric is Character Error Rate (CER). CER is computed by aligning the predicted and reference character sequences and counting substitutions, insertions, and deletions, then dividing by the number of reference characters. CER is particularly appropriate for Japanese because it does not require pre-defined whitespace boundaries. Word Error Rate (WER) is also reported for completeness. As with the GMM--HMM and CRDNN--CTC systems, WER is computed using a consistent segmentation procedure that defines word-like units in Japanese. WER is treated as a supporting metric, since its value depends more directly on the details of that segmentation.
+
+In addition to CER and WER, Real-Time Factor (RTF) is measured for Whisper. RTF is defined as the ratio between total decoding time and total audio duration for the entire test set. Because Whisper is a transformer encoder--decoder model with autoregressive generation, it can be computationally heavier than a greedy-decoding CRDNN--CTC system, especially if beam search is enabled. Measuring RTF therefore provides a concrete sense of the latency trade-off: Whisper may deliver very strong accuracy after fine-tuning, but potentially at higher inference cost.
+
+By evaluating CER, WER, and RTF on exactly the same held-out speakers and utterances used for the GMM--HMM baseline and the CRDNN--CTC model, this thesis is able to compare three distinct ASR paradigms under matched experimental conditions: a traditional hybrid system with an explicit pronunciation lexicon and language model, an end-to-end recurrent model trained with CTC, and a large pretrained transformer model fine-tuned for in-domain Japanese formal speech. The results in Chapter~4 quantify not only raw transcription accuracy, but also practical considerations such as inference speed and stylistic conformity to professional transcription norms.
+
+
+\section{Unified Evaluation Protocol}
+\label{sec:evaluation_protocol}
+
+All models in this thesis --- the GMM--HMM baseline from Section~\ref{sec:gmm_hmm}, the CRDNN--CTC model from Section~\ref{sec:crdnn_ctc}, and the fine-tuned Whisper model from Section~\ref{sec:whisper} --- are evaluated using a single, shared protocol. The purpose of this protocol is to ensure that performance comparisons are fair and that reported differences in accuracy or latency reflect genuine model behavior rather than differences in preprocessing, scoring scripts, or data splits. The same held-out test set is used for every system, and the same reference transcripts are used as ground truth for all scoring. All evaluation is performed only after model selection has finished, so that no model is tuned directly on the test data.
+
+\subsection{Error Metrics: CER and WER}
+\label{subsec:cer_wer}
+
+The primary accuracy metric in this thesis is Character Error Rate (CER). CER is well suited to Japanese because Japanese orthography does not require whitespace-delimited word boundaries in the way that English does. To compute CER, the predicted transcription from a model is aligned with the reference transcription at the character level. The alignment counts substitutions (characters that are incorrect), insertions (characters that appear in the hypothesis but not the reference), and deletions (characters missing from the hypothesis). CER is then defined as
+\[
+\mathrm{CER} = \frac{S + D + I}{N_\mathrm{ref}},
+\]
+where $S$ is the number of substitutions, $D$ is the number of deletions, $I$ is the number of insertions, and $N_\mathrm{ref}$ is the total number of characters in the reference transcript. A lower CER indicates a better match between hypothesis and reference.
+
+Word Error Rate (WER) is also reported, but it is treated as a supporting metric. WER is computed in the same general way as CER, except that the alignment is performed over word-like units rather than over individual characters. Because Japanese does not use spaces to mark word boundaries by default, word segmentation must be defined explicitly. In this work, the same segmentation strategy used to train and score the language model in the GMM--HMM pipeline is reused for all systems. This segmentation produces a token sequence that serves as a stand-in for ``words.'' The predicted output and the reference transcript are both segmented in this way, and WER is computed from substitutions, insertions, and deletions at the token level. WER is informative because it approximates how often whole lexical units are wrong, but it depends on the particular segmentation method and therefore is less language-agnostic than CER.
+
+Both CER and WER are always computed after applying the same normalization policy to the model output and to the reference transcript. The normalization rules, described previously in Sections~\ref{sec:data_collection} and~\ref{sec:text_prep}, remove elements such as applause markers and enforce consistent formatting for punctuation, numerals, and polite forms. This is important because it prevents systems from being penalized for style differences that are irrelevant to transcription quality, and it ensures that all models are judged with respect to the same target text.
+
+\subsection{Latency Metric: Real-Time Factor}
+\label{subsec:rtf}
+
+In addition to transcription accuracy, latency is measured using Real-Time Factor (RTF). RTF is defined as the ratio between the total amount of wall-clock time a system spends decoding the test audio and the total duration of that audio. If $T_\mathrm{decode}$ is the time in seconds that the model took to produce transcriptions for the entire test set, and $T_\mathrm{audio}$ is the sum of durations of all test utterances in seconds, then
+\[
+\mathrm{RTF} = \frac{T_\mathrm{decode}}{T_\mathrm{audio}}.
+\]
+An RTF below 1.0 indicates that the system can, in principle, run faster than real time on the measured hardware configuration. An RTF above 1.0 indicates that the system is slower than real time under those conditions. Because deployment settings such as live captioning and broadcast subtitling care strongly about end-to-end delay, RTF provides a practical complement to CER and WER. Two systems with similar CER may have very different RTF values if one depends on an expensive beam search or a large transformer decoder while the other uses a lighter acoustic model and greedy decoding.
+
+For fairness, RTF is measured in a consistent way across models. Each system is run end-to-end on the same held-out test audio. GMM--HMM decoding time includes feature extraction, acoustic likelihood computation, and graph-based beam search. CRDNN--CTC decoding time includes feature extraction, neural inference, and either greedy or beam search decoding, depending on the chosen evaluation setting. Whisper decoding time includes spectrogram computation, transformer encoder inference, and autoregressive decoding with the transformer decoder. Timing is done at the utterance level and accumulated across the entire test set.
+
+\subsection{Consistency and Comparability}
+\label{subsec:consistency}
+
+All reported results in this thesis follow three consistency rules. First, every system is evaluated on exactly the same test utterances, drawn from the test split defined in Section~\ref{sec:data_collection}, with strictly held-out speakers. Second, every system is scored against the same reference transcripts, which were cleaned and normalized using a single policy designed to reflect publishable, formal Japanese rather than raw unedited speech. Third, the same scoring procedure is applied: CER is computed on normalized character sequences, WER is computed on consistently segmented token sequences, and RTF is computed using total decoding time divided by total audio duration.
+
+These constraints allow direct comparison of traditional hybrid modeling (GMM--HMM), recurrent end-to-end modeling (CRDNN--CTC), and transformer encoder--decoder modeling (Whisper). When differences appear in Chapter~4, those differences can therefore be attributed to model architecture, feature choices, decoding strategy, or computational cost, and not to mismatched data conditions or unfair evaluation settings.
+
+
+\section{Ablation Studies and Controlled Comparisons}
+\label{sec:ablations}
+
+Beyond straightforward model evaluation, this thesis also conducts a series of controlled comparisons designed to isolate the impact of specific design decisions. The purpose of these ablations is to understand not only which model performs best overall, but also why: which front-end features matter most, how much benefit comes from data augmentation, how decoding choices affect both CER and RTF, and how much the text normalization policy contributes to final scores.
+
+One axis of comparison is the choice of acoustic front end. The dataset described in Section~\ref{sec:data_collection} is always the same, but the feature representations differ across models. The GMM--HMM pipeline relies on MFCC features with cepstral mean and variance normalization, which reflect the assumptions of Gaussian mixture acoustic modeling. The CRDNN--CTC model consumes log-Mel or spectrogram-derived features that preserve more local time--frequency structure and are well matched to convolutional front ends. Whisper uses its own fixed log-Mel spectrogram front end inherited from large-scale pretraining. By evaluating all systems on the same held-out speakers, we can compare how these different front ends behave under formal Japanese speech. This addresses a practical question: do classical MFCC features remain competitive in relatively clean lecture-style audio, or do modern log-Mel features always dominate once neural sequence models are introduced?
+
+Another axis of comparison is data augmentation. For CRDNN--CTC, runtime augmentation such as speed perturbation, light time masking, and frequency masking can make the model more robust to differences in speaking rate and mild channel variation. For the GMM--HMM system, speed perturbation can also be applied before MFCC extraction to simulate slower or faster speech and increase the effective size of the training set. Whisper, by contrast, begins with a strong prior from pretraining, so the marginal benefit of additional augmentation during fine-tuning may be smaller or more situational. By running versions of each model with and without augmentation (while keeping all other conditions stable), we can measure how much of the final performance gain is actually due to augmentation, rather than to the model architecture itself. This is important when interpreting results: a model that appears superior may simply have benefited from more aggressive augmentation.
+
+A further controlled comparison concerns decoding strategy and search complexity. The CRDNN--CTC model can be decoded using a simple greedy strategy, which tends to be fast and gives a low Real-Time Factor, or using a beam search strategy, which tends to improve CER and WER but is slower. Whisper can also be decoded greedily or with beam search, and may include heuristics such as temperature control or biasing toward Japanese output only. The GMM--HMM system uses a beam search over a precompiled decoding graph, where pruning thresholds determine how aggressively unlikely hypotheses are discarded. By varying these decoding strategies in a controlled way and measuring both accuracy and RTF, we can observe the trade-off between accuracy and latency. In other words, ablation on decoding settings reveals whether a model's higher accuracy is intrinsically due to its architecture, or whether it is largely the result of spending more compute at inference time.
+
+Another comparison concerns text normalization and ``formalization.'' The transcripts used in this thesis are cleaned to remove elements such as explicit laughter tags and to regularize punctuation, numerals, and polite forms so that the final transcript resembles publishable Japanese. From a deployment standpoint, this matters: organizations interested in archival transcripts or broadcast subtitles often prefer clean written text instead of literal disfluency. However, from a modeling standpoint, enforcing this normalization can hide certain types of errors. By examining examples where the raw model output differs from the normalized reference only in terms of fillers or honorific style, and by contrasting those with examples where the model actually misrecognized content words, we can estimate how much of the error rate comes from linguistic substance and how much comes from stylistic alignment. This analysis helps clarify how usable a model's raw hypotheses are without post-editing, and how much human cleanup would still be required in a downstream workflow.
+
+Taken together, these ablations provide a structured way to interpret the quantitative results in Chapter~4. They separate the effects of feature choice, augmentation strategy, decoding complexity, and stylistic normalization. This is important, because without such controls it would be easy to draw overly broad conclusions about ``which model is best'' without understanding the conditions under which that conclusion holds. The ablation studies show not only which system yields the lowest CER in absolute terms, but also how sensitive that performance is to choices that might change in a real deployment, such as whether beam search is allowed or how aggressively the output must be formalized.
+
+
+
+
+
 
 \section{Challenges and Limitations}
-One of the major challenges in this study is the availability of high quality dataset that has comes with annotation for Japanese speech recognition. Although the dataset like TED Talks YouTube and the Corpus of COJADS gives a valuable resources, they may not fully cover all the different aspect in the linguistic diversity in Japanese. Not only that, the variations in recording quality and noise levels within the datasets may also introduce inconsistencies that may affect the models’ performance evaluation.
+Challenges in the methodology include ensuring data quality during scraping, handling diverse speaking styles within formal speech, and managing computational resources for training large models like Whisper. Limitations include potential biases in the selected public talks, the representativeness of the dataset for all forms of formal Japanese speech, and the generalizability of results to other languages or dialects. The limitations of each model architecture, such as the GMM--HMM's reliance on handcrafted features or Whisper's dependence on large-scale pretraining, also affect the conclusions drawn from the experiments.
 
-Another limitation during carried out this study is the bias that may be occur during the dataset selection process. Dataset from Ted Talk Youtube may only capture the formal Japanese language without having enough representation for daily use of the Japanese language. The Corpus of COJADS dataset also may only be capture the six most major dialects in Japanese while ignoring other dialects as there is not enough data available to be used in this test. Because of this bias, it could temper the evaluation results by favoring models better suited to the specific characteristics of the datasets. 
 
 \section{Ethical Considerations}  
-In this study, the ethical challenges that may be rise is on data privacy, consent and the fairness when evaluating the models. The dataset that has been used in the study contain publicly available speech recordings and there is no private or sensitive information is disclosed. Apart from that, the dataset from Ted Talk Youtube and the COJADS is widely available and can be obtain easily thus did not require individual consent for research purposes. This study will only be using the data for evaluating the performance of speech recognition models rather than analyzing the content of the recordings, reducing potential privacy concerns.
+Ethical considerations in this research include respecting copyright and usage rights when scraping public talks, ensuring that speaker consent is obtained where necessary, and being mindful of privacy concerns related to audio data. Additionally, the potential societal impact of deploying ASR systems, such as accessibility improvements versus risks of misrepresentation or bias in transcription, must be carefully weighed. The research adheres to ethical guidelines for data collection and model evaluation to mitigate these concerns.
 
-\section{Summary}
-In this chapter, a clear research design was laid out to compare three ASR models on Japanese speech. Formal (TED Talks) and informal (COJADS) datasets were chosen for linguistic variety, and consistent preprocessing steps were described. The reasoning for selecting Whisper, wav2vec 2.0, and CHIRP USM was explained, followed by details on how testing will be conducted in a standardized environment to measure WER and transcription latency. Lastly, challenges in dataset availability, biases, and ethical considerations around data privacy were also addressed in this chapter.
+\section{Chapter Summary}
+\label{sec:chapter_summary}
+
+This chapter has described the full experimental methodology used in this thesis, from raw data collection to evaluation. The process begins with assembling a domain-specific corpus of formal Japanese speech. Public talks, lecture-style presentations, and similar sources are scraped programmatically, and their audio and Japanese subtitles are harvested. The subtitles are cleaned to remove applause markers and other non-speech annotations, and the remaining text is normalized to match a professional, publishable style. The long-form audio is segmented into utterance-level clips aligned with timestamped transcript segments. All clips are standardized to a consistent technical format (16~kHz mono WAV), and each clip is paired with its cleaned transcript and assigned to a speaker-independent train, validation, or test split.
+
+On top of this dataset, three different ASR model families are trained and evaluated. The first is a traditional Kaldi-style GMM--HMM system, which uses MFCC features with cepstral mean and variance normalization, an explicit pronunciation lexicon, and a decoding graph that integrates acoustic likelihoods with a language model. The second is a CRDNN--CTC model, an end-to-end neural recognizer with a convolutional front end, recurrent temporal modeling, and CTC loss, which learns alignment implicitly and decodes either greedily or with beam search. The third is a fine-tuned Whisper model, which is a transformer encoder--decoder architecture pretrained on multilingual speech and adapted here to the target domain of formal Japanese. Whisper performs autoregressive decoding directly into text-like output, including punctuation and polite forms.
+
+All three systems are evaluated on the same held-out speakers using the same reference transcripts. Character Error Rate (CER) is used as the primary metric, Word Error Rate (WER) is reported as a supporting metric, and Real-Time Factor (RTF) is measured to capture inference speed. The evaluation protocol enforces consistent normalization and scoring rules so that differences in CER, WER, and RTF can be traced back to meaningful differences in modeling approach, feature design, or decoding strategy, rather than to inconsistencies in preprocessing.
+
+Finally, this chapter outlined how ablation studies are used to interpret the results. By contrasting MFCC-based and log-Mel-based front ends, testing augmentation versus no augmentation, varying decoding complexity, and examining the role of transcript normalization, the thesis aims to separate architectural gains from procedural gains. The next chapter presents the quantitative results of these experiments, including detailed CER, WER, and RTF measurements for each model family, as well as qualitative error analyses that highlight typical substitution patterns, honorific handling, and stylistic differences between raw hypotheses and the final cleaned transcripts.
