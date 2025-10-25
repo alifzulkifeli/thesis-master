@@ -1,36 +1,36 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[76] biber:340> INFO - === Sat Oct 25, 2025, 22:20:43
-[91] Biber.pm:420> INFO - Reading 'main.bcf'
-[189] Biber.pm:994> INFO - Found 50 citekeys in bib section 0
-[208] Biber.pm:4463> INFO - Processing section 0
-[217] Biber.pm:4654> INFO - Looking for bibtex file 'references/myref.bib' for section 0
-[219] bibtex.pm:1713> INFO - LaTeX decoding ...
-[273] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
-[790] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[790] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[790] Biber.pm:4283> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[790] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[919] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[919] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[919] Biber.pm:4283> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[919] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[980] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[1030] bbl.pm:779> INFO - Output to main.bbl
-[1031] Biber.pm:131> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
-[1031] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 4, warning: 113 characters of junk seen at toplevel
-[1031] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 29, warning: 5 characters of junk seen at toplevel
-[1031] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 50, warning: 117 characters of junk seen at toplevel
-[1031] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 73, warning: 224 characters of junk seen at toplevel
-[1032] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 115, warning: 3 characters of junk seen at toplevel
-[1032] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 285, warning: 5 characters of junk seen at toplevel
-[1032] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 344, warning: 5 characters of junk seen at toplevel
-[1032] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 648, warning: 3 characters of junk seen at toplevel
-[1032] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_T3MJ/791e559347c7f027f49328e019ff3066_19472.utf8, line 659, warning: 3 characters of junk seen at toplevel
-[1032] Biber.pm:131> WARN - I didn't find a database entry for 'jsut' (section 0)
-[1032] Biber.pm:131> WARN - I didn't find a database entry for 'ravanelli2019pytorch' (section 0)
-[1032] Biber.pm:131> WARN - I didn't find a database entry for 'graves2006ctc' (section 0)
-[1032] Biber.pm:131> WARN - I didn't find a database entry for 'watanabe2018espnet' (section 0)
-[1032] Biber.pm:131> WARN - I didn't find a database entry for 'speechbrain2021toolkit' (section 0)
-[1032] Biber.pm:131> WARN - I didn't find a database entry for 'sonobe2017jsut' (section 0)
-[1032] Biber.pm:133> INFO - WARNINGS: 16
+[82] biber:340> INFO - === Sat Oct 25, 2025, 22:28:07
+[98] Biber.pm:420> INFO - Reading 'main.bcf'
+[201] Biber.pm:994> INFO - Found 47 citekeys in bib section 0
+[221] Biber.pm:4463> INFO - Processing section 0
+[231] Biber.pm:4654> INFO - Looking for bibtex file 'references/myref.bib' for section 0
+[233] bibtex.pm:1713> INFO - LaTeX decoding ...
+[293] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
+[798] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[798] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[798] Biber.pm:4283> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[798] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[921] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[921] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[921] Biber.pm:4283> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[921] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[979] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1027] bbl.pm:779> INFO - Output to main.bbl
+[1027] Biber.pm:131> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
+[1027] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 4, warning: 113 characters of junk seen at toplevel
+[1027] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 29, warning: 5 characters of junk seen at toplevel
+[1027] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 50, warning: 117 characters of junk seen at toplevel
+[1027] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 73, warning: 224 characters of junk seen at toplevel
+[1027] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 115, warning: 3 characters of junk seen at toplevel
+[1028] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 285, warning: 5 characters of junk seen at toplevel
+[1028] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 344, warning: 5 characters of junk seen at toplevel
+[1028] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 648, warning: 3 characters of junk seen at toplevel
+[1028] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_gPH2/791e559347c7f027f49328e019ff3066_20284.utf8, line 659, warning: 3 characters of junk seen at toplevel
+[1028] Biber.pm:131> WARN - I didn't find a database entry for 'jsut' (section 0)
+[1028] Biber.pm:131> WARN - I didn't find a database entry for 'ravanelli2019pytorch' (section 0)
+[1028] Biber.pm:131> WARN - I didn't find a database entry for 'graves2006ctc' (section 0)
+[1028] Biber.pm:131> WARN - I didn't find a database entry for 'watanabe2018espnet' (section 0)
+[1028] Biber.pm:131> WARN - I didn't find a database entry for 'speechbrain2021toolkit' (section 0)
+[1028] Biber.pm:131> WARN - I didn't find a database entry for 'sonobe2017jsut' (section 0)
+[1028] Biber.pm:133> INFO - WARNINGS: 16

@@ -19,75 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{Afouras}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e02033561beee55daf6882333cea72c7}{%
-           family={Afouras},
-           familyi={A\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e02033561beee55daf6882333cea72c7}
-      \strng{fullhash}{e02033561beee55daf6882333cea72c7}
-      \strng{fullhashraw}{e02033561beee55daf6882333cea72c7}
-      \strng{bibnamehash}{e02033561beee55daf6882333cea72c7}
-      \strng{authorbibnamehash}{e02033561beee55daf6882333cea72c7}
-      \strng{authornamehash}{e02033561beee55daf6882333cea72c7}
-      \strng{authorfullhash}{e02033561beee55daf6882333cea72c7}
-      \strng{authorfullhashraw}{e02033561beee55daf6882333cea72c7}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Lrs3-ted: a large-scale dataset for visual speech recognition}
-      \field{year}{2018}
-      \verb{doi}
-      \verb 10.48550/arxiv.1809.00496
-      \endverb
-    \endentry
-    \entry{ando2021}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=43fb4328909f1ab1d3cd000ad33bf084}{%
-           family={Ando},
-           familyi={A\bibinitperiod},
-           given={Shintaro},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=643ec2c804b05b99211a2defd3538feb}{%
-           family={Fujihara},
-           familyi={F\bibinitperiod},
-           given={Hiromasa},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{fullhash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{fullhashraw}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{bibnamehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authorbibnamehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authornamehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authorfullhash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authorfullhashraw}{5a3766fcae5ce216d17425d887db8dac}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
-      \field{title}{Construction of a large-scale Japanese ASR corpus on TV recordings}
-      \field{year}{2021}
-      \field{pages}{6948\bibrangedash 6952}
-      \range{pages}{5}
-    \endentry
     \entry{baevski2020wav2vec}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=e478046d4abc39e9814f6e364a736511}{%
@@ -799,48 +730,6 @@
       \verb{doi}
       \verb 10.21437/INTERSPEECH.2021-775
       \endverb
-    \endentry
-    \entry{kibe2018intonational}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=a90a96ccd5f7582fd7c577d58b44d476}{%
-           family={Kibe},
-           familyi={K\bibinitperiod},
-           given={Nobuko},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d06df226836d696c1a4b15ba08fbddc8}{%
-           family={Otsuki},
-           familyi={O\bibinitperiod},
-           given={Tomoyo},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=aa08ce3eba2fc771deecc14ee627e5c4}{%
-           family={Sato},
-           familyi={S\bibinitperiod},
-           given={Kumiko},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{49a1d8980105176542ba4b615198b83d}
-      \strng{fullhash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{fullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{bibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{authorbibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{authornamehash}{49a1d8980105176542ba4b615198b83d}
-      \strng{authorfullhash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{authorfullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedfings of the LREC 2018 Special Speech Sessions}
-      \field{title}{Intonational variations at the end of interrogative sentences in Japanese dialects: From the “Corpus of Japanese Dialects”}
-      \field{year}{2018}
-      \field{pages}{21\bibrangedash 28}
-      \range{pages}{8}
     \endentry
     \entry{Mukohara2015Emotion}{article}{}{}
       \true{moreauthor}
@@ -2185,75 +2074,6 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
-    \entry{Afouras}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e02033561beee55daf6882333cea72c7}{%
-           family={Afouras},
-           familyi={A\bibinitperiod},
-           given={T.},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{e02033561beee55daf6882333cea72c7}
-      \strng{fullhash}{e02033561beee55daf6882333cea72c7}
-      \strng{fullhashraw}{e02033561beee55daf6882333cea72c7}
-      \strng{bibnamehash}{e02033561beee55daf6882333cea72c7}
-      \strng{authorbibnamehash}{e02033561beee55daf6882333cea72c7}
-      \strng{authornamehash}{e02033561beee55daf6882333cea72c7}
-      \strng{authorfullhash}{e02033561beee55daf6882333cea72c7}
-      \strng{authorfullhashraw}{e02033561beee55daf6882333cea72c7}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Lrs3-ted: a large-scale dataset for visual speech recognition}
-      \field{year}{2018}
-      \verb{doi}
-      \verb 10.48550/arxiv.1809.00496
-      \endverb
-    \endentry
-    \entry{ando2021}{article}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=43fb4328909f1ab1d3cd000ad33bf084}{%
-           family={Ando},
-           familyi={A\bibinitperiod},
-           given={Shintaro},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=643ec2c804b05b99211a2defd3538feb}{%
-           family={Fujihara},
-           familyi={F\bibinitperiod},
-           given={Hiromasa},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{fullhash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{fullhashraw}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{bibnamehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authorbibnamehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authornamehash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authorfullhash}{5a3766fcae5ce216d17425d887db8dac}
-      \strng{authorfullhashraw}{5a3766fcae5ce216d17425d887db8dac}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
-      \field{title}{Construction of a large-scale Japanese ASR corpus on TV recordings}
-      \field{year}{2021}
-      \field{pages}{6948\bibrangedash 6952}
-      \range{pages}{5}
-    \endentry
     \entry{baevski2020wav2vec}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=e478046d4abc39e9814f6e364a736511}{%
@@ -2965,48 +2785,6 @@
       \verb{doi}
       \verb 10.21437/INTERSPEECH.2021-775
       \endverb
-    \endentry
-    \entry{kibe2018intonational}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=a90a96ccd5f7582fd7c577d58b44d476}{%
-           family={Kibe},
-           familyi={K\bibinitperiod},
-           given={Nobuko},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d06df226836d696c1a4b15ba08fbddc8}{%
-           family={Otsuki},
-           familyi={O\bibinitperiod},
-           given={Tomoyo},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=aa08ce3eba2fc771deecc14ee627e5c4}{%
-           family={Sato},
-           familyi={S\bibinitperiod},
-           given={Kumiko},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{49a1d8980105176542ba4b615198b83d}
-      \strng{fullhash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{fullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{bibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{authorbibnamehash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{authornamehash}{49a1d8980105176542ba4b615198b83d}
-      \strng{authorfullhash}{6a08e3c99b622d3adce13e8eff246ca9}
-      \strng{authorfullhashraw}{6a08e3c99b622d3adce13e8eff246ca9}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedfings of the LREC 2018 Special Speech Sessions}
-      \field{title}{Intonational variations at the end of interrogative sentences in Japanese dialects: From the “Corpus of Japanese Dialects”}
-      \field{year}{2018}
-      \field{pages}{21\bibrangedash 28}
-      \range{pages}{8}
     \endentry
     \entry{Mukohara2015Emotion}{article}{}{}
       \true{moreauthor}

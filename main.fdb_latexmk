@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1761402042.53942 "main.bcf" "main.bbl" "main" 1761402180.00157 0
-  "main.bcf" 1761402179.8434 141906 aa7b1016a1183e2cc898c9f329c96132 "pdflatex"
+["biber main"] 1761402486.82174 "main.bcf" "main.bbl" "main" 1761402498.41016 0
+  "main.bcf" 1761402498.25268 141700 a6cf230dc5440f48922bc208a6614ab5 "pdflatex"
   "references/myref.bib" 1761402031.52467 25808 0b86ac9b440336e0dd33b391e0b51449 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1761402176.65425 "/home/aliff/Downloads/uitmthesis-aliff-20251024T120316Z-1-001/uitmthesis-aliff/main.tex" "main.pdf" "main" 1761402180.00196 0
+["pdflatex"] 1761402494.93064 "/home/aliff/Downloads/uitmthesis-aliff-20251024T120316Z-1-001/uitmthesis-aliff/main.tex" "main.pdf" "main" 1761402498.41053 0
   "/home/aliff/Downloads/uitmthesis-aliff-20251024T120316Z-1-001/uitmthesis-aliff/main.tex" 1761399360.39746 1321 81cad8ae7a56860b2db324aa1aa0fdb4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1737590400 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -180,18 +180,18 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1737590400 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759447528.8647 4602002 62dba5fc29055c16380d7393a2adb07a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759447188 7753789 1d2acd82081b265ee13f758f6598eee9 ""
-  "main.aux" 1761402179.8164 78854 0c60513a4d9ff33c7ce0fb90016add69 "pdflatex"
-  "main.bbl" 1761402044.12451 180715 b11f52cdbcd70343e042879082efa366 "biber main"
-  "main.lof" 1761402179.84547 444 8b95d451d4a264455ca7e7115a76fbe9 "pdflatex"
-  "main.lot" 1761402179.84547 1119 68c56f8239b3ac69b1632af3d0dffc9d "pdflatex"
-  "main.run.xml" 1761402179.84547 2433 9615c3ec793d1eb17de43f4d372b1c50 "pdflatex"
+  "main.aux" 1761402498.22657 78113 0fa2b758f453a760bc633249cb38690d "pdflatex"
+  "main.bbl" 1761402488.41645 171213 3e4f28abeaf0a05fa26b49b893aa9c13 "biber main"
+  "main.lof" 1761402498.25491 444 8b95d451d4a264455ca7e7115a76fbe9 "pdflatex"
+  "main.lot" 1761402498.25491 1119 68c56f8239b3ac69b1632af3d0dffc9d "pdflatex"
+  "main.run.xml" 1761402498.25491 2433 9615c3ec793d1eb17de43f4d372b1c50 "pdflatex"
   "main.tex" 1761399360.39746 1321 81cad8ae7a56860b2db324aa1aa0fdb4 ""
-  "main.toc" 1761402179.84547 7969 23b270107c18b5fbd7c4d6a55508207c "pdflatex"
+  "main.toc" 1761402498.25491 7969 6c2a8d60f62d0179f829cb3d963d9d93 "pdflatex"
   "mainmatter//images/bitrate.png" 1737234832 30582 3999692f74393ccb057a2cc51946688c ""
   "mainmatter//images/image.png" 1736289174 103746 b3f0f683686cf8886d4292ae72ace0e9 ""
   "mainmatter//images/mindmap.png" 1761402031.52465 168886 d7145ab3edcae411e5760c0cdb62a652 ""
-  "mainmatter/chapIntro.tex" 1761402031.56176 12984 3f96599ce41f24cf4f6c8b1aac0a35e3 ""
-  "mainmatter/chapLiterature.tex" 1761402031.56176 36937 3674f6674285323aa63933cc5116a620 ""
+  "mainmatter/chapIntro.tex" 1761402409.18567 12984 3f96599ce41f24cf4f6c8b1aac0a35e3 ""
+  "mainmatter/chapLiterature.tex" 1761402394.48784 35648 0c10900532c8e8bc44f26c9699d4269a ""
   "mainmatter/chapMethodology.tex" 1761402176.41763 90716 3be5db7f03f4929ed6367a1758a72b72 ""
   "settings.tex" 1761402031.56294 4683 ac33bb2d160f5cc7b6931103327a60d9 ""
   "uitmthesis.cls" 1736289174 19856 9d2d71378150e4d2d867c4628383a887 ""
