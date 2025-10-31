@@ -11,21 +11,21 @@
 % \theconfirmation
 % \input{frontmatter/frontAuthorsDeclaration}
 % \input{frontmatter/frontAbstract}
-% \input{frontmatter/frontAcknowledgement}
+% \input{frontmatter/frontAcknowledgement} 
 
 \tableofcontents
-{%% Adding word 'Table' before each entry in list of tables
-    \let\oldnumberline\numberline%
+{%% Adding word 'Table' before each entry in list of tables 
+    \let\oldnumberline\numberline%  
     \renewcommand{\numberline}{\tablename~\oldnumberline}%
     \listoftables%
-}
+} 
 {%% Adding word 'Figure' before each entry in list of figures
     \let\oldnumberline\numberline%
     \renewcommand{\numberline}{\figurename~\oldnumberline}%
     \listoffigures%
 }
 % \input{frontmatter/listofsymbols}
-% \input{frontmatter/listofabbreviations}
+% \input{frontmatter/listofabbreviations} 
 % \input{frontmatter/listofnomenclatures}
 
 \mainmatter

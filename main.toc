@@ -1,8 +1,8 @@
 \changetocdepth {3}
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{TABLE OF CONTENTS}{i}{section*.1}%
-\contentsline {chapter}{LIST OF TABLES}{v}{section*.2}%
-\contentsline {chapter}{LIST OF FIGURES}{vi}{section*.3}%
+\contentsline {chapter}{TABLE OF CONTENTS}{i}{chapter*.1}%
+\contentsline {chapter}{LIST OF TABLES}{v}{chapter*.2}%
+\contentsline {chapter}{LIST OF FIGURES}{vi}{chapter*.3}%
 \vspace {1.7cm}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Research Background}{1}{section.1.1}%
@@ -91,4 +91,4 @@
 \contentsline {section}{\numberline {3.11}Challenges and Limitations}{57}{section.3.11}%
 \contentsline {section}{\numberline {3.12}Ethical Considerations}{57}{section.3.12}%
 \contentsline {section}{\numberline {3.13}Chapter Summary}{57}{section.3.13}%
-\contentsline {chapter}{REFERENCES}{59}{section*.14}%
+\contentsline {chapter}{REFERENCES}{59}{section*.15}%
