@@ -1,8 +1,8 @@
 \changetocdepth {3}
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{TABLE OF CONTENTS}{i}{section*.1}%
-\contentsline {chapter}{LIST OF TABLES}{iv}{section*.2}%
-\contentsline {chapter}{LIST OF FIGURES}{v}{section*.3}%
+\contentsline {chapter}{LIST OF TABLES}{v}{section*.2}%
+\contentsline {chapter}{LIST OF FIGURES}{vi}{section*.3}%
 \vspace {1.7cm}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Research Background}{1}{section.1.1}%
@@ -56,32 +56,39 @@
 \contentsline {subsection}{\numberline {3.5.2}Log-Mel Filterbank and Spectrogram-Derived Features}{33}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Data Augmentation}{35}{subsection.3.5.3}%
 \contentsline {section}{\numberline {3.6}Model Family A: GMM--HMM (Kaldi-Style Hybrid Baseline)}{36}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Data Preparation for Kaldi}{36}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Acoustic Model Training Stages}{37}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Decoding Graph Construction}{38}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Inference and Decoding}{39}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Scoring and Metrics}{40}{subsection.3.6.5}%
-\contentsline {section}{\numberline {3.7}Model Family B: CRDNN--CTC (End-to-End, Non-Transformer)}{41}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Architecture and Rationale}{41}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Data Manifest and Supervision}{42}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Feature Pipeline}{43}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Training Procedure}{44}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.6.1}Data and Language Preparation}{37}{subsection.3.6.1}%
+\contentsline {paragraph}{Kaldi data directories.}{37}{subsection.3.6.1}%
+\contentsline {paragraph}{Kana phoneset and lexicon.}{37}{subsection.3.6.1}%
+\contentsline {paragraph}{Language model (LM).}{38}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Acoustic Features}{38}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Training Schedule}{38}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Decoding Graph Construction}{39}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Inference and Lattice Rescoring}{39}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Scoring: WER, CER, and RTF}{39}{subsection.3.6.6}%
+\contentsline {paragraph}{WER.}{39}{subsection.3.6.6}%
+\contentsline {paragraph}{CER (character error rate).}{40}{subsection.3.6.6}%
+\contentsline {paragraph}{RTF (real-time factor).}{40}{subsection.3.6.6}%
+\contentsline {section}{\numberline {3.7}Model Family B: CRDNN--CTC (End-to-End, Non-Transformer)}{40}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Architecture and Rationale}{40}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Data Manifest and Supervision}{41}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Feature Pipeline}{42}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Training Procedure}{43}{subsection.3.7.4}%
 \contentsline {subsection}{\numberline {3.7.5}Decoding and Hypothesis Generation}{44}{subsection.3.7.5}%
-\contentsline {subsection}{\numberline {3.7.6}Post-Processing of Hypotheses}{45}{subsection.3.7.6}%
-\contentsline {subsection}{\numberline {3.7.7}Scoring and Metrics}{46}{subsection.3.7.7}%
-\contentsline {section}{\numberline {3.8}Model Family C: Whisper (Transformer Encoder--Decoder, Fine-Tuned)}{47}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Model Overview and Motivation}{47}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Dataset Formatting and Input Representation}{48}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Fine-Tuning Configuration and Optimization}{49}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}Inference and Decoding Strategy}{50}{subsection.3.8.4}%
-\contentsline {subsection}{\numberline {3.8.5}Text Normalization and Style Consistency}{51}{subsection.3.8.5}%
-\contentsline {subsection}{\numberline {3.8.6}Scoring and Metrics}{52}{subsection.3.8.6}%
-\contentsline {section}{\numberline {3.9}Unified Evaluation Protocol}{53}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Error Metrics: CER and WER}{53}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Latency Metric: Real-Time Factor}{54}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}Consistency and Comparability}{55}{subsection.3.9.3}%
-\contentsline {section}{\numberline {3.10}Ablation Studies and Controlled Comparisons}{55}{section.3.10}%
+\contentsline {subsection}{\numberline {3.7.6}Post-Processing of Hypotheses}{44}{subsection.3.7.6}%
+\contentsline {subsection}{\numberline {3.7.7}Scoring and Metrics}{45}{subsection.3.7.7}%
+\contentsline {section}{\numberline {3.8}Model Family C: Whisper (Transformer Encoder--Decoder, Fine-Tuned)}{46}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Model Overview and Motivation}{46}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Dataset Formatting and Input Representation}{47}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Fine-Tuning Configuration and Optimization}{48}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Inference and Decoding Strategy}{49}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}Text Normalization and Style Consistency}{50}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}Scoring and Metrics}{51}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}Unified Evaluation Protocol}{52}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Error Metrics: CER and WER}{52}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Latency Metric: Real-Time Factor}{53}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Consistency and Comparability}{54}{subsection.3.9.3}%
+\contentsline {section}{\numberline {3.10}Ablation Studies and Controlled Comparisons}{54}{section.3.10}%
 \contentsline {section}{\numberline {3.11}Challenges and Limitations}{57}{section.3.11}%
-\contentsline {section}{\numberline {3.12}Ethical Considerations}{58}{section.3.12}%
-\contentsline {section}{\numberline {3.13}Chapter Summary}{58}{section.3.13}%
-\contentsline {chapter}{REFERENCES}{60}{section*.14}%
+\contentsline {section}{\numberline {3.12}Ethical Considerations}{57}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Chapter Summary}{57}{section.3.13}%
+\contentsline {chapter}{REFERENCES}{59}{section*.14}%
