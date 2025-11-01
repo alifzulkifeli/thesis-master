@@ -1204,6 +1204,38 @@
       \field{pages}{404\bibrangedash 439}
       \range{pages}{36}
     \endentry
+    \entry{2019CreationAI}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b892f598571026c055b848bf78394688}{%
+           family={Praveen\bibnamedelimb Kumar\bibnamedelimb P\bibnamedelima S},
+           familyi={P\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={H\bibnamedelima S\bibnamedelima Jayanna},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b892f598571026c055b848bf78394688}
+      \strng{fullhash}{b892f598571026c055b848bf78394688}
+      \strng{bibnamehash}{b892f598571026c055b848bf78394688}
+      \strng{authorbibnamehash}{b892f598571026c055b848bf78394688}
+      \strng{authornamehash}{b892f598571026c055b848bf78394688}
+      \strng{authorfullhash}{b892f598571026c055b848bf78394688}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Innovative Technology and Exploring Engineering}
+      \field{title}{Creation and Instigation of Triphone based Big-Lexicon Speaker-Independent Continuous Speech Recognition Framework for Kannada Language}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:241128661
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:241128661
+      \endverb
+    \endentry
     \entry{radford2019language}{article}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -3176,6 +3208,38 @@
       \field{year}{2011}
       \field{pages}{404\bibrangedash 439}
       \range{pages}{36}
+    \endentry
+    \entry{2019CreationAI}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b892f598571026c055b848bf78394688}{%
+           family={Praveen\bibnamedelimb Kumar\bibnamedelimb P\bibnamedelima S},
+           familyi={P\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={H\bibnamedelima S\bibnamedelima Jayanna},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b892f598571026c055b848bf78394688}
+      \strng{fullhash}{b892f598571026c055b848bf78394688}
+      \strng{bibnamehash}{b892f598571026c055b848bf78394688}
+      \strng{authorbibnamehash}{b892f598571026c055b848bf78394688}
+      \strng{authornamehash}{b892f598571026c055b848bf78394688}
+      \strng{authorfullhash}{b892f598571026c055b848bf78394688}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Innovative Technology and Exploring Engineering}
+      \field{title}{Creation and Instigation of Triphone based Big-Lexicon Speaker-Independent Continuous Speech Recognition Framework for Kannada Language}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:241128661
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:241128661
+      \endverb
     \endentry
     \entry{radford2023robust}{article}{}
       \name{author}{6}{}{%

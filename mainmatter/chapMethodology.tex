@@ -215,51 +215,8 @@ Additive noise or reverberation simulation can also be applied, although in this
 It is important to note that augmentation policies must be applied consistently when comparing model families. If CRDNN--CTC benefits from aggressive augmentation while the GMM--HMM system is trained only on clean audio, then any accuracy gap might reflect augmentation rather than architectural differences. In this work, augmentation is therefore documented alongside each model's training recipe, and its impact is evaluated explicitly in later chapters. The final reported WER, CER, and RTF values are always computed on the unmodified held-out test set, so that improvements in robustness do not come at the cost of unfair evaluation.
 
 
-
-% \subsection{Acoustic Model Training Stages}
-% \label{subsec:gmm_training} 
-
-% Training proceeds in several stages of increasing complexity, following a standard Kaldi recipe. The process begins with a monophone model. At this stage, each phone is modeled without explicit left or right context, and acoustic frames are represented using MFCC features with cepstral mean and variance normalization (CMVN), as described in Section~\ref{sec:features}. The monophone system is relatively simple, but it provides the first set of alignments between the audio frames and the phone sequences derived from the transcripts.
-
-% After the monophone system is trained, the next stage introduces context-dependent triphone models. Instead of treating each phone in isolation, the model now distinguishes phones based on their immediate phonetic context (for example, the same base phone may be modeled differently depending on what precedes and follows it). In Kaldi, this is often referred to as the \texttt{tri1} or ``deltas'' system, because the acoustic features typically include MFCCs plus first- and second-order temporal derivatives (deltas and delta-deltas). The alignments from the monophone system are used to initialize and train this first triphone system.
-
-% Once the initial triphone system is available, Kaldi can perform forced alignment again and retrain more advanced triphone systems that include linear transforms such as Linear Discriminant Analysis (LDA) and Maximum Likelihood Linear Transform (MLLT). These transforms project the input features into a space that is more suitable for Gaussian modeling by reducing correlations and emphasizing dimensions that are most discriminative for phone classification. This stage is often referred to as \texttt{tri2} or \texttt{tri2+LDA+MLLT} in typical Kaldi workflows. The process continues with speaker adaptive training (SAT), sometimes referred to as \texttt{tri3}, where feature-space transforms (for example, feature-space Maximum Likelihood Linear Regression, or fMLLR) are estimated per speaker. SAT allows the acoustic model to compensate for systematic differences between speakers and microphones by warping features toward a canonical space.
-
-% Throughout these stages, the training loop alternates between alignment and parameter estimation. The current model is used to force-align the audio to the phone sequences implied by the transcripts and lexicon. These alignments are then treated as supervision for re-estimating Gaussian mixture components and HMM transition probabilities. Each stage produces a refined acoustic model with improved context modeling and better speaker normalization. By the end of the triphone SAT stage, the system represents a strong GMM--HMM baseline for the domain.
-
-% \subsection{Decoding Graph Construction}
-% \label{subsec:gmm_graph}
-
-% Decoding in Kaldi is performed by searching over a composite graph that encodes acoustic likelihoods, pronunciation constraints, and language model probabilities in a single weighted finite-state transducer (WFST). Conceptually, several components are composed together: the HMM topology for context-dependent phones (\texttt{H}), the context-dependent to context-independent phone mappings (\texttt{C}), the lexicon that maps phone sequences to words (\texttt{L}), and the language model over word sequences (\texttt{G}). The final result is commonly referred to as \texttt{HCLG.fst}.
-
-% This decoding graph enforces several constraints at once. First, it ensures that the sequence of HMM states hypothesized by the decoder corresponds to a legal sequence of triphone states that the acoustic model knows how to score. Second, it ensures that these states correspond to a valid pronunciation path in the lexicon, so that arbitrary or impossible phone strings are not proposed as words. Third, it biases the search toward word sequences that are likely under the trained language model, which reflects the formal lecture-style Japanese in the training text. Beam search parameters and pruning thresholds are applied during decoding to keep the search tractable in real time. These parameters control how widely the decoder explores alternate hypotheses versus how aggressively it prunes unlikely paths.
-
-% For Japanese, where word segmentation is less explicit than in languages that use whitespace, the lexicon and language model must agree on how text is tokenized. The same segmentation used to train the language model must also be reflected in the \texttt{text} transcripts in the Kaldi data directories; otherwise, decoding and scoring will not align.
-
-% \subsection{Inference and Decoding}
-% \label{subsec:gmm_decoding}
-
-% Once the acoustic model and decoding graph are prepared, the system can be evaluated on the held-out test set. For each utterance in the test data directory, Kaldi loads the corresponding MFCC+CMVN features, feeds them frame by frame into the trained triphone SAT acoustic model, and computes the log-likelihood of each HMM state sequence allowed by the decoding graph. The decoder then performs a beam search over \texttt{HCLG.fst}, combining acoustic likelihoods with language model scores to find the most probable word sequence.
-
-% The output of decoding is typically a lattice: a compact graph of alternative word sequences annotated with acoustic and language model scores. From this lattice, Kaldi can extract the single best path (the 1-best hypothesis) or compute confidence measures. The 1-best hypothesis is treated as the system's transcription for that utterance. These hypotheses are written out in a format parallel to the \texttt{text} files, using the same utterance identifiers so that scoring tools can match each decoded hypothesis with its reference transcript.
-
-% Decoding time is also measured at this stage. Wall-clock decoding time for each utterance (or for the full test set) is compared against the total audio duration to compute the Real-Time Factor (RTF), which is later reported as part of the latency analysis. Measuring RTF at this point allows direct comparison with end-to-end systems, since all systems are evaluated on the same test audio.
-
-% \subsection{Scoring and Metrics}
-% \label{subsec:gmm_scoring}
-
-% After decoding, the system's hypotheses are evaluated against the cleaned reference transcripts for the test set. The primary accuracy metric in this thesis is Character Error Rate (CER), which is well suited to Japanese because it does not rely on whitespace-delimited words. CER is computed by aligning the hypothesis and reference character sequences and counting substitutions, insertions, and deletions, then normalizing by the number of characters in the reference. Word Error Rate (WER) is also reported as a secondary metric. To compute WER, both the hypothesis and the reference are segmented into word-like units using the same segmentation procedure that was used during language model training; WER is then based on substitutions, insertions, and deletions at the word level.
-
-% In Kaldi, scoring scripts handle normalization, alignment, and calculation of these error rates. These scripts apply the same normalization policy described earlier in Section~\ref{sec:text_prep}, so the comparison is fair: the GMM--HMM system is never penalized for failing to output tokens (for example, applause markers or bracketed stage directions) that were explicitly removed from the reference. The final step is to compute Real-Time Factor (RTF), defined as the ratio between the total time required for decoding and the total length of the processed audio. RTF provides a measure of practical usability: a system that is accurate but extremely slow may not be viable in settings such as live captioning or real-time broadcast subtitling.
-
-% By reporting CER, WER, and RTF on exactly the same held-out test split that is later used for CRDNN--CTC and Whisper, this thesis treats the GMM--HMM system as a grounded baseline rather than an outdated artifact. The GMM--HMM results quantify how far a carefully tuned traditional pipeline can go on formal Japanese speech under well-controlled conditions. Subsequent sections will compare these baseline numbers to the performance and latency characteristics of modern end-to-end systems.
-
-
 \section{Model Family A: GMM--HMM (Kaldi-Style Hybrid Baseline)}
 \label{sec:gmm_hmm}
-
-This baseline follows a standard Kaldi hybrid pipeline with MFCC+CMVN features and context-dependent GMM--HMM acoustic models trained in stages (mono $\rightarrow$ tri1 $\rightarrow$ tri2 $\rightarrow$ tri3-SAT). Despite the emergence of end-to-end systems (CRDNN--CTC, Whisper), a carefully configured GMM--HMM remains a strong point of reference for controlled studies on lexicon design, tokenization, and LM effects. All experiments use the same Japanese lecture-style speech as Section~\ref{sec:data_collection}, and the same scoring protocol as Section~\ref{sec:text_prep}.
-
 This section will be detailed the process taken to build the GMM--HMM baseline system used in this thesis. HMM-GMM system that carefully configured still remains a strong point of reference for controlled studies on lexicon design, tokenization, and LM effects although end-to-end systems like CRDNN--CTC, Whisper are become more mainstream. Kaldi recipes will be used for all steps, following best practices from existing Japanese ASR recipes since creating a new GMM--HMM pipeline from scratch will be taking a considerable amount of time and out of scope for this thesis. The GMM-HMM acoustic will be trained in stages  like below:
 
 % [ut image here: GMM-HMM training stages]
@@ -276,55 +233,83 @@ The conducted steps will be split into step that is data and language preparatio
 
 \subsection{Data and Language Preparation}
 \label{subsec:gmm_data_prep}
+Before proceeding to acoustic model training, we need to prepare the Kaldi data directories. This involves creating a \texttt{data/} directory with subdirectories for training names \texttt{train/}, validation names \texttt{valid/}, and test names \texttt{test/}. In each subdirectory, the required files will be \texttt{wav.scp} for 16kHz mono WAV that point to the correct paths, \texttt{text} for normalized transcripts that map utterance IDs to their text, \texttt{utt2spk} for utterance-to-speaker mapping that maps utterance IDs to speaker IDs, and \texttt{spk2utt} derived from \texttt{utt2spk}. The speaker-ids will be assigned based on talk-level speakers to enforce speaker-independence between train/valid/test splits. The Folder structure will be like below:
+% [ut image here: Kaldi data directory structure]
+\begin{itemize}
+    \item \texttt{data/}
+    \begin{itemize}
+        \item \texttt{train/}
+        \begin{itemize}
+            \item \texttt{wav.scp}
+            \item \texttt{text}
+            \item \texttt{utt2spk}
+            \item \texttt{spk2utt}
+        \end{itemize}
+        \item \texttt{valid/}
+        \begin{itemize}
+            \item \texttt{wav.scp}
+            \item \texttt{text}
+            \item \texttt{utt2spk}
+            \item \texttt{spk2utt}
+        \end{itemize}
+        \item \texttt{test/}
+        \begin{itemize}
+            \item \texttt{wav.scp}
+            \item \texttt{text}
+            \item \texttt{utt2spk}
+            \item \texttt{spk2utt}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
 
-\paragraph{Kaldi data directories.}
-For each split (train/valid/test), Kaldi requires: \texttt{wav.scp} (utt-id $\rightarrow$ 16,kHz mono WAV path), \texttt{text} (utt-id $\rightarrow$ normalized transcript), \texttt{utt2spk} (utt-id $\rightarrow$ speaker-id), and \texttt{spk2utt} (derived). Speaker-ids correspond to talk-level speakers.
 
-\paragraph{Kana phoneset and lexicon.}
-To avoid a combinatorial phone explosion with mixed kanji/kana, we convert transcripts to readings and train with a \emph{grapheme-level kana phoneset}. The lexicon uses kana characters (plus digits and a small set of normalized symbols) as phones, with \texttt{sil} as the optional silence phone. The dictionary comprises:
+% \paragraph{Kana phoneset and lexicon.}
+There is 1000s of kanji characters in Japanese, each with multiple possible readings depending on context. To avoid a combinatorial phone explosion with mixed kanji/kana, we convert transcripts to readings and train with a \emph{grapheme-level kana phoneset}. The lexicon uses kana characters (plus digits and a small set of normalized symbols) as phones, with \texttt{sil} as the optional silence phone. The dictionary includes:
+
 \begin{itemize}
 \item \texttt{lexicon.txt}: \texttt{<token> <space-separated\ kana\ symbols>}
 \item \texttt{nonsilence\_phones.txt}: full kana inventory (typically $\sim$80--120 symbols)
 \item \texttt{silence\_phones.txt} and \texttt{optional\_silence.txt}: \texttt{sil}
-\item \texttt{extra\_questions.txt}: left empty (not required)
 \end{itemize}
-This choice stabilizes context clustering, reduces the number of tied states, and avoids downstream FST blow-ups observed with very large “character” inventories.
 
-\paragraph{Language model (LM).}
-We train a pruned 3-gram LM from the cleaned training text using KenLM (\texttt{lmplz}, with \texttt{--discount\_fallback} and light pruning), and format a test language directory (\texttt{lang\_kana\_test\_3g}). During decoding we use this smaller 3-gram to build \texttt{HCLG} robustly; we then apply \emph{lattice} rescoring with a 4-gram const-ARPA LM for accuracy gains without inflating the search graph.
+This low number of feature will make sure model training and decoding are efficient. Also without a very large number of "character" as phones, this will help to mitigate the risk of overfitting and improve generalization.
 
 
-
-
-
+% \paragraph{Language model (LM).}
+For building language models, the cleaned training transcripts from data collection pipeline is used as LM text. Then the text is used to train pruned 3- gram LM using KenLM \texttt{lmplz} with \texttt{--discount\_fallback} and light pruning. A test language directory (\texttt{lang\_kana\_test\_3g}) is formatted. Then during decoding, this smaller 3-gram LM is used to build \texttt{HCLG} more efficiently, and a larger 4-gram LM is used for lattice rescoring to improve accuracy without creating a huge decoding graph. 
 
 \subsection{Acoustic Features}
-\label{subsec:features_gmm}
+For building the GMM--HMM acoustic models, MFCC features with per-speaker CMVN needs to be extracted. For this setup, 13-dim MFCCs per 25 ms frame with 10 ms shift and apply per-speaker CMVN is used. The details of MFCC extraction configuration are as follows:
 
-We extract 13-dim MFCCs per 25,ms frame with 10,ms shift and apply per-speaker CMVN:
 \begin{itemize}
 \item \texttt{--sample-frequency=16000}, \texttt{--frame-length=25}, \texttt{--frame-shift=10}
 \item \texttt{--num-ceps=13}, \texttt{--num-mel-bins=23}, \texttt{--low-freq=20}, \texttt{--high-freq=0}
 \item \texttt{--snip-edges=false}, \texttt{--use-energy=true}
 \end{itemize}
-For tri1 we append $\Delta$ and $\Delta\Delta$; for tri2 we estimate LDA+MLLT transforms; for tri3-SAT we estimate per-speaker fMLLR transforms (two-pass decoding).
+
+For monophone training we use only the static 13-dim MFCCs. However, for triphone training we append dynamic features to capture temporal context. The specifics are as in table below:
+
+\begin{table}
+\centering
+\begin{tabular}{l c c}
+\hline
+\textbf{Model} & \textbf{Features} & \textbf{Dimensionality} \\
+\hline
+Mono & MFCC & 13 \\
+Tri1 & MFCC + $\Delta$ + $\Delta\Delta$ & 39 \\
+Tri2 & LDA+MLLT (spliced context $\pm$3) & 40 \\
+Tri3-SAT & fMLLR (spliced context $\pm$3) & 40 \\
+\hline
+\end{tabular}
+\end{table}
+
+Dimensionality is increased in triphone stages to capture more context and improve discriminability. LDA+MLLT and fMLLR transforms are learned during training to optimize feature representation for the GMM--HMM models. \parencite{2019CreationAI}
 
 \subsection{Training Schedule}
-\label{subsec:gmm_training}
-
-Training follows the canonical Kaldi progression with alternating alignment and re-estimation:
-\begin{enumerate}
-\item \textbf{Mono}: context-independent HMMs trained on MFCC+CMVN (provides first alignments).
-\item \textbf{tri1} (\emph{deltas}): context-dependent triphones with MFCC+$\Delta$+$\Delta\Delta$ (initial CD tree + alignment refresh).
-\item \textbf{tri2} (\emph{LDA+MLLT}): linear transforms reduce correlation and sharpen Gaussians.
-\item \textbf{tri3-SAT} (\emph{fMLLR}): speaker-adaptive training with feature-space transforms (SI first pass $\rightarrow$ fMLLR estimation $\rightarrow$ main pass).
-\end{enumerate}
-We use typical decision-tree sizes (e.g., \texttt{2000/10000} leaves/gaussians for tri1; \texttt{2500/15000} for tri2/tri3). Jobs are parallelized across available cores. This schedule yielded stable alignment probabilities and consistent likelihood improvements across passes.
+The acoustic model is trained in multiple stages, each building on the previous one to increase modeling power and robustness. The first step of training is to build a monophone model using the MFCC+CMVN features. This model provides initial alignments between audio frames and phone sequences derived from the transcripts. The monophone model is relatively simple, but it establishes a foundation for more complex models. After the monophone model is trained, we proceed to context-dependent triphone models. The first triphone model (\texttt{tri1}) uses MFCC features augmented with delta and delta-delta coefficients to capture temporal dynamics. This model leverages the alignments from the monophone stage to learn context-dependent phone representations. Then the second triphone model (\texttt{tri2}) used LDA+MLLT transforms to project the spliced features into a lower-dimensional space that is more suitable for Gaussian modeling. This stage refines the acoustic model further by improving feature representation. Finally, the third triphone model (\texttt{tri3-SAT}) incorporates speaker-adaptive training (SAT) using fMLLR transforms. This allows the model to adapt to individual speaker characteristics, improving robustness across different voices and recording conditions.
 
 \subsection{Decoding Graph Construction}
-\label{subsec:gmm_graph}
-
-We form the composite WFST \texttt{HCLG} via \texttt{H} (HMM), \texttt{C} (context composition), \texttt{L} (lexicon), and \texttt{G} (LM):
+After training the acoustic model, the next step is to build the decoding graph \texttt{HCLG.fst} that combines acoustic, pronunciation, and language model information into a single weighted finite-state transducer (WFST). HCLG is constructed by composing several components: the HMM topology for context-dependent phones (\texttt{H}), the context-dependency transducer (\texttt{C}), the lexicon transducer (\texttt{L}), and the language model transducer (\texttt{G}). Each component serves a specific purpose in constraining the decoding process. 
 
 $\mathrm{HCLG} = H \circ C \circ L \circ G$.
 
@@ -338,31 +323,25 @@ In practice, large or dense \texttt{G} can cause memory spikes during \texttt{fs
 Using a compact 3-gram for \texttt{HCLG} and deferring the 4-gram to lattice rescoring eliminates the memory pathologies while preserving final accuracy.
 
 \subsection{Inference and Lattice Rescoring}
-\label{subsec:gmm_decoding}
+Before scoring the model, we perform decoding on the held-out test set using the trained acoustic model and the constructed \texttt{HCLG.fst} graph. This step uses two-pass fMLLR decoding to adapt to speaker characteristics in the test data. In the first pass, we use a speaker-independent (SI) model to estimate fMLLR transforms for each speaker in the test set. These transforms are then applied to the features in the second pass, where we decode using the adapted features. This two-pass approach helps improve accuracy by normalizing speaker variability.
 
-Decoding uses two-pass fMLLR with tuned beams:
-\begin{itemize}
-\item First pass (SI) to estimate transforms; second pass with fMLLR features.
-\item Beam and pruning: \texttt{beam=10}, \texttt{lattice-beam=6}, \texttt{max-active=3000}.
-\end{itemize}
-We decode against \texttt{HCLG} (3-gram), then rescore lattices with the 4-gram const-ARPA LM (\texttt{G.carpa}). This workflow improves accuracy without regenerating a heavier search graph.
-
-\subsection{Scoring: WER, CER, and RTF}
-\label{subsec:gmm_scoring}
-
-\paragraph{WER.}
-Kaldi’s scoring sweeps LM weight and word insertion penalty to select the best operating point. We use a broader grid (e.g., \texttt{LMWT} 7--17; \texttt{WIP} {-1.0,,-0.7,,-0.5,,-0.3,,0,,0.2,,0.4,,0.6}) to stabilize WER selection across datasets.
+\subsection{Scoring}
 
 \paragraph{CER (character error rate).}
-Because Japanese is not whitespace-delimited, CER is the primary metric. Hypotheses are detokenized to Unicode strings, then split into characters; references are prepared the same way from normalized text. We compute edit distance (S/I/D) at the character level. This avoids confounds from word segmentation and reflects kana lexicon choices directly.
+After the model is trained and decoded using GMM-HMM, we evaluate its performance using Character Error Rate (CER) as the primary metric. Since Japanese text is not whitespace-delimited, CER is particularly well-suited for this language. The CER is computed by comparing the decoded hypotheses against the reference transcripts at the character level. Both hypotheses and references are converted into sequences of characters, and we compute the edit distance (substitutions, insertions, deletions) between these sequences. The CER is then calculated as the total number of errors divided by the total number of characters in the reference transcript.
+
+\paragraph{WER.}
+Another important metric reported in this thesis is Word Error Rate (WER). WER is computed by aligning the decoded hypotheses with the reference transcripts at the word level, counting substitutions, insertions, and deletions, and normalizing by the total number of words in the reference. For Japanese, where word boundaries are not explicitly marked, we use a consistent segmentation procedure to tokenize both hypotheses and references into word-like units. This ensures that WER comparisons are fair and meaningful across different models. 
 
 \paragraph{RTF (real-time factor).}
-To obtain a machine- and configuration-stable latency estimate, we perform a 1-job fMLLR decode on the full test set, record wall time, and divide by the total audio duration:
+The RTF will be used to measure the decoding speed of the GMM-HMM system. RTF is defined as the ratio of the time taken to decode an audio segment to the actual duration of that audio segment. An RTF less than 1 indicates that the model can decode faster than real-time, which is desirable for realtime applications. To obtain a machine- and configuration-stable latency estimate, we perform a 1-job fMLLR decode on the full test set, record wall time, and divide by the total audio duration:
+
+% To obtain a machine- and configuration-stable latency estimate, we perform a 1-job fMLLR decode on the full test set, record wall time, and divide by the total audio duration:
 
 RTF = wall-clock decode time (1 job) / total audio seconds
 
 
-(Parallel decodes yield lower practical RTF by $\approx 1/\text{nj}$ but the single-job figure is used for cross-model comparability.)
+% (Parallel decodes yield lower practical RTF by $\approx 1/\text{nj}$ but the single-job figure is used for cross-model comparability.)
 
 \section{Model Family B: CRDNN--CTC (End-to-End, Non-Transformer)}
 \label{sec:crdnn_ctc}
