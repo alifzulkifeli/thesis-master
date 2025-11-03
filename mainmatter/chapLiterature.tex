@@ -190,8 +190,17 @@ Current comparative analysis from these studies shows that several challenges ne
 \subsection{Datasets}
 Dataset is a crucial component in training and evaluating ASR models. In this study, the dataset that will be used is JSUT, which is a large-scale Japanese speech corpus that contains over 10 hours of read speech from 100 speakers \parencite{sonobe2017jsut}. The dataset includes a variety of speech styles, such as formal and informal speech, and covers a wide range of topics. The JSUT dataset is suitable for training ASR models because it provides a diverse set of speech samples that can help improve the model's ability to generalize to different speakers and speech styles.
 
-\subsection{Python Moviepy}
-MoviePy is a Python library for video editing that can be used to extract audio from video files. It provides a simple and intuitive interface for working with video and audio files, making it easy to extract audio clips from video files \parencite{boishakhi2021multi}. One of the key features to use MoviePy in this study is to extract audio from video files and convert them into a format that can be used for training ASR models.
+\subsection{Python}
+Python is a popular programming language that is widely used in the field of machine learning and natural language processing. It provides a variety of libraries and frameworks that can be used to develop ASR models, such as TensorFlow, PyTorch, and Keras \parencite{boishakhi2021multi}. Python also has a large community of developers who contribute to open-source projects, making it easy to find resources and support for developing ASR models. In this study, Python will be used to implement the ASR models and to preprocess the dataset.
+
+\subsection{yt-dlp}
+yt-dlp is a command-line tool that allows users to download videos from various websites, including YouTube. It is a fork of the popular youtube-dl tool and provides additional features and improvements \parencite{yt-dlp}. In this study, yt-dlp will be used to download TED talk videos that will be used as part of the dataset for training and evaluating the ASR models. The audio from the downloaded videos will be extracted and processed to create a suitable dataset for ASR model training.
+
+\subsection{Kaldi}
+Kaldi is an open-source toolkit for speech recognition that provides a wide range of tools and algorithms for developing ASR models \parencite{povey2011kaldi}. It includes tools for feature extraction, acoustic modeling, and decoding, as well as support for various machine learning algorithms. Kaldi is widely used in the research community and has been used to develop state-of-the-art ASR models for various languages. In this study, Kaldi will be used to implement and evaluate the ASR models for Japanese speech recognition.
+
+\subsection{speechbrain}
+SpeechBrain is an open-source toolkit for speech processing that provides a wide range of tools and algorithms for developing ASR models \parencite{ravanelli2021speechbraingeneralpurposespeechtoolkit}. It includes tools for feature extraction, acoustic modeling, and decoding, as well as support for various machine learning algorithms. SpeechBrain is designed to be easy to use and provides a modular architecture that allows users to easily customize and extend the toolkit. In this study, SpeechBrain will be used to implement and evaluate the ASR models for Japanese speech recognition.
 
 \subsection{Hugging Face}
 Hugging Face is a platform that provides a wide range of pre-trained models for natural language processing tasks, including speech recognition. It offers a variety of models that can be fine-tuned on custom datasets to improve performance on specific tasks \parencite{boishakhi2021multi}. In this study, Hugging Face will be used to access pre-trained models for Japanese ASR. These model will be downloaded from Hugging Face and analyze the performance of the models based on the dataset used in this study.
