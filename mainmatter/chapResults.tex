@@ -1,183 +1,20 @@
 \chapter{RESULTS AND DISCUSSIONS}
 \label{ch:results}
 
-\section{Background of Study}
+\section{Introduction}
 
-Suppose that  have a line with equation $y = 2x + 3$. This line cuts the $y$-axis at $y = 3$.  can find the gradient of the line using \eqref{eq:gradient}. Equation~\eqref{eq:tada}, $\ldots$.
+\section{Experimental Design and Evaluation Setup}
 
-\begin{equation} \label{eq:gradient}
-    m = \frac{y_2 - y_1}{x_2 - x_1}
-\end{equation}
 
-\begin{equation} \label{eq:tada}
-e^{\pi i} + 1 = 0
-\end{equation}
+\section{Data Collection}
+\section{Data Pre-Processing}
+\section{Model Training Result}
+\subsection{Traditional GMM-HMM}
+\subsection{Neural Network CRDNN-CTC}
+\subsection{Transformers Whisper}
+\section{Discussion}
+\section{Limitations and Threats to Validity}
+\section{Summary}
 
-\subsection{Comparison of Method A with Other Studies}
 
-\begin{table}[ht]
-    \caption{Length Units}
-    %\begin{tabular}{cc}
-    \begin{tabular}{>{\centering\arraybackslash}p{.47\textwidth} >{\centering\arraybackslash}p{.47\textwidth}}
-        \toprule %header
-        \textbf{Millimeters} & \textbf{Centimeters}\\
-        \textbf{mm}          &   \textbf{cm}\\
-        \midrule
-        1           &   0.1\\ \hline
-        10          &   1\\ \hline
-        100         &   10\\ \hline
-        1000        &   100\\ \hline
-        10000       &   1000\\
-        \bottomrule
-    \end{tabular}
-    \par\raggedright Note: This table is useful for $\ldots$.
-    \label{table:lengthunits}
-\end{table}
 
-\subsubsection{Method A Improved}
-
-% Figure~\ref{fig:logouitm} is $\dots$. \lipsum[1-2]
-
-% \begin{figure}[ht]
-%     \centering
-%     \fbox{ % add box arounf image
-%         \includegraphics[width=.9\linewidth]{mainmatter/images/logouitm.png} % scale=.5 <- 50% of original size
-%     }
-%     \caption[Short version for LoF]{Logo UiTM Logo UiTM Logo UiTM Logo UiTM Logo UiTM Logo UiTM Logo UiTM Logo UiTM}
-%     \label{fig:logouitm}
-
-%     \par\raggedright
-%     Notes/Sources: Phasellus in dui mi. Suspendisse placerat nisl et elit tristique, non congue elit bibendum. Donec mauris libero, vehicula in feugiat vitae.
-% \end{figure}
-
-\lipsum[2-3]
-
-%% An example of a long table
-\begin{longtable}{c|c|c} % Need to have 3 c's if there are 3 columns
-\caption{A long table.} \label{tab:alongtable} \\
-
-% header for 1st page
-\hline\multicolumn{1}{c|}{\textbf{First column}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c}{\textbf{Third column}} \\ \hline 
-\endfirsthead
-
-% What to say at the beginning of the table on the next page, if more than 1 pages.
-% Change 3 to the number of columns.
-% Comment out these two lines if not needed.
-\multicolumn{3}{c}%
-{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-
-% header if more than 1 pages.
-\hline \multicolumn{1}{c|}{\textbf{First column}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c}{\textbf{Third column}} \\ \hline
-
-%DO NOT REMOVE THIS LINE
-\endhead
-
-% What to say at the end of the table, if more than 1 pages.
-% Change 3 to the number of columns.
-% Comment out this line if not needed.
-\hline \multicolumn{3}{|r|}{{Continued on next page}} \\ \hline
-
-%DO NOT REMOVE THIS LINE
-\endfoot
-
-% repeat \hline if require more than one line at the end of the table
-\hline
-\endlastfoot
-
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\ \hline
-One & Two & 10.2345667890122 \\
-\end{longtable}
-
-\lipsum[1]
-
-%% An example of a long table + landscape orientation
-\begin{landscape}
-
-\begin{longtable}{c|c|c|c|c|c} % Need to have 6 c's if there are 6 columns
-\caption{A long table.} \label{tab:alongtablelandscape} \\
-
-% header for 1st page
-\hline\multicolumn{1}{c|}{\textbf{First column}} &
- \multicolumn{1}{c|}{\textbf{Second column}} &
- \multicolumn{1}{c|}{\textbf{Third column}} &
- \multicolumn{1}{c|}{\textbf{Forth column}} & 
- \multicolumn{1}{c|}{\textbf{Fifth column}} & 
- \multicolumn{1}{c}{\textbf{Last column}}
- \\ \hline 
-\endfirsthead
-
-% What to say at the beginning of the table on the next page, if more than 1 pages.
-% Change 6 to the number of columns.
-% Comment out these two lines if not needed.
-\multicolumn{6}{c}%
-{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
-
-% header if more than 1 pages.
-\hline \multicolumn{1}{c|}{\textbf{First column}} & \multicolumn{1}{c|}{\textbf{Second column}} & \multicolumn{1}{c}{\textbf{Third column}} \\ \hline
-
-%DO NOT REMOVE THIS LINE
-\endhead
-
-% What to say at the end of the table, if more than 1 pages.
-% Change 6 to the number of columns.
-% Comment out this line if not needed.
-\hline \multicolumn{6}{|r|}{{Continued on next page}} \\ \hline
-
-%DO NOT REMOVE THIS LINE
-\endfoot
-
-% repeat \hline if require more than one line at the end of the table
-\hline
-\endlastfoot
-
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901223532523 2334235235 & 2334235235 abcdefghijkl 123456\\ \hline
-One & Two & 10.2345667890122 & a & 8901222r24234 2334235235 & 2334232235 abcdefghijkl 123456\\
-\end{longtable}
-
-\end{landscape}
-
-\lipsum[1]

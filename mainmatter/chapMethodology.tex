@@ -1,78 +1,226 @@
 \chapter{RESEARCH METHODOLOGY}
 
 \section{Introduction}
-This chapter explained the methodology used to evaluate Japanese automatic speech recognition (ASR) across three model families: a traditional Kaldi-style GMM--HMM system, an end-to-end CRDNN--CTC model, and a fine-tuned transformer encoder--decoder model based on Whisper. These models were chosen to represent three major paradigms in ASR: classic hybrid acoustic modeling with an explicit lexicon, recurrent end-to-end modeling with CTC alignment, and large-scale pretrained transformer modeling. All systems were trained and tested on the same curated set of formal Japanese speech. The audio was collected, cleaned, segmented into utterances, normalized, and converted to a consistent 16~kHz mono WAV format. Transcripts were also normalized to produce a publishable-style reference that was used consistently across all models.
-
-The evaluation focused on both accuracy and usability. Accuracy was measured using Character Error Rate (CER) as the primary metric, with Word Error Rate (WER) as supporting context. Usability was measured using Real-Time Factor (RTF), which reflected how fast each model could decode speech relative to the length of the audio. The rest of this chapter described the data pipeline (collection, cleaning, segmentation, and splits), the feature extraction and augmentation strategy, the training and decoding process for each model family, and the scoring protocol used to compute CER, WER, and RTF on the same held-out test set.
+This chapter explained the methodology used to evaluate Japanese automatic speech recognition (ASR) across three model families: a traditional Kaldi-style GMM--HMM system, an end-to-end CRDNN--CTC model, and a fine-tuned transformer encoder--decoder model based on Whisper model from OpenAI. This chapter described the data pipeline such as data collection, audio and transcript cleaning, and audio splits. The preprocessing, training, decoding process and the scoring protocol used for each model family is also discussed in this chapter. 
 
 \section{Research Design}
-This study was organised into four phases: Preparation, Data Collection, Analysis, and Discussion.
-An overview of the phases, activities, methods, and expected deliverables was shown in table below.
+This study was organised into six phases where started from planning and followed by reviewing prior work. And then moving to data collection and preprocessing phase where dataset was compiled and processed. After that, the selcted model were trained and fine tuned using the data. Then the model was scored using selected metrics and the the data finally were analyzed and discussed in the later phase. \Cref{tab:projectOverview} below shows an overview of the phases, activities and deliverables.
+
 
 \begin{table}[H]
 \centering
-\caption{Overview of the Research Methodology Plan}
+\caption{Overview of Research Project}
+\label{tab:projectOverview}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
 
-   \begin{tabular}{ p{2.5cm} | p{4.2cm} | p{4.2cm} | p{4.2cm} }
+\begin{tabular}{ p{2.8cm}  p{5.3cm}  p{5.3cm}  }
 \hline
-\textbf{Phase} & \textbf{Activities} & \textbf{Methods} & \textbf{Deliverables} \\
-\hline \hline
+\textbf{Phase} & \textbf{Activities} & \textbf{Deliverables} \\
+\hline 
 
-\textbf{Phase 1 --- Preparation} 
-& Defined research area  
-  \newline Defined problem statement  
-  \newline Defined research objectives, scope, questions, and significance  
-& Review of related articles and journals  
-  \newline Discussion and guidance with supervisor  
-& Approved research proposal  
-  \newline Completed Chapter~1 (Introduction) \\
+\textbf{Planning} &
+Define below items:
+\begin{itemize}[leftmargin=*, nosep]
+  \item Project title
+  \item Problem statements
+  \item Objectives
+  \item Scopes
+  \item Significance
+\end{itemize}
+&
+Chapter 1
+\begin{itemize}[leftmargin=*, nosep]
+  \item Title defined
+  \item Problems defined
+  \item Objectives defined
+  \item Scope defined
+  \item Significance defined
+\end{itemize}
+\\ \hline
+
+\textbf{Prior Work} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Review Japanese ASR studies
+  \item List preprocessing methods
+  \item List model families
+  \item List evaluation metrics
+  \item Summarize key gaps
+\end{itemize}
+&
+Chapter 2
+\begin{itemize}[leftmargin=*, nosep]  
+  \item Literature review written
+  \item Preprocessing chosen
+  \item Models selected
+  \item Metrics defined
+  \item Gaps summarized
+\end{itemize}
+\\ \hline
+
+\textbf{Data Collection and preprocessing} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Collect Japanese TEDx talks
+  \item Download audio and  subtitles
+  \item Clean and normalize transcripts
+  \item Resample audio to 16 kHz mono
+  \item Split audio using VAD
+  \item Create train/valid/test splits
+  \item Export manifests and metadata
+\end{itemize}
+&
+Chapter 3
+\begin{itemize}[leftmargin=*, nosep]
+  \item Dataset compiled
+  \item Collection method documented
+  \item Transcripts normalized
+  \item Segments generated
+  \item Splits finalized
+  \item Manifests prepared
+\end{itemize}
+\\ \hline
+
+\textbf{Model Training and Fine Tune} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Train GMM-HMM
+  \item Train CRDNN-CTC 
+  \item Fine-tune Whisper variants
+  \item Set decoding parameters
+  \item Save configs and checkpoints
+\end{itemize}
+&
+Chapter 4
+\begin{itemize}[leftmargin=*, nosep]
+  \item Models trained
+  \item Checkpoints saved
+  \item Settings recorded
+  \item Outputs generated
+\end{itemize}
+\\ \hline
+
+\textbf{Analysis} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Score with CER and WER
+  \item Measure speed using RTF
+  \item Compare models and decoders
+  \item Inspect common errors
+\end{itemize}
+&
+Chapter 4
+\begin{itemize}[leftmargin=*, nosep]
+  \item Results tables and plots
+  \item Error analysis summary
+  \item Best model identified
+\end{itemize}
+\\ \hline
+
+\textbf{Discussion} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Explain main findings
+  \item Link to prior work
+  \item Note limitations
+  \item Suggest future work
+\end{itemize}
+&
+Chapter 5
+\begin{itemize}[leftmargin=*, nosep]
+  \item Findings discussed
+  \item Limitations stated
+  \item Recommendations given
+  \item Future work proposed
+\end{itemize}
+\\ \hline
+
+\end{tabular}}
+\end{table}
+
+
+\subsection{Planning Phase}
+\Cref{tab:planning} shows the first phase of this project where most of the planning and decision about this projectis done. The activities carried out and the outcome deliverables are described in the table shown below.
+\vspace{1em}
+
+\begin{table}[H]
+\centering
+\caption{Overview of Research Project}
+\label{tab:planning}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{tabular}{ p{2.8cm}  p{5.3cm}  p{5.3cm}  }
 \hline
+\textbf{Phase} & \textbf{Activities} & \textbf{Deliverables} \\
+\hline 
 
-\textbf{Phase 2 --- Data Collection} 
-& Studied prior work on Automatic Speech Recognition (ASR)  
-  \newline Identified current challenges in Japanese ASR  
-  \newline Identified promising techniques for improving transcription accuracy and latency  
-  \newline Collected and prepared speech data  
-& Literature review  
-  \newline Data collection from:
-  \newline \hspace*{1em}-- TED Talks (YouTube)  
-  \newline Data preprocessing:
-  \newline \hspace*{1em}-- Audio segmentation  
-  \newline \hspace*{1em}-- Normalisation and cleaning of transcripts  
-  \newline \hspace*{1em}-- Train/validation/test split  
-& Selection of target ASR models (GMM--HMM, CRDNN--CTC, Whisper)  
-  \newline Processed and standardised audio--text pairs  
-  \newline Experimental environment and training configuration \\
+\textbf{Planning} &
+Define below items:
+\begin{itemize}[leftmargin=*, nosep]
+  \item Project title
+  \item Problem statements
+  \item Objectives
+  \item Scopes
+  \item Significance
+\end{itemize}
+&
+Chapter 1
+\begin{itemize}[leftmargin=*, nosep]
+  \item Title defined
+  \item Problems defined
+  \item Objectives defined
+  \item Scope defined
+  \item Significance defined
+\end{itemize}
+\\ \hline
+
+\end{tabular}}
+\end{table}
+
+The starting point of this project begin in the planning phase. This phase is important because it will serve as the blueprint and become guidance to the project direction. This phase purpose is to identify the problem in the domain and finds a way to solve the problem stated. The activities that will be carried out in this pahse is defining key aspect that is the title of the project, problem statements, objective, scope and significance of the project. The outcome from this phase will be the title of the project, problems that has been defined, objective of the project, scope of the project which explained what is covered and what is not covered in this project and last deliverables in this phase is the significance that has been identified. During this planning phase, things like time, cost, resource, benefit and difficulty level also have been take into consideration.
+
+
+
+
+\subsection{Prior Work}
+\Cref{tab:PriorWork} shows the second phase of this project where prior work in the domain of ASR is reviewed and some decision is made. The activities carried out and the outcome deliverables are described in the table shown below.
+\vspace{1em}
+
+\begin{table}[H]
+\centering
+\caption{Overview of Research Project}
+\label{tab:PriorWork}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{tabular}{ p{2.8cm}  p{5.3cm}  p{5.3cm}  }
 \hline
+\textbf{Phase} & \textbf{Activities} & \textbf{Deliverables} \\
+\hline 
 
-\textbf{Phase 3 --- Analysis} 
-& Trained and evaluated the selected ASR models  
-  \newline Computed evaluation metrics  
-  \newline Compared models quantitatively  
-  \newline Analysed error patterns  
-& Model training and inference on held-out test data  
-  \newline Performance measurement:
-  \newline \hspace*{1em}-- Character Error Rate (CER)  
-  \newline \hspace*{1em}-- Word Error Rate (WER)  
-  \newline \hspace*{1em}-- Real-Time Factor (RTF, transcription latency)  
-& Quantitative comparison of GMM--HMM, CRDNN--CTC, and Whisper  
-  \newline Strengths, weaknesses, and trade-offs for each model  
-  \newline Analysis of accuracy vs.\ latency \\
-\hline
+\textbf{Prior Work} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Review Japanese ASR studies
+  \item List preprocessing methods
+  \item List model families
+  \item List evaluation metrics
+  \item Summarize key gaps
+\end{itemize}
+&
+Chapter 2
+\begin{itemize}[leftmargin=*, nosep]  
+  \item Literature review written
+  \item Preprocessing chosen
+  \item Models selected
+  \item Metrics defined
+  \item Gaps summarized
+\end{itemize}
+\\ \hline
 
-\textbf{Phase 4 --- Discussion} 
-& Interpreted the results  
-  \newline Discussed limitations and challenges  
-  \newline Related findings to the research objectives  
-  \newline Outlined implications and future work  
-& Synthesis of findings across all models  
-  \newline Identification of remaining gaps in Japanese ASR for formal speech  
-& Final dissertation write-up  
-  \newline Chapters on discussion, conclusion, and future work \\
-\hline
+\end{tabular}}
+\end{table}
 
-\end{tabular}
-\end{table} 
+The starting point of this project begin in the planning phase. This phase is important because it will serve as the blueprint and become guidance to the project direction. This phase purpose is to identify the problem in the domain and finds a way to solve the problem stated. The activities that will be carried out in this pahse is defining key aspect that is the title of the project, problem statements, objective, scope and significance of the project. The outcome from this phase will be the title of the project, problems that has been defined, objective of the project, scope of the project which explained what is covered and what is not covered in this project and last deliverables in this phase is the significance that has been identified. During this planning phase, things like time, cost, resource, benefit and difficulty level also have been take into consideration.
 
 \section{Data Collection Pipeline}
 In this section, each step of the data collection pipeline was described in detail, highlighting the methods and tools used to ensure the quality and consistency of the collected data. The process began with identifying suitable sources of formal spoken Japanese, was followed by programmatically scraping of audio and subtitle data from YouTube and TED Talk platforms. The raw subtitles were then cleaned and normalized to produce high-quality transcripts. The long-form audio recordings were segmented into utterance-level clips aligned with the cleaned transcripts. All audio clips were standardized to a consistent 16~kHz, mono and WAV format. Finally, the dataset was split into speaker-independent for training, validation, and test sets.
