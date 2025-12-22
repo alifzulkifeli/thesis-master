@@ -142,7 +142,7 @@ Chapter 5
 
 \begin{table}[H]
 \centering
-\caption{Overview of Research Project}
+\caption{Planning Phase}
 \label{tab:planning}
 {\small
 \setlength{\tabcolsep}{6pt}
@@ -187,7 +187,7 @@ The starting point of this project begin in the planning phase. This phase is im
  
 \begin{table}[H]
 \centering
-\caption{Overview of Research Project}
+\caption{Prior Work Phase}
 \label{tab:PriorWork}
 {\small
 \setlength{\tabcolsep}{6pt}
@@ -220,8 +220,89 @@ Chapter 2
 \end{tabular}}
 \end{table}
 
+
 After planning phase is completed and the reasearch domain has been set, next phase is reviewing prior work phase. During this phase, multiple sources such as related article, journal, conference paper and textbook is reviewed. This resource is used to evaluate and identified what has been discussed or discovered. In this phase, the activity involved is list down the preprocessing mrthod that currently being used in speech recognition and a few preprocessing technique has been choose based on the requirements of the models as the deliverables. The next activity is to choose which model to compared to, instead of comparing model from same family, this research has conclude to compare 3 model from different model architecture and these 3 models will be the deliverables for this phase. The next activity is to conclude which metrics will be used to compare these models. As the deliverables, three metrics has been choose to do comparitive analysis between each models. In this phase, the gaps in the literature is also defined and as the deliverables the gaps in the literature is summarized. 
 
+
+
+\section{Data Collection and preprocessing Phase}
+\Cref{tab:DataCollection} shows the third phase of this project where the source of the data is selected, aqquired and then the data will go through preprocessing to make sure data is ready to be input into models. The activities carried out and the outcome deliverables are described in the table shown below.
+\vspace{1em}
+ 
+\begin{table}[H]
+\centering
+\caption{Data Collection and preprocessing Phase}
+\label{tab:DataCollection}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{tabular}{ p{2.8cm}  p{5.3cm}  p{5.3cm}  }
+\hline
+\textbf{Phase} & \textbf{Activities} & \textbf{Deliverables} \\
+\hline 
+
+\textbf{Data Collection and preprocessing} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Collect Japanese TEDx talks
+  \item Download audio and  subtitles
+  \item Clean and normalize transcripts
+  \item Resample audio to 16 kHz mono
+  \item Split audio using VAD
+  \item Create train/valid/test splits
+  \item Export manifests and metadata
+\end{itemize}
+&
+Chapter 3
+\begin{itemize}[leftmargin=*, nosep]
+  \item Dataset compiled
+  \item Collection method documented
+  \item Transcripts normalized
+  \item Segments generated
+  \item Splits finalized
+  \item Manifests prepared
+\end{itemize}
+\\ \hline
+
+\end{tabular}}
+\end{table}
+
+The focus of this phase to build a cleaned and useable dataset from publicly available dataset into a consistent training and evaluation format so that all three models from different family can use the sama dataset for traiing and testing. The pipeline for this phase can be seperated into four section. The first task is  collecting TEDx Japanese talks from YouTube with only Japanese subtitles that comes with manual subtitles by human. Then the audio was downloaded with the subtitle files. The second task is to clean and normalize subtitle text into reference transcripts and standardized the audio into 16\,kHz mono PCM. Third task is to split the audio into chunks using voice activity detection (VAD) and the audio that did not have audio activity such as intro music will be discarded. The last task is to produce train/validation/test splits and manifests with audio paths, durations, and transcripts.
+
+\begin{figure}[H]
+\centering
+\fbox{\rule{0pt}{2.0in}\rule{0.92\linewidth}{0pt}}
+\caption{Placeholder: End-to-end data collection and preprocessing pipeline for TEDx Japanese talks (YouTube $\rightarrow$ cleaned transcripts $\rightarrow$ VAD chunks $\rightarrow$ manifests).}
+\label{fig:pipeline_placeholder}
+\end{figure}
+
+
+\subsection{Data Source and Selection Criteria}
+The source of the data will be collected from Japanese TEDx talks that is hosted on video sharing platform, Youtube. This particular source is choosen beacuse TEDx talks is a collection of public speaking where commonly the speaker will have a clear speech with structured monologue-style delivery. However, not all video that published comes with manual Japanese subtitle  by human, only part of the video has manual Japanese subtitle. The rest either did not have subtitle or the subtitle is in other language. To make sure that the transcripts were sufficiently reliable to serve as reference text during ASR training and evaluation, only videos that has Japanese manual subtitle will be choose and the rest will be excluded. The videos that contained only auto-generated subtitles were also excluded to reduce transcription noise and alignment inconsistencies.
+
+
+Audio and subtitles were downloaded using \texttt{yt\_dlp}. The script first queried the video metadata without downloading the media (using \texttt{skip\_download}) to verify the existence of Japanese subtitle tracks. The inclusion rule was:
+\begin{itemize}[leftmargin=*, nosep]
+    \item Include the video if \texttt{info['subtitles']} contains \texttt{'ja'} (manual subtitles).
+    \item Skip the video if Japanese subtitles are missing, or only auto-generated captions are available.
+\end{itemize}
+
+
+For accepted videos, the script downloaded:
+\begin{itemize}[leftmargin=*, nosep]
+    \item The best available audio stream (\texttt{bestaudio/best}).
+    \item Japanese subtitles in \texttt{.vtt} format, and then converted subtitles to \texttt{.srt} via FFmpeg post-processing.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\fbox{\rule{0pt}{1.5in}\rule{0.92\linewidth}{0pt}}
+\caption{Placeholder: Example console output from \texttt{yt\_dlp} showing detection of manual Japanese subtitles and successful download.}
+\label{fig:download_log_placeholder}
+\end{figure}
+
+
+% _____________________________________________________________________________________
 \section{Data Collection Pipeline}
 In this section, each step of the data collection pipeline was described in detail, highlighting the methods and tools used to ensure the quality and consistency of the collected data. The process began with identifying suitable sources of formal spoken Japanese, was followed by programmatically scraping of audio and subtitle data from YouTube and TED Talk platforms. The raw subtitles were then cleaned and normalized to produce high-quality transcripts. The long-form audio recordings were segmented into utterance-level clips aligned with the cleaned transcripts. All audio clips were standardized to a consistent 16~kHz, mono and WAV format. Finally, the dataset was split into speaker-independent for training, validation, and test sets.
 

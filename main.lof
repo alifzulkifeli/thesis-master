@@ -1,4 +1,6 @@
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Literature Review Mind Map}}{6}{figure.caption.4}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Whisper WER cited from \blx@tocontentsinit {0}\cite {radford2023robust}}}{15}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}}{29}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Literature Review Mind Map\relax }}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Whisper WER cited from \blx@tocontentsinit {0}\cite {radford2023robust}\relax }}{15}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Placeholder: End-to-end data collection and preprocessing pipeline for TEDx Japanese talks (YouTube $\rightarrow $ cleaned transcripts $\rightarrow $ VAD chunks $\rightarrow $ manifests).\relax }}{27}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Placeholder: Example console output from \texttt {yt\_dlp} showing detection of manual Japanese subtitles and successful download.\relax }}{28}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{32}{figure.caption.17}%
