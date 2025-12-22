@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1766368233 "main.bcf" "main.bbl" "main" 1766373695
-  "main.bcf" 1766373694 134244 ede3ae26b3d063218747c79e75b93c72 "pdflatex"
+["biber main"] 1766368233 "main.bcf" "main.bbl" "main" 1766375360
+  "main.bcf" 1766375360 134244 ede3ae26b3d063218747c79e75b93c72 "pdflatex"
   "references/myref.bib" 1766132914 28063 6381851d34dad6b8ee39312eb8a4ad27 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1766373692 "/home/aliff/thesis-master/main.tex" "main.pdf" "main" 1766373695
+["pdflatex"] 1766375358 "/home/aliff/thesis-master/main.tex" "main.pdf" "main" 1766375360
   "/etc/texmf/web2c/texmf.cnf" 1766273787 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/aliff/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk" 1766274753 24132 4d7af21124fb7db503d6836df9652bd0 ""
   "/home/aliff/thesis-master/main.tex" 1766273659 1378 8bd741a55e46b6dcb679df6bc5cbc9d8 ""
@@ -182,19 +182,19 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1766274514 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1766274516 1405656 753f50023573d6cf4f5b10cfbe4a1bf3 ""
-  "main.aux" 1766373694 74617 ff283684e16cb2f631e63846fcb442e7 "pdflatex"
+  "main.aux" 1766375360 74617 e39170f744d44722db9567988f8ff50a "pdflatex"
   "main.bbl" 1766368246 108479 257b422c3edc5271cc07dbca8f99fad6 "biber main"
-  "main.lof" 1766373695 444 1e6a5d66f0d7342ef44e974f53b7eb20 "pdflatex"
-  "main.lot" 1766373695 1336 bff181fbbdf3b17c9f9875217f691a06 "pdflatex"
-  "main.run.xml" 1766373695 2433 9615c3ec793d1eb17de43f4d372b1c50 "pdflatex"
+  "main.lof" 1766375360 444 1e6a5d66f0d7342ef44e974f53b7eb20 "pdflatex"
+  "main.lot" 1766375360 1336 bff181fbbdf3b17c9f9875217f691a06 "pdflatex"
+  "main.run.xml" 1766375360 2433 9615c3ec793d1eb17de43f4d372b1c50 "pdflatex"
   "main.tex" 1766273659 1378 8bd741a55e46b6dcb679df6bc5cbc9d8 ""
-  "main.toc" 1766373695 9006 475eabd0d2ba989a917561a93bc00cf7 "pdflatex"
+  "main.toc" 1766375360 9006 f0cc26740381be9c989a4b73f1b48d85 "pdflatex"
   "mainmatter//images/bitrate.png" 1766132914 30582 3999692f74393ccb057a2cc51946688c ""
   "mainmatter//images/image.png" 1766132914 103746 b3f0f683686cf8886d4292ae72ace0e9 ""
   "mainmatter//images/mindmap.png" 1766132914 129895 d27ac82d874ad9cc8abfcdf3333559a2 ""
   "mainmatter/chapIntro.tex" 1766132914 9233 71101c3525c12ce625cc6bcdee278f2a ""
   "mainmatter/chapLiterature.tex" 1766132914 37559 49c703039d47b8b6f74a9fd107814067 ""
-  "mainmatter/chapMethodology.tex" 1766373692 59355 ce17f5a7aa31c649176deb504221577d ""
+  "mainmatter/chapMethodology.tex" 1766375355 59573 16986cd0565b6898da9fb5f2fbc86ad4 ""
   "mainmatter/chapResults.tex" 1766278172 412 3272e1bbcc562542ff06fdc7611ab05e ""
   "settings.tex" 1766368320 4832 3de8b1922670f80171ad1240dc00d2dd ""
   "uitmthesis.cls" 1766132914 19856 9d2d71378150e4d2d867c4628383a887 ""

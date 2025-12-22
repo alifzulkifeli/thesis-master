@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {3.3.5}Resampling and Format Standardization}{29}{subsection.3.3.5}%
 \contentsline {subsection}{\numberline {3.3.6}Train / Validation / Test Split}{30}{subsection.3.3.6}%
 \contentsline {section}{\numberline {3.4}Text Preparation for ASR Training}{30}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Lexicon and Token Units}{30}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Lexicon and Token Units}{31}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Buildiing Language Model Text for the GMM--HMM}{31}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Feature Extraction and Front-End Processing}{32}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}MFCC with Cepstral Mean and Variance Normalization}{32}{subsection.3.5.1}%
