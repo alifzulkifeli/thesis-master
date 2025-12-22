@@ -1,30 +1,34 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'main.blg'
-[76] biber:340> INFO - === Mon Dec 22, 2025, 09:50:45
-[92] Biber.pm:418> INFO - Reading 'main.bcf'
-[132] Biber.pm:972> INFO - Found 55 citekeys in bib section 0
-[138] Biber.pm:4383> INFO - Processing section 0
-[151] Biber.pm:4574> INFO - Looking for bibtex file 'references/myref.bib' for section 0
-[154] bibtex.pm:1713> INFO - LaTeX decoding ...
-[202] bibtex.pm:1518> INFO - Found BibTeX data source 'references/myref.bib'
-[516] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[516] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[516] Biber.pm:4203> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[516] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[559] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[591] bbl.pm:757> INFO - Output to main.bbl
-[591] Biber.pm:130> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
-[591] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 4, warning: 113 characters of junk seen at toplevel
-[591] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 29, warning: 5 characters of junk seen at toplevel
-[591] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 50, warning: 117 characters of junk seen at toplevel
-[591] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 73, warning: 224 characters of junk seen at toplevel
-[592] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 115, warning: 3 characters of junk seen at toplevel
-[592] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 285, warning: 5 characters of junk seen at toplevel
-[592] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 344, warning: 5 characters of junk seen at toplevel
-[592] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 648, warning: 3 characters of junk seen at toplevel
-[592] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_GDyX/791e559347c7f027f49328e019ff3066_88199.utf8, line 659, warning: 3 characters of junk seen at toplevel
-[592] Biber.pm:130> WARN - I didn't find a database entry for 'koenecke2020racial' (section 0)
-[592] Biber.pm:130> WARN - I didn't find a database entry for 'sonobe2017jsut' (section 0)
-[592] Biber.pm:130> WARN - I didn't find a database entry for 'yt-dlp' (section 0)
-[592] Biber.pm:130> WARN - I didn't find a database entry for 'povey2011kaldi' (section 0)
-[592] Biber.pm:132> INFO - WARNINGS: 14
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[116] biber-darwin:342> INFO - === Mon Dec 22, 2025, 13:39:55
+[145] Biber.pm:421> INFO - Reading 'main.bcf'
+[383] Biber.pm:1002> INFO - Found 55 citekeys in bib section 0
+[418] Biber.pm:4487> INFO - Processing section 0
+[435] Biber.pm:4678> INFO - Looking for bibtex file 'references/myref.bib' for section 0
+[440] bibtex.pm:1713> INFO - LaTeX decoding ...
+[540] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
+[1431] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1431] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1431] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1431] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1659] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1660] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1660] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1660] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1789] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1973] bbl.pm:779> INFO - Output to main.bbl
+[1974] Biber.pm:132> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 4, warning: 113 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 29, warning: 5 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 50, warning: 117 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 73, warning: 224 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 115, warning: 3 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 285, warning: 5 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 344, warning: 5 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 648, warning: 3 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_DIJ6/791e559347c7f027f49328e019ff3066_69523.utf8, line 659, warning: 3 characters of junk seen at toplevel
+[1974] Biber.pm:132> WARN - I didn't find a database entry for 'koenecke2020racial' (section 0)
+[1975] Biber.pm:132> WARN - I didn't find a database entry for 'sonobe2017jsut' (section 0)
+[1975] Biber.pm:132> WARN - I didn't find a database entry for 'yt-dlp' (section 0)
+[1975] Biber.pm:132> WARN - I didn't find a database entry for 'povey2011kaldi' (section 0)
+[1975] Biber.pm:134> INFO - WARNINGS: 14
