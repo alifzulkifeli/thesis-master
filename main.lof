@@ -2,5 +2,15 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Literature Review Mind Map\relax }}{6}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Whisper WER cited from \blx@tocontentsinit {0}\cite {radford2023robust}\relax }}{15}{figure.caption.5}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Placeholder: End-to-end data collection and preprocessing pipeline for TEDx Japanese talks (YouTube $\rightarrow $ cleaned transcripts $\rightarrow $ VAD chunks $\rightarrow $ manifests).\relax }}{27}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Placeholder: Example console output from \texttt {yt\_dlp} showing detection of manual Japanese subtitles and successful download.\relax }}{28}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{32}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Placeholder: Model training workflow for GMMHMM\relax }}{33}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Placeholder: Model training workflow for CRDNN\relax }}{38}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Placeholder: Model training workflow for Whisper\relax }}{40}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{46}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{46}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{47}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{49}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{50}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{50}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{51}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{52}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)\relax }}{53}{figure.caption.38}%

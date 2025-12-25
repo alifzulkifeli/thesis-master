@@ -2,7 +2,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{TABLE OF CONTENTS}{i}{section*.1}%
 \contentsline {chapter}{LIST OF TABLES}{v}{section*.2}%
-\contentsline {chapter}{LIST OF FIGURES}{vi}{section*.3}%
+\contentsline {chapter}{LIST OF FIGURES}{vii}{section*.3}%
 \vspace {1.7cm}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Research Background}{1}{section.1.1}%
@@ -47,58 +47,62 @@
 \contentsline {section}{\numberline {3.4}Prior Work Phase}{25}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Data Collection and preprocessing Phase}{26}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Data Source and Selection Criteria}{28}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}Data Collection Pipeline}{29}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Data Source Selection}{29}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Data Scraping in Python}{30}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Transcript Cleaning and Normalization}{30}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Audio Segmentation}{31}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Resampling and Format Standardization}{31}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}Train / Validation / Test Split}{32}{subsection.3.6.6}%
-\contentsline {section}{\numberline {3.7}Text Preparation for ASR Training}{33}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Lexicon and Token Units}{33}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Buildiing Language Model Text for the GMM--HMM}{34}{subsection.3.7.2}%
-\contentsline {section}{\numberline {3.8}Feature Extraction and Front-End Processing}{34}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}MFCC with Cepstral Mean and Variance Normalization}{35}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Log-Mel Filterbank and Spectrogram-Derived Features}{35}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Data Augmentation}{36}{subsection.3.8.3}%
-\contentsline {section}{\numberline {3.9}Model Family A: GMM--HMM Acoustic Model}{37}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Data and Language Preparation}{38}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Acoustic Features}{39}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}Training Schedule}{40}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}Decoding Graph Construction}{41}{subsection.3.9.4}%
-\contentsline {subsection}{\numberline {3.9.5}Inference and Lattice Rescoring}{41}{subsection.3.9.5}%
-\contentsline {subsection}{\numberline {3.9.6}Scoring}{42}{subsection.3.9.6}%
-\contentsline {section}{\numberline {3.10}Model Family B: CRDNN–CTC (End-to-End, Non-Transformer)}{42}{section.3.10}%
-\contentsline {subsection}{\numberline {3.10.1}Data and Supervision}{43}{subsection.3.10.1}%
-\contentsline {subsection}{\numberline {3.10.2}Acoustic Features and Augmentation}{43}{subsection.3.10.2}%
-\contentsline {subsection}{\numberline {3.10.3}Training Procedure}{43}{subsection.3.10.3}%
-\contentsline {subsection}{\numberline {3.10.4}Decoding}{43}{subsection.3.10.4}%
-\contentsline {subsection}{\numberline {3.10.5}Post-Processing and Normalization}{44}{subsection.3.10.5}%
-\contentsline {subsection}{\numberline {3.10.6}Scoring}{44}{subsection.3.10.6}%
-\contentsline {section}{\numberline {3.11}Model Family C: Whisper (Transformer Encoder–Decoder, Fine-Tuned)}{44}{section.3.11}%
-\contentsline {subsection}{\numberline {3.11.1}Model Overview}{44}{subsection.3.11.1}%
-\contentsline {subsection}{\numberline {3.11.2}Dataset Formatting and Inputs}{45}{subsection.3.11.2}%
-\contentsline {subsection}{\numberline {3.11.3}Fine-Tuning Configuration}{45}{subsection.3.11.3}%
-\contentsline {subsection}{\numberline {3.11.4}Inference and Decoding}{45}{subsection.3.11.4}%
-\contentsline {subsection}{\numberline {3.11.5}Normalization and Style Consistency}{45}{subsection.3.11.5}%
-\contentsline {subsection}{\numberline {3.11.6}Scoring}{45}{subsection.3.11.6}%
-\contentsline {section}{\numberline {3.12}Unified Evaluation Protocol}{46}{section.3.12}%
-\contentsline {subsection}{\numberline {3.12.1}Accuracy: CER and WER}{46}{subsection.3.12.1}%
-\contentsline {subsection}{\numberline {3.12.2}Latency: Real-Time Factor}{46}{subsection.3.12.2}%
-\contentsline {subsection}{\numberline {3.12.3}Consistency and Comparability}{47}{subsection.3.12.3}%
-\contentsline {section}{\numberline {3.13}Challenges and Limitations}{47}{section.3.13}%
-\contentsline {section}{\numberline {3.14}Ethical Considerations}{47}{section.3.14}%
-\contentsline {section}{\numberline {3.15}Chapter Summary}{47}{section.3.15}%
-\contentsline {chapter}{\chapternumberline {4}RESULTS AND DISCUSSIONS}{50}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{50}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Experimental Design and Evaluation Setup}{50}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data Collection}{50}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Data Pre-Processing}{50}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Model Training Result}{50}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Traditional GMM-HMM}{50}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Neural Network CRDNN-CTC}{50}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Transformers Whisper}{50}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}Discussion}{50}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Limitations and Threats to Validity}{50}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Summary}{50}{section.4.8}%
-\contentsline {chapter}{REFERENCES}{51}{section*.20}%
+\contentsline {subsection}{\numberline {3.5.2}Transcript Cleaning and Normalization}{29}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Audio Standardization to 16\,kHz Mono}{29}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Speech Segmentation using WebRTC VAD}{30}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Remove non speaker audio}{30}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Transcript-to-Audio Mapping and Manifest Preparation}{31}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Train/Validation/Test Splits }{32}{subsection.3.5.7}%
+\contentsline {section}{\numberline {3.6}Model Training and Fine Tune Phase}{32}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}GMM--HMM Training (Kaldi)}{33}{subsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.1.1}Lexicon, Dictionary, and Language Preparation}{34}{subsubsection.3.6.1.1}%
+\contentsline {subsubsection}{\numberline {3.6.1.2}Feature Extraction (MFCC + CMVN)}{34}{subsubsection.3.6.1.2}%
+\contentsline {subsubsection}{\numberline {3.6.1.3}Acoustic Model Training Stages}{35}{subsubsection.3.6.1.3}%
+\contentsline {subsubsection}{\numberline {3.6.1.4}Language Model Construction and Decoding Graph}{37}{subsubsection.3.6.1.4}%
+\contentsline {subsection}{\numberline {3.6.2}CRDNN--CTC Training (SpeechBrain)}{37}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}Manifest Preparation}{38}{subsubsection.3.6.2.1}%
+\contentsline {subsubsection}{\numberline {3.6.2.2}Character Vocabulary (CTC Token Set)}{38}{subsubsection.3.6.2.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.3}Model Configuration and Hyperparameters}{39}{subsubsection.3.6.2.3}%
+\contentsline {subsubsection}{\numberline {3.6.2.4}Training Procedure and Checkpointing}{39}{subsubsection.3.6.2.4}%
+\contentsline {subsection}{\numberline {3.6.3}Whisper Fine-Tuning (Transformer Encoder--Decoder)}{40}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}Dataset Preparation for Fine-Tuning}{40}{subsubsection.3.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.6.3.2}Feature Extraction and Label Encoding}{40}{subsubsection.3.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.6.3.3}Fine-Tuning Configuration}{41}{subsubsection.3.6.3.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.4}Training Loop and Validation}{41}{subsubsection.3.6.3.4}%
+\contentsline {subsubsection}{\numberline {3.6.3.5}Model Saving and Inference Check}{42}{subsubsection.3.6.3.5}%
+\contentsline {section}{\numberline {3.7}Evaluation Phase}{42}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Decoding and Hypothesis Generation}{43}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Scoring Protocol (CER and WER)}{43}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Speed Measurement (RTF)}{43}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Discussion Phase}{43}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Summary}{44}{section.3.9}%
+\contentsline {chapter}{\chapternumberline {4}RESULTS AND DISCUSSION}{45}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{45}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Data Collection and Preprocessing Results}{45}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Data Source Selection Outcomes}{45}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Transcript Cleaning and Normalization Outcomes}{45}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Audio Standardization Outcomes}{46}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}VAD Segmentation Outcomes}{46}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Non-Speaker / Low-Quality Audio Filtering Outcomes}{47}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Transcript-to-Audio Mapping and Manifest Outcomes}{47}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Train/Validation/Test Split Results}{48}{subsection.4.2.7}%
+\contentsline {section}{\numberline {4.3}Model Training and Fine-Tuning Results}{48}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Kaldi GMM--HMM Training Outcomes}{48}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}CRDNN--CTC Training Outcomes}{49}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Whisper Fine-Tuning Outcomes}{50}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Evaluation Results (CER, WER, and RTF)}{51}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Overall Performance Comparison}{51}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Kaldi GMM--HMM Results (mono to tri3)}{53}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}CRDNN--CTC Results (Greedy vs Beam)}{53}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Whisper Fine-Tuning Results (Model Size Effects)}{54}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}Discussion}{54}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Main Findings and Trade-offs}{54}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Interpretation by Model Family}{55}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Kaldi: staged training gains and diminishing returns}{55}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}CRDNN--CTC: decoding strategy impact}{55}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}Whisper: strong accuracy with model-size cost}{55}{subsubsection.4.5.2.3}%
+\contentsline {subsection}{\numberline {4.5.3}Error Analysis}{55}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Impact of Preprocessing Choices on Results}{56}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Limitations}{56}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}Summary}{56}{section.4.6}%
+\contentsline {chapter}{REFERENCES}{57}{section*.44}%

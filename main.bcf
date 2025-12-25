@@ -2812,4 +2812,208 @@
     <bcf:citekey order="18">povey2011subspace</bcf:citekey>
     <bcf:citekey order="19">povey2011subspace</bcf:citekey>
     <bcf:citekey order="20">Imaishi2022Examination</bcf:citekey>
-    <bcf:citekey order="21">Imaishi2022Examination</bcf:cit
+    <bcf:citekey order="21">Imaishi2022Examination</bcf:citekey>
+    <bcf:citekey order="22">povey2011subspace</bcf:citekey>
+    <bcf:citekey order="23">povey2011subspace</bcf:citekey>
+    <bcf:citekey order="24">Takami2020Performance</bcf:citekey>
+    <bcf:citekey order="25">Takami2020Performance</bcf:citekey>
+    <bcf:citekey order="26">dehak2009support</bcf:citekey>
+    <bcf:citekey order="27">matrouf2011modeling</bcf:citekey>
+    <bcf:citekey order="28">Tokuda1999Application</bcf:citekey>
+    <bcf:citekey order="29">juang1991hidden</bcf:citekey>
+    <bcf:citekey order="30">Tokuda2000HMM</bcf:citekey>
+    <bcf:citekey order="31">juang1991hidden</bcf:citekey>
+    <bcf:citekey order="32">Tokuda2000HMM</bcf:citekey>
+    <bcf:citekey order="33">gales2008application</bcf:citekey>
+    <bcf:citekey order="34">gales2008application</bcf:citekey>
+    <bcf:citekey order="35">taheri2006fuzzy</bcf:citekey>
+    <bcf:citekey order="36">nicita1</bcf:citekey>
+    <bcf:citekey order="37">taheri2006fuzzy</bcf:citekey>
+    <bcf:citekey order="37">nicita1</bcf:citekey>
+    <bcf:citekey order="38">seki2014comparison</bcf:citekey>
+    <bcf:citekey order="39">seki2014comparison</bcf:citekey>
+    <bcf:citekey order="40">hojo2018dnn</bcf:citekey>
+    <bcf:citekey order="41">Mimura2013CSJ</bcf:citekey>
+    <bcf:citekey order="42">mu2020japanese</bcf:citekey>
+    <bcf:citekey order="43">mu2020japanese</bcf:citekey>
+    <bcf:citekey order="44">lin2017dnn</bcf:citekey>
+    <bcf:citekey order="45">lin2017dnn</bcf:citekey>
+    <bcf:citekey order="46">noda2014lipreading</bcf:citekey>
+    <bcf:citekey order="47">yalta2019cnn</bcf:citekey>
+    <bcf:citekey order="48">yalta2019cnn</bcf:citekey>
+    <bcf:citekey order="49">noda2014lipreading</bcf:citekey>
+    <bcf:citekey order="50">noda2014lipreading</bcf:citekey>
+    <bcf:citekey order="51">Mukohara2015Emotion</bcf:citekey>
+    <bcf:citekey order="52">takeuchi2020real</bcf:citekey>
+    <bcf:citekey order="53">takeuchi2020real</bcf:citekey>
+    <bcf:citekey order="54">Kida2016LSTM</bcf:citekey>
+    <bcf:citekey order="55">Kida2016LSTM</bcf:citekey>
+    <bcf:citekey order="56">Kubo2014DeepLearning</bcf:citekey>
+    <bcf:citekey order="57">Kubo2014DeepLearning</bcf:citekey>
+    <bcf:citekey order="58">takeuchi2020real</bcf:citekey>
+    <bcf:citekey order="59">takeuchi2020real</bcf:citekey>
+    <bcf:citekey order="60">imaizumi2022</bcf:citekey>
+    <bcf:citekey order="61">imaizumi2022</bcf:citekey>
+    <bcf:citekey order="62">ravanelli2019pytorch</bcf:citekey>
+    <bcf:citekey order="63">ravanelli2019pytorch</bcf:citekey>
+    <bcf:citekey order="63">takeuchi2020real</bcf:citekey>
+    <bcf:citekey order="64">fujita2024lvctcnonautoregressiveasrctc</bcf:citekey>
+    <bcf:citekey order="65">fujita2024lvctcnonautoregressiveasrctc</bcf:citekey>
+    <bcf:citekey order="66">watanabe2018espnetendtoendspeechprocessing</bcf:citekey>
+    <bcf:citekey order="67">ravanelli2019pytorch</bcf:citekey>
+    <bcf:citekey order="68">takeuchi2020real</bcf:citekey>
+    <bcf:citekey order="69">ravanelli2019pytorch</bcf:citekey>
+    <bcf:citekey order="69">ravanelli2021speechbraingeneralpurposespeechtoolkit</bcf:citekey>
+    <bcf:citekey order="69">watanabe2018espnetendtoendspeechprocessing</bcf:citekey>
+    <bcf:citekey order="70">taniguchi2022transformer</bcf:citekey>
+    <bcf:citekey order="71">taniguchi2022transformer</bcf:citekey>
+    <bcf:citekey order="72">Futami2020Bidirectional</bcf:citekey>
+    <bcf:citekey order="73">taniguchi2022transformer</bcf:citekey>
+    <bcf:citekey order="74">taniguchi2022transformer</bcf:citekey>
+    <bcf:citekey order="75">Taniguchi2024Pretraining</bcf:citekey>
+    <bcf:citekey order="76">Futami2020Bidirectional</bcf:citekey>
+    <bcf:citekey order="77">radford2023robust</bcf:citekey>
+    <bcf:citekey order="78">radford2023robust</bcf:citekey>
+    <bcf:citekey order="79">baevski2020wav2vec</bcf:citekey>
+    <bcf:citekey order="80">kolesnikov2020big</bcf:citekey>
+    <bcf:citekey order="81">radford2019language</bcf:citekey>
+    <bcf:citekey order="82">radford2023robust</bcf:citekey>
+    <bcf:citekey order="83">radford2023robust</bcf:citekey>
+    <bcf:citekey order="84">radford2023robust</bcf:citekey>
+    <bcf:citekey order="85">bajo2024efficient</bcf:citekey>
+    <bcf:citekey order="86">bajo2024efficient</bcf:citekey>
+    <bcf:citekey order="87">bajo2024efficient</bcf:citekey>
+    <bcf:citekey order="88">bajo2024efficient</bcf:citekey>
+    <bcf:citekey order="89">baevski2020wav2vec</bcf:citekey>
+    <bcf:citekey order="90">baevski2020wav2vec</bcf:citekey>
+    <bcf:citekey order="91">baevski2020wav2vec</bcf:citekey>
+    <bcf:citekey order="92">baevski2020wav2vec</bcf:citekey>
+    <bcf:citekey order="93">miwa2023dialect</bcf:citekey>
+    <bcf:citekey order="94">miwa2023dialect</bcf:citekey>
+    <bcf:citekey order="95">zhang2023google</bcf:citekey>
+    <bcf:citekey order="96">zhang2023google</bcf:citekey>
+    <bcf:citekey order="97">zhang2023google</bcf:citekey>
+    <bcf:citekey order="98">Karita2021</bcf:citekey>
+    <bcf:citekey order="99">Karita2021</bcf:citekey>
+    <bcf:citekey order="100">Karita2021</bcf:citekey>
+    <bcf:citekey order="101">Karita2021</bcf:citekey>
+    <bcf:citekey order="102">takahashi2024comparison</bcf:citekey>
+    <bcf:citekey order="103">takahashi2024comparison</bcf:citekey>
+    <bcf:citekey order="104">takahashi2024comparison</bcf:citekey>
+    <bcf:citekey order="105">Karita2021</bcf:citekey>
+    <bcf:citekey order="106">Karita2021</bcf:citekey>
+    <bcf:citekey order="107">takahashi2024comparison</bcf:citekey>
+    <bcf:citekey order="108">takahashi2024comparison</bcf:citekey>
+    <bcf:citekey order="109">takahashi2024comparison</bcf:citekey>
+    <bcf:citekey order="110">sonobe2017jsut</bcf:citekey>
+    <bcf:citekey order="111">boishakhi2021multi</bcf:citekey>
+    <bcf:citekey order="112">yt-dlp</bcf:citekey>
+    <bcf:citekey order="113">povey2011kaldi</bcf:citekey>
+    <bcf:citekey order="114">ravanelli2021speechbraingeneralpurposespeechtoolkit</bcf:citekey>
+    <bcf:citekey order="115">boishakhi2021multi</bcf:citekey>
+    <bcf:citekey order="116">Xu</bcf:citekey>
+    <bcf:citekey order="117">Koenecke2020</bcf:citekey>
+    <bcf:citekey order="118">xu2023recent</bcf:citekey>
+    <bcf:citekey order="119">latif2020</bcf:citekey>
+    <bcf:citekey order="120">ando2021</bcf:citekey>
+    <bcf:citekey order="121">koenecke2020racial</bcf:citekey>
+    <bcf:citekey order="122">rose2019unique</bcf:citekey>
+    <bcf:citekey order="123">Ito2016End-to-end</bcf:citekey>
+    <bcf:citekey order="124">ito2017</bcf:citekey>
+    <bcf:citekey order="125">curtin2020japanese</bcf:citekey>
+    <bcf:citekey order="126">Imaishi2022Examination</bcf:citekey>
+    <bcf:citekey order="127">sun2020subspace</bcf:citekey>
+    <bcf:citekey order="128">povey2011subspace</bcf:citekey>
+    <bcf:citekey order="129">Takami2020Performance</bcf:citekey>
+    <bcf:citekey order="130">dehak2009support</bcf:citekey>
+    <bcf:citekey order="131">matrouf2011modeling</bcf:citekey>
+    <bcf:citekey order="132">Tokuda1999Application</bcf:citekey>
+    <bcf:citekey order="133">juang1991hidden</bcf:citekey>
+    <bcf:citekey order="134">Tokuda2000HMM</bcf:citekey>
+    <bcf:citekey order="135">gales2008application</bcf:citekey>
+    <bcf:citekey order="136">taheri2006fuzzy</bcf:citekey>
+    <bcf:citekey order="137">nicita1</bcf:citekey>
+    <bcf:citekey order="138">seki2014comparison</bcf:citekey>
+    <bcf:citekey order="139">hojo2018dnn</bcf:citekey>
+    <bcf:citekey order="140">Mimura2013CSJ</bcf:citekey>
+    <bcf:citekey order="141">mu2020japanese</bcf:citekey>
+    <bcf:citekey order="142">lin2017dnn</bcf:citekey>
+    <bcf:citekey order="143">noda2014lipreading</bcf:citekey>
+    <bcf:citekey order="144">yalta2019cnn</bcf:citekey>
+    <bcf:citekey order="145">Mukohara2015Emotion</bcf:citekey>
+    <bcf:citekey order="146">takeuchi2020real</bcf:citekey>
+    <bcf:citekey order="147">Kida2016LSTM</bcf:citekey>
+    <bcf:citekey order="148">Kubo2014DeepLearning</bcf:citekey>
+    <bcf:citekey order="149">imaizumi2022</bcf:citekey>
+    <bcf:citekey order="150">ravanelli2019pytorch</bcf:citekey>
+    <bcf:citekey order="151">fujita2024lvctcnonautoregressiveasrctc</bcf:citekey>
+    <bcf:citekey order="152">watanabe2018espnetendtoendspeechprocessing</bcf:citekey>
+    <bcf:citekey order="153">ravanelli2021speechbraingeneralpurposespeechtoolkit</bcf:citekey>
+    <bcf:citekey order="154">taniguchi2022transformer</bcf:citekey>
+    <bcf:citekey order="155">Futami2020Bidirectional</bcf:citekey>
+    <bcf:citekey order="156">Taniguchi2024Pretraining</bcf:citekey>
+    <bcf:citekey order="157">radford2023robust</bcf:citekey>
+    <bcf:citekey order="158">baevski2020wav2vec</bcf:citekey>
+    <bcf:citekey order="159">kolesnikov2020big</bcf:citekey>
+    <bcf:citekey order="160">radford2019language</bcf:citekey>
+    <bcf:citekey order="161">bajo2024efficient</bcf:citekey>
+    <bcf:citekey order="162">miwa2023dialect</bcf:citekey>
+    <bcf:citekey order="163">zhang2023google</bcf:citekey>
+    <bcf:citekey order="164">Karita2021</bcf:citekey>
+    <bcf:citekey order="165">takahashi2024comparison</bcf:citekey>
+    <bcf:citekey order="166">sonobe2017jsut</bcf:citekey>
+    <bcf:citekey order="167">boishakhi2021multi</bcf:citekey>
+    <bcf:citekey order="168">yt-dlp</bcf:citekey>
+    <bcf:citekey order="169">povey2011kaldi</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="apa">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="5">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">pubstate</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+      <bcf:sortitem literal="1" order="3">-2000000000</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">month</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="7">
+      <bcf:sortitem order="1">day</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="8">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="9">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="apa/global//global/global"
+                type="entry"
+                sortingtemplatename="apa"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

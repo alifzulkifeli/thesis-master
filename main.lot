@@ -8,3 +8,18 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Planning Phase\relax }}{25}{table.caption.12}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Prior Work Phase\relax }}{26}{table.caption.13}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Data Collection and preprocessing Phase\relax }}{27}{table.caption.14}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Model Training and Fine Tune Phase\relax }}{33}{table.caption.16}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Evaluation Phase\relax }}{42}{table.caption.20}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Discussion Phase\relax }}{44}{table.caption.21}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Video selection outcomes for TEDx Japanese data collection.\relax }}{45}{table.caption.22}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces VAD segmentation results.\relax }}{47}{table.caption.25}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Audio filtering outcomes (diarization + CLAP).\relax }}{47}{table.caption.26}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Dataset statistics and train/validation/test split summary.\relax }}{48}{table.caption.28}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Kaldi GMM--HMM training dynamics based on objective function improvement per frame. Peak improvements occur early and decrease toward near-zero values, indicating convergence.\relax }}{48}{table.caption.29}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces CRDNN--CTC training metrics across epochs.\relax }}{49}{table.caption.31}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Whisper fine-tuning loss across epochs (lower is better).\relax }}{51}{table.caption.34}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Overall comparison of ASR systems on the test split (lower is better for CER/WER/RTF).\relax }}{52}{table.caption.36}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Kaldi GMM--HMM results across training stages on the test split.\relax }}{53}{table.caption.39}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces CRDNN--CTC results on the test split (greedy vs beam).\relax }}{54}{table.caption.40}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Whisper fine-tuning results by model size on the test split.\relax }}{54}{table.caption.41}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Qualitative transcription examples (reference vs hypotheses).\relax }}{56}{table.caption.42}%

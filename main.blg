@@ -1,30 +1,30 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[46] biber:340> INFO - === Mon Dec 22, 2025, 14:59:36
-[55] Biber.pm:418> INFO - Reading 'main.bcf'
-[102] Biber.pm:972> INFO - Found 55 citekeys in bib section 0
-[110] Biber.pm:4383> INFO - Processing section 0
-[117] Biber.pm:4574> INFO - Looking for bibtex file 'references/myref.bib' for section 0
-[119] bibtex.pm:1713> INFO - LaTeX decoding ...
-[154] bibtex.pm:1518> INFO - Found BibTeX data source 'references/myref.bib'
-[466] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[466] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[466] Biber.pm:4203> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[466] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[503] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[540] bbl.pm:757> INFO - Output to main.bbl
-[540] Biber.pm:130> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
-[540] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 4, warning: 113 characters of junk seen at toplevel
-[540] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 29, warning: 5 characters of junk seen at toplevel
-[540] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 50, warning: 117 characters of junk seen at toplevel
-[540] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 73, warning: 224 characters of junk seen at toplevel
-[541] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 115, warning: 3 characters of junk seen at toplevel
-[541] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 285, warning: 5 characters of junk seen at toplevel
-[541] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 344, warning: 5 characters of junk seen at toplevel
-[541] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 648, warning: 3 characters of junk seen at toplevel
-[541] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_pj7B/791e559347c7f027f49328e019ff3066_124144.utf8, line 659, warning: 3 characters of junk seen at toplevel
-[541] Biber.pm:130> WARN - I didn't find a database entry for 'koenecke2020racial' (section 0)
-[541] Biber.pm:130> WARN - I didn't find a database entry for 'sonobe2017jsut' (section 0)
-[541] Biber.pm:130> WARN - I didn't find a database entry for 'yt-dlp' (section 0)
-[541] Biber.pm:130> WARN - I didn't find a database entry for 'povey2011kaldi' (section 0)
-[541] Biber.pm:132> INFO - WARNINGS: 14
+[88] biber:340> INFO - === Wed Dec 24, 2025, 21:43:19
+[99] Biber.pm:418> INFO - Reading 'main.bcf'
+[155] Biber.pm:972> INFO - Found 54 citekeys in bib section 0
+[162] Biber.pm:4383> INFO - Processing section 0
+[170] Biber.pm:4574> INFO - Looking for bibtex file 'references/myref.bib' for section 0
+[172] bibtex.pm:1713> INFO - LaTeX decoding ...
+[212] bibtex.pm:1518> INFO - Found BibTeX data source 'references/myref.bib'
+[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[521] Biber.pm:4203> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[521] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[562] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[596] bbl.pm:757> INFO - Output to main.bbl
+[596] Biber.pm:130> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
+[596] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 4, warning: 113 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 29, warning: 5 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 50, warning: 117 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 73, warning: 224 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 115, warning: 3 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 285, warning: 5 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 344, warning: 5 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 648, warning: 3 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - BibTeX subsystem: /tmp/biber_tmp_sOm5/791e559347c7f027f49328e019ff3066_166338.utf8, line 659, warning: 3 characters of junk seen at toplevel
+[597] Biber.pm:130> WARN - I didn't find a database entry for 'koenecke2020racial' (section 0)
+[597] Biber.pm:130> WARN - I didn't find a database entry for 'sonobe2017jsut' (section 0)
+[597] Biber.pm:130> WARN - I didn't find a database entry for 'yt-dlp' (section 0)
+[597] Biber.pm:130> WARN - I didn't find a database entry for 'povey2011kaldi' (section 0)
+[597] Biber.pm:132> INFO - WARNINGS: 14

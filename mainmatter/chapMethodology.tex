@@ -1,10 +1,10 @@
 \chapter{RESEARCH METHODOLOGY}
 
 \section{Introduction}
-This chapter explained the methodology used to evaluate Japanese automatic speech recognition (ASR) across three model families: a traditional Kaldi-style GMM--HMM system, an end-to-end CRDNN--CTC model, and a fine-tuned transformer encoder--decoder model based on Whisper model from OpenAI. This chapter described the data pipeline such as data collection, audio and transcript cleaning, and audio splits. The preprocessing, training, decoding process and the scoring protocol used for each model family is also discussed in this chapter. 
+This chapter explained the methodology used to evaluate Japanese automatic speech recognition (ASR) across three model families: a traditional Kaldi-style GMM--HMM system, an end-to-end CRDNN--CTC model, and a fine-tuned transformer encoder--decoder model based on Whisper model from OpenAI. This chapter described the data pipeline such as data collection, audio and transcript cleaning, and audio splits. The preprocessing, training, decoding process and the scoring protocol used for each model family was also discussed in this chapter. 
 
 \section{Research Design}
-This study was organised into six phases where started from planning and followed by reviewing prior work. And then moving to data collection and preprocessing phase where dataset was compiled and processed. After that, the selcted model were trained and fine tuned using the data. Then the model was scored using selected metrics and the the data finally were analyzed and discussed in the later phase. \Cref{tab:projectOverview} below shows an overview of the phases, activities and deliverables.
+This study was organised into six phases where started from planning and followed by reviewing prior work. And then moved to data collection and preprocessing phase where dataset was compiled and processed. After that, the selcted model were trained and fine tuned using the data. Then the model was scored using selected metrics and the the data finally were analyzed and discussed in the later phase. \Cref{tab:projectOverview} below showed an overview of the phases, activities and deliverables.
 
 
 \begin{table}[H]
@@ -21,7 +21,7 @@ This study was organised into six phases where started from planning and followe
 \hline 
 
 \textbf{Planning} &
-Define below items:
+Defined below items:
 \begin{itemize}[leftmargin=*, nosep]
   \item Project title
   \item Problem statements
@@ -42,11 +42,11 @@ Chapter 1
 
 \textbf{Prior Work} &
 \begin{itemize}[leftmargin=*, nosep]
-  \item Review Japanese ASR studies
-  \item List preprocessing methods
-  \item List model families
-  \item List evaluation metrics
-  \item Summarize key gaps
+  \item Reviewed Japanese ASR studies
+  \item Listed preprocessing methods
+  \item Listed model families
+  \item Listed evaluation metrics
+  \item Summarized key gaps
 \end{itemize}
 &
 Chapter 2
@@ -61,13 +61,13 @@ Chapter 2
 
 \textbf{Data Collection and preprocessing} &
 \begin{itemize}[leftmargin=*, nosep]
-  \item Collect Japanese TEDx talks
-  \item Download audio and  subtitles
-  \item Clean and normalize transcripts
-  \item Resample audio to 16 kHz mono
+  \item Collected Japanese TEDx talks
+  \item Downloaded audio and  subtitles
+  \item Cleaned and normalized transcripts
+  \item Resampled audio to 16 kHz mono
   \item Split audio using VAD
-  \item Create train/valid/test splits
-  \item Export manifests and metadata
+  \item Created train/valid/test splits
+  \item Exported manifests and metadata
 \end{itemize}
 &
 Chapter 3
@@ -83,11 +83,11 @@ Chapter 3
 
 \textbf{Model Training and Fine Tune} &
 \begin{itemize}[leftmargin=*, nosep]
-  \item Train GMM-HMM
-  \item Train CRDNN-CTC 
-  \item Fine-tune Whisper variants
+  \item Trained GMM-HMM
+  \item Trained CRDNN-CTC 
+  \item Fine-tuned Whisper variants
   \item Set decoding parameters
-  \item Save configs and checkpoints
+  \item Saved configs and checkpoints
 \end{itemize}
 &
 Chapter 4
@@ -99,28 +99,26 @@ Chapter 4
 \end{itemize}
 \\ \hline
 
-\textbf{Analysis} &
+\textbf{Evaluation} &
 \begin{itemize}[leftmargin=*, nosep]
-  \item Score with CER and WER
-  \item Measure speed using RTF
-  \item Compare models and decoders
-  \item Inspect common errors
+  \item Scored with CER and WER
+  \item Measured speed using RTF
+  \item Compared models and decoders
 \end{itemize}
 &
 Chapter 4
 \begin{itemize}[leftmargin=*, nosep]
   \item Results tables and plots
-  \item Error analysis summary
   \item Best model identified
 \end{itemize}
 \\ \hline
 
 \textbf{Discussion} &
 \begin{itemize}[leftmargin=*, nosep]
-  \item Explain main findings
-  \item Link to prior work
-  \item Note limitations
-  \item Suggest future work
+  \item Explained main findings
+  \item Linked to prior work
+  \item Noted limitations
+  \item Suggested future work
 \end{itemize}
 &
 Chapter 5
@@ -137,7 +135,7 @@ Chapter 5
 
 
 \section{Planning Phase}
-\Cref{tab:planning} shows the first phase of this project where most of the planning and decision about this projectis done. The activities carried out and the outcome deliverables are described in the table shown below.
+\Cref{tab:planning} showed the first phase of this project where most of the planning and decision about this projectis done. The activities carried out and the outcome deliverables were described in the table shown below.
 \vspace{1em}
 
 \begin{table}[H]
@@ -154,7 +152,7 @@ Chapter 5
 \hline 
 
 \textbf{Planning} &
-Define below items: 
+Defined below items: 
 \begin{itemize}[leftmargin=*, nosep]
   \item Project title
   \item Problem statements
@@ -176,13 +174,13 @@ Chapter 1
 \end{tabular}}  
 \end{table}
 
-The starting point of this project begin in the planning phase. This phase is important because it will serve as the blueprint and become guidance to the project direction. This phase purpose is to identify the problem in the domain and finds a way to solve the problem stated. The activities that will be carried out in this pahse is defining key aspect that is the title of the project, problem statements, objective, scope and significance of the project. The outcome from this phase will be the title of the project, problems that has been defined, objective of the project, scope of the project which explained what is covered and what is not covered in this project and last deliverables in this phase is the significance that has been identified. During this planning phase, things like time, cost, resource, benefit and difficulty level also have been take into consideration.
+The starting point of this project began in the planning phase. This phase was important because it served as the blueprint and became guidance to the project direction. This phase purpose was to identify the problem in the domain and found a way to solve the problem stated. The activities that was carried out in this pahse was defining key aspect that was the title of the project, problem statements, objective, scope and significance of the project. The outcome from this phase was the title of the project, problems that has been defined, objective of the project, scope of the project which explained what was covered and what was not covered in this project and last deliverables in this phase was the significance that has been identified. During this planning phase, things like time, cost, resource, benefit and difficulty level also have been take into consideration.
 
 
 
 
 \section{Prior Work Phase}
-\Cref{tab:PriorWork} shows the second phase of this project where prior work in the domain of ASR is reviewed and some decision is made. The activities carried out and the outcome deliverables are described in the table shown below.
+\Cref{tab:PriorWork} showed the second phase of this project where prior work in the domain of ASR was reviewed and some decision was made. The activities carried out and the outcome deliverables were described in the table shown below.
 \vspace{1em}
  
 \begin{table}[H]
@@ -200,11 +198,11 @@ The starting point of this project begin in the planning phase. This phase is im
 
 \textbf{Prior Work} &
 \begin{itemize}[leftmargin=*, nosep]
-  \item Review Japanese ASR studies
-  \item List preprocessing methods
-  \item List model families
-  \item List evaluation metrics
-  \item Summarize key gaps
+  \item Reviewed Japanese ASR studies
+  \item Listed preprocessing methods
+  \item Listed model families
+  \item Listed evaluation metrics
+  \item Summarized key gaps
 \end{itemize}
 &
 Chapter 2
@@ -221,12 +219,12 @@ Chapter 2
 \end{table}
 
 
-After planning phase is completed and the reasearch domain has been set, next phase is reviewing prior work phase. During this phase, multiple sources such as related article, journal, conference paper and textbook is reviewed. This resource is used to evaluate and identified what has been discussed or discovered. In this phase, the activity involved is list down the preprocessing mrthod that currently being used in speech recognition and a few preprocessing technique has been choose based on the requirements of the models as the deliverables. The next activity is to choose which model to compared to, instead of comparing model from same family, this research has conclude to compare 3 model from different model architecture and these 3 models will be the deliverables for this phase. The next activity is to conclude which metrics will be used to compare these models. As the deliverables, three metrics has been choose to do comparitive analysis between each models. In this phase, the gaps in the literature is also defined and as the deliverables the gaps in the literature is summarized. 
+After planning phase was completed and the reasearch domain has been set, next phase was reviewing prior work phase. During this phase, multiple sources such as related article, journal, conference paper and textbook was reviewed. This resource was used to evaluate and identified what has been discussed or discovered. In this phase, the activity involved was list down the preprocessing mrthod that currently being used in speech recognition and a few preprocessing technique was choosen based on the requirements of the models as the deliverables. The next activity was to choose which model to compared to, instead of comparing model from same family, this research has conclude to compare 3 model from different model architecture and these 3 models was the deliverables for this phase. The next activity was to conclude which metrics was used to compare these models. As the deliverables, three metrics has been choose to do comparitive analysis between each models. In this phase, the gaps in the literature was also defined and as the deliverables the gaps in the literature was summarized. 
 
 
 
 \section{Data Collection and preprocessing Phase}
-\Cref{tab:DataCollection} shows the third phase of this project where the source of the data is selected, aqquired and then the data will go through preprocessing to make sure data is ready to be input into models. The activities carried out and the outcome deliverables are described in the table shown below.
+\Cref{tab:DataCollection} showed the third phase of this project where the source of the data was selected, aqquired and then the data went through preprocessing to make sure data was ready to be input into models. The activities carried out and the outcome deliverables were described in the table shown below.
 \vspace{1em}
  
 \begin{table}[H]
@@ -244,13 +242,13 @@ After planning phase is completed and the reasearch domain has been set, next ph
 
 \textbf{Data Collection and preprocessing} &
 \begin{itemize}[leftmargin=*, nosep]
-  \item Collect Japanese TEDx talks
-  \item Download audio and  subtitles
-  \item Clean and normalize transcripts
-  \item Resample audio to 16 kHz mono
+  \item Collected Japanese TEDx talks
+  \item Downloaded audio and  subtitles
+  \item Cleaned and normalized transcripts
+  \item Resampled audio to 16 kHz mono
   \item Split audio using VAD
-  \item Create train/valid/test splits
-  \item Export manifests and metadata
+  \item Created train/valid/test splits
+  \item Exported manifests and metadata
 \end{itemize}
 &
 Chapter 3
@@ -267,7 +265,7 @@ Chapter 3
 \end{tabular}}
 \end{table}
 
-The focus of this phase to build a cleaned and useable dataset from publicly available dataset into a consistent training and evaluation format so that all three models from different family can use the sama dataset for traiing and testing. The pipeline for this phase can be seperated into four section. The first task is  collecting TEDx Japanese talks from YouTube with only Japanese subtitles that comes with manual subtitles by human. Then the audio was downloaded with the subtitle files. The second task is to clean and normalize subtitle text into reference transcripts and standardized the audio into 16\,kHz mono PCM. Third task is to split the audio into chunks using voice activity detection (VAD) and the audio that did not have audio activity such as intro music will be discarded. The last task is to produce train/validation/test splits and manifests with audio paths, durations, and transcripts.
+The focus of this phase was to build a cleaned and useable dataset from publicly available dataset into a consistent training and evaluation format so that all three models from different family can use the sama dataset for traiing and testing. The pipeline for this phase could be seperated into four section. The first task was  collecting TEDx Japanese talks from YouTube with only Japanese subtitles that came with manual subtitles by human. Then the audio was downloaded with the subtitle files. The second task was to clean and normalize subtitle text into reference transcripts and standardized the audio into 16\,kHz mono PCM. Third task was to split the audio into chunks using voice activity detection (VAD) and the audio that did not have audio activity such as intro music was discarded. The last task was to produce train/validation/test splits and manifests with audio paths, durations, and transcripts.
 
 \begin{figure}[H]
 \centering
@@ -278,364 +276,521 @@ The focus of this phase to build a cleaned and useable dataset from publicly ava
 
 
 \subsection{Data Source and Selection Criteria}
-The source of the data will be collected from Japanese TEDx talks that is hosted on video sharing platform, Youtube. This particular source is choosen beacuse TEDx talks is a collection of public speaking where commonly the speaker will have a clear speech with structured monologue-style delivery. However, not all video that published comes with manual Japanese subtitle  by human, only part of the video has manual Japanese subtitle. The rest either did not have subtitle or the subtitle is in other language. To make sure that the transcripts were sufficiently reliable to serve as reference text during ASR training and evaluation, only videos that has Japanese manual subtitle will be choose and the rest will be excluded. The videos that contained only auto-generated subtitles were also excluded to reduce transcription noise and alignment inconsistencies.
+The source of the data was collected from Japanese TEDx talks that was hosted on video sharing platform, Youtube. This particular source was choosen beacuse TEDx talks was a collection of public speaking where commonly the speaker had a clear speech with structured monologue-style delivery. However, not all video that published came with manual Japanese subtitle  by human, only part of the video had manual Japanese subtitle. The rest either did not have subtitle or the subtitle was in other language. To make sure that the transcripts were sufficiently reliable to serve as reference text during ASR training and evaluation, only videos that had Japanese manual subtitle was choosen and the rest was excluded. The videos that contained only auto-generated subtitles were also excluded to reduce transcription noise and alignment inconsistencies.
+
+All audio and subtitle was downloaded using a python library name yt-dl. The script first queried the video metadata to find if the video in playlist had Japanese subtitle or did not without downloading the video using \texttt{extract\_info} function from yt-dl library. 
+
+\begin{lstlisting}[language=Python, caption={Audio splitting script}, label={lst:vad-split-check}]
+with yt_dlp.YoutubeDL(check_opts) as ydl:
+    info = ydl.extract_info(video_url, download=False)
+
+    # Check manual subtitles
+    if 'subtitles' in info and 'ja' in info['subtitles']:
+        has_jp_subs = True
+
+    # Check auto-generated subtitles (ASR)
+    elif ('automatic_captions' in info
+          and 'ja' in info['automatic_captions']):
+        pass
+\end{lstlisting}
+
+For the video that had Japenese subtitle, audio and transcript was downloaded
+\begin{lstlisting}[language=Python, caption={Audio splitting script}, label={lst:vad-split-download}]
+download_opts = {
+    'subtitleslangs': ['ja'], 
+    'subtitlesformat': 'vtt',
+}
+if has_jp_subs:
+    with yt_dlp.YoutubeDL(download_opts) as ydl:
+        ydl.download([video_url])
+\end{lstlisting}
 
 
-Audio and subtitles were downloaded using \texttt{yt\_dlp}. The script first queried the video metadata without downloading the media (using \texttt{skip\_download}) to verify the existence of Japanese subtitle tracks. The inclusion rule was:
-\begin{itemize}[leftmargin=*, nosep]
-    \item Include the video if \texttt{info['subtitles']} contains \texttt{'ja'} (manual subtitles).
-    \item Skip the video if Japanese subtitles are missing, or only auto-generated captions are available.
-\end{itemize}
-
-
-For accepted videos, the script downloaded:
-\begin{itemize}[leftmargin=*, nosep]
-    \item The best available audio stream (\texttt{bestaudio/best}).
-    \item Japanese subtitles in \texttt{.vtt} format, and then converted subtitles to \texttt{.srt} via FFmpeg post-processing.
-\end{itemize}
-
-
-\begin{figure}[H]
-\centering
-\fbox{\rule{0pt}{1.5in}\rule{0.92\linewidth}{0pt}}
-\caption{Placeholder: Example console output from \texttt{yt\_dlp} showing detection of manual Japanese subtitles and successful download.}
-\label{fig:download_log_placeholder}
-\end{figure}
-
-
-% _____________________________________________________________________________________
-\section{Data Collection Pipeline}
-In this section, each step of the data collection pipeline was described in detail, highlighting the methods and tools used to ensure the quality and consistency of the collected data. The process began with identifying suitable sources of formal spoken Japanese, was followed by programmatically scraping of audio and subtitle data from YouTube and TED Talk platforms. The raw subtitles were then cleaned and normalized to produce high-quality transcripts. The long-form audio recordings were segmented into utterance-level clips aligned with the cleaned transcripts. All audio clips were standardized to a consistent 16~kHz, mono and WAV format. Finally, the dataset was split into speaker-independent for training, validation, and test sets.
-
-\subsection{Data Source Selection}
-The first step in data collection was to identify the suitable data sources that would be used in this study. The focus was on formal speech rather than spontaneous conversation or noisy environments. Suitable sources included TED and TEDx talks, invited lectures, conference presentations, public addresses, and university lectures. These audio usually had clear speech, minimal background noise, and well-structured content. However to gather data from private lectures or talks that were not publicly available, permission from the content owners might have been required. Because of that, this work focused on publicly accessible content on platforms like YouTube and the official TEDx talks website.
-
-Video from TEDx talks had 2 types that was manually curated subtitles and automatically generated subtitles. Manually curated subtitles became the primary choice because they tended to be more accurate and better aligned with the spoken content. Another strong reason to choose TEDx talks was that they often covered a wide range of topics, which helped ensure lexical diversity in the collected dataset. The speakers were usually professionals or experts in their fields, which meant the speech was generally clear and well-articulated.
-
-\subsection{Data Scraping in Python}
-After selecting the data sources, the next step was to programmatically scrape the audio and subtitle data. A python library yt-dlp was used to download audio and subtitles from YouTube videos. This tools had the option to specify download option so that only video that had manual japanese transcription only that would be downloaded. Additionally, yt-dlp supported downloading subtitles in various formats, including SRT and VTT, which were commonly used for captioning.
-
-The video was downloaded using a custom Python script that leveraged the yt-dlp library. The script took a list of video URLs as input and iterated through each URL to perform the following actions. First, it checked whether the video had Japanese subtitles available, either human-curated or automatically generated. If subtitles were present, the script proceeded to download the audio track of the video. Then, the audio was then downloaded in high quality for example, as \texttt{.m4a} and kept in its original form temporarily before the audio files was converted into wav using ffmpeg.
 
 \subsection{Transcript Cleaning and Normalization}
-The downloaded subtitle files contained time-aligned text segments that corresponded to the spoken content in the audio. However, they also included non-speech elements such as speaker labels, overlapping dialogue, or background noise descriptions. There was also the issue of inconsistent formatting, such as different use of punctuation, capitalization, and spacing. Because of this, the raw subtitle text could not be used directly as the reference transcript for ASR training and evaluation. Instead, the subtitles had to be normalized by removing non-speech annotations so that only the spoken content remained.
+After the transcript was downloaded, the transcript needed to be cleaned since it could not be directly used as reference transcript. The raw downloaded trasncriptt contained non-speech markers, formatting tags, and artifacts introduced for readability rather than ASR training. All subtitle files were normalized into cleaned text using a custom script.
+The cleaning rules implemented included:
+\begin{itemize}[ nosep]
+    \item Removing HTML and formatting tags (e.g., \texttt{<i>}, brace tags).
+    \item Removing speaker labels (e.g., \texttt{Speaker 1:}, \texttt{NARRATOR:}).
+    \item Removing non-speech annotations inside brackets or parentheses when they represent events such as \texttt{[laughter]}, \texttt{(applause)}, \texttt{[music]}, or \texttt{(inaudible)}.
+    \item Normalizing whitespace and punctuation (e.g., collapsing multiple spaces, removing spaces before punctuation).
+\end{itemize}
+\vspace{1em}
+The script produced a transcript file where one cleaned line per subtitle cue with the timestamp which was useful for later alignment between subtitle cues and speech segments. The timestamp was used to seperate the long audio format into chunks. 
 
-A custom Python script was developed to process each subtitle file. The script read the subtitle data and applied a series of normalization rules. These rules included removing any tags or annotations that did not correspond to spoken words, such as \texttt{[laughter]}, \texttt{(applause)}, or speaker identifiers like \texttt{Speaker 1:}. The output of this stage was a cleaned transcript for each time span covered by the subtitle timestamps. This cleaned transcript became the reference text for evaluation. Applying the same normalization rules consistently across the entire dataset was important, because the comparisons between models were based on this single source of truth.
 
-\subsection{Audio Segmentation}
-Most of the downloaded audio consisted of long-form recordings, often ranging from 5 minutes to over an hour in length. However, ASR models were typically trained and evaluated on much shorter utterances, often in the range of a few seconds. This was because long audio would cause memory and computational challenges during both training and decoding. To address this issue, the long recordings had to be segmented into shorter clips that aligned with the ASR training requirements. The time stamps provided in the subtitle data created natural cut points that could be used to break a long recording into manageable clips.
+\subsection{Audio Standardization to 16\,kHz Mono}
+The downloaded audio may came with different format based on the download option and video quality. To ensure the compatibility with all selected model, the audio was standardized into 16\,kHz Mono. This was also to make sure the fairness across all ASR model families when compare to each other. The standardized choosen was \textbf{16\,kHz sample rate, mono channel, 16-bit PCM} because this format was a standard configuration used in Kaldi recipes and also aligned with typical front-end assumptions in many end-to-end ASR pipelines.
 
-A custom Python script was used to perform the segmentation. The script read the cleaned subtitle timestamps and used them to extract corresponding audio segments from the long-form recordings. Each segment was saved as a separate audio file, typically in WAV format, along with its associated cleaned transcript. If the subtitle was less than 1 second, it might have been discarded to avoid training on extremely short utterances that provided little context. The final output of this stage was a collection of utterance-level audio clips, each paired with its cleaned transcript.
-% \begin{figure}[H]
-% \centering
-% \includegraphics[width=1\textwidth]{mainmatter//images/segmentation.png}
-% \caption{Audio segmentation based on subtitle timestamps}
-% \end{figure}
+\begin{lstlisting}[language=Python, caption={Audio resampling to 16 kHz}, label={lst:resample-16khz}]
+import librosa, soundfile as sf
 
-\subsection{Resampling and Format Standardization}
-After segmentation, all clips were converted to a consistent audio format so that different model families could be trained and evaluated under the same acoustic conditions. In this paper, every utterance-level clip was resampled to 16~kHz, converted to mono, and stored as 16-bit PCM WAV. Standardizing at this stage had two main benefits. First, traditional hybrid systems such as GMM--HMM in Kaldi commonly assumed 16~kHz WAV input. Second, by storing all clips in an identical format, end-to-end neural systems such as CRDNN-CTC and Whisper could operate directly on the same files without requiring model-specific resampling or channel conversion later.
+def resample_16khz(in_wav, out_wav, target_sr=16000):
+    y, sr = librosa.load(in_wav, sr=None)          
+    if sr != target_sr:
+        y = librosa.resample(y, orig_sr=sr, target_sr=target_sr)
+        sr = target_sr
+    sf.write(out_wav, y, sr)                      
+\end{lstlisting}
 
+
+
+\subsection{Speech Segmentation using WebRTC VAD}
+The downloaded audio was averaging between 20 minutes to 30 minutes long. This duration was not suitable to be used as trining data because it was chalenging for the model to learn effectively from very long utterances, and it also increased memory usage and training time. To deal with this issue, WebRTC voice activity detection (VAD) was used to split a long audio files into chunks audio that suitable to be used in training phase. The segmentation strategy was:
+\begin{itemize}[nosep]
+    \item Audio was split into 30\,ms frames.
+    \item Speech frames were grouped into continuous speech regions.
+    \item A region was closed when silence exceeded a threshold 500\,ms.
+    \item Very short segments were removed $\leq$2\,s.
+    \item Very long segments were further sliced into $\leq$20\,s chunks.
+\end{itemize}
+
+\vspace{1em}
+The created a lot of short audio files and to manage all the chunks of file, below naming convention was used to make sure the original audio name still available
+\[
+\texttt{<originalname>\_chunk\_000.wav},\ \texttt{<originalname>\_chunk\_001.wav},\ \dots
+\]
+This naming convention was later reused as utterance IDs in the transcript mapping and manifests.
+
+
+\subsection{Remove non speaker audio}
+To improve the quality of the dataset, a filtering step was applied to remove the audio that did not have any Japanese speaker in it. This was because this audio became noise and could cause the the quality of the training data become lower. The type of audio that removed was audio clips that dominated by applause/laughter, heavy background noise, or non-Japanese speech. A python script was created to filter out this type of audio by applied three checks:
+
+\begin{itemize}[ nosep]
+    \item \textbf{Speaker structure check (pyannote diarization):} clips were preferred when a single dominant speaker is present (high dominant speaker ratio).
+    \item \textbf{Acoustic event detection (CLAP zero-shot audio classification):} clips with high confidence of laughter or clapping were removed based on threshold scores.
+\end{itemize}
+
+\begin{adjustwidth}{-1.5cm}{-1.5cm}
+\begin{lstlisting}[language=Python, breaklines=true, basicstyle=\ttfamily\small,
+caption={Automatic audio quality filtering}, label={lst:audio-filter}]
+diar = Pipeline.from_pretrained("pyannote/speaker-diarization-3.1",
+    use_auth_token=HF_TOKEN)
+clap = hf_pipeline("zero-shot-audio-classification",
+    model="laion/clap-htsat-fused",device=0 )
+
+for audio_path in wav_files:
+    # keep only clear speech (no laughter/clapping)
+    dom_ratio = dominant_speaker_ratio(diar(audio_path))
+    scores = clap(audio_path,
+        candidate_labels=["people laughing", "applause or hand clap"],
+        top_k=None)
+    clear = ((dom_ratio >= 0.85) and (score(scores, "laugh") < 0.30)
+        and (score(scores, "clap") < 0.30))
+
+    if not clear:
+        os.remove(audio_path)
+\end{lstlisting}
+\end{adjustwidth}
+
+
+
+
+Files failing the clarity or language criteria were deleted automatically, leaving a cleaner set of speech segments for the downstream ASR experiments.
+
+
+\subsection{Transcript-to-Audio Mapping and Manifest Preparation}
+The next step after splitting the audio into chunks and cleaning the subtitle was to align the audio with a matching reference transcript to enable supervised training and evaluation. The cleaned subtitle text served as the transcript source and the final transcript mapping was stored in a simple format like this:
+\[
+\texttt{utt\_id: transcript}
+\]
+where \texttt{utt\_id} matched the chunk filename and the \texttt{transcript} was the clean subtitle file that has been extracted the value and aligned based on the timestamp in the subtitle file. After reference transcript was aligned with audio file, for training and evaluation reproducibility, metadata manifests were generated containing:
+\begin{itemize}[ nosep]
+    \item \texttt{utt\_id} (utterance identifier),
+    \item \texttt{wav} (absolute path to the audio file),
+    \item \texttt{duration} (in seconds),
+    \item \texttt{transcript} (cleaned reference text).
+\end{itemize}
+
+\subsection{Train/Validation/Test Splits }
+The final dataset was divided into three splits to support model development and unbiased evaluation. The split ratio used was 80\% training, 10\% validation, and 10\% testing. The script implemented a two-step split using train test split:
+\begin{enumerate}[ nosep]
+    \item Split the full set into 80\% train and 20\% temporary.
+    \item Split the temporary set into 50\% validation and 50\% test (10\% each).
+\end{enumerate}
+The data was split like this beacuse the training set must be large enough for the models to learn the language patterns, while the validation set was required to tune hyperparameters and select checkpoints without leaking information from the test set. The test set was kept completely unseen until the final evaluation to provide an unbiased estimate of real-world transcription performance.
+
+
+
+\section{Model Training and Fine Tune Phase}
+\Cref{tab:ModelTraining} showed the fourth phase of this project where cleaned audio and transcript earlier was used to train or fine tune models. The main objective of this phase was to make sure each model was trained using the same data split so that the evaluation in the next phase was fair and consistent. 
+\vspace{1em}
+
+\begin{table}[H]
+\centering
+\caption{Model Training and Fine Tune Phase}
+\label{tab:ModelTraining}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{tabular}{ p{2.8cm}  p{5.3cm}  p{5.3cm}  }
+\hline
+\textbf{Phase} & \textbf{Activities} & \textbf{Deliverables} \\
+\hline 
+
+\textbf{Model Training and Fine Tune} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Trained GMM-HMM
+  \item Trained CRDNN-CTC 
+  \item Fine-tuned Whisper variants
+  \item Set decoding parameters
+  \item Saved configs and checkpoints
+\end{itemize}
+&
+Chapter 4
+\begin{itemize}[leftmargin=*, nosep]
+  \item Models trained
+  \item Checkpoints saved
+  \item Settings recorded
+  \item Outputs generated
+\end{itemize}
+\\ \hline
+
+\end{tabular}}
+\end{table}
+There model was used in this phase that was which was a traditional Kaldi GMM--HMM, an end-to-end CRDNN--CTC using SpeechBrain framework that was trained from zero while a transformer encoder--decoder Whisper model from OpenAI was fine tuned using the same dataset. 
+
+\subsection{GMM--HMM Training (Kaldi)}
+The first model family was the traditional Kaldi-style GMM--HMM system. This model was trained using a standard Kaldi recipe flow which started from feature extraction, followed by acoustic model training in multiple stages (mono, tri1, tri2, tri3). In this experiment, MFCC features with CMVN normalization were used because it was a common baseline setup in Kaldi and suitable for classical HMM-based modelling.
+
+\vspace{1em}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{mainmatter//images/bitrate.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\fbox{\rule{0pt}{2.0in}\rule{0.92\linewidth}{0pt}}
+\caption{Placeholder: Model training workflow for GMMHMM}
+\label{fig:train_pipeline_placeholder}
 \end{figure}
 
-Alongside the WAV files, machine-readable metadata was generated. For each utterance ID, the metadata recorded the path to the audio file, the audio duration, the cleaned transcript text from transcript cleaning, and basic information about the speaker or the talk. For the GMM--HMM experiments, these fields were also exported into the conventional Kaldi-style files \texttt{wav.scp}, \texttt{text}, \texttt{utt2spk}, and \texttt{spk2utt}. For the CRDNN-CTC and Whisper pipelines, the same information was exported into JSON or CSV manifests, which were the common input format for modern end-to-end ASR training recipes.
+\subsubsection{Lexicon, Dictionary, and Language Preparation}
+A pronunciation dictionary and lexicon were prepared using a custom script, \texttt{prepare\_dict.py}. The script extracted a vocabulary list from the training transcripts and generated a grapheme-based lexicon by converting each Japanese token into Hepburn romanisation using \texttt{pykakasi}. The romanised output was normalised to lowercase and filtered to \texttt{a--z} characters only. Each word was then mapped to a sequence of letters, which served as the basic pronunciation units (phones).
 
-\subsection{Train / Validation / Test Split}
-The final step in the data collection pipeline was to split the data into training, validation, and test folders. This data had to be split because the ASR models needed to be trained on one portion of the data (training set), tuned on another portion (validation set), and evaluated on a completely held-out portion (test set). Another reason to split the data was to prevent the system from overfitting to a particular voice and then benefiting from that familiarity at test time, which would have given an unrealistically optimistic error rate.
+\begin{adjustwidth}{-1.5cm}{-1.5cm}
+\begin{lstlisting}[language=Python, breaklines=true, basicstyle=\ttfamily\small,
+caption={Grapheme-based lexicon generation (Japanese $\rightarrow$ Hepburn letters)}, label={lst:dict-lexicon}]
+from pykakasi import kakasi
 
-Since the data was collected from multiple speakers, the data was split in a folder level so that no speaker appeared in more than one split. And then the data was divided into three disjoint sets: 80\% for training, 10\% for validation, and 10\% for testing. Since every model in this thesis was always trained and evaluated on these same splits, their performance could be compared directly.
+k = kakasi()
+k.setMode('J','a'); k.setMode('K','a'); k.setMode('H','a'); k.setMode('r','Hepburn')
+conv = k.getConverter()
 
-\section{Text Preparation for ASR Training}
-After collecting and segmenting the audio, the corresponding text was prepared for consistent use across all models. The process had three steps. First, the prediction units for each model family—phonetic units for GMM–HMM, characters or subwords for CRDNN–CTC, and tokenizer units for Whisper had to be defined. Secondly, the auxiliary text resources required by each model, such as the pronunciation lexicon and language model text for GMM–HMM, had to be built. Finally, a final normalized reference transcript for each utterance had to be created to serve as the ground truth for evaluation metrics. This section described each of these steps in detail.
+for w in vocab:  # unique tokens from training transcripts
+    roma = "".join(x["hepburn"] for x in conv.convert(w)).lower()
+    phones = list(re.sub(r"[^a-z]", "", roma))      # keep a-z only
+    if phones:
+        lexicon.write(f"{w} {' '.join(phones)}\n")  # lexicon
+        phone_set.update(phones)                    # nonsilence_phones
+\end{lstlisting}
+\end{adjustwidth}
 
-\subsection{Lexicon and Token Units}
-Different ASR model families represented ``text'' in different ways. The GMM--HMM system followed a traditional hybrid ASR design in which there was an explicit pronunciation lexicon and an explicit phone or phoneme-like inventory. In this setting, each written unit that appeared in the transcript was mapped to one or more pronunciations, and each pronunciation was represented as a sequence of phones. The acoustic model was trained to predict these phones, and decoding proceeded by searching over phone sequences consistent with both the lexicon and the language model. 
-
-% Preparing this system therefore required defining a consistent phone set for Japanese, determining which symbols counted as silence or noise, and producing a lexicon that linked each lexical item in the transcript to its allowed pronunciations. This lexicon became part of the standard Kaldi-style \texttt{lang/} directory and was later used to construct the decoding graph.
-
-In contrast, the CRDNN--CTC model did not depend on an externally defined pronunciation dictionary. Instead, it was trained to map acoustic features directly to character-like units using the CTC loss. In this work, these prediction targets were typically Japanese characters or subword units derived from the cleaned transcripts described in data collection. Because CTC training did not require frame-level alignments, the model could learn the alignment between audio and text implicitly. 
-
-% This simplified the preparation pipeline: once the final normalized transcript text was available for each utterance, it could be used directly as the target sequence, and there was no need to define or maintain an explicit pronunciation lexicon.
-
-The fine-tuned Whisper model followed yet another strategy. Whisper was a transformer encoder--decoder model that used a multilingual tokenizer to represent text as a sequence of subword tokens. These tokens were not simple characters; instead, they were learned units from Whisper's large-scale pretraining, which covered Japanese along with many other languages. During fine-tuning, the model was optimized to continue predicting these tokenizer units, conditioned on the input audio and any decoding settings.
-
-% As a result, for Whisper there was no need to design a new token set. However, it was important that the transcripts fed into Whisper fine-tuning were formatted in a way that matched Whisper's expectations: consistent script usage, stable punctuation rules, and no inserted tags that Whisper would never naturally emit. Any mismatch between training-time targets and Whisper's decoding style could have caused degraded performance.
-
-% Although these three model families operate on different units (phones, raw characters, or subword tokens), they must all remain aligned to the same semantic content. A polite form such as saseteitadakimasu, for example, should not be normalized away in one system and kept in another, because that would make direct comparison of CER and WER unreliable. For this reason, the transcript normalization policy described in data collectionis applied globally before any model-specific tokenization is carried out.
-
-\subsection{Buildiing Language Model Text for the GMM--HMM}
-
-The GMM--HMM pipeline used a separate language model (LM) during decoding to constrain which word sequences were likely. Preparing this component required assembling a clean text corpus that reflected the type of Japanese we expected the system to transcribe. The starting point for this text corpus was the set of cleaned transcripts obtained from the scraping and normalization steps. Because these transcripts came from formal, presentation-style speech, they were already well matched to the target domain of this thesis.
-
-% Depending on the experiment configuration, additional external text may also be incorporated to improve language coverage. For example, publicly available written Japanese in a similar register (conference abstracts, formal articles, lecture summaries, or encyclopedic prose) can be added to increase lexical diversity and provide better coverage of technical vocabulary or polite forms. When such external data is used, it is subjected to the same normalization rules as the in-domain transcripts to keep punctuation, numerals, and stylistic conventions consistent. The goal is not to build a large, general-purpose language model for arbitrary Japanese text, but rather to model the specific style of well-structured, mostly single-speaker public speech.
-
-Once the text corpus was prepared, it was tokenized according to the unit definition adopted for the GMM--HMM decoding stage. In many Japanese ASR recipes, words'' might have been approximated using segmentation heuristics or morphological analyzers, since Japanese did not naturally separate words with spaces. Whatever segmentation strategy was chosen, it had to remain stable from training through evaluation, because WER depended directly on how word boundaries'' were defined. The processed text was then used to train an $n$-gram language model. This language model, together with the lexicon and the phone set described above, was compiled into the decoding graph (often represented in Kaldi as \texttt{HCLG.fst}) that would be used at inference time.
-
-% \subsection{Final Reference Transcripts for Scoring}
-% All reported evaluation metrics in this thesis --- including Character Error Rate (CER), Word Error Rate (WER), and Real-Time Factor (RTF) --- were computed against a single, consistent set of reference transcripts. These reference transcripts came from the normalized text produced in the data collection stage data collection, after cleaning, disfluency handling, and punctuation standardization. No model was allowed to ``see'' a different or more favorable version of the truth. This was important for fairness: the GMM--HMM, the CRDNN--CTC model, and the fine-tuned Whisper model were all judged against exactly the same textual target for each utterance in the held-out test set.
-
-% For CER, the reference transcript was converted into the agreed-upon character sequence. This sequence typically included kanji, hiragana, and katakana, with punctuation either retained or removed according to a fixed scoring policy. CER reflected substitutions, insertions, and deletions at the character level, and was especially meaningful for Japanese because spaces were not required between words. For WER, the same reference transcript was segmented into word-like units using a consistent segmentation procedure. Although Japanese did not naturally include whitespace boundaries, defining an explicit segmentation allowed us to report WER in a way that was at least internally consistent across experiments. WER was treated as a supporting metric in this thesis, while CER was treated as the primary metric.
-
-% % It is worth emphasizing that text normalization and scoring policy are tightly connected. For example, if numbers are spoken aloud and then replaced in the transcript by Arabic numerals, a model that outputs the spoken form will be penalized even if it is ``correct'' from a speech perception point of view. To avoid this ambiguity, numerals and similar constructs are normalized to a stable written form before any model is trained, and that same written form is used everywhere in evaluation. Likewise, non-speech events such as laughter or applause are removed from the transcripts entirely, so that systems are not punished for failing to output tokens that they were never supposed to predict.
-
-% Finally, Real-Time Factor (RTF) was computed using the same test set and the same reference transcripts, but it was conceptually different: RTF measured how fast the model produced its hypothesis relative to the length of the audio, rather than how accurate that hypothesis was. By tying CER, WER, and RTF to the same held-out speakers and the same canonical reference text, this thesis ensured that downstream comparisons between traditional hybrid models, end-to-end recurrent models, and transformer-based models remained meaningful and reproducible.
+Next, an unknown token \texttt{<unk>} was inserted into the lexicon to handle out-of-vocabulary (OOV) terms during decoding. This was for silent between speech or unknown features when decoding. After that, a language directory \texttt{data/lang} which contained symbol tables and language resources, was created using kaldi internal receipe. The output of this step was a complete language directory that included \texttt{words.txt}, \texttt{L.fst}, and other required files used by Kaldi for graph construction.
 
 
-\section{Feature Extraction and Front-End Processing}
+\subsubsection{Feature Extraction (MFCC + CMVN)}
+MFCC (Mel-Frequency Cepstral Coefficients) was a compact numeric features that extracted from audio to represent the way human hear sound. It converted audio into numerical value and used as input feature in the ASR system. MFCC features were extracted for train, dev, and test sets using \texttt{steps/make\_mfcc.sh} from kaldi receipe.
 
-Before any acoustic model could be trained, the raw waveform for each utterance had to be converted into a numeric representation that was suitable for learning. This section described the feature extraction pipeline used in this thesis. Although the three model families --- GMM--HMM, CRDNN--CTC, and fine-tuned Whisper --- ultimately relied on different assumptions about how speech should be represented, they all began from the standardized 16~kHz mono WAV clips described in data collection. The processing described here covered two main aspects: (i) how acoustic features were computed, normalized, and prepared for consumption by each model family; and (ii) how data augmentation was applied in a controlled way to improve robustness and allow fair comparison across systems.
+After that, CMVN (Cepstral Mean and Variance Normalization) statistics were computed using \texttt{steps/compute\_cmvn\_stats.sh}. CVMN was a normalization step that applied to the MFCC to make the features more consistent by removing channel/mic/loudness differences. It also applied variance normalization for scale the unit variance and reduced scale differences.Below was the script to run MFCC and CMVN:
 
-\subsection{MFCC with Cepstral Mean and Variance Normalization}
 
-The GMM--HMM system in this work used Mel-Frequency Cepstral Coefficients (MFCCs) as its primary acoustic representation. MFCCs were a conventional hand-crafted feature set for ASR. The waveform was first divided into short, overlapping frames using a fixed frame length (for example, 25~ms) and a fixed frame shift (for example, 10~ms). For each frame, a short-time Fourier transform was computed. The resulting magnitude spectrum was then passed through a Mel-scaled filterbank that emphasized perceptually relevant frequency regions. The log energies in these Mel bands were decorrelated using a discrete cosine transform, yielding a compact cepstral vector per frame. In many ASR recipes, first- and second-order temporal derivatives (deltas and delta-deltas) were appended to capture local dynamics. The final MFCC feature at a given frame therefore encoded both the short-term spectral shape and how that shape was changing over time.
+\begin{adjustwidth}{-1.5cm}{-1.5cm}
+\begin{lstlisting}[language=Bash, breaklines=true, basicstyle=\ttfamily\small,
+caption={Grapheme-based lexicon generation (Japanese $\rightarrow$ Hepburn letters)}, label={lst:kaldi-mfcc-cmvn}]
+echo "=== Extracting MFCCs & CMVN ==="
+steps/make_mfcc.sh --mfcc-config conf/mfcc.conf --nj "$NJ_MFCC_TRAIN" 
+  --cmd run.pl data/train exp/make_mfcc/train mfcc
+steps/make_mfcc.sh --mfcc-config conf/mfcc.conf --nj "$NJ_MFCC_DEV"  
+  --cmd run.pl data/dev   exp/make_mfcc/dev   mfcc
+steps/make_mfcc.sh --mfcc-config conf/mfcc.conf --nj "$NJ_MFCC_TEST"  
+  --cmd run.pl data/test  exp/make_mfcc/test  mfcc
 
-After MFCC extraction, Cepstral Mean and Variance Normalization (CMVN) was applied. The goal of CMVN was to reduce channel mismatch and long-term amplitude drift by forcing each feature dimension to have approximately zero mean and unit variance. In traditional GMM--HMM pipelines, CMVN could be computed per speaker, using all utterances from that speaker, or at minimum per utterance when speaker identity was not reliably known. In this thesis, because data was collected from multiple unrelated speakers and recording conditions, normalization was applied consistently across all clips so that the acoustic model saw features that were less sensitive to absolute loudness, microphone characteristics, or background coloration. 
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+steps/compute_cmvn_stats.sh data/dev   exp/make_mfcc/dev   mfcc
+steps/compute_cmvn_stats.sh data/test  exp/make_mfcc/test  mfcc  
+\end{lstlisting}
+\end{adjustwidth}
 
-% This normalized MFCC representation was then used in all stages of the GMM--HMM acoustic training pipeline, including monophone training, triphone training, and subsequent alignment and re-alignment steps.
 
-% The MFCC+CMVN front end was important not only for historical reasons, but also because it provided a baseline reference point when comparing more modern approaches. Later chapters reported how this classical front end performed under the same Japanese speech data used by end-to-end models, which helped answer whether such ``older'' features were still competitive when the domain was formal, relatively clean speech.
 
-\subsection{Log-Mel Filterbank and Spectrogram-Derived Features}
 
-While MFCCs were well matched to GMM--HMM systems, contemporary neural ASR models tended to operate on less aggressively compressed representations such as log-Mel filterbanks or related spectrogram features. In this thesis, the CRDNN--CTC model was trained on features derived from the short-time magnitude spectrum computed over 16~kHz audio. The waveform was framed and windowed in a similar way, for example, 25~ms windows with 10~ms stride, and a Fourier transform was applied to obtain the frequency content over time. Instead of applying the discrete cosine transform to decorrelate these spectra into cepstral coefficients, the model directly consumed the log-scaled Mel filterbank energies or a closely related log-Mel time frequency matrix. 
-
-% This preserved more fine-grained structure in the frequency domain, which was especially useful for convolutional front ends. Convolutional layers in CRDNN architectures benefited from two-dimensional structure (time $\times$ frequency) because they could learn local patterns such as formant transitions, onsets, and consonant bursts.
-
-These log-Mel features were typically mean/variance normalized before being fed into the network. Normalization could be applied globally, as example, using statistics computed over the entire training set or on a per-utterance basis. In practice, either approach reduced variation due to recording conditions and helped stabilize training. The CRDNN--CTC model then learned to map these normalized log-Mel features to character or subword predictions under the CTC loss. Because the model had recurrent or bidirectional recurrent layers on top of the convolutional stack, it was able to integrate long-range temporal information that went well beyond a single frame.
-
-The Whisper model followed a similar but more specialized approach. Whisper's original pretraining used a log-Mel spectrogram computed with a fixed configuration, as example, a particular FFT size, hop length, and Mel filterbank definition and expected audio resampled to a specific rate. During fine-tuning in this thesis, Whisper continued to consume internally normalize log-Mel spectrogram features consistent with its pretraining regime. This was a key difference from MFCC-based systems: in Whisper and other transformer encoder--decoder models, the learned encoder expected the raw spectral structure, not a hand-designed compact representation.
-
-% As a result, it was important that the front end for Whisper remained faithful to the preprocessing used during its large-scale pretraining; deviating from this could have harmed downstream accuracy.
-
-% Although MFCCs and log-Mel features shared the same physical input (the standardized 16~kHz WAV clips), they embedded different assumptions. MFCCs assumed that a relatively low-dimensional, decorrelated cepstral space was best for a Gaussian mixture model with diagonal covariances. Log-Mel features assumed that downstream neural layers would learn useful patterns directly from a higher-resolution time--frequency surface. One contribution of this thesis was to evaluate both styles of features under matched Japanese data and reported how these front ends affected CER, WER, and real-time decoding speed.
-
-\subsection{Data Augmentation}
-
-In addition to extracting features, this work also considered controlled forms of data augmentation. Augmentation was useful because the dataset described in data collection was drawn from a limited number of speakers and recording setups. Without augmentation, a model might have overfit to those specific voices, microphones, or rooms and then degraded noticeably on new speakers in the held-out test set.
-
-One common augmentation strategy was speed perturbation, where the audio waveform was played slightly faster or slower (for example, by factors such as 0.9$\times$, 1.0$\times$, and 1.1$\times$) without altering the pitch too aggressively. This produced additional training examples that mimicked natural variations in speaking rate. Speed perturbation effectively changed both the temporal dynamics and the apparent formant trajectories, which encouraged the acoustic model to become less sensitive to how quickly a speaker delivered each phrase. 
-
-In traditional hybrid systems such as GMM--HMM, speed perturbation was often applied before MFCC extraction so that each perturbed version of the audio yielded its own set of MFCC features. In end-to-end systems such as CRDNN--CTC, it was usually applied on the fly during training, so the model was repeatedly exposed to slightly different versions of the same utterance.
-
-Another augmentation strategy, more common in neural end-to-end models, was spectrogram masking (often referred to as SpecAugment). After computing log-Mel features, small contiguous time regions or frequency bands were randomly masked out during training. The CRDNN--CTC model could be trained with this kind of masking so that it learned to rely on context rather than any single narrowband cue. 
-
-% Time masking imitated short dropouts or pauses, while frequency masking imitated mild channel distortion or bandwidth limitations. The net effect was improved robustness to local corruption and noise.
-
-% Additive noise or reverberation simulation could also be applied, although in this thesis the speech domain was relatively clean lecture-style audio rather than highly noisy conversational speech. For that reason, augmentation was chosen to be conservative: the goal was not to invent extreme background noise that did not exist in the target domain, but rather to introduce realistic variability in rate, bandwidth emphasis, and mild spectral dropouts. This approach kept the augmented data close to the style of formal Japanese speech that this thesis aimed to model.
-
-% It was important to note that augmentation policies had to be applied consistently when comparing model families. If CRDNN--CTC benefited from aggressive augmentation while the GMM--HMM system was trained only on clean audio, then any accuracy gap might have reflected augmentation rather than architectural differences. In this work, augmentation was therefore documented alongside each model's training recipe, and its impact was evaluated explicitly in later chapters. The final reported WER, CER, and RTF values were always computed on the unmodified held-out test set, so that improvements in robustness did not come at the cost of unfair evaluation.
-
-\section{Model Family A: GMM--HMM Acoustic Model}
-This section was detailed the process taken to build the GMM--HMM baseline system used in this thesis. HMM-GMM system that carefully configured still remained a strong point of reference for controlled studies on lexicon design, tokenization, and LM effects although end-to-end systems like CRDNN--CTC, Whisper became more mainstream. Kaldi recipes were used for all steps, following best practices from existing Japanese ASR recipes since creating a new GMM--HMM pipeline from scratch was taking a considerable amount of time and out of scope for this thesis. The GMM-HMM acoustic was trained in stages like below:
-
-% [ut image here: GMM-HMM training stages]
-\begin{itemize}
-    \item Monophone (mono)
-    \item Context-dependent triphone with delta features (tri1)
-    \item Context-dependent triphone with LDA+MLLT (tri2)
-    \item Context-dependent triphone with SAT (tri3-SAT)
-    \item Decoding with WFST HCLG graph
+\subsubsection{Acoustic Model Training Stages}
+To train the acoustic model, the training was done gradually to improve the performance. The acoutic model was train using 4 stages as described below:
+\begin{itemize}[nosep]
+    \item \textbf{Monophone (mono):} a baseline context-independent model trained using \texttt{train\_mono.sh}.
+    \item \textbf{Triphone 1 (tri1):} a delta-based triphone model trained using \texttt{train\_deltas.sh}.
+    \item \textbf{Triphone 2 (tri2):} a triphone model with LDA+MLLT transforms trained using \texttt{train\_lda\_mllt.sh}.
+    \item \textbf{Triphone 3 (tri3):} a speaker-adaptive training (SAT) model trained using \texttt{train\_sat.sh}.
 \end{itemize}
 
-The conducted steps were split into step that was data and language preparation, acoustic features, training schedule, and decoding graph construction to get CER and WER.
+Between each stage, the training set was aligned using \texttt{align\_si.sh} to produce improved alignments for the next model. This staged approach was important in Kaldi because better alignments usually led to better acoustic models. Below was the snippet of the bash script used to run the training receipe from Kaldi library.
 
+\begin{lstlisting}[language=Bash, caption={Audio resampling to 16 kHz}, label={lst:kaldi-train-stages}]
+echo "=== Training mono ==="
+steps/train_mono.sh --nj "$NJ_TRAIN" --cmd run.pl \
+  data/train data/lang exp/mono 
 
-\subsection{Data and Language Preparation}
-Before proceeding to acoustic model training, we needed to prepare the Kaldi data directories. This involved creating a \texttt{data/} directory with subdirectories for training names \texttt{train/}, validation names \texttt{valid/}, and test names \texttt{test/}. In each subdirectory, the required files were \texttt{wav.scp} for 16kHz mono WAV that pointed to the correct paths, \texttt{text} for normalized transcripts that mapped utterance IDs to their text, \texttt{utt2spk} for utterance-to-speaker mapping that mapped utterance IDs to speaker IDs, and \texttt{spk2utt} derived from \texttt{utt2spk}. The speaker-ids were assigned based on talk-level speakers to enforce speaker-independence between train/valid/test splits. The Folder structure was like below:
-% [ut image here: Kaldi data directory structure]
-\begin{itemize}
-    \item \texttt{data/}
-    \begin{itemize}
-        \item \texttt{train/}
-        \begin{itemize}
-            \item \texttt{wav.scp}
-            \item \texttt{text}
-            \item \texttt{utt2spk}
-            \item \texttt{spk2utt}
-        \end{itemize}
-        \item \texttt{valid/}
-        \begin{itemize}
-            \item \texttt{wav.scp}
-            \item \texttt{text}
-            \item \texttt{utt2spk}
-            \item \texttt{spk2utt}
-        \end{itemize}
-        \item \texttt{test/}
-        \begin{itemize}
-            \item \texttt{wav.scp}
-            \item \texttt{text}
-            \item \texttt{utt2spk}
-            \item \texttt{spk2utt}
-        \end{itemize}
-    \end{itemize}
-\end{itemize}
+echo "=== Aligning with mono -> mono_ali ==="
+steps/align_si.sh --nj "$NJ_ALIGN" --cmd run.pl \
+  data/train data/lang exp/mono exp/mono_ali 
 
+echo "=== Training tri1 (deltas) ==="
+steps/train_deltas.sh 2000 10000 \
+  data/train data/lang exp/mono_ali exp/tri1 
 
-% \paragraph{Kana phoneset and lexicon.}
-There were 1000s of kanji characters in Japanese, each with multiple possible readings depending on context. To avoid a combinatorial phone explosion with mixed kanji/kana, we converted transcripts to readings and trained with a \emph{grapheme-level kana phoneset}. The lexicon used kana characters (plus digits and a small set of normalized symbols) as phones, with \texttt{sil} as the optional silence phone. The dictionary included:
+echo "=== Aligning with tri1 -> tri1_ali ==="
+steps/align_si.sh --nj "$NJ_ALIGN" --cmd run.pl \
+  data/train data/lang exp/tri1 exp/tri1_ali 
 
-\begin{itemize}
-\item \texttt{lexicon.txt}: \texttt{<token> <space-separated\ kana\ symbols>}
-\item \texttt{nonsilence\_phones.txt}: full kana inventory (typically $\sim$80--120 symbols)
-\item \texttt{silence\_phones.txt} and \texttt{optional\_silence.txt}: \texttt{sil}
-\end{itemize}
+echo "=== Training tri2 (LDA+MLLT) ==="
+steps/train_lda_mllt.sh 2500 15000 \
+  data/train data/lang exp/tri1_ali exp/tri2 
 
-This low number of feature made sure model training and decoding were efficient. Also without a very large number of "character" as phones, this helped to mitigate the risk of overfitting and improve generalization.
+echo "=== Aligning with tri2 -> tri2_ali ==="
+steps/align_si.sh --nj "$NJ_ALIGN" --cmd run.pl \
+  data/train data/lang exp/tri2 exp/tri2_ali 
+
+echo "=== Training tri3 (SAT) ==="
+steps/train_sat.sh 3500 20000 \
+  data/train data/lang exp/tri2_ali exp/tri3                    
+\end{lstlisting}
 
 
 
-For building language models, the cleaned training transcripts from the data collection pipeline were used as LM text. The text was used to train a pruned 3-gram LM using KenLM's \texttt{lmplz} with \texttt{--discount\_fallback} and light pruning. A test language directory (\texttt{lang\_kana\_test\_3g}) was formatted. During decoding, this smaller 3-gram LM was used to build \texttt{HCLG} more efficiently, while a larger 4-gram LM was reserved for lattice rescoring to improve accuracy without creating an excessively large decoding graph.
+\subsubsection{Language Model Construction and Decoding Graph}
+For decoding using a 3-gram,  a language model was created using KenLM. An external language model from wikipedia dump was used because it had a huge number of vocabluary to cover huge amount of language pattern. After that  \texttt{lmplz} was used to produce an ARPA LM, and Kaldi tools were used to convert the ARPA file into \texttt{G.fst}.
 
-\subsection{Acoustic Features}
-For building the GMM--HMM acoustic models, MFCC features with per-speaker CMVN needed to be extracted. For this setup, 13-dim MFCCs per 25 ms frame with 10 ms shift and apply per-speaker CMVN was used. The details of MFCC extraction configuration were as follows:
 
-\begin{itemize}
-\item \texttt{--sample-frequency=16000}, \texttt{--frame-length=25}, \texttt{--frame-shift=10}
-\item \texttt{--num-ceps=13}, \texttt{--num-mel-bins=23}, \texttt{--low-freq=20}, \texttt{--high-freq=0}
-\item \texttt{--snip-edges=false}, \texttt{--use-energy=true}
-\end{itemize}
+Finally, decoding graphs were created for each acoustic model using \texttt{utils/mkgraph.sh}. This produced graphs such as \texttt{exp/mono/graph}, \texttt{exp/tri1/graph}, and so on, which were used for decoding the test set.
 
-For monophone training we used only the static 13-dim MFCCs. However, for triphone training we appended dynamic features to capture temporal context. The specifics were as in table below:
 
-\begin{table}
+\begin{lstlisting}[language=Bash, caption={Audio resampling to 16 kHz}, label={lst:kaldi-mkgraph}]
+echo "=== Making decoding graphs for each system ==="
+utils/mkgraph.sh data/lang exp/mono exp/mono/graph
+utils/mkgraph.sh data/lang exp/tri1 exp/tri1/graph
+utils/mkgraph.sh data/lang exp/tri2 exp/tri2/graph
+utils/mkgraph.sh data/lang exp/tri3 exp/tri3/graph              
+\end{lstlisting}
+
+
+\vspace{0.5em}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{CRDNN--CTC Training (SpeechBrain)}
+The second family model was from neural network model and CRDNNCTC model has been choosen based on the literature review. This model was trained using SpeechBrain framework with the goal was to learn the direct mapping from acoustic feature and output character sequesnce. For the decoder setup, CTC was used because Japanese transcripts could be handled naturally as a sequence of characters, and it avoided the need for word segmentation.
+
+\vspace{1em}
+\begin{figure}[H]
 \centering
-\begin{tabular}{l c c}
+\fbox{\rule{0pt}{2.0in}\rule{0.92\linewidth}{0pt}}
+\caption{Placeholder: Model training workflow for CRDNN}
+\label{fig:train_pipeline_placeholder}
+\end{figure}
+
+\subsubsection{Manifest Preparation}
+Similar to GMM-HMM setup earlier, CRDNN-CTC setup also utilized the same  CSV manifests that included \texttt{ID}, \texttt{wav}, \texttt{duration}, and \texttt{transcript}. The manifests were generated from the prepared wav directory and transcript mapping file. The same 80/10/10 split strategy train/valid/test was used.
+
+\subsubsection{Character Vocabulary (CTC Token Set)}
+Next step was to create a character vocabuluary from the training script by scanning all characters in the training set and writing them into a charset file. The vocabulary file began with a special \texttt{<blank>} token to represent the CTC blank symbol. After that this charset was loaded into SpeechBrain using \texttt{CTCTextEncoder}.  This step was important because CTC required a fixed label set, and the model output layer size depended directly on the number of characters in this vocabulary. By generating the charset from the training transcripts, the label set stayed consistent with the dataset and reduced unexpected errors when unseen symbols appeared during training.
+
+
+
+\begin{adjustwidth}{-1.5cm}{-1.5cm}
+\begin{lstlisting}[language=Python, breaklines=true, basicstyle=\ttfamily\small,
+caption={Grapheme-based lexicon generation (Japanese $\rightarrow$ Hepburn letters)}, label={lst:ctc-charset}]
+# (1) Build charset.txt (CTC vocab)
+import pandas as pd, unicodedata as ud
+from collections import Counter
+from pathlib import Path
+
+df = pd.read_csv("manifests/jsut_train.csv")
+chars = Counter(ch for t in df.transcript.astype(str)
+                for ch in ud.normalize("NFKC", t).strip() if ch != " ")
+
+Path("tokenizer").mkdir(exist_ok=True)
+with open("tokenizer/charset.txt", "w", encoding="utf-8") as f:
+    f.write("<blank>\n" + "\n".join(sorted(k for k in chars if k.strip())) + "\n")
+
+\end{lstlisting}
+\end{adjustwidth}
+
+\subsubsection{Model Configuration and Hyperparameters}
+The CRDNN model hyperparameters were defined in \texttt{hyperparams.yaml}. In this experiment, filterbank (FBank) features with mean-variance normalization were used. The architecture consisted of CNN blocks, followed by bidirectional LSTM layers, and a DNN block before a final linear layer that projected to the CTC vocabulary size. The optimizer used was Adam with a learning rate of $1\times10^{-3}$, and learning rate scheduling was handled using NewBob scheduling based on validation improvement. Dropout was also applied to reduce overfitting because the dataset size was limited compared to large-scale ASR corpora. In addition, batch sizes for training and validation were configured separately to make sure validation could run stably under limited GPU memory.
+
+\subsubsection{Training Procedure and Checkpointing}
+A custom SpeechBrain \texttt{Brain} class (\texttt{ASRBrain}) was implemented to define forward computation, CTC loss, and CER tracking during validation. During training, checkpoints were saved using SpeechBrain checkpointer so that the best model could be recovered and used during evaluation. The model was trained for a fixed number of epochs, and validation CER was monitored across epochs. The learning rate was automatically adjusted when validation improvement became small, which helped stabilize training and avoided over-updating the model. At the end of training, the best checkpoint was selected based on validation performance
+
+
+
+
+
+
+
+
+\subsection{Whisper Fine-Tuning (Transformer Encoder--Decoder)}
+The third model family was Whisper, a transformer encoder--decoder ASR model from OpenAI. In this research, multiple Whisper variants were fine tuned (tiny, base, small, medium, and large-turbo). Whisper was fine tuned using supervised learning by providing audio features as inputs and reference transcripts as labels.
+
+\vspace{1em}
+\begin{figure}[H]
+\centering
+\fbox{\rule{0pt}{2.0in}\rule{0.92\linewidth}{0pt}}
+\caption{Placeholder: Model training workflow for Whisper}
+\label{fig:train_pipeline_placeholder}
+\end{figure}
+
+\subsubsection{Dataset Preparation for Fine-Tuning}
+The dataset was prepared by converting \texttt{transcript\_utf8.txt} into a DataFrame that mapped each utterance ID to its corresponding \texttt{.wav} path and transcript. The data was shuffled using a fixed random seed for reproducibility and split into training, validation, and testing sets. Each split was stored as CSV files (\texttt{train.csv}, \texttt{valid.csv}, \texttt{test.csv}) and later loaded using HuggingFace \texttt{datasets}.
+
+\subsubsection{Feature Extraction and Label Encoding}
+Whisper used log-Mel filterbank features extracted by the Whisper feature extractor. In preprocessing, each audio sample was resampled to 16\,kHz if needed and converted into \texttt{input\_features}. The transcript text was tokenized using Whisper tokenizer to generate \texttt{labels}. To avoid extremely long samples affecting training stability, audio longer than a fixed threshold (example: 30 seconds) was filtered out before training.
+
+\subsubsection{Fine-Tuning Configuration}
+For fine tuning, a pretrained Whisper checkpoint (example: \texttt{openai/whisper-base}) was loaded. The decoder was configured with Japanese language prompts using forced decoder IDs (\texttt{language="japanese", task="transcribe"}). Gradient checkpointing-related settings were applied by setting \texttt{use\_cache=False}. Training used AdamW optimizer with a small learning rate (example: $1\times10^{-5}$) and cosine learning rate scheduling with warmup. Mixed precision (FP16) training was enabled when running on GPU to speed up training and reduce memory usage.
+
+
+\begin{adjustwidth}{-1.5cm}{-1.5cm}
+\begin{lstlisting}[language=Python, breaklines=true, basicstyle=\ttfamily\small,
+caption={Grapheme-based lexicon generation (Japanese $\rightarrow$ Hepburn letters)}, label={lst:whisper-config}]
+from transformers import WhisperProcessor, WhisperForConditionalGeneration
+
+MODEL_NAME = "openai/whisper-medium"  # later you can try tiny/base/medium/etc.
+
+processor = WhisperProcessor.from_pretrained(MODEL_NAME)
+model = WhisperForConditionalGeneration.from_pretrained(MODEL_NAME)
+
+# configure language + task
+forced_decoder_ids = processor.get_decoder_prompt_ids(
+    language="japanese",
+    task="transcribe",  
+)
+model.config.forced_decoder_ids = forced_decoder_ids
+model.config.suppress_tokens = []   # often helps for fine-tuning
+model.config.use_cache = False      # must be False for gradient checkpointing
+\end{lstlisting}
+\end{adjustwidth}
+
+\subsubsection{Training Loop and Validation}
+Training was performed for 10 epochs using mini-batch gradient updates. During training, the loss value was monitored at each step and average loss was computed at the end of each epoch. After training, validation decoding was performed using \texttt{model.generate()} and metrics were computed using WER and CER. The model and processor were then saved for later decoding and test evaluation.
+
+\subsubsection{Model Saving and Inference Check}
+After fine-tuning completed, the model weights and processor configuration were saved using \texttt{save\_pretrained}. A quick inference check was performed by decoding a sample from the test split and comparing the predicted transcription against the ground truth reference. This step was important to confirm that the model and tokenizer were saved correctly and could be loaded again for the evaluation phase.
+
+
+
+\section{Evaluation Phase}
+\Cref{tab:Evaluation} showed the fifth phase of this project where all trained models were evaluated using the same test split and the same scoring protocol. The main objective of this phase was to measure transcription accuracy and decoding efficiency in a consistent and reproducible way so that comparisons across the three model families were fair. The activities carried out and the outcome deliverables were described in the table shown below.
+\vspace{1em}
+
+\begin{table}[H]
+\centering
+\caption{Evaluation Phase}
+\label{tab:Evaluation}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{tabular}{ p{2.8cm}  p{5.3cm}  p{5.3cm}  }
 \hline
-\textbf{Model} & \textbf{Features} & \textbf{Dimensionality} \\
-\hline
-Mono & MFCC & 13 \\
-Tri1 & MFCC + $\Delta$ + $\Delta\Delta$ & 39 \\
-Tri2 & LDA+MLLT (spliced context $\pm$3) & 40 \\
-Tri3-SAT & fMLLR (spliced context $\pm$3) & 40 \\
-\hline
-\end{tabular}
+\textbf{Phase} & \textbf{Activities} & \textbf{Deliverables} \\
+\hline 
+
+\textbf{Evaluation} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Scored with CER and WER
+  \item Measured speed using RTF
+  \item Compared models and decoders
+\end{itemize}
+&
+Chapter 4
+\begin{itemize}[leftmargin=*, nosep]
+  \item Results tables and plots
+  \item Best model identified
+\end{itemize}
+\\ \hline
+
+\end{tabular}}
 \end{table}
 
-Dimensionality was increased in triphone stages to capture more context and improve discriminability. LDA+MLLT and fMLLR transforms were learned during training to optimize feature representation for the GMM--HMM models. \parencite{2019CreationAI}
+In this phase, each trained system produced hypotheses on the test split and those hypotheses were scored against the same reference transcripts. The evaluation used three metrics that matched the research objectives that is character error rate (CER), word error rate (WER), and real-time factor (RTF). 
 
-\subsection{Training Schedule}
-The acoustic model was trained in multiple stages, each building on the previous one to increase modeling power and robustness. The first step of training was to build a monophone model using the MFCC+CMVN features. This model provided initial alignments between audio frames and phone sequences derived from the transcripts. The monophone model was relatively simple, but it established a foundation for more complex models. After the monophone model was trained, we proceeded to context-dependent triphone models. The first triphone model (\texttt{tri1}) used MFCC features augmented with delta and delta-delta coefficients to capture temporal dynamics. This model leveraged the alignments from the monophone stage to learn context-dependent phone representations. Then the second triphone model (\texttt{tri2}) used LDA+MLLT transforms to project the spliced features into a lower-dimensional space that was more suitable for Gaussian modeling. This stage refined the acoustic model further by improving feature representation. Finally, the third triphone model (\texttt{tri3-SAT}) incorporated speaker-adaptive training (SAT) using fMLLR transforms. This allowed the model to adapt to individual speaker characteristics, improving robustness across different voices and recording conditions.
+\subsection{Decoding and Hypothesis Generation}
+For the Kaldi GMM--HMM systems, decoding was performed using the test set features and the corresponding decoding graphs created earlier. Hypotheses were produced for each acoustic model stage (mono, tri1, tri2, tri3) using the standard Kaldi decoding pipeline. For the CRDNN--CTC system, decoding was performed using CTC decoding and hypotheses were generated for the test set, including the beam decoding variant when configured. For Whisper variants, hypotheses were generated using the HuggingFace \texttt{model.generate()} decoding procedure, and the output token sequences were converted back into Japanese text using the Whisper tokenizer.
 
-\subsection{Decoding Graph Construction}
-After training the acoustic model, the next step was to build the decoding graph \texttt{HCLG.fst} that combined acoustic, pronunciation, and language model information into a single weighted finite-state transducer (WFST). HCLG was constructed by composing several components: the HMM topology for context-dependent phones (\texttt{H}), the context-dependency transducer (\texttt{C}), the lexicon transducer (\texttt{L}), and the language model transducer (\texttt{G}). Each component served a specific purpose in constraining the decoding process.
+\subsection{Scoring Protocol (CER and WER)}
+After hypotheses were generated, each prediction was aligned against the reference transcripts and scored using CER and WER. CER was computed by measuring the normalized Levenshtein distance between predicted and reference character sequences. WER was computed using the same edit distance approach but applied at the word level after tokenization. The scoring protocol was applied consistently across all three model families so that differences in results reflected model performance rather than differences in evaluation handling.
 
-$\mathrm{HCLG} = H \circ C \circ L \circ G$.
-
-
-In practice, large or dense \texttt{G} could cause memory spikes during \texttt{fstcomposecontext}. To avoid the “bad FST header” / OOM failures seen with bigger character LMs, a two-step approach was used:
-\begin{enumerate}
-\item Build \texttt{LG} using \emph{Kaldi’s} \texttt{fstbin} utilities (\texttt{fsttablecompose} $\rightarrow$ \texttt{fstdeterminizestar} $\rightarrow$ \texttt{fstminimizeencoded} $\rightarrow$ \texttt{fstpushspecial}).
-\item Compose context with the kana \texttt{disambig} symbols to produce \texttt{CLG}.
-\item Create \texttt{Ha} with \texttt{make-h-transducer}, then compose \texttt{Ha} with \texttt{CLG} and finalize (\texttt{fstrmsymbols}, \texttt{fstrmepslocal}, \texttt{fstdeterminizestar}, \texttt{add-self-loops}).
-\end{enumerate}
-Using a compact 3-gram for \texttt{HCLG} and deferring the 4-gram to lattice rescoring eliminates the memory pathologies while preserving final accuracy.
-
-\subsection{Inference and Lattice Rescoring}
-Before scoring the model, we performed decoding on the held-out test set using the trained acoustic model and the constructed \texttt{HCLG.fst} graph. This step used two-pass fMLLR decoding to adapt to speaker characteristics in the test data. In the first pass, we used a speaker-independent (SI) model to estimate fMLLR transforms for each speaker in the test set. These transforms were then applied to the features in the second pass, where we decoded using the adapted features. This two-pass approach helped improve accuracy by normalizing speaker variability.
-
-\subsection{Scoring}
-
-% \paragraph{CER (character error rate).}
-After the model was trained and decoded using GMM-HMM, we evaluated its performance using Character Error Rate (CER) as the primary metric. Since Japanese text was not whitespace-delimited, CER was particularly well-suited for this language. The CER was computed by comparing the decoded hypotheses against the reference transcripts at the character level. Both hypotheses and references were converted into sequences of characters, and we computed the edit distance (substitutions, insertions, deletions) between these sequences. The CER was then calculated as the total number of errors divided by the total number of characters in the reference transcript.
-
-% \paragraph{WER.}
-Another important metric reported in this thesis was Word Error Rate (WER). WER was computed by aligning the decoded hypotheses with the reference transcripts at the word level, counting substitutions, insertions, and deletions, and normalizing by the total number of words in the reference. For Japanese, where word boundaries were not explicitly marked, we used a consistent segmentation procedure to tokenize both hypotheses and references into word-like units. This ensured that WER comparisons were fair and meaningful across different models.
-
-% \paragraph{RTF (real-time factor).}
-The last metric that was used was the Real-Time Factor (RTF). The RTF was used to measure the decoding speed of the GMM-HMM system. RTF was defined as the ratio of the time taken to decode an audio segment to the actual duration of that audio segment. An RTF less than 1 indicated that the model could decode faster than real-time, which was desirable for realtime applications. To obtain a machine- and configuration-stable latency estimate, we performed a 1-job fMLLR decode on the full test set, recorded wall time, and divided by the total audio duration:
-
-% To obtain a machine- and configuration-stable latency estimate, we perform a 1-job fMLLR decode on the full test set, record wall time, and divide by the total audio duration:
-
-RTF = wall-clock decode time (1 job) / total audio seconds
+\subsection{Speed Measurement (RTF)}
+Decoding speed was evaluated using real-time factor (RTF), where total decoding wall time was divided by total audio duration. RTF values below 1.0 indicated faster-than-real-time decoding, while values above 1.0 indicated slower-than-real-time decoding. RTF was recorded for each system to compare computational efficiency, and the same measurement approach was applied across models under the same hardware environment to support fair comparisons.
 
 
-% (Parallel decodes yield lower practical RTF by $\approx 1/\text{nj}$ but the single-job figure is used for cross-model comparability.)
 
 
-\section{Model Family B: CRDNN–CTC (End-to-End, Non-Transformer)}
+\section{Discussion Phase}
+\Cref{tab:Discussion} showed the sixth phase of this project where the evaluation outcomes were interpreted and discussed in relation to the research questions and prior work. The main objective of this phase was to analyze the trends observed across the three model families, explain the trade-offs between accuracy and speed, and outline the limitations and future improvements. The activities carried out and the outcome deliverables were described in the table shown below.
+\vspace{1em}
 
-This section documented the end-to-end baseline used in this study: a Convolutional Recurrent Deep Neural Network trained with the Connectionist Temporal Classification (CTC) loss. Unlike the GMM–HMM pipeline in previous section, this model mapped speech features directly to character or subword sequences without an explicit pronunciation lexicon or frame-level alignments. It served as a strong non-transformer reference under the same data, normalization, and scoring policies.
+\begin{table}[H]
+\centering
+\caption{Discussion Phase}
+\label{tab:Discussion}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
 
-\subsection{Data and Supervision}
-Training used the speaker-independent splits defined in data collection. For each utterance, a manifest recorded the path to the 16~kHz mono WAV, the duration, and the cleaned and normalized transcript from text preparation. Parallel manifests were created for validation for checkpoint selection and for test for final scoring. No additional alignment files were required.
+\begin{tabular}{ p{2.8cm}  p{5.3cm}  p{5.3cm}  }
+\hline
+\textbf{Phase} & \textbf{Activities} & \textbf{Deliverables} \\
+\hline 
 
-\subsection{Acoustic Features and Augmentation}
-The model consumed log-Mel or closely related spectrogram features computed from the standardized audio. Frames used a typical 25~ms window and 10~ms shift. Mean and variance normalization was applied per utterance or using global statistics for robustness across recording conditions. Augmentation followed the policy in data augmentation. Modest speed perturbation and spectrogram masking in time and frequency improved generalization while staying close to the formal-speech domain.
+\textbf{Discussion} &
+\begin{itemize}[leftmargin=*, nosep]
+  \item Explained main findings
+  \item Linked to prior work
+  \item Noted limitations
+  \item Suggested future work
+\end{itemize}
+&
+Chapter 5
+\begin{itemize}[leftmargin=*, nosep]
+  \item Findings discussed
+  \item Limitations stated
+  \item Recommendations given
+  \item Future work proposed
+\end{itemize}
+\\ \hline
 
-% \subsection{Architecture}
-% The network comprised a convolutional front end that learned local time–frequency patterns and reduced sequence length via striding, bidirectional recurrent layers such as LSTM or GRU to integrate longer temporal context, and a projection layer to the output inventory of characters or subwords plus a CTC blank. CTC marginalized over frame and label alignments, which removed the need for forced alignment and simplified the pipeline.
+\end{tabular}}
+\end{table}
 
-\subsection{Training Procedure}
-Optimization used minibatches with padding and length masks. An adaptive optimizer such as Adam and a scheduled learning rate were applied. Early stopping and model selection were based on validation Character Error Rate computed from decoded hypotheses. This tied checkpoint choice to transcription quality rather than training loss.
+In this phase, the results from CER, WER, and RTF were analyzed to explain how each model family behaved under the same dataset and evaluation setup. The discussion compared classical and neural approaches by focusing on how performance improved from mono to tri3 in the Kaldi pipeline, how CRDNN--CTC handled Japanese character sequences under end-to-end training, and how Whisper variants achieved different accuracy and speed trade-offs depending on model size. The outcomes were linked back to prior work to show whether observed trends matched or differed from findings in the literature, especially regarding the advantages of pretrained transformer-based models for low-resource or domain-mismatched settings.
 
-\subsection{Decoding}
-Two decoding modes were considered. The first was greedy collapse of per-frame argmax predictions, which was fast and had low overhead. The second was beam search with optional shallow-fusion language modeling, which could improve accuracy at higher computational cost. Evaluation used a fixed and documented configuration for fair comparison across systems. Wall-clock time for the full test set was recorded for Real-Time Factor.
-
-\subsection{Post-Processing and Normalization}
-CTC outputs were collapsed by removing blanks and merging repeats, then normalized with the same policy applied to references in data collection. Errors then reflected recognition differences rather than formatting.
-
-\subsection{Scoring}
-On the held-out test set, Character Error Rate was the primary metric. Word Error Rate was reported using the same word-like segmentation as elsewhere. Real-Time Factor was computed as total decode time divided by total audio duration, following the unified protocol in RTF section.
-
-\section{Model Family C: Whisper (Transformer Encoder–Decoder, Fine-Tuned)}
-
-This section presented the transformer encoder–decoder system based on Whisper, fine-tuned on the curated formal Japanese speech described in data collection. Whisper differed from both GMM–HMM and CRDNN–CTC. It generated text autoregressively with a decoder conditioned on an encoder’s learned acoustic representation. Large-scale multilingual pretraining provided strong prior knowledge that was then adapted to the target domain.
-
-\subsection{Model Overview}
-The encoder ingested a log-Mel spectrogram with the configuration Whisper expected from pretraining and produced a sequence of latent acoustic embeddings. The decoder generated subword tokens from Whisper’s multilingual vocabulary using cross-attention over these embeddings. This setup naturally produced punctuation and formal written style consistent with pretraining.
-
-\subsection{Dataset Formatting and Inputs}
-Fine-tuning used the same speaker-independent train, validation, and test partitions and the same normalized transcripts from data collection and text preparation. Audio was supplied as 16~kHz WAV. The Whisper pipeline then applied its canonical front end to compute the spectrogram expected by the pretrained model. Consistency with Whisper’s original preprocessing was maintained to avoid feature mismatch.
-
-\subsection{Fine-Tuning Configuration}
-Supervised training minimized token-level cross-entropy over the decoder’s autoregressive outputs. Depending on resource constraints, either all layers were updated or lower encoder blocks were partially frozen. Effective batch size and a scheduled learning rate were tuned within GPU memory limits. Validation Character Error Rate was monitored periodically, and the checkpoint with the best validation Character Error Rate was selected for testing.
-
-\subsection{Inference and Decoding}
-At test time, decoding was performed in Japanese transcribe mode with translation disabled. Greedy decoding provided a fast baseline. Beam search could improve accuracy on longer clauses at additional cost. Subword outputs were detokenized to text. The decoding configuration was fixed for reporting, and total wall time over the test set was recorded for Real-Time Factor.
-
-\subsection{Normalization and Style Consistency}
-Light and deterministic normalization aligned hypotheses with the reference style used in this thesis. Numerals and punctuation followed the same policy as the references, and any tags not present in references were removed. Scoring then reflected recognition quality rather than stylistic variation.
-
-\subsection{Scoring}
-Evaluation followed the unified protocol. Character Error Rate was the primary metric. Word Error Rate was a supporting metric with the shared segmentation. Real-Time Factor was decode time over audio time. Results were directly comparable to the GMM–HMM and CRDNN–CTC systems because data splits, normalization, and scoring rules were identical.
-
-
-\section{Unified Evaluation Protocol}
-
-All models in this study—the GMM--HMM baseline, the CRDNN--CTC model, and the fine-tuned Whisper model were evaluated with one protocol. The same held-out test set and the same reference transcripts were used for every system. Evaluation was performed only after model selection; no system was tuned on the test set.
-
-\subsection{Accuracy: CER and WER}
-Character Error Rate (CER) is the primary metric because it suits Japanese orthography. Given substitutions $S$, deletions $D$, insertions $I$, and reference length $N_{\mathrm{ref}}$,
-\[
-\mathrm{CER}=\frac{S+D+I}{N_{\mathrm{ref}}}.
-\]
-Word Error Rate (WER) is reported as a secondary metric. It is computed on a shared tokenization (“word-like” units) applied consistently to all systems, using the same segmentation policy as the language model in the GMM--HMM pipeline. Before scoring, the same normalization rules in data collection and text preparation are applied to hypotheses and references to standardize punctuation, numerals, and markup.
-
-\subsection{Latency: Real-Time Factor}
-Latency is measured with Real-Time Factor (RTF), the ratio of total decoding time to total audio duration:
-\[
-\mathrm{RTF}=\frac{T_{\mathrm{decode}}}{T_{\mathrm{audio}}}.
-\]
-RTF $<1$ indicates faster-than-real-time processing. Timing is end-to-end on the same hardware: GMM--HMM includes feature extraction, likelihoods, and beam search; CRDNN--CTC includes features, neural inference, and greedy/beam decoding; Whisper includes spectrograms, encoder inference, and autoregressive decoding.
-
-\subsection{Consistency and Comparability}
-All results followed three rules: (1) identical test utterances with held-out speakers; (2) identical, normalized references; (3) identical scoring (CER on characters, WER on shared tokens, RTF as above). Under these conditions, differences reported in Chapter~4 reflected model architecture, features, and decoding strategy rather than data or scoring mismatches.
-
-\section{Challenges and Limitations}
-Challenges in the methodology included ensuring data quality during scraping, handling diverse speaking styles within formal speech, and managing computational resources for training large models like Whisper. Limitations included potential biases in the selected public talks, the representativeness of the dataset for all forms of formal Japanese speech, and the generalizability of results to other languages or dialects. The limitations of each model architecture, such as the GMM--HMM's reliance on handcrafted features or Whisper's dependence on large-scale pretraining, also affected the conclusions drawn from the experiments.
-
-\section{Ethical Considerations}
-Ethical considerations in this research included respecting copyright and usage rights when scraping public talks, ensuring that speaker consent was obtained where necessary, and being mindful of privacy concerns related to audio data. Additionally, the potential societal impact of deploying ASR systems, such as accessibility improvements versus risks of misrepresentation or bias in transcription, had to be carefully weighed. The research adhered to ethical guidelines for data collection and model evaluation to mitigate these concerns.
-
-\section{Chapter Summary}
-
-This chapter described the full experimental methodology used in this thesis, from raw data collection to evaluation. The process began with assembling a domain-specific corpus of formal Japanese speech. Public talks, lecture-style presentations, and similar sources were scraped programmatically, and their audio and Japanese subtitles were harvested. The subtitles were cleaned to remove applause markers and other non-speech annotations, and the remaining text was normalized to match a professional, publishable style. The long-form audio was segmented into utterance-level cl ips aligned with timestamped transcript segments. All clips were standardized to a consistent technical format (16~kHz mono WAV), and each clip was paired with its cleaned transcript and assigned to a speaker-independent train, validation, or test split.
-
-On top of this dataset, three different ASR model families were trained and evaluated. The first was a traditional Kaldi-style GMM--HMM system, which used MFCC features with cepstral mean and variance normalization, an explicit pronunciation lexicon, and a decoding graph that integrated acoustic likelihoods with a language model. The second was a CRDNN--CTC model, an end-to-end neural recognizer with a convolutional front end, recurrent temporal modeling, and CTC loss, which learned alignment implicitly and decoded either greedily or with beam search. The third was a fine-tuned Whisper model, which was a transformer encoder--decoder architecture pretrained on multilingual speech and adapted here to the target domain of formal Japanese. Whisper performed autoregressive decoding directly into text-like output, including punctuation and polite forms.
-
-All three systems were evaluated on the same held-out speakers using the same reference transcripts. Character Error Rate (CER) was used as the primary metric, Word Error Rate (WER) was reported as a supporting metric, and Real-Time Factor (RTF) was measured to capture inference speed. The evaluation protocol enforced consistent normalization and scoring rules so that differences in CER, WER, and RTF could be traced back to meaningful differences in modeling approach, feature design, or decoding strategy, rather than to inconsistencies in preprocessing.
-
-Finally, this chapter outlined how ablation studies were used to interpret the results. By contrasting MFCC-based and log-Mel-based front ends, testing augmentation versus no augmentation, varying decoding complexity, and examining the role of transcript normalization, the thesis aimed to separate architectural gains from procedural gains. The next chapter presented the quantitative results of these experiments, including detailed CER, WER, and RTF measurements for each model family, as well as qualitative error analyses that highlighted typical substitution patterns, honorific handling, and stylistic differences between raw hypotheses and the final cleaned transcripts.
+\section{Summary}
+This chapter described the methodology for comparing Japanese ASR across three model families. The study followed six phases (planning, prior work, data preparation, training, evaluation, and discussion) and used a single, consistent dataset pipeline to ensure fair comparison. Japanese TEDx talks with manual subtitles were collected, transcripts were cleaned, audio was standardised to 16\,kHz mono, and long recordings were segmented using WebRTC VAD, with low-quality non-speech clips filtered out. All models were trained on the same 80/10/10 splits and evaluated on the same test set using CER, WER, and RTF to compare accuracy and decoding speed.
