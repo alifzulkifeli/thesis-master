@@ -1,20 +1,404 @@
-\chapter{RESULTS AND DISCUSSIONS}
+\chapter{RESULTS AND DISCUSSION}
 \label{ch:results}
 
 \section{Introduction}
+This chapter reported the outcomes of the end-to-end pipeline described in Chapter~3, starting from data collection and preprocessing, followed by model training and fine-tuning, and finally evaluation on a held-out test split. Results were organized to reflect the methodology phases and to support a fair comparison across three ASR model families (Kaldi GMM--HMM, CRDNN--CTC, and fine-tuned Whisper). Performance was measured using character error rate (CER), word error rate (WER), and real-time factor (RTF).
 
-\section{Experimental Design and Evaluation Setup}
+% =========================================================
+\section{Data Collection and Preprocessing Results}
+\label{sec:data_results}
+
+\subsection{Data Source Selection Outcomes}
+This study collected Japanese TEDx talks from YouTube, restricted to videos that provided \textbf{manual Japanese subtitles}. Videos with only auto-generated captions or no Japanese subtitles were excluded to reduce transcript noise.
+
+\begin{table}[H]
+\centering
+\caption{Video selection outcomes for TEDx Japanese data collection.}
+\label{tab:video_selection}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrr}
+\hline
+\textbf{Item} & \textbf{Count}  \\
+\hline
+Playlist items queried & \texttt{1574}  \\
+Manual Japanese subtitles found & \texttt{862} \\
+Auto-generated only / none & \texttt{712}  \\
+Download completed & \texttt{862} \\
+\hline
+\end{tabular}}
+\end{table}
+
+\subsection{Transcript Cleaning and Normalization Outcomes}
+After subtitle download, raw subtitle text was normalized into reference transcripts by removing formatting tags, speaker labels, and non-speech annotations (e.g., \texttt{[laughter]}, \texttt{(applause)}). The output of this step was a cleaned transcript stream aligned by subtitle cue timestamps.
 
 
-\section{Data Collection}
-\section{Data Pre-Processing}
-\section{Model Training Result}
-\subsection{Traditional GMM-HMM}
-\subsection{Neural Network CRDNN-CTC}
-\subsection{Transformers Whisper}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{mainmatter//images/clean_sub.png}
+\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\end{figure}
+
+\subsection{Audio Standardization Outcomes}
+All audio was converted to a consistent format (16\,kHz, mono, PCM16). This ensured compatibility across Kaldi, SpeechBrain, and Whisper training pipelines.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{mainmatter//images/bitrate.png}
+\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\end{figure}
+
+\subsection{VAD Segmentation Outcomes}
+Long-form TEDx audio was segmented into shorter training utterances using WebRTC VAD. Very short segments ($\leq$2\,s) were removed, and very long segments were sliced into $\leq$20\,s chunks to stabilize training.
+
+\begin{table}[H]
+\centering
+\caption{VAD segmentation results.}
+\label{tab:vad_results}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrr}
+\hline
+\textbf{Item} & \textbf{Count / Value} & \textbf{Notes} \\
+\hline
+Total chunks produced & \texttt{74802} & After segmentation and slicing \\
+Chunks removed (too short) & \texttt{11881} & $\leq$2\,s \\
+Avg chunk duration (s) & \texttt{6.605} & After filtering short clips \\
+Max chunk duration (s) & 20 & Enforced by slicing \\
+\hline
+\end{tabular}}
+\end{table}
+
+\subsection{Non-Speaker / Low-Quality Audio Filtering Outcomes}
+A filtering step was applied to remove chunks dominated by applause/laughter or unclear speech using diarization (dominant speaker ratio) and CLAP-based acoustic event detection. This step aimed to reduce training noise.
+
+\begin{table}[H]
+\centering
+\caption{Audio filtering outcomes (diarization + CLAP).}
+\label{tab:filtering_results}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrr}
+\hline
+\textbf{Item} & \textbf{Count} & \textbf{Notes} \\
+\hline
+Chunks before filtering & \texttt{62921} & Output from VAD \\
+Removed by speaker-structure check & \texttt{13758} & Dominant speaker ratio threshold \\
+Removed by clap/laughter threshold & \texttt{5596} & CLAP score thresholds \\
+Chunks after filtering (final) & \texttt{43567} & Used to build manifests \\
+\hline
+\end{tabular}}
+\end{table}
+
+\subsection{Transcript-to-Audio Mapping and Manifest Outcomes}
+After segmentation and cleaning, each chunk was paired with a reference transcript using timestamp alignment, and manifests were produced for reproducible training and evaluation.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{mainmatter//images/manifest_data.png}
+\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\end{figure}
+
+\subsection{Train/Validation/Test Split Results}
+The final dataset was split into 80\% training, 10\% validation, and 10\% testing. \Cref{tab:data_split_stats} reported split sizes.
+
+\begin{table}[H]
+\centering
+\caption{Dataset statistics and train/validation/test split summary.}
+\label{tab:data_split_stats}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Split} & \textbf{\#Utterances} & \textbf{Duration (hrs)} & \textbf{Average (s)} \\
+\hline
+Train & \texttt{32852}  & \texttt{63.3} & \texttt{6.941} \\
+Valid & \texttt{4357}  & \texttt{8.3}  & \texttt{6.861}\\
+Test  & \texttt{4358} & \texttt{8.1}  & \texttt{6.731}\\
+\hline
+\end{tabular}}
+\end{table}
+
+% =========================================================
+\section{Model Training and Fine-Tuning Results}
+\label{sec:training_results}
+
+\subsection{Kaldi GMM--HMM Training Outcomes}
+Four Kaldi acoustic model stages were trained (mono, tri1, tri2, tri3). Later stages consistently improved accuracy in the final evaluation (reported in \Cref{tab:kaldi_results}), indicating that staged training and improved alignments produced stronger acoustic models.
+
+\begin{table}[H]
+\centering
+\caption{Kaldi GMM--HMM training dynamics based on objective function improvement per frame. Peak improvements occur early and decrease toward near-zero values, indicating convergence.}
+\label{tab:kaldi_obj_impr_summary}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrrrr}
+\hline
+\textbf{Stage} &
+\textbf{Peak impr./frame} &
+\textbf{Peak iter} &
+\textbf{Final impr./frame} &
+\textbf{Stable iter ($<0.02$)} \\
+\hline
+mono & 0.4289 & 1 & 0.0110 & 32 \\
+tri1 & 0.2022 & 3 & 0.0026 & 30 \\
+tri2 & 0.4820 & 1 & 0.0034 & 30 \\
+tri3 & 0.2975 & 3 & 0.0034 & 30 \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{mainmatter//images/kaldi_obj_impr_curve_linear.png}
+\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\end{figure}
+
+
+\subsection{CRDNN--CTC Training Outcomes}
+The CRDNN--CTC model was trained using the prepared manifests and a character vocabulary derived from the training transcripts. Over 70 epochs, training loss decreased from 5.44 to 0.0775, while validation CER reached its lowest value of 0.2272 at epoch 68. The best checkpoint was selected using validation tracking and later evaluated on the test split (reported in \Cref{tab:crdnn_results}). \Cref{tab:crdnn_training_metrics} summarized the epoch-by-epoch training dynamics from \texttt{data.txt}.
+
+\begin{table}[H]
+\centering
+\caption{CRDNN--CTC training metrics across epochs.}
+\label{tab:crdnn_training_metrics}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{rccc}
+\hline
+\textbf{Epoch} & \textbf{Train loss} & \textbf{Valid loss} & \textbf{CER} \\
+\hline
+1 & 5.4400 & 5.2833 & 0.9983 \\
+2 & 4.0100 & 3.0769 & 0.6428 \\
+5 & 1.9100 & 1.6922 & 0.4555 \\
+10 & 1.1200 & 1.3025 & 0.3372 \\
+15 & 0.7760 & 1.0662 & 0.2906 \\
+20 & 0.5770 & 1.0610 & 0.2783 \\
+25 & 0.3130 & 1.0613 & 0.2629 \\
+30 & 0.2250 & 1.0297 & 0.2483 \\
+35 & 0.1740 & 1.0951 & 0.2404 \\
+40 & 0.1360 & 1.1158 & 0.2363 \\
+50 & 0.2050 & 1.0767 & 0.2437 \\
+60 & 0.1090 & 1.1674 & 0.2352 \\
+70 & 0.0775 & 1.2433 & 0.2309 \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{mainmatter//images/loss_curves.png}
+\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{mainmatter//images/cer_curve.png}
+\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\end{figure}
+
+\subsection{Whisper Fine-Tuning Outcomes}
+Multiple Whisper variants were fine-tuned (tiny, base, small, medium, turbo). Training loss decreased steadily over 10 epochs for all variants, showing stable convergence. \Cref{tab:whisper_loss} reported the training loss trajectories.
+
+\begin{table}[H]
+\centering
+\caption{Whisper fine-tuning loss across epochs (lower is better).}
+\label{tab:whisper_loss}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{rccccc}
+\hline
+\textbf{Epoch} & \textbf{tiny} & \textbf{base} & \textbf{small} & \textbf{medium} & \textbf{turbo} \\
+\hline
+1  & 0.6626 & 0.3683 & 0.1988 & 0.0747 & 0.2137 \\
+2  & 0.3636 & 0.2106 & 0.0820 & 0.0415 & 0.1361 \\
+3  & 0.2862 & 0.1466 & 0.0413 & 0.0236 & 0.0911 \\
+4  & 0.2327 & 0.1034 & 0.0216 & 0.0130 & 0.0591 \\
+5  & 0.1930 & 0.0731 & 0.0115 & 0.0071 & 0.0362 \\
+6  & 0.1636 & 0.0520 & 0.0061 & 0.0035 & 0.0198 \\
+7  & 0.1426 & 0.0380 & 0.0033 & 0.0016 & 0.0095 \\
+8  & 0.1289 & 0.0296 & 0.0016 & 0.0012 & 0.0041 \\
+9  & 0.1205 & 0.0252 & 0.0008 & 0.0006 & 0.0016 \\
+10 & 0.1173 & 0.0234 & 0.0006 & 0.0003 & 0.0003 \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{mainmatter//images/whisper_epochs.png}
+\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\end{figure}
+
+
+% =========================================================
+\section{Evaluation Results (CER, WER, and RTF)}
+\label{sec:eval_results}
+
+\subsection{Overall Performance Comparison}
+\Cref{tab:overall_results} presented the main comparison across all systems. Whisper variants achieved the lowest error rates overall, CRDNN--CTC achieved the fastest decoding speed, and Kaldi showed strong gains from staged training but remained less accurate than the neural approaches.
+
+\begin{table}[H]
+\centering
+\caption{Overall comparison of ASR systems on the test split (lower is better for CER/WER/RTF).}
+\label{tab:overall_results}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Model} & \textbf{CER (\%)} & \textbf{WER (\%)} & \textbf{RTF} \\
+\hline
+GMMHMM-mono  & 49.49 & 53.43 & 0.6500 \\
+GMMHMM-tri1  & 24.95 & 29.31 & 0.3410 \\
+GMMHMM-tri2  & 21.30 & 25.59 & 0.2480 \\
+GMMHMM-tri3  & 19.48 & 23.57 & 0.2510 \\
+CRDNNCTC-1   & 15.23 & 22.87 & \textbf{0.0129} \\
+CRDNNCTC-2 (beam) & 15.12 & 22.70 & 0.0147 \\
+Whisper-tiny   & 10.72 & 11.61 & 0.0297 \\
+Whisper-base   &  5.67 &  5.89 & 0.0413 \\
+Whisper-small  &  4.34 &  4.30 & 0.0737 \\
+Whisper-medium &  4.29 &  \textbf{4.22} & 0.1605 \\
+Whisper-turbo  &  \textbf{4.28} & 4.23 & 0.0959 \\
+\hline
+\end{tabular}}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\fbox{\rule{0pt}{2.0in}\rule{0.92\linewidth}{0pt}}
+\caption{Placeholder: CER and WER comparison across all systems.}
+\label{fig:cer_wer_all}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\fbox{\rule{0pt}{2.0in}\rule{0.92\linewidth}{0pt}}
+\caption{Placeholder: Accuracy--speed trade-off (RTF vs WER) for all systems.}
+\label{fig:rtf_wer_tradeoff}
+\end{figure}
+
+\subsection{Kaldi GMM--HMM Results (mono to tri3)}
+\label{sec:kaldi_results}
+Kaldi showed consistent improvements across staged training. From mono to tri3, CER decreased from 49.49\% to 19.48\% (60.64\% relative reduction), while WER decreased from 53.43\% to 23.57\% (55.89\% relative reduction). The largest improvement occurred from mono to tri1, while later stages provided smaller but consistent gains.
+
+\begin{table}[H]
+\centering
+\caption{Kaldi GMM--HMM results across training stages on the test split.}
+\label{tab:kaldi_results}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Stage} & \textbf{CER (\%)} & \textbf{WER (\%)} & \textbf{RTF} \\
+\hline
+mono & 49.49 & 53.43 & 0.6500 \\
+tri1 & 24.95 & 29.31 & 0.3410 \\
+tri2 & 21.30 & 25.59 & 0.2480 \\
+tri3 & 19.48 & 23.57 & 0.2510 \\
+\hline
+\end{tabular}}
+\end{table}
+
+\subsection{CRDNN--CTC Results (Greedy vs Beam)}
+\label{sec:crdnn_results}
+Beam decoding provided a small improvement over greedy decoding (WER reduced from 22.87\% to 22.70\%; 0.74\% relative reduction), but increased decoding cost (RTF increased by approximately 13.95\%). Both CRDNN variants remained substantially faster than the other model families.
+
+\begin{table}[H]
+\centering
+\caption{CRDNN--CTC results on the test split (greedy vs beam).}
+\label{tab:crdnn_results}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Decoder} & \textbf{CER (\%)} & \textbf{WER (\%)} & \textbf{RTF} \\
+\hline
+Greedy (CRDNNCTC-1) & 15.23 & 22.87 & \textbf{0.0129} \\
+Beam (CRDNNCTC-2)   & 15.12 & 22.70 & 0.0147 \\
+\hline
+\end{tabular}}
+\end{table}
+
+\subsection{Whisper Fine-Tuning Results (Model Size Effects)}
+\label{sec:whisper_results}
+Whisper fine-tuning produced the strongest transcription accuracy. Accuracy improved substantially from tiny to base (WER reduced from 11.61\% to 5.89\%), and continued improving from base to small (WER reduced to 4.30\%). Gains from small to medium were marginal (WER 4.30\% to 4.22\%; about 1.86\% relative), while decoding became much slower (RTF increased from 0.0737 to 0.1605). Whisper-turbo achieved nearly the same accuracy as medium (WER 4.23\%) with faster decoding (RTF 0.0959).
+
+\begin{table}[H]
+\centering
+\caption{Whisper fine-tuning results by model size on the test split.}
+\label{tab:whisper_results}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrrr}
+\hline
+\textbf{Variant} & \textbf{CER (\%)} & \textbf{WER (\%)} & \textbf{RTF} \\
+\hline
+tiny   & 10.72 & 11.61 & 0.0297 \\
+base   &  5.67 &  5.89 & 0.0413 \\
+small  &  4.34 &  4.30 & 0.0737 \\
+medium &  4.29 &  \textbf{4.22} & 0.1605 \\
+turbo  &  \textbf{4.28} & 4.23 & 0.0959 \\
+\hline
+\end{tabular}}
+\end{table}
+
+% =========================================================
 \section{Discussion}
-\section{Limitations and Threats to Validity}
+\label{sec:discussion}
+
+\subsection{Main Findings and Trade-offs}
+The results showed clear differences between model families. Whisper variants achieved the lowest CER/WER, indicating the strongest accuracy under the TEDx Japanese domain. CRDNN--CTC achieved the fastest decoding (lowest RTF), indicating strong suitability for low-latency use cases. Kaldi showed large improvements across staged training but remained less accurate than the neural approaches.
+
+\subsection{Interpretation by Model Family}
+\subsubsection{Kaldi: staged training gains and diminishing returns}
+The large improvement from mono to tri1 reflected the benefit of moving from context-independent to context-dependent modelling. Later stages (tri2 and tri3) further improved accuracy through feature transforms (LDA+MLLT) and speaker-adaptive training (SAT), but with diminishing gains as the system approached its best performance under the chosen feature and language model configuration.
+
+\subsubsection{CRDNN--CTC: decoding strategy impact}
+The small gap between greedy and beam decoding suggested that most performance was driven by the acoustic model, and the chosen beam settings provided limited additional benefit relative to the added decoding cost. However, both CRDNN variants were consistently faster than Whisper and Kaldi in RTF.
+
+\subsubsection{Whisper: strong accuracy with model-size cost}
+Whisper performance improved with model size, but the speed cost increased substantially for larger variants. Whisper-medium achieved the best WER, while Whisper-turbo provided nearly the same accuracy with improved speed, making it a more practical choice when latency was important.
+
+\subsection{Error Analysis}
+\label{sec:error_analysis}
+To complement aggregate metrics, this section can summarize recurring error patterns across systems (e.g., deletions under fast speech, named entities, subtitle mismatch, or segmentation boundary effects). Detailed examples can be included using \Cref{tab:qual_examples}.
+
+\begin{table}[H]
+\centering
+\caption{Qualitative transcription examples (reference vs hypotheses).}
+\label{tab:qual_examples}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{2.2cm}p{10.5cm}}
+\hline
+\textbf{System} & \textbf{Text} \\
+\hline
+Reference & \texttt{<fill: reference sentence>} \\
+Kaldi (tri3) & \texttt{<fill: hypothesis>} \\
+CRDNN--CTC (best) & \texttt{<fill: hypothesis>} \\
+Whisper (best) & \texttt{<fill: hypothesis>} \\
+\hline
+\end{tabular}}
+\end{table}
+
+\subsection{Impact of Preprocessing Choices on Results}
+Because all systems used the same cleaned and standardized dataset, differences in accuracy and speed mainly reflected model architecture and decoding strategy rather than evaluation handling. Nevertheless, the preprocessing steps in Chapter~3 (manual subtitle selection, cleaning, VAD chunking, and filtering) were designed to reduce transcript noise and non-speech audio, which supported stable training and fair comparison across model families.
+
+\subsection{Limitations}
+Key limitations include TEDx-only speaking style, possible subtitle-to-speech mismatch, sensitivity of Japanese WER to tokenization, and limited ablation studies (e.g., VAD thresholds, filtering thresholds, or language model variants).
+
 \section{Summary}
-
-
-
+This chapter presented results for each stage of the Chapter~3 pipeline and compared ASR performance across classical and neural approaches. Kaldi improved substantially across staged training, CRDNN--CTC provided the fastest decoding, and fine-tuned Whisper variants achieved the best transcription accuracy with clear speed trade-offs by model size. The next chapter concludes the study and proposes future improvements.
