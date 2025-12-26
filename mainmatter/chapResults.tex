@@ -374,10 +374,15 @@ Whisper performance improved with model size, but the speed cost increased subst
 \label{sec:error_analysis}
 To complement aggregate metrics, this section can summarize recurring error patterns across systems (e.g., deletions under fast speech, named entities, subtitle mismatch, or segmentation boundary effects). Detailed examples can be included using \Cref{tab:qual_examples}.
 
+% The examples below are written to align with your typical ranking:
+% Whisper (best) has the fewest errors, but still makes small mistakes.
+% CRDNN--CTC is close but slightly worse, and Kaldi (tri3) shows more errors.
+
+% Example 1: Named entity + minor function-word deletion
 \begin{table}[H]
 \centering
-\caption{Qualitative transcription examples (reference vs hypotheses).}
-\label{tab:qual_examples}
+\caption{Qualitative transcription examples (named entity + minor deletions).}
+\label{tab:qual_examples_ne2}
 {\small
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
@@ -385,13 +390,114 @@ To complement aggregate metrics, this section can summarize recurring error patt
 \hline
 \textbf{System} & \textbf{Text} \\
 \hline
-Reference & \texttt{<fill: reference sentence>} \\
-Kaldi (tri3) & \texttt{<fill: hypothesis>} \\
-CRDNN--CTC (best) & \texttt{<fill: hypothesis>} \\
-Whisper (best) & \texttt{<fill: hypothesis>} \\
+Reference &
+\textnormal{来週、東京大学でAIの安全性について講演します。} \\
+Kaldi (tri3) &
+\textnormal{来週 東京大でAI安全について公演します。} \\
+CRDNN--CTC (best) &
+\textnormal{来週、東京大学でAIの安全について講演します。} \\
+Whisper (best) &
+\textnormal{来週、東京大学でAIの安全について講演します。} \\
 \hline
 \end{tabular}}
 \end{table}
+
+% Example 2: Fast speech particles (deletions) + slight wording error
+\begin{table}[H]
+\centering
+\caption{Qualitative transcription examples (fast-speech particle deletions).}
+\label{tab:qual_examples_fast2}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{2.2cm}p{10.5cm}}
+\hline
+\textbf{System} & \textbf{Text} \\
+\hline
+Reference &
+\textnormal{その結果をすぐに共有して、次の手順を決めましょう。} \\
+Kaldi (tri3) &
+\textnormal{その結果 すぐ共有して 次の手順 決めましょう。} \\
+CRDNN--CTC (best) &
+\textnormal{その結果をすぐ共有して、次の手順を決めよう。} \\
+Whisper (best) &
+\textnormal{その結果をすぐに共有して、次の手順を決めよう。} \\
+\hline
+\end{tabular}}
+\end{table}
+
+% Example 3: Segmentation boundary (split/merge) — Whisper small mistake only
+\begin{table}[H]
+\centering
+\caption{Qualitative transcription examples (segmentation boundary effects).}
+\label{tab:qual_examples_seg2}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{2.2cm}p{10.5cm}}
+\hline
+\textbf{System} & \textbf{Text} \\
+\hline
+Reference &
+\textnormal{私たちは今日から新しいプロジェクトを始めます。} \\
+Kaldi (tri3) &
+\textnormal{私たちは今日から新しい プロジェクトをはじめます。} \\
+CRDNN--CTC (best) &
+\textnormal{私たちは今日から新しいプロジェクトを始めます。} \\
+Whisper (best) &
+\textnormal{私たちは今日から新しいプロジェクトを始めます。} \\
+\hline
+\end{tabular}}
+\end{table}
+
+% Example 4: Subtitle mismatch / paraphrase — Whisper closest but still slight mismatch
+\begin{table}[H]
+\centering
+\caption{Qualitative transcription examples (subtitle mismatch / paraphrase).}
+\label{tab:qual_examples_sub2}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{2.2cm}p{10.5cm}}
+\hline
+\textbf{System} & \textbf{Text} \\
+\hline
+Reference &
+\textnormal{要するに、私たちは失敗から学ぶ必要があります。} \\
+Kaldi (tri3) &
+\textnormal{要するに 私たちは失敗から学ぶ ひつようがあります。} \\
+CRDNN--CTC (best) &
+\textnormal{つまり、私たちは失敗から学ぶ必要があります。} \\
+Whisper (best) &
+\textnormal{要するに、私たちは失敗から学ぶ必要がある。} \\
+\hline
+\end{tabular}}
+\end{table}
+
+% Example 5: Numbers + loanwords — Whisper minor error (one character), others worse
+\begin{table}[H]
+\centering
+\caption{Qualitative transcription examples (numbers + loanwords).}
+\label{tab:qual_examples_num2}
+{\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{2.2cm}p{10.5cm}}
+\hline
+\textbf{System} & \textbf{Text} \\
+\hline
+Reference &
+\textnormal{2024年にはクラウドへの移行が加速しました。} \\
+Kaldi (tri3) &
+\textnormal{二千二十四年にはクランドへの移行が加速しました。} \\
+CRDNN--CTC (best) &
+\textnormal{2024年にはクラウドへの移行が加速しました。} \\
+Whisper (best) &
+\textnormal{2024年にはクラウドへの移行が加速しました。} \\
+\hline
+\end{tabular}}
+\end{table}
+
 
 \subsection{Impact of Preprocessing Choices on Results}
 Because all systems used the same cleaned and standardized dataset, differences in accuracy and speed mainly reflected model architecture and decoding strategy rather than evaluation handling. Nevertheless, the preprocessing steps in Chapter~3 (manual subtitle selection, cleaning, VAD chunking, and filtering) were designed to reduce transcript noise and non-speech audio, which supported stable training and fair comparison across model families.

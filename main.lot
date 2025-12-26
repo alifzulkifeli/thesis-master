@@ -22,4 +22,8 @@
 \contentsline {table}{\numberline {4.9}{\ignorespaces Kaldi GMM--HMM results across training stages on the test split.\relax }}{53}{table.caption.39}%
 \contentsline {table}{\numberline {4.10}{\ignorespaces CRDNN--CTC results on the test split (greedy vs beam).\relax }}{54}{table.caption.40}%
 \contentsline {table}{\numberline {4.11}{\ignorespaces Whisper fine-tuning results by model size on the test split.\relax }}{54}{table.caption.41}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Qualitative transcription examples (reference vs hypotheses).\relax }}{56}{table.caption.42}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Qualitative transcription examples (named entity + minor deletions).\relax }}{56}{table.caption.42}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Qualitative transcription examples (fast-speech particle deletions).\relax }}{56}{table.caption.43}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Qualitative transcription examples (segmentation boundary effects).\relax }}{56}{table.caption.44}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces Qualitative transcription examples (subtitle mismatch / paraphrase).\relax }}{56}{table.caption.45}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces Qualitative transcription examples (numbers + loanwords).\relax }}{57}{table.caption.46}%

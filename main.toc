@@ -1,8 +1,8 @@
 \changetocdepth {3}
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{TABLE OF CONTENTS}{i}{section*.1}%
-\contentsline {chapter}{LIST OF TABLES}{v}{section*.2}%
-\contentsline {chapter}{LIST OF FIGURES}{vii}{section*.3}%
+\contentsline {chapter}{LIST OF TABLES}{ii}{section*.2}%
+\contentsline {chapter}{LIST OF FIGURES}{iii}{section*.3}%
 \vspace {1.7cm}
 \contentsline {chapter}{\chapternumberline {1}INTRODUCTION}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Research Background}{1}{section.1.1}%
@@ -102,7 +102,7 @@
 \contentsline {subsubsection}{\numberline {4.5.2.2}CRDNN--CTC: decoding strategy impact}{55}{subsubsection.4.5.2.2}%
 \contentsline {subsubsection}{\numberline {4.5.2.3}Whisper: strong accuracy with model-size cost}{55}{subsubsection.4.5.2.3}%
 \contentsline {subsection}{\numberline {4.5.3}Error Analysis}{55}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Impact of Preprocessing Choices on Results}{56}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {4.5.5}Limitations}{56}{subsection.4.5.5}%
-\contentsline {section}{\numberline {4.6}Summary}{56}{section.4.6}%
-\contentsline {chapter}{REFERENCES}{57}{section*.44}%
+\contentsline {subsection}{\numberline {4.5.4}Impact of Preprocessing Choices on Results}{57}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Limitations}{57}{subsection.4.5.5}%
+\contentsline {section}{\numberline {4.6}Summary}{57}{section.4.6}%
+\contentsline {chapter}{REFERENCES}{58}{section*.48}%
