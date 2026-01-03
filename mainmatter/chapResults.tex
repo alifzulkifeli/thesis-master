@@ -2,14 +2,19 @@
 \label{ch:results}
 
 \section{Introduction}
-This chapter reported the outcomes of the end-to-end pipeline described in Chapter~3, starting from data collection and preprocessing, followed by model training and fine-tuning, and finally evaluation on a held-out test split. Results were organized to reflect the methodology phases and to support a fair comparison across three ASR model families (Kaldi GMM--HMM, CRDNN--CTC, and fine-tuned Whisper). Performance was measured using character error rate (CER), word error rate (WER), and real-time factor (RTF).
+
+In this chapter, the result of the workflow explained in Chapter 3 is presented. The result encompasses the steps from data collection and preprocessing, model training and fine-tuning, and finally evaluation on a held-out test split. Then, the result is organized based on the methodology section and the quantitative results from testing the trained and fine-tuned models. 
+
+
+The performance is measured using character error rate (CER), word error rate (WER), and real-time factor (RTF). Following the research objective explained in Chapter 1 and the gap identified in Chapter 2, the analysis in this chapter focuses on two goals. The first goal is measure and compare the accuracy of the selected models, and secothe nd goal is to measure how fast the model can generate output based on the inputted audio \parencite{ando2021}. 
+
 
 % =========================================================
 \section{Data Collection and Preprocessing Results}
 \label{sec:data_results}
 
 \subsection{Data Source Selection Outcomes}
-This study collected Japanese TEDx talks from YouTube, restricted to videos that provided \textbf{manual Japanese subtitles}. Videos with only auto-generated captions or no Japanese subtitles were excluded to reduce transcript noise.
+This study gathered data from publicly available Japanese TEDx talks and only videos that contain manual subtitle will be selected from the playlist. Videos with auto-generated subtitles or subtitles in languages other than Japanese will be excluded to reduce transcript noise.
 
 \begin{table}[H]
 \centering
@@ -30,28 +35,38 @@ Download completed & \texttt{862} \\
 \end{tabular}}
 \end{table}
 
+Since the data source only utilizes data from manual transcription, it is align with the testing objective that is to produce a readable and standardized transcript while at the same time reducing the noise during training and evaluation. This is important because Japanese language can have words with different meaning with same pronunciation. If this kind of data used as training data, it will resulting in model performance to become worsen.
+
+\parencite{Koenecke2020}.
+
 \subsection{Transcript Cleaning and Normalization Outcomes}
-After subtitle download, raw subtitle text was normalized into reference transcripts by removing formatting tags, speaker labels, and non-speech annotations (e.g., \texttt{[laughter]}, \texttt{(applause)}). The output of this step was a cleaned transcript stream aligned by subtitle cue timestamps.
-
-
+After the subtitle is downloaded, the raw data from the subtitle was normalized into a  reference transcript that acts as the source of truth. This cleaning process involves removing formatting tags, removing speaker labels, and discarding non-speech annotations such as \texttt{[laughter]}, \texttt{(applause)}. The output from this process is a clean transcript with a timestamp. Another benefit of removing the labels is to reduce noise as things like bracket events will increase the error rate because when calculating the error number, the bracket event will be treated as a deletion from the reference transcript. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{mainmatter//images/clean_sub.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{Raw vs cleaned transcript after preprocesing}
+\label{fig:clean_sub_example}
 \end{figure}
 
+
+As shown in \Cref{fig:clean_sub_example}, the raw subtitle contains non-speech items like formatting symbols and additional annotations that will be very useful for human viewing the video but since it is not part of the intended script, it will cause noise. Another thing to be taken into consideration is that the post-processing also needs to clean these kinds of annotations in the hypothesis transcript. This will improve the fairness when comparing these models because the CER/WER is measured based on the speech content rather than subtitle formatting. \parencite{ando2021} 
+
+
 \subsection{Audio Standardization Outcomes}
-All audio was converted to a consistent format (16\,kHz, mono, PCM16). This ensured compatibility across Kaldi, SpeechBrain, and Whisper training pipelines.
+After the audio is downloaded, it will be converted into a consistent 16\,kHz, mono, PCM16 format. The audio needs to be formatted to ensure compatibility when used in Kaldi, SpeechBrain, and Whisper training pipelines. By standardizing the sampling rate, it will reduce the differences caused by audio encoders and also 16\,kHz, mono, PCM16 is the standard data expected from traditional pipelines (MFCC + CMVN) and modern neural pipelines (log-Mel filterbanks) \parencite{kaldi2011, mcfee_2025_15006942}. This step also will support the ``apples-to-apples'' comparison goal stated in Chapter 1 by using the same data format across all models \parencite{xu2023recent}. \Cref{fig:audio_resample_example}  below shows the difference of downloaded and resampled audio. 
+
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{mainmatter//images/bitrate.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{Example of audio standardization via resampling (44.1\,kHz to 16\,kHz).}
+\label{fig:audio_resample_example}
 \end{figure}
 
+
 \subsection{VAD Segmentation Outcomes}
-Long-form TEDx audio was segmented into shorter training utterances using WebRTC VAD. Very short segments ($\leq$2\,s) were removed, and very long segments were sliced into $\leq$20\,s chunks to stabilize training.
+The downloaded audio length is approximately 20 minutes long, which is not suitable for direct use as training data. By segmenting the long audio into shorter utterances, it will be more practical to use as training data. Additionally, models like Whisper, which is based on transformers, will cause memory issues because long sequences of training data will increase memory usage and decrease the stability of the models during training and fine-tuning. The segmentation process is done using a lightweight segmentation mechanism widely used in speech preprocessing pipelines named WebRTC VAD \parencite{webrtc}.
 
 \begin{table}[H]
 \centering
@@ -72,8 +87,11 @@ Max chunk duration (s) & 20 & Enforced by slicing \\
 \end{tabular}}
 \end{table}
 
+\Cref{tab:vad_results}  above showed the summary of the data after segmentation. The average audio length became 6.6 seconds,  which are closer to utterance-level speech than long-form audio. This will eliminate the memory usage problem mentioned earlier, as the longest audio is only 20 seconds. Another reason to chunk the audio is to prevent the RTF meafrom surement creating a spike because of limits when decoding the audio. 
+
+
 \subsection{Non-Speaker / Low-Quality Audio Filtering Outcomes}
-A filtering step was applied to remove chunks dominated by applause/laughter or unclear speech using diarization (dominant speaker ratio) and CLAP-based acoustic event detection. This step aimed to reduce training noise.
+The filtering process is carried out based on the requirement in Chapter 1, which states that the preprocessing method will heavily impact performance, especially for audio that contains too much noise, such as non-linguistic events or multi-speaker overlap \parencite{latif2020}. This type of data needs to be removed because it may contain a weak or wrong subtitle alignment even when the segment has manual subtitles.
 
 \begin{table}[H]
 \centering
@@ -94,14 +112,21 @@ Chunks after filtering (final) & \texttt{43567} & Used to build manifests \\
 \end{tabular}}
 \end{table}
 
+The result in the table above shows that after removing non-speaker and low-quality  audio, only \texttt{43567} chunks remain  from  \texttt{62921}. This shows that it is a trade-off between the quantity and the quality of the audio, where filtering will reduce the number of dataset size but increase the segment with clean Japanese speech. The reliability of CER/WER is also increased because the test reference is less affected by non-speech artifacts and misalignment noise \parencite{ando2021}.
+
+
 \subsection{Transcript-to-Audio Mapping and Manifest Outcomes}
-After segmentation and cleaning, each chunk was paired with a reference transcript using timestamp alignment, and manifests were produced for reproducible training and evaluation.
+After the audio is segmented and cleaned, each chunk will be paired with the reference transcript from the cleaned subtitle earlier. From there, the manifest containing the audio and transcript data is created. The objective of creating the manifest is to improve reproducibility when splitting the data into train and test splits. This will also ensure that the differences in the end result are only due to the model itself and not on inconsistent data splits \parencite{ravanelli2021speechbraingeneralpurposespeechtoolkit}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{mainmatter//images/manifest_data.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{Data after mapping audio and transcript into manifest format}
 \end{figure}
+
+Figure above shows some of the data from the manifest data. The manifest data contains four column that is ID, path, duration, and transcript. The ID data is used to differentiate each chunk from the main audio file name. Duration and path are the data of the audio file, keeping records of where the audio is stored and the duration of the audio file. Lastly, the transcript is the reference transcript that will be used as labelled data when training models and as a reference transcript when testing the models. 
+
+
 
 \subsection{Train/Validation/Test Split Results}
 The final dataset was split into 80\% training, 10\% validation, and 10\% testing. \Cref{tab:data_split_stats} reported split sizes.
@@ -124,12 +149,14 @@ Test  & \texttt{4358} & \texttt{8.1}  & \texttt{6.731}\\
 \end{tabular}}
 \end{table}
 
+The split statistics show comparable average durations across train/valid/test, which reduces the risk that one split systematically contains longer or harder utterances. Keeping the test split fully held out supports a cleaner interpretation of generalization and makes the evaluation consistent with comparative reporting in prior Japanese ASR studies \parencite{ando2021, Karita2021}.
+
 % =========================================================
 \section{Model Training and Fine-Tuning Results}
 \label{sec:training_results}
 
 \subsection{Kaldi GMM--HMM Training Outcomes}
-Four Kaldi acoustic model stages were trained (mono, tri1, tri2, tri3). Later stages consistently improved accuracy in the final evaluation (reported in \Cref{tab:kaldi_results}), indicating that staged training and improved alignments produced stronger acoustic models.
+Kaldi training consisted of four stages of training, which are mono, tri1, tri2, and tri3. The later stages were trained based on the previous stages' aligned data. This convention follows the Kaldi recipe logic, where increasing the context-dependent model will improve the alignment and feature-space transform. The consistent improvement aligns with established reports with other training recipes, such as CSJ, where later triphone and SAT will produce better accuracy gain \parencite{kaldi2011, KaldiCSJResults2015}
 
 \begin{table}[H]
 \centering
@@ -154,15 +181,18 @@ tri3 & 0.2975 & 3 & 0.0034 & 30 \\
 \end{tabular}}
 \end{table}
 
+The trend line in \Cref{tab:kaldi_obj_impr_summary} above shows that most of the huge parameter updates occurred early in the training, then followed by small improvements until it hit a plateau and convergence was approached. This pattern is expected for GMM--HMM training and aligns with typical Kaldi diagnostics used to detect training stability and saturation \parencite{kaldi2011}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{mainmatter//images/kaldi_obj_impr_curve_linear.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{Kaldi GMM-HMM training dynamics in linear scale}
 \end{figure}
 
-
 \subsection{CRDNN--CTC Training Outcomes}
-The CRDNN--CTC model was trained using the prepared manifests and a character vocabulary derived from the training transcripts. Over 70 epochs, training loss decreased from 5.44 to 0.0775, while validation CER reached its lowest value of 0.2272 at epoch 68. The best checkpoint was selected using validation tracking and later evaluated on the test split (reported in \Cref{tab:crdnn_results}). \Cref{tab:crdnn_training_metrics} summarized the epoch-by-epoch training dynamics from \texttt{data.txt}.
+The CRDNN-CTC model was trained using the manifest prepared in the preprocessing phase and a character vocabulary derived from the training script. The training was done over 70 epochs, where the starting training loss was 5.44 at the start of the training and became 0.0775 at the end, with the lowest CER at 0.2272 during epoch 68. After that, the best checkpoint was selected using validation tracking and later evaluated on the test split (reported in \Cref{tab:crdnn_results}). \Cref{tab:crdnn_training_metrics} summarized the epoch-by-epoch training dynamics from \texttt{data.txt}.
+
+For the decoding part using CTC, it is well aligned with Japanese transcription due to its ability to use monotonic alignment without needing a pronunciation dictionary. The reference transcript also does not need to be tokenized into words, which is very useful for languages that do not have space between words in a sentence \parencite{watanabe2018espnetendtoendspeechprocessing}.
 
 \begin{table}[H]
 \centering
@@ -192,20 +222,22 @@ The CRDNN--CTC model was trained using the prepared manifests and a character vo
 \end{tabular}}
 \end{table}
 
+Training curves below show that learning occurs very strongly in the early stages and then followed by small changes later in the training as the epochs increase. The error rate value starting from a very high number that is 0.9983 which shows that the prediction is basically random at this point of training. As the train loss and valid loss decrease, the CER also decreased. The figure below shows that training and validation loss as the epoch increases, with valid loss becoming flat first, followed by training loss. The figure also shows that CER is decreasing aggressively at the start of the training and then becomes stable in the middle and maintains the trend until the end of the training.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{mainmatter//images/loss_curves.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{Training vs validation loss}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{mainmatter//images/cer_curve.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{CER over Epochs}
 \end{figure}
 
 \subsection{Whisper Fine-Tuning Outcomes}
-Multiple Whisper variants were fine-tuned (tiny, base, small, medium, turbo). Training loss decreased steadily over 10 epochs for all variants, showing stable convergence. \Cref{tab:whisper_loss} reported the training loss trajectories.
+The Whisper model fine-tuning is using a pre-trained model provided by OpenAI, where the model is built upon a large-scale weak supervision, which has been shown to improve robustness under domain mismatch and reduce the reliance on task-specific feature engineering \parencite{radford2023robust}. Previous studies from \textcite{bajo2024efficient} show that a notable improvement is it achieved when fine-tuning the base multi-language models by adapting to the Japanese language. The fine-tune stability can be seen from the loss vs epoch values below. 
 
 \begin{table}[H]
 \centering
@@ -232,19 +264,23 @@ Multiple Whisper variants were fine-tuned (tiny, base, small, medium, turbo). Tr
 \end{tabular}}
 \end{table}
 
+The larger model, like medium and large-turbo, becomes stable faster at only epoch 5, while the smaller model, like tiny, becomes stable become stable after epochs 9. Also worth noting that the loss value after epochs 10 is different eventhough the training become stable showing that the larger model is more quick to adapt to the training data compared to the smaller model. 
+
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{mainmatter//images/whisper_epochs.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{Whisper Fine-tuning loss over Epochs}
 \end{figure}
-
 
 % =========================================================
 \section{Evaluation Results (CER, WER, and RTF)}
 \label{sec:eval_results}
 
 \subsection{Overall Performance Comparison}
-\Cref{tab:overall_results} presented the main comparison across all systems. Whisper variants achieved the lowest error rates overall, CRDNN--CTC achieved the fastest decoding speed, and Kaldi showed strong gains from staged training but remained less accurate than the neural approaches.
+\Cref{tab:overall_results} above shows that  Whisper   achieved the highest accuracy with the lowest CER and WER overall,  followed by CRDNN--CTC which is second in accuracy but has   the highest decoding speed. And then, the traditional model Kaldi shows a good result and strong gains from staged training but remains less accurate compared to the neural approaches.
+
+Based on the literature review in Chapter 2, the pattern is consistent with past studies where newer end-to-end models that build using transformers perform better compared to the older pipeline in terms of accuracy.  However, architectural and decoding choices have a strong impact on latency \parencite{xu2023recent, radford2023robust}.
 
 \begin{table}[H]
 \centering
@@ -275,19 +311,20 @@ Whisper-turbo  &  \textbf{4.28} & 4.23 & 0.0959 \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{mainmatter//images/cer_wer_all.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{CER and WER comparison across all system}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{mainmatter//images/rtf_vs_cer_tradeoff_labeled.png}
-\caption{Audio resampling from 44.1 kHz(Top) to 16 kHz(Bottom)}
+\caption{Accuracy speed trade-off}
 \end{figure}
 
+The ranking for accuracy is consistent across both CER and WER, where Whisper variants are the best in terms of precision while placing CRDNN--CTC a little bit behind in terms of accuracy, which sits in the middle, and Kaldi is the weakest, even at tri3. In contrast, from the RTF performance, CRDNN--CTC runs the fastest, with Whisper slowing down as model size increases. 
 
 \subsection{Kaldi GMM--HMM Results (mono to tri3)}
 \label{sec:kaldi_results}
-Kaldi showed consistent improvements across staged training. From mono to tri3, CER decreased from 49.49\% to 19.48\% (60.64\% relative reduction), while WER decreased from 53.43\% to 23.57\% (55.89\% relative reduction). The largest improvement occurred from mono to tri1, while later stages provided smaller but consistent gains.
+Starting at mono and moving through tri3, the performance of GMM-HMM steadily increases. As the model advances, CER drops and falls from nearly 49.49\% to 19.48\%, a drop of more than 60\%. WER follows a similar trend, first decreasing from over 53.43\% to 23.57\%, cutting errors by roughly half. Most of the progress happens early, particularly between mono and tri1. After that point, each step only lowers the error rate by a small amount but continuously.
 
 \begin{table}[H]
 \centering
@@ -308,9 +345,11 @@ tri3 & 19.48 & 23.57 & 0.2510 \\
 \end{tabular}}
 \end{table}
 
+Smaller improvements from tri1 to tri3 show an expected behavior of conventional pipelines, where shifting to context-sensitive triphones results in notable progress. Additionally,  subsequent enhancements via feature adjustments and SAT add modest improvements \parencite{kaldi2011, KaldiCSJResults2015}. In terms of real-time usability, GMM-HMM shows that the model's performance in terms of RTF becomes better as efficiency holds despite deeper layers in GMM-HMM models.
+
 \subsection{CRDNN--CTC Results (Greedy vs Beam)}
 \label{sec:crdnn_results}
-Beam decoding provided a small improvement over greedy decoding (WER reduced from 22.87\% to 22.70\%; 0.74\% relative reduction), but increased decoding cost (RTF increased by approximately 13.95\%). Both CRDNN variants remained substantially faster than the other model families.
+In the CRDNN-CTC results, the error rate decreased slightly when using beam decoding compared to greedy decoding. The decrease from 22.87\% to 22.70\% resulted in a 0.17\% difference between both decoders. The decoding speed increased significantly by about 13.95\% from greedy decoding to beam decoding. However, both versions of CRDNN-CTC achieved the fastest decoding time compared to other models. 
 
 \begin{table}[H]
 \centering
@@ -329,9 +368,13 @@ Beam (CRDNNCTC-2)   & 15.12 & 22.70 & 0.0147 \\
 \end{tabular}}
 \end{table}
 
+A slight difference in accuracy between greedy and beam decoding shows that the acoustic model has a greater influence, while beam search adds little gain. In this case, the performance leans more on the encoder's strength rather than advanced decoding methods. Prior work supports this pattern, which shows that greedy approaches often match beam results when language modeling plays a minor role \parencite{graves2013, chen2020streaming}. What stands out is how fast both setups operate, delivering very low RTF values. Their speed makes them practical choices for real-time applications where delay matters.
+
 \subsection{Whisper Fine-Tuning Results (Model Size Effects)}
 \label{sec:whisper_results}
-Whisper fine-tuning produced the strongest transcription accuracy. Accuracy improved substantially from tiny to base (WER reduced from 11.61\% to 5.89\%), and continued improving from base to small (WER reduced to 4.30\%). Gains from small to medium were marginal (WER 4.30\% to 4.22\%; about 1.86\% relative), while decoding became much slower (RTF increased from 0.0737 to 0.1605). Whisper-turbo achieved nearly the same accuracy as medium (WER 4.23\%) with faster decoding (RTF 0.0959).
+Transcription accuracy reached its highest with Whisper fine-tuning. Moving up from tiny to base brought a clear improvement, where the WER dropped from 11.61\% down to 5.89\%. A further step to small model reduced the WER again, landing at 4.30\%. Progress beyond that slowed, where medium only edged ahead by 1.86\%, lowering WER to 4.22\%. At the same time, processing lagged behind, and RTF climbed past 0.16. Yet, Whisper-turbo matched medium closely, hitting 4.23\% WER while responding quicker than medium, with an  RTF under 0.1.
+
+
 
 \begin{table}[H]
 \centering
@@ -353,157 +396,144 @@ turbo  &  \textbf{4.28} & 4.23 & 0.0959 \\
 \end{tabular}}
 \end{table}
 
+Results reveal how speed ties to accuracy where bigger models gain precision only until gains slow, demanding far more computing power. Earlier work supports this because pre-trained Transformers handle Japanese speech well, though size must suit real-world limits \parencite{radford2023robust, bajo2024efficient}. Here, Whisper-turbo strikes a useful middle ground, holding near top-tier word error rates while cutting response time compared to Whisper-medium.
+
 % =========================================================
 \section{Discussion}
 \label{sec:discussion}
 
 \subsection{Main Findings and Trade-offs}
-The results showed clear differences between model families. Whisper variants achieved the lowest CER/WER, indicating the strongest accuracy under the TEDx Japanese domain. CRDNN--CTC achieved the fastest decoding (lowest RTF), indicating strong suitability for low-latency use cases. Kaldi showed large improvements across staged training but remained less accurate than the neural approaches.
+Overall finding that can be concluded is that Whisper models handled Japanese TEDx talks better than others. This can be seen from the CER and WER in speech recognition tasks. However, the real-time performance aspect was something else that was unexpected, as the CRDNN--CTC system processed audio faster than amaking it ll, suitable for real-time usage. Training helped GMM-HMM a lot at each stage. However, when measured against deep learning systems, its performance stayed behind.
+
+
+The overall outcomes align with the objective explained in Chapter 1 and with past studies in reviewed in Chapter 2. ASR systems for Japanese speech recognition perform better when they handle symbol patterns and draw on broad pre-trained knowledge. Meanwhile, older processing methods still offer clearer logic paths and organized learning setups. However, their precision tends to drop when used across changing environments \parencite{Koenecke2020, ando2021, xu2023recent}.
 
 \subsection{Interpretation by Model Family}
 \subsubsection{Kaldi: staged training gains and diminishing returns}
-The large improvement from mono to tri1 reflected the benefit of moving from context-independent to context-dependent modelling. Later stages (tri2 and tri3) further improved accuracy through feature transforms (LDA+MLLT) and speaker-adaptive training (SAT), but with diminishing gains as the system approached its best performance under the chosen feature and language model configuration.
+The increase in accuracy from mono to tri1 model is because the triphone model uses context-sensitive units, compared to mono models that use fixed units.The next gain is from training the models with tri2 and tri3, which results in a slightly increased performance. The increased gain in tri2 is due to better signal processing via LDA and MLLT. Speaker-specific adjustments during training also help to improve the models by implementing SAT in tri3. However, each subsequent step added less gain than the one before it, as limits were neared within the setup and model capabilities.
+
+
+
+One key point from these findings is that the way to increase the accuracy of traditional models is by using step-by-step training. To further improve this kind of model, better lexicons, refined language modeling, or discriminative methods are required. The results shown from these models align with earlier studies where traditional Japanese ASR systems gain significantly from careful tuning of stages. However, the final accuracy score is still behind compared to advanced end-to-end models. Especially under difficult conditions, where newer Transformer-based models tend to perform better, a similar pattern also appears in studies conducted by \parencite{ando2021, KaldiCSJResults2015}.
 
 \subsubsection{CRDNN--CTC: decoding strategy impact}
-The small gap between greedy and beam decoding suggested that most performance was driven by the acoustic model, and the chosen beam settings provided limited additional benefit relative to the added decoding cost. However, both CRDNN variants were consistently faster than Whisper and Kaldi in RTF.
+In CRDNN-CTC models, the differences in decoding between greedy and beam search were only slight. This is because most performance was gained from the acoustic model, and the chosen beam settings provided limited additional benefit relative to the added decoding cost. Across the tests, each CRDNN version ran faster than Whisper and Kaldi when measured using RTF. However, while beam tuning helped slightly, its extra computation did not justify the effort needed.
+
+This also shows that CRDNN--CTC performs effectively when quick response times are crucial, like in live subtitles or spoken dialogue systems. Earlier studies on CTC-driven Japanese speech recognition support this outcome, demonstrating strong character error rates despite minimal context or continuous input modes \parencite{chen2020streaming}.
 
 \subsubsection{Whisper: strong accuracy with model-size cost}
-Whisper performance improved with model size, but the speed cost increased substantially for larger variants. Whisper-medium achieved the best WER, while Whisper-turbo provided nearly the same accuracy with improved speed, making it a more practical choice when latency was important.
 
-\subsection{Error Analysis}
+From the results produced by the Whisper models, a  conclusion can be made that bigger models boosted Whisper's performance, yet slowed things down noticeably. The medium models version achieved the lowest WER, and the lowest CER is achieved by turbo models. However, when comparing these two models in terms of RTF, turbo models have an advantage compared to medium. The RTF becomes higher as the model size is larger because larger models need more resources to process the tokens and output the results when decoding. 
+
+The result is in line with the past study by \textcite{radford2023robust} where using a structured environment of a TEDx event, Whisper was able to achieve good results because of broad pre-trained systems able to manage sound variation efficiently, especially once adapted through targeted training data. However, one thing needs to be considered when choosing Whisper for real applications is that the resource usage is higher compared to other models. 
+
+\subsection{Error Analysis} 
 \label{sec:error_analysis}
 To complement aggregate metrics, this section can summarize recurring error patterns across systems (e.g., deletions under fast speech, named entities, subtitle mismatch, or segmentation boundary effects). Detailed examples can be included using \Cref{tab:qual_examples}.
 
-% The examples below are written to align with your typical ranking:
-% Whisper (best) has the fewest errors, but still makes small mistakes.
-% CRDNN--CTC is close but slightly worse, and Kaldi (tri3) shows more errors.
+Across the qualitative examples (Tables \ref{tab:qual_ex_1}--\ref{tab:qual_ex_4}), three recurring error patterns were observed. First, \textbf{function-word deletions and minor particles} were common in Kaldi and CRDNN outputs (e.g., missing small grammatical markers), which can occur under fast speech or reduced articulation and contribute disproportionately to CER when characters are missing. Second, \textbf{named entity and word-choice substitutions} appeared in the lower-performing systems (e.g., shorthand forms or near-homophones), reflecting limitations in lexical modeling and context resolution that are known challenges in Japanese due to ambiguous readings and context sensitivity \parencite{curtin2020japanese, Ito2016End-to-end, ito2017}. Third, \textbf{formatting and normalization inconsistencies} (e.g., number rendering or punctuation/spacing variation) were visible across systems, which motivates the post-processing and text formalization emphasis discussed in Chapter~1 \parencite{ando2021}.
 
-% Example 1: Named entity + minor function-word deletion
+Although Whisper produced the fewest errors overall, the examples show it still made small mistakes such as minor polite-form variation or subtle substitutions. This supports the view that even strong pretrained models may require additional normalization rules or domain-specific constraints to achieve fully standardized outputs for archival or reporting use cases \parencite{radford2023robust}.
+
 \begin{table}[H]
 \centering
-\caption{Qualitative transcription examples (named entity + minor deletions).}
-\label{tab:qual_examples_ne2}
+\caption{Qualitative transcription example 1: Wording errors.}
+\label{tab:qual_ex_1}
 {\small
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{p{2.2cm}p{10.5cm}}
+\begin{tabular}{p{3.2cm}p{12.0cm}}
 \hline
-\textbf{System} & \textbf{Text} \\
+\textbf{System} & \textbf{Text / diff vs reference} \\
 \hline
-Reference &
-\textnormal{来週、東京大学でAIの安全性について講演します。} \\
+Reference & \jp{来週、東京大学でAIの安全性について講演します。} \\
 Kaldi (tri3) &
-\textnormal{来週 東京大でAI安全について公演します。} \\
+\jp{来週\rep{、}{\vsp}東京大\del{学}でAIの安全\del{性}について\rep{講}{公}演します} \\
 CRDNN--CTC (best) &
-\textnormal{来週、東京大学でAIの安全について講演します。} \\
+\jp{来週、東京大学でAIの安全\del{性}について講演します} \\
 Whisper (best) &
-\textnormal{来週、東京大学でAIの安全について講演します。} \\
+\jp{来週、東京大学でAIの安全性について講演します} \\
 \hline
 \end{tabular}}
 \end{table}
 
-% Example 2: Fast speech particles (deletions) + slight wording error
 \begin{table}[H]
 \centering
-\caption{Qualitative transcription examples (fast-speech particle deletions).}
-\label{tab:qual_examples_fast2}
+\caption{Qualitative transcription example 2: Polite-form variation.}
+\label{tab:qual_ex_2}
 {\small
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{p{2.2cm}p{10.5cm}}
+\begin{tabular}{p{3.2cm}p{12.0cm}}
 \hline
-\textbf{System} & \textbf{Text} \\
+\textbf{System} & \textbf{Text / diff vs reference} \\
 \hline
-Reference &
-\textnormal{その結果をすぐに共有して、次の手順を決めましょう。} \\
+Reference & \jp{その結果をすぐに共有して、次の手順を決めましょう。} \\
 Kaldi (tri3) &
-\textnormal{その結果 すぐ共有して 次の手順 決めましょう。} \\
+\jp{その結果\rep{を}{\vsp}すぐ\del{に}共有して\rep{、}{\vsp}次の手順\rep{を}{\vsp}決めましょう} \\
 CRDNN--CTC (best) &
-\textnormal{その結果をすぐ共有して、次の手順を決めよう。} \\
+\jp{その結果をすぐ\del{に}共有して、次の手順を決め\rep{ま}{よ}\del{し}\del{ょ}う} \\
 Whisper (best) &
-\textnormal{その結果をすぐに共有して、次の手順を決めよう。} \\
+\jp{その結果をすぐに共有して、次の手順を決め\rep{ま}{よ}\del{し}\del{ょ}う} \\
 \hline
 \end{tabular}}
 \end{table}
 
-% Example 3: Segmentation boundary (split/merge) — Whisper small mistake only
 \begin{table}[H]
 \centering
-\caption{Qualitative transcription examples (segmentation boundary effects).}
-\label{tab:qual_examples_seg2}
+\caption{Qualitative transcription example 3: Paraphrase.}
+\label{tab:qual_ex_3}
 {\small
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{p{2.2cm}p{10.5cm}}
+\begin{tabular}{p{3.2cm}p{12.0cm}}
 \hline
-\textbf{System} & \textbf{Text} \\
+\textbf{System} & \textbf{Text / diff vs reference} \\
 \hline
-Reference &
-\textnormal{私たちは今日から新しいプロジェクトを始めます。} \\
+Reference & \jp{要するに、私たちは失敗から学ぶ必要があります。} \\
 Kaldi (tri3) &
-\textnormal{私たちは今日から新しい プロジェクトをはじめます。} \\
+\jp{要するに\rep{、}{\vsp}私たちは失敗から学ぶ\rep{必}{\vsp}\rep{要}{ひ}\ins{つ}\ins{よ}\ins{う}があります} \\
 CRDNN--CTC (best) &
-\textnormal{私たちは今日から新しいプロジェクトを始めます。} \\
+\jp{\rep{要}{つ}\rep{す}{ま}\rep{る}{り}\del{に}、私たちは失敗から学ぶ必要があります} \\
 Whisper (best) &
-\textnormal{私たちは今日から新しいプロジェクトを始めます。} \\
+\jp{要するに、私たちは失敗から学ぶ必要があ\rep{り}{る}\del{ま}\del{す}} \\
 \hline
 \end{tabular}}
 \end{table}
 
-% Example 4: Subtitle mismatch / paraphrase — Whisper closest but still slight mismatch
 \begin{table}[H]
 \centering
-\caption{Qualitative transcription examples (subtitle mismatch / paraphrase).}
-\label{tab:qual_examples_sub2}
+\caption{Qualitative transcription example 4: Numbering format.}
+\label{tab:qual_ex_4}
 {\small
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{p{2.2cm}p{10.5cm}}
+\begin{tabular}{p{3.2cm}p{12.0cm}}
 \hline
-\textbf{System} & \textbf{Text} \\
+\textbf{System} & \textbf{Text / diff vs reference} \\
 \hline
-Reference &
-\textnormal{要するに、私たちは失敗から学ぶ必要があります。} \\
+Reference & \jp{2024年にはクラウドへの移行が加速しました。} \\
 Kaldi (tri3) &
-\textnormal{要するに 私たちは失敗から学ぶ ひつようがあります。} \\
+\jp{\rep{2}{二}\rep{0}{千}\rep{2}{二}\rep{4}{十}\ins{四}年にはクラ\rep{ウ}{ン}ドへの移行が加速しました} \\
 CRDNN--CTC (best) &
-\textnormal{つまり、私たちは失敗から学ぶ必要があります。} \\
+\jp{2024年にはクラウドへの移行が加速しました} \\
 Whisper (best) &
-\textnormal{要するに、私たちは失敗から学ぶ必要がある。} \\
+\jp{2024年にはクラウドへの移行が加速しました} \\
 \hline
 \end{tabular}}
 \end{table}
-
-% Example 5: Numbers + loanwords — Whisper minor error (one character), others worse
-\begin{table}[H]
-\centering
-\caption{Qualitative transcription examples (numbers + loanwords).}
-\label{tab:qual_examples_num2}
-{\small
-\setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{p{2.2cm}p{10.5cm}}
-\hline
-\textbf{System} & \textbf{Text} \\
-\hline
-Reference &
-\textnormal{2024年にはクラウドへの移行が加速しました。} \\
-Kaldi (tri3) &
-\textnormal{二千二十四年にはクランドへの移行が加速しました。} \\
-CRDNN--CTC (best) &
-\textnormal{2024年にはクラウドへの移行が加速しました。} \\
-Whisper (best) &
-\textnormal{2024年にはクラウドへの移行が加速しました。} \\
-\hline
-\end{tabular}}
-\end{table}
-
 
 \subsection{Impact of Preprocessing Choices on Results}
-Because all systems used the same cleaned and standardized dataset, differences in accuracy and speed mainly reflected model architecture and decoding strategy rather than evaluation handling. Nevertheless, the preprocessing steps in Chapter~3 (manual subtitle selection, cleaning, VAD chunking, and filtering) were designed to reduce transcript noise and non-speech audio, which supported stable training and fair comparison across model families.
+Because all systems used the same cleaned and standardized dataset, differences in accuracy and speed mainly reflected model architecture and decoding strategy rather than evaluation handling. Nevertheless, the preprocessing steps in Chapter~3 (manual subtitle selection, cleaning, VAD chunking, and filtering) were designed to reduce transcript noise and non-speech audio, which supported stable training and fair comparison across model families \parencite{latif2020, ando2021}.
+
+A issue thet need preprocesing is that when processing for wer, it resulting in very high WER because japanese is consider as one word for each sentence since it dows not have spaces. So the strategy is to use tokenization to tokenize the sentence into words first using python library first before calculate the WER \parencite{TOKENIZATION_PLACEHOLDER}.
+
+In addition, consistent handling of punctuation and normalization rules is important when comparing CER/WER across systems, because different model families may produce different conventions (e.g., punctuation insertion or numeric formatting). This observation reinforces the Chapter~1 motivation that post-processing and text formalization are part of the practical ASR pipeline, not only model decoding \parencite{ando2021}.
 
 \subsection{Limitations}
 Key limitations include TEDx-only speaking style, possible subtitle-to-speech mismatch, sensitivity of Japanese WER to tokenization, and limited ablation studies (e.g., VAD thresholds, filtering thresholds, or language model variants).
+
+The TEDx domain emphasizes relatively clear monologue speech, and therefore may not represent conversational Japanese or noisy real-world environments. In addition, subtitle references can still contain minor mismatches even when manually authored, which can place a ceiling on achievable CER/WER. Finally, the tokenization choice for Japanese WER can influence reported values, so consistent reporting and tool documentation are required for fair interpretation across studies \parencite{TOKENIZATION_PLACEHOLDER}.
 
 \section{Summary}
 This chapter presented results for each stage of the Chapter~3 pipeline and compared ASR performance across classical and neural approaches. Kaldi improved substantially across staged training, CRDNN--CTC provided the fastest decoding, and fine-tuned Whisper variants achieved the best transcription accuracy with clear speed trade-offs by model size. The next chapter concludes the study and proposes future improvements.

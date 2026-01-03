@@ -1,1685 +1,876 @@
-PWD /home/aliff/thesis-master
-INPUT /etc/texmf/web2c/texmf.cnf
-INPUT /usr/share/texmf/web2c/texmf.cnf
-INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/aliff/thesis-master/main.tex
+PWD /Users/aliff/Documents/thesis-master
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
+INPUT /Users/aliff/Documents/thesis-master/main.tex
 OUTPUT main.log
 INPUT ./uitmthesis.cls
-INPUT ./uitmthesis.cls
 INPUT uitmthesis.cls
-INPUT ./uitmthesis.cls
-INPUT ./uitmthesis.cls
-INPUT ./uitmthesis.cls
-INPUT ./uitmthesis.cls
-INPUT ./uitmthesis.cls
-INPUT uitmthesis.cls
-INPUT ./uitmthesis.cls
-INPUT uitmthesis.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/mem12.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/mem12.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/mem12.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/mem12.clo
-INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/dcolumn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/delarray.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption-memoir.sto
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption-memoir.sto
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption-memoir.sto
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption-memoir.sto
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrb1200.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/memoir/memoir.cls
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/memoir/memoir.cls
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xpatch/xpatch.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xpatch/xpatch.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kernel/expl3.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kernel/expl3.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/iftex.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/memoir/mem12.clo
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/memoir/mem12.clo
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/memoir/mem12.clo
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/array.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/dcolumn.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/dcolumn.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/delarray.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/delarray.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/tabularx.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/tabularx.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/booktabs/booktabs.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/booktabs/booktabs.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/nameref.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcount/refcount.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/verbatim.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/verbatim.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/shortvrb.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/shortvrb.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/setspace/setspace.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/setspace/setspace.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/mathptmx.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/mathptmx.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/babel.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/txtbabel.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/arabi/bblopts.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/en/babel-english.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/en/babel-english.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/en/babel-english.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/babel/locale/en/babel-en.ini
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-english/english.ldf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-english/english.ldf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/babel-english/english.ldf
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption3.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption-memoir.sto
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption-memoir.sto
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/caption-memoir.sto
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/indentfirst.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/indentfirst.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/appendix/appendix.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fmtcount.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fmtcount.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ifthen.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/xkeyval/xkeyval.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fcprefix.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fcprefix.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fcnumparser.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fcnumparser.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fc-english.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fc-english.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fmtcount/fc-english.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/longtable.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/longtable.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/lscape.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/lscape.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecrb1200.tfm
+INPUT ./settings.tex
 INPUT ./settings.tex
 INPUT ./settings.tex
 INPUT ./settings.tex
 INPUT settings.tex
-INPUT ./settings.tex
-INPUT ./settings.tex
-INPUT settings.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.dbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.dbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.dbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.bbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.bbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.bbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.cbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.cbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/apa.cbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/memoir/memhfixc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJKutf8.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
-INPUT /usr/share/texmf/tex/latex/CJK/CJK.enc
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lipsum/lipsum.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lipsum/lipsum.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lipsum/lipsum.ltd.tex
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lipsum/lipsum.ltd.tex
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/changepage/changepage.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/enumitem/enumitem.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/enumitem/enumitem.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amssymb.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/amsthm.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/subcaption.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/subcaption.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.cfg
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.cfg
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/csquotes/csquotes.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/logreq/logreq.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/logreq/logreq.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/logreq/logreq.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/logreq/logreq.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/logreq/logreq.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-dm.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-dm.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-dm.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.dbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.dbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.dbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-compat.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-compat.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-compat.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.bbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.bbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.bbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.cbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.cbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/apa.cbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/biblatex.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-case-expl3.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/blx-case-expl3.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/memoir/memhfixc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/memoir/memhfixc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hyperref.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor/hycolor.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/stringenc/stringenc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/stringenc/stringenc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/pd1enc.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intcalc/intcalc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/puenc.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitset/bitset.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperref/hpdftex.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cleveref/cleveref.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cleveref/cleveref.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/bookmark/bookmark.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/bookmark/bookmark.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/bookmark/bkm-pdftex.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/bookmark/bkm-pdftex.def
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/bookmark/bkm-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstpatch.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstpatch.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstpatch.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstmisc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstmisc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstmisc.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/multirow/multirow.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/multirow/multirow.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/makecell/makecell.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/makecell/makecell.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgfplots/pgfplots.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgfplots/pgfplots.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/pgf.revision.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/pgf.revision.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfint.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplotscore.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplotsstackedplots.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.scaling.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.markers.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplotsticks.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/pgfplots.paths.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/CJKutf8.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/CJKutf8.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifpdf.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex/ifpdf.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/CJK.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/CJK.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/mule/MULEenc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/mule/MULEenc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/CJK.enc
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fontenc.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1ptm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1ptm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/t1ptm.fd
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/textcomp.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT ./main.aux
+INPUT ./main.aux
+INPUT main.aux
 OUTPUT main.aux
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
-INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/ltcaption.sty
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption/ltcaption.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/english-apa.lbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/english-apa.lbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/english-apa.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/american-apa.lbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/american-apa.lbx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex-apa/american-apa.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/american.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/american.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/american.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/english.lbx
 OUTPUT main.bcf
 INPUT main.bbl
 INPUT ./main.bbl
-INPUT main.bbl
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 OUTPUT main.pdf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT ./main.toc
+INPUT ./main.toc
+INPUT main.toc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ztmcm.fd
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omlztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omlztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omlztmcm.fd
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omsztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omsztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omsztmcm.fd
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omxztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omxztmcm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/omxztmcm.fd
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ot1ptm.fd
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT ./main.lot
+INPUT ./main.lot
+INPUT main.lot
+INPUT ./main.lof
+INPUT ./main.lof
+INPUT main.lof
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7y.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT ./mainmatter/chapIntro.tex
+INPUT ./mainmatter/chapIntro.tex
+INPUT ./mainmatter/chapIntro.tex
+INPUT ./mainmatter/chapIntro.tex
+INPUT mainmatter/chapIntro.tex
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmri8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT ./mainmatter/chapLiterature.tex
+INPUT ./mainmatter/chapLiterature.tex
+INPUT ./mainmatter/chapLiterature.tex
+INPUT ./mainmatter/chapLiterature.tex
+INPUT mainmatter/chapLiterature.tex
+INPUT ./mainmatter//images/mindmap.png
+INPUT ./mainmatter//images/mindmap.png
+INPUT ./mainmatter//images/mindmap.png
+INPUT ./mainmatter//images/mindmap.png
+INPUT ./mainmatter//images/mindmap.png
+INPUT ./mainmatter//images/mindmap.png
+INPUT ./mainmatter//images/mindmap.png
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7m.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/psyro.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ectt1200.tfm
+INPUT ./mainmatter/chapMethodology.tex
+INPUT ./mainmatter/chapMethodology.tex
+INPUT ./mainmatter/chapMethodology.tex
+INPUT ./mainmatter/chapMethodology.tex
+INPUT mainmatter/chapMethodology.tex
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ptm.fd
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmr8c.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ectt1000.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/ptmr8c.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ectt0900.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ectt0800.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ectt1095.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7y.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
+INPUT ./mainmatter/chapResults.tex
+INPUT ./mainmatter/chapResults.tex
+INPUT ./mainmatter/chapResults.tex
+INPUT ./mainmatter/chapResults.tex
+INPUT mainmatter/chapResults.tex
+INPUT ./mainmatter//images/clean_sub.png
+INPUT ./mainmatter//images/clean_sub.png
+INPUT ./mainmatter//images/clean_sub.png
+INPUT ./mainmatter//images/clean_sub.png
+INPUT ./mainmatter//images/clean_sub.png
+INPUT ./mainmatter//images/clean_sub.png
+INPUT ./mainmatter//images/clean_sub.png
+INPUT ./mainmatter//images/bitrate.png
+INPUT ./mainmatter//images/bitrate.png
+INPUT ./mainmatter//images/bitrate.png
+INPUT ./mainmatter//images/bitrate.png
+INPUT ./mainmatter//images/bitrate.png
+INPUT ./mainmatter//images/bitrate.png
+INPUT ./mainmatter//images/bitrate.png
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7y.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT ./mainmatter//images/manifest_data.png
+INPUT ./mainmatter//images/manifest_data.png
+INPUT ./mainmatter//images/manifest_data.png
+INPUT ./mainmatter//images/manifest_data.png
+INPUT ./mainmatter//images/manifest_data.png
+INPUT ./mainmatter//images/manifest_data.png
+INPUT ./mainmatter//images/manifest_data.png
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7m.vf
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/psyro.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
+INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
+INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
+INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
+INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
+INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
+INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
+INPUT ./mainmatter//images/loss_curves.png
+INPUT ./mainmatter//images/loss_curves.png
+INPUT ./mainmatter//images/loss_curves.png
+INPUT ./mainmatter//images/loss_curves.png
+INPUT ./mainmatter//images/loss_curves.png
+INPUT ./mainmatter//images/loss_curves.png
+INPUT ./mainmatter//images/loss_curves.png
+INPUT ./mainmatter//images/cer_curve.png
+INPUT ./mainmatter//images/cer_curve.png
+INPUT ./mainmatter//images/cer_curve.png
+INPUT ./mainmatter//images/cer_curve.png
+INPUT ./mainmatter//images/cer_curve.png
+INPUT ./mainmatter//images/cer_curve.png
+INPUT ./mainmatter//images/cer_curve.png
+INPUT ./mainmatter//images/whisper_epochs.png
+INPUT ./mainmatter//images/whisper_epochs.png
+INPUT ./mainmatter//images/whisper_epochs.png
+INPUT ./mainmatter//images/whisper_epochs.png
+INPUT ./mainmatter//images/whisper_epochs.png
+INPUT ./mainmatter//images/whisper_epochs.png
+INPUT ./mainmatter//images/whisper_epochs.png
+INPUT ./mainmatter//images/cer_wer_all.png
+INPUT ./mainmatter//images/cer_wer_all.png
+INPUT ./mainmatter//images/cer_wer_all.png
+INPUT ./mainmatter//images/cer_wer_all.png
+INPUT ./mainmatter//images/cer_wer_all.png
+INPUT ./mainmatter//images/cer_wer_all.png
+INPUT ./mainmatter//images/cer_wer_all.png
+INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
+INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
+INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
+INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
+INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
+INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
+INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.bdg
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ipaex-type1/c70ipxm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ipaex-type1/c70ipxm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ipaex-type1/c70ipxm.fd
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ipaex-type1/c70ipxm.fdx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ipaex-type1/c70ipxm.fdx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ipaex-type1/c70ipxm.fdx
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u67.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u90.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u30.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u4e.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u59.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u5b.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u51.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u60.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u8b.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u6f.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u7d.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u6b.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u62.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u98.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u6c.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u89.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u79.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u65.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u5f.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u5e.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u88.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u52.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u53.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/ipaex-type1/ipxm-r-u56.tfm
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 OUTPUT main.toc
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 OUTPUT main.lot
 OUTPUT main.lof
-INPUT ./mainmatter/chapIntro.tex
-INPUT ./mainmatter/chapIntro.tex
-INPUT ./mainmatter/chapIntro.tex
-INPUT mainmatter/chapIntro.tex
-INPUT ./mainmatter/chapIntro.tex
-INPUT ./mainmatter/chapIntro.tex
-INPUT mainmatter/chapIntro.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT ./mainmatter/chapLiterature.tex
-INPUT ./mainmatter/chapLiterature.tex
-INPUT ./mainmatter/chapLiterature.tex
-INPUT mainmatter/chapLiterature.tex
-INPUT ./mainmatter/chapLiterature.tex
-INPUT ./mainmatter/chapLiterature.tex
-INPUT mainmatter/chapLiterature.tex
-INPUT ./mainmatter//images/mindmap.png
-INPUT ./mainmatter//images/mindmap.png
-INPUT mainmatter//images/mindmap.png
-INPUT ./mainmatter//images/mindmap.png
-INPUT ./mainmatter//images/mindmap.png
-INPUT ./mainmatter//images/image.png
-INPUT ./mainmatter//images/image.png
-INPUT mainmatter//images/image.png
-INPUT ./mainmatter//images/image.png
-INPUT ./mainmatter//images/image.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT ./mainmatter/chapMethodology.tex
-INPUT ./mainmatter/chapMethodology.tex
-INPUT ./mainmatter/chapMethodology.tex
-INPUT mainmatter/chapMethodology.tex
-INPUT ./mainmatter/chapMethodology.tex
-INPUT ./mainmatter/chapMethodology.tex
-INPUT mainmatter/chapMethodology.tex
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt0900.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt0800.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT ./mainmatter/chapResults.tex
-INPUT ./mainmatter/chapResults.tex
-INPUT ./mainmatter/chapResults.tex
-INPUT mainmatter/chapResults.tex
-INPUT ./mainmatter/chapResults.tex
-INPUT ./mainmatter/chapResults.tex
-INPUT mainmatter/chapResults.tex
-INPUT ./mainmatter//images/clean_sub.png
-INPUT ./mainmatter//images/clean_sub.png
-INPUT mainmatter//images/clean_sub.png
-INPUT ./mainmatter//images/clean_sub.png
-INPUT ./mainmatter//images/clean_sub.png
-INPUT ./mainmatter//images/bitrate.png
-INPUT ./mainmatter//images/bitrate.png
-INPUT mainmatter//images/bitrate.png
-INPUT ./mainmatter//images/bitrate.png
-INPUT ./mainmatter//images/bitrate.png
-INPUT ./mainmatter//images/manifest_data.png
-INPUT ./mainmatter//images/manifest_data.png
-INPUT mainmatter//images/manifest_data.png
-INPUT ./mainmatter//images/manifest_data.png
-INPUT ./mainmatter//images/manifest_data.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7y.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
-INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
-INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
-INPUT mainmatter//images/kaldi_obj_impr_curve_linear.png
-INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
-INPUT ./mainmatter//images/kaldi_obj_impr_curve_linear.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7m.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/psyro.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
-INPUT ./mainmatter//images/loss_curves.png
-INPUT ./mainmatter//images/loss_curves.png
-INPUT mainmatter//images/loss_curves.png
-INPUT ./mainmatter//images/loss_curves.png
-INPUT ./mainmatter//images/loss_curves.png
-INPUT ./mainmatter//images/cer_curve.png
-INPUT ./mainmatter//images/cer_curve.png
-INPUT mainmatter//images/cer_curve.png
-INPUT ./mainmatter//images/cer_curve.png
-INPUT ./mainmatter//images/cer_curve.png
-INPUT ./mainmatter//images/whisper_epochs.png
-INPUT ./mainmatter//images/whisper_epochs.png
-INPUT mainmatter//images/whisper_epochs.png
-INPUT ./mainmatter//images/whisper_epochs.png
-INPUT ./mainmatter//images/whisper_epochs.png
-INPUT ./mainmatter//images/cer_wer_all.png
-INPUT ./mainmatter//images/cer_wer_all.png
-INPUT mainmatter//images/cer_wer_all.png
-INPUT ./mainmatter//images/cer_wer_all.png
-INPUT ./mainmatter//images/cer_wer_all.png
-INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
-INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
-INPUT mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
-INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
-INPUT ./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png
 INPUT main.aux
 INPUT main.run.xml
 OUTPUT main.run.xml
-INPUT /home/aliff/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk
-INPUT /home/aliff/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk
-INPUT /home/aliff/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk
-INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u56.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u53.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u52.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u88.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u5e.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u5f.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u65.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u79.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u89.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u6c.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u98.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u62.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u6b.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u7d.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u6f.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u8b.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u60.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u51.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u5b.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u59.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u4e.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u90.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u67.enc
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u4e.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u4e.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u51.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u51.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u52.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u52.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u53.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u53.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u56.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u56.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u59.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u59.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5b.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5b.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5e.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5e.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5f.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5f.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u60.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u60.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u62.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u62.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u65.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u65.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u67.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u67.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6b.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6b.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6c.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6c.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6f.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6f.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u79.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u79.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u7d.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u7d.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u88.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u88.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u89.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u89.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u8b.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u8b.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u90.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u90.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u98.pfb
+INPUT /Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u98.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb
+INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb

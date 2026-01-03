@@ -1,7 +1,7 @@
 \chapter{RESEARCH METHODOLOGY}
 
 \section{Introduction}
-This chapter explained the methodology used to evaluate Japanese automatic speech recognition (ASR) across three model families: a traditional Kaldi-style GMM--HMM system, an end-to-end CRDNN--CTC model, and a fine-tuned transformer encoder--decoder model based on Whisper model from OpenAI. This chapter described the data pipeline such as data collection, audio and transcript cleaning, and audio splits. The preprocessing, training, decoding process and the scoring protocol used for each model family was also discussed in this chapter. 
+This chapter explained the methodology used to evaluate Japanese automatic speech recognition (ASR) across three model families: a traditional Kaldi-style GMM--HMM system, an end-to-end CRDNN--CTC model, and a fine-tuned transformer encoder--decoder model based on Whisper model from OpenAI \parencite{kaldi2011, speechbrain_v1, radford2023robust}. This chapter described the data pipeline such as data collection, audio and transcript cleaning, and audio splits. The preprocessing, training, decoding process and the scoring protocol used for each model family was also discussed in this chapter. 
 
 \section{Research Design}
 This study was organised into six phases where started from planning and followed by reviewing prior work. And then moved to data collection and preprocessing phase where dataset was compiled and processed. After that, the selcted model were trained and fine tuned using the data. Then the model was scored using selected metrics and the the data finally were analyzed and discussed in the later phase. \Cref{tab:projectOverview} below showed an overview of the phases, activities and deliverables.
@@ -174,7 +174,7 @@ Chapter 1
 \end{tabular}}  
 \end{table}
 
-The starting point of this project began in the planning phase. This phase was important because it served as the blueprint and became guidance to the project direction. This phase purpose was to identify the problem in the domain and found a way to solve the problem stated. The activities that was carried out in this pahse was defining key aspect that was the title of the project, problem statements, objective, scope and significance of the project. The outcome from this phase was the title of the project, problems that has been defined, objective of the project, scope of the project which explained what was covered and what was not covered in this project and last deliverables in this phase was the significance that has been identified. During this planning phase, things like time, cost, resource, benefit and difficulty level also have been take into consideration.
+The starting point of this project began in the planning phase. This phase was important because it served as the blueprint and became guidance to the project direction \parencite{TODO_planning_methodology}. This phase purpose was to identify the problem in the domain and found a way to solve the problem stated \parencite{TODO_planning_methodology}. The activities that was carried out in this pahse was defining key aspect that was the title of the project, problem statements, objective, scope and significance of the project. The outcome from this phase was the title of the project, problems that has been defined, objective of the project, scope of the project which explained what was covered and what was not covered in this project and last deliverables in this phase was the significance that has been identified. During this planning phase, things like time, cost, resource, benefit and difficulty level also have been take into consideration \parencite{TODO_planning_methodology}.
 
 
 
@@ -219,7 +219,7 @@ Chapter 2
 \end{table}
 
 
-After planning phase was completed and the reasearch domain has been set, next phase was reviewing prior work phase. During this phase, multiple sources such as related article, journal, conference paper and textbook was reviewed. This resource was used to evaluate and identified what has been discussed or discovered. In this phase, the activity involved was list down the preprocessing mrthod that currently being used in speech recognition and a few preprocessing technique was choosen based on the requirements of the models as the deliverables. The next activity was to choose which model to compared to, instead of comparing model from same family, this research has conclude to compare 3 model from different model architecture and these 3 models was the deliverables for this phase. The next activity was to conclude which metrics was used to compare these models. As the deliverables, three metrics has been choose to do comparitive analysis between each models. In this phase, the gaps in the literature was also defined and as the deliverables the gaps in the literature was summarized. 
+After planning phase was completed and the reasearch domain has been set, next phase was reviewing prior work phase. During this phase, multiple sources such as related article, journal, conference paper and textbook was reviewed \parencite{TODO_literature_review_method}. This resource was used to evaluate and identified what has been discussed or discovered \parencite{TODO_literature_review_method}. In this phase, the activity involved was list down the preprocessing mrthod that currently being used in speech recognition and a few preprocessing technique was choosen based on the requirements of the models as the deliverables. The next activity was to choose which model to compared to, instead of comparing model from same family, this research has conclude to compare 3 model from different model architecture and these 3 models was the deliverables for this phase \parencite{kaldi2011, speechbrain_v1, radford2023robust}. The next activity was to conclude which metrics was used to compare these models. As the deliverables, three metrics has been choose to do comparitive analysis between each models \parencite{jiwer_2025, TODO_rtf_reference}. In this phase, the gaps in the literature was also defined and as the deliverables the gaps in the literature was summarized \parencite{TODO_literature_review_method}. 
 
 
 
@@ -265,7 +265,7 @@ Chapter 3
 \end{tabular}}
 \end{table}
 
-The focus of this phase was to build a cleaned and useable dataset from publicly available dataset into a consistent training and evaluation format so that all three models from different family can use the sama dataset for traiing and testing. The pipeline for this phase could be seperated into four section. The first task was  collecting TEDx Japanese talks from YouTube with only Japanese subtitles that came with manual subtitles by human. Then the audio was downloaded with the subtitle files. The second task was to clean and normalize subtitle text into reference transcripts and standardized the audio into 16\,kHz mono PCM. Third task was to split the audio into chunks using voice activity detection (VAD) and the audio that did not have audio activity such as intro music was discarded. The last task was to produce train/validation/test splits and manifests with audio paths, durations, and transcripts.
+The focus of this phase was to build a cleaned and useable dataset from publicly available dataset into a consistent training and evaluation format so that all three models from different family can use the sama dataset for traiing and testing \parencite{ando2021, TODO_dataset_pipeline_reference}. The pipeline for this phase could be seperated into four section. The first task was  collecting TEDx Japanese talks from YouTube with only Japanese subtitles that came with manual subtitles by human \parencite{yt-dlp}. Then the audio was downloaded with the subtitle files \parencite{yt-dlp}. The second task was to clean and normalize subtitle text into reference transcripts and standardized the audio into 16\,kHz mono PCM \parencite{mcfee_2025_15006942, soundfile}. Third task was to split the audio into chunks using voice activity detection (VAD) and the audio that did not have audio activity such as intro music was discarded \parencite{webrtc}. The last task was to produce train/validation/test splits and manifests with audio paths, durations, and transcripts \parencite{TODO_manifest_best_practice}.
 
 \begin{figure}[H]
 \centering
@@ -276,9 +276,9 @@ The focus of this phase was to build a cleaned and useable dataset from publicly
 
 
 \subsection{Data Source and Selection Criteria}
-The source of the data was collected from Japanese TEDx talks that was hosted on video sharing platform, Youtube. This particular source was choosen beacuse TEDx talks was a collection of public speaking where commonly the speaker had a clear speech with structured monologue-style delivery. However, not all video that published came with manual Japanese subtitle  by human, only part of the video had manual Japanese subtitle. The rest either did not have subtitle or the subtitle was in other language. To make sure that the transcripts were sufficiently reliable to serve as reference text during ASR training and evaluation, only videos that had Japanese manual subtitle was choosen and the rest was excluded. The videos that contained only auto-generated subtitles were also excluded to reduce transcription noise and alignment inconsistencies.
+The source of the data was collected from Japanese TEDx talks that was hosted on video sharing platform, Youtube. This particular source was choosen beacuse TEDx talks was a collection of public speaking where commonly the speaker had a clear speech with structured monologue-style delivery \parencite{ando2021}. However, not all video that published came with manual Japanese subtitle  by human, only part of the video had manual Japanese subtitle. The rest either did not have subtitle or the subtitle was in other language. To make sure that the transcripts were sufficiently reliable to serve as reference text during ASR training and evaluation, only videos that had Japanese manual subtitle was choosen and the rest was excluded \parencite{TODO_reference_transcript_selection}. The videos that contained only auto-generated subtitles were also excluded to reduce transcription noise and alignment inconsistencies \parencite{TODO_reference_transcript_selection}.
 
-All audio and subtitle was downloaded using a python library name yt-dl. The script first queried the video metadata to find if the video in playlist had Japanese subtitle or did not without downloading the video using \texttt{extract\_info} function from yt-dl library. 
+All audio and subtitle was downloaded using a python library name yt-dl \parencite{yt-dlp}. The script first queried the video metadata to find if the video in playlist had Japanese subtitle or did not without downloading the video using \texttt{extract\_info} function from yt-dl library \parencite{yt-dlp}. 
 
 \begin{lstlisting}[language=Python, caption={Audio splitting script}, label={lst:vad-split-check}]
 with yt_dlp.YoutubeDL(check_opts) as ydl:
@@ -294,7 +294,7 @@ with yt_dlp.YoutubeDL(check_opts) as ydl:
         pass
 \end{lstlisting}
 
-For the video that had Japenese subtitle, audio and transcript was downloaded
+For the video that had Japenese subtitle, audio and transcript was downloaded \parencite{yt-dlp}.
 \begin{lstlisting}[language=Python, caption={Audio splitting script}, label={lst:vad-split-download}]
 download_opts = {
     'subtitleslangs': ['ja'], 
@@ -308,7 +308,7 @@ if has_jp_subs:
 
 
 \subsection{Transcript Cleaning and Normalization}
-After the transcript was downloaded, the transcript needed to be cleaned since it could not be directly used as reference transcript. The raw downloaded trasncriptt contained non-speech markers, formatting tags, and artifacts introduced for readability rather than ASR training. All subtitle files were normalized into cleaned text using a custom script.
+After the transcript was downloaded, the transcript needed to be cleaned since it could not be directly used as reference transcript \parencite{ando2021, TODO_text_normalization_reference}. The raw downloaded trasncriptt contained non-speech markers, formatting tags, and artifacts introduced for readability rather than ASR training \parencite{ando2021, TODO_text_normalization_reference}. All subtitle files were normalized into cleaned text using a custom script.
 The cleaning rules implemented included:
 \begin{itemize}[ nosep]
     \item Removing HTML and formatting tags (e.g., \texttt{<i>}, brace tags).
@@ -317,11 +317,11 @@ The cleaning rules implemented included:
     \item Normalizing whitespace and punctuation (e.g., collapsing multiple spaces, removing spaces before punctuation).
 \end{itemize}
 \vspace{1em}
-The script produced a transcript file where one cleaned line per subtitle cue with the timestamp which was useful for later alignment between subtitle cues and speech segments. The timestamp was used to seperate the long audio format into chunks. 
+The script produced a transcript file where one cleaned line per subtitle cue with the timestamp which was useful for later alignment between subtitle cues and speech segments \parencite{TODO_alignment_reference}. The timestamp was used to seperate the long audio format into chunks \parencite{TODO_alignment_reference}. 
 
 
 \subsection{Audio Standardization to 16\,kHz Mono}
-The downloaded audio may came with different format based on the download option and video quality. To ensure the compatibility with all selected model, the audio was standardized into 16\,kHz Mono. This was also to make sure the fairness across all ASR model families when compare to each other. The standardized choosen was \textbf{16\,kHz sample rate, mono channel, 16-bit PCM} because this format was a standard configuration used in Kaldi recipes and also aligned with typical front-end assumptions in many end-to-end ASR pipelines.
+The downloaded audio may came with different format based on the download option and video quality. To ensure the compatibility with all selected model, the audio was standardized into 16\,kHz Mono \parencite{mcfee_2025_15006942, soundfile}. This was also to make sure the fairness across all ASR model families when compare to each other \parencite{TODO_standardization_reference}. The standardized choosen was \textbf{16\,kHz sample rate, mono channel, 16-bit PCM} because this format was a standard configuration used in Kaldi recipes and also aligned with typical front-end assumptions in many end-to-end ASR pipelines \parencite{kaldi2011, TODO_end2end_frontend_reference}.
 
 \begin{lstlisting}[language=Python, caption={Audio resampling to 16 kHz}, label={lst:resample-16khz}]
 import librosa, soundfile as sf
@@ -337,13 +337,13 @@ def resample_16khz(in_wav, out_wav, target_sr=16000):
 
 
 \subsection{Speech Segmentation using WebRTC VAD}
-The downloaded audio was averaging between 20 minutes to 30 minutes long. This duration was not suitable to be used as trining data because it was chalenging for the model to learn effectively from very long utterances, and it also increased memory usage and training time. To deal with this issue, WebRTC voice activity detection (VAD) was used to split a long audio files into chunks audio that suitable to be used in training phase. The segmentation strategy was:
+The downloaded audio was averaging between 20 minutes to 30 minutes long. This duration was not suitable to be used as trining data because it was chalenging for the model to learn effectively from very long utterances, and it also increased memory usage and training time \parencite{webrtc, TODO_long_utterance_reference}. To deal with this issue, WebRTC voice activity detection (VAD) was used to split a long audio files into chunks audio that suitable to be used in training phase \parencite{webrtc}. The segmentation strategy was:
 \begin{itemize}[nosep]
-    \item Audio was split into 30\,ms frames.
-    \item Speech frames were grouped into continuous speech regions.
-    \item A region was closed when silence exceeded a threshold 500\,ms.
-    \item Very short segments were removed $\leq$2\,s.
-    \item Very long segments were further sliced into $\leq$20\,s chunks.
+    \item Audio was split into 30\,ms frames \parencite{webrtc}.
+    \item Speech frames were grouped into continuous speech regions \parencite{webrtc}.
+    \item A region was closed when silence exceeded a threshold 500\,ms \parencite{webrtc}.
+    \item Very short segments were removed $\leq$2\,s \parencite{TODO_vad_threshold_reference}.
+    \item Very long segments were further sliced into $\leq$20\,s chunks \parencite{TODO_vad_threshold_reference}.
 \end{itemize}
 
 \vspace{1em}
@@ -354,12 +354,13 @@ The created a lot of short audio files and to manage all the chunks of file, bel
 This naming convention was later reused as utterance IDs in the transcript mapping and manifests.
 
 
+
 \subsection{Remove non speaker audio}
-To improve the quality of the dataset, a filtering step was applied to remove the audio that did not have any Japanese speaker in it. This was because this audio became noise and could cause the the quality of the training data become lower. The type of audio that removed was audio clips that dominated by applause/laughter, heavy background noise, or non-Japanese speech. A python script was created to filter out this type of audio by applied three checks:
+To improve the quality of the dataset, a filtering step was applied to remove the audio that did not have any Japanese speaker in it \parencite{TODO_audio_filtering_reference}. This was because this audio became noise and could cause the the quality of the training data become lower \parencite{TODO_audio_filtering_reference}. The type of audio that removed was audio clips that dominated by applause/laughter, heavy background noise, or non-Japanese speech \parencite{clap, TODO_audio_filtering_reference}. A python script was created to filter out this type of audio by applied three checks:
 
 \begin{itemize}[ nosep]
-    \item \textbf{Speaker structure check (pyannote diarization):} clips were preferred when a single dominant speaker is present (high dominant speaker ratio).
-    \item \textbf{Acoustic event detection (CLAP zero-shot audio classification):} clips with high confidence of laughter or clapping were removed based on threshold scores.
+    \item \textbf{Speaker structure check (pyannote diarization):} clips were preferred when a single dominant speaker is present (high dominant speaker ratio) \parencite{TODO_pyannote_reference}.
+    \item \textbf{Acoustic event detection (CLAP zero-shot audio classification):} clips with high confidence of laughter or clapping were removed based on threshold scores \parencite{clap}.
 \end{itemize}
 
 \begin{adjustwidth}{-1.5cm}{-1.5cm}
@@ -387,15 +388,15 @@ for audio_path in wav_files:
 
 
 
-Files failing the clarity or language criteria were deleted automatically, leaving a cleaner set of speech segments for the downstream ASR experiments.
+Files failing the clarity or language criteria were deleted automatically, leaving a cleaner set of speech segments for the downstream ASR experiments \parencite{TODO_audio_filtering_reference}.
 
 
 \subsection{Transcript-to-Audio Mapping and Manifest Preparation}
-The next step after splitting the audio into chunks and cleaning the subtitle was to align the audio with a matching reference transcript to enable supervised training and evaluation. The cleaned subtitle text served as the transcript source and the final transcript mapping was stored in a simple format like this:
+The next step after splitting the audio into chunks and cleaning the subtitle was to align the audio with a matching reference transcript to enable supervised training and evaluation \parencite{TODO_alignment_reference}. The cleaned subtitle text served as the transcript source and the final transcript mapping was stored in a simple format like this:
 \[
 \texttt{utt\_id: transcript}
 \]
-where \texttt{utt\_id} matched the chunk filename and the \texttt{transcript} was the clean subtitle file that has been extracted the value and aligned based on the timestamp in the subtitle file. After reference transcript was aligned with audio file, for training and evaluation reproducibility, metadata manifests were generated containing:
+where \texttt{utt\_id} matched the chunk filename and the \texttt{transcript} was the clean subtitle file that has been extracted the value and aligned based on the timestamp in the subtitle file \parencite{TODO_alignment_reference}. After reference transcript was aligned with audio file, for training and evaluation reproducibility, metadata manifests were generated containing:
 \begin{itemize}[ nosep]
     \item \texttt{utt\_id} (utterance identifier),
     \item \texttt{wav} (absolute path to the audio file),
@@ -404,17 +405,17 @@ where \texttt{utt\_id} matched the chunk filename and the \texttt{transcript} wa
 \end{itemize}
 
 \subsection{Train/Validation/Test Splits }
-The final dataset was divided into three splits to support model development and unbiased evaluation. The split ratio used was 80\% training, 10\% validation, and 10\% testing. The script implemented a two-step split using train test split:
+The final dataset was divided into three splits to support model development and unbiased evaluation \parencite{TODO_dataset_splitting_reference}. The split ratio used was 80\% training, 10\% validation, and 10\% testing. The script implemented a two-step split using train test split \parencite{TODO_sklearn_train_test_split}:
 \begin{enumerate}[ nosep]
     \item Split the full set into 80\% train and 20\% temporary.
     \item Split the temporary set into 50\% validation and 50\% test (10\% each).
 \end{enumerate}
-The data was split like this beacuse the training set must be large enough for the models to learn the language patterns, while the validation set was required to tune hyperparameters and select checkpoints without leaking information from the test set. The test set was kept completely unseen until the final evaluation to provide an unbiased estimate of real-world transcription performance.
+The data was split like this beacuse the training set must be large enough for the models to learn the language patterns, while the validation set was required to tune hyperparameters and select checkpoints without leaking information from the test set \parencite{TODO_dataset_splitting_reference}. The test set was kept completely unseen until the final evaluation to provide an unbiased estimate of real-world transcription performance \parencite{TODO_dataset_splitting_reference}.
 
 
 
 \section{Model Training and Fine Tune Phase}
-\Cref{tab:ModelTraining} showed the fourth phase of this project where cleaned audio and transcript earlier was used to train or fine tune models. The main objective of this phase was to make sure each model was trained using the same data split so that the evaluation in the next phase was fair and consistent. 
+\Cref{tab:ModelTraining} showed the fourth phase of this project where cleaned audio and transcript earlier was used to train or fine tune models. The main objective of this phase was to make sure each model was trained using the same data split so that the evaluation in the next phase was fair and consistent \parencite{TODO_controlled_comparison_reference}. 
 \vspace{1em}
 
 \begin{table}[H]
@@ -450,10 +451,10 @@ Chapter 4
 
 \end{tabular}}
 \end{table}
-There model was used in this phase that was which was a traditional Kaldi GMM--HMM, an end-to-end CRDNN--CTC using SpeechBrain framework that was trained from zero while a transformer encoder--decoder Whisper model from OpenAI was fine tuned using the same dataset. 
+There model was used in this phase that was which was a traditional Kaldi GMM--HMM, an end-to-end CRDNN--CTC using SpeechBrain framework that was trained from zero while a transformer encoder--decoder Whisper model from OpenAI was fine tuned using the same dataset \parencite{kaldi2011, ravanelli2021speechbraingeneralpurposespeechtoolkit, speechbrain_v1, radford2023robust, wolf2020huggingfacestransformersstateoftheartnatural}. 
 
 \subsection{GMM--HMM Training (Kaldi)}
-The first model family was the traditional Kaldi-style GMM--HMM system. This model was trained using a standard Kaldi recipe flow which started from feature extraction, followed by acoustic model training in multiple stages (mono, tri1, tri2, tri3). In this experiment, MFCC features with CMVN normalization were used because it was a common baseline setup in Kaldi and suitable for classical HMM-based modelling.
+The first model family was the traditional Kaldi-style GMM--HMM system \parencite{kaldi2011}. This model was trained using a standard Kaldi recipe flow which started from feature extraction, followed by acoustic model training in multiple stages (mono, tri1, tri2, tri3) \parencite{kaldi2011}. In this experiment, MFCC features with CMVN normalization were used because it was a common baseline setup in Kaldi and suitable for classical HMM-based modelling \parencite{kaldi2011, TODO_mfcc_cmvn_reference}.
 
 \vspace{1em}
 \begin{figure}[H]
@@ -464,7 +465,7 @@ The first model family was the traditional Kaldi-style GMM--HMM system. This mod
 \end{figure}
 
 \subsubsection{Lexicon, Dictionary, and Language Preparation}
-A pronunciation dictionary and lexicon were prepared using a custom script, \texttt{prepare\_dict.py}. The script extracted a vocabulary list from the training transcripts and generated a grapheme-based lexicon by converting each Japanese token into Hepburn romanisation using \texttt{pykakasi}. The romanised output was normalised to lowercase and filtered to \texttt{a--z} characters only. Each word was then mapped to a sequence of letters, which served as the basic pronunciation units (phones).
+A pronunciation dictionary and lexicon were prepared using a custom script, \texttt{prepare\_dict.py}. The script extracted a vocabulary list from the training transcripts and generated a grapheme-based lexicon by converting each Japanese token into Hepburn romanisation using \texttt{pykakasi} \parencite{pykakasi}. The romanised output was normalised to lowercase and filtered to \texttt{a--z} characters only. Each word was then mapped to a sequence of letters, which served as the basic pronunciation units (phones) \parencite{TODO_grapheme_lexicon_reference}.
 
 \begin{adjustwidth}{-1.5cm}{-1.5cm}
 \begin{lstlisting}[language=Python, breaklines=true, basicstyle=\ttfamily\small,
@@ -484,13 +485,13 @@ for w in vocab:  # unique tokens from training transcripts
 \end{lstlisting}
 \end{adjustwidth}
 
-Next, an unknown token \texttt{<unk>} was inserted into the lexicon to handle out-of-vocabulary (OOV) terms during decoding. This was for silent between speech or unknown features when decoding. After that, a language directory \texttt{data/lang} which contained symbol tables and language resources, was created using kaldi internal receipe. The output of this step was a complete language directory that included \texttt{words.txt}, \texttt{L.fst}, and other required files used by Kaldi for graph construction.
+Next, an unknown token \texttt{<unk>} was inserted into the lexicon to handle out-of-vocabulary (OOV) terms during decoding \parencite{TODO_oov_reference}. This was for silent between speech or unknown features when decoding. After that, a language directory \texttt{data/lang} which contained symbol tables and language resources, was created using kaldi internal receipe \parencite{kaldi2011}. The output of this step was a complete language directory that included \texttt{words.txt}, \texttt{L.fst}, and other required files used by Kaldi for graph construction \parencite{kaldi2011}.
 
 
 \subsubsection{Feature Extraction (MFCC + CMVN)}
-MFCC (Mel-Frequency Cepstral Coefficients) was a compact numeric features that extracted from audio to represent the way human hear sound. It converted audio into numerical value and used as input feature in the ASR system. MFCC features were extracted for train, dev, and test sets using \texttt{steps/make\_mfcc.sh} from kaldi receipe.
+MFCC (Mel-Frequency Cepstral Coefficients) was a compact numeric features that extracted from audio to represent the way human hear sound \parencite{TODO_mfcc_reference}. It converted audio into numerical value and used as input feature in the ASR system \parencite{TODO_mfcc_reference}. MFCC features were extracted for train, dev, and test sets using \texttt{steps/make\_mfcc.sh} from kaldi receipe \parencite{kaldi2011}.
 
-After that, CMVN (Cepstral Mean and Variance Normalization) statistics were computed using \texttt{steps/compute\_cmvn\_stats.sh}. CVMN was a normalization step that applied to the MFCC to make the features more consistent by removing channel/mic/loudness differences. It also applied variance normalization for scale the unit variance and reduced scale differences.Below was the script to run MFCC and CMVN:
+After that, CMVN (Cepstral Mean and Variance Normalization) statistics were computed using \texttt{steps/compute\_cmvn\_stats.sh} \parencite{kaldi2011}. CVMN was a normalization step that applied to the MFCC to make the features more consistent by removing channel/mic/loudness differences \parencite{TODO_cmvn_reference}. It also applied variance normalization for scale the unit variance and reduced scale differences \parencite{TODO_cmvn_reference}.Below was the script to run MFCC and CMVN:
 
 
 \begin{adjustwidth}{-1.5cm}{-1.5cm}
@@ -514,15 +515,15 @@ steps/compute_cmvn_stats.sh data/test  exp/make_mfcc/test  mfcc
 
 
 \subsubsection{Acoustic Model Training Stages}
-To train the acoustic model, the training was done gradually to improve the performance. The acoutic model was train using 4 stages as described below:
+To train the acoustic model, the training was done gradually to improve the performance \parencite{kaldi2011}. The acoutic model was train using 4 stages as described below:
 \begin{itemize}[nosep]
-    \item \textbf{Monophone (mono):} a baseline context-independent model trained using \texttt{train\_mono.sh}.
-    \item \textbf{Triphone 1 (tri1):} a delta-based triphone model trained using \texttt{train\_deltas.sh}.
-    \item \textbf{Triphone 2 (tri2):} a triphone model with LDA+MLLT transforms trained using \texttt{train\_lda\_mllt.sh}.
-    \item \textbf{Triphone 3 (tri3):} a speaker-adaptive training (SAT) model trained using \texttt{train\_sat.sh}.
+    \item \textbf{Monophone (mono):} a baseline context-independent model trained using \texttt{train\_mono.sh} \parencite{kaldi2011}.
+    \item \textbf{Triphone 1 (tri1):} a delta-based triphone model trained using \texttt{train\_deltas.sh} \parencite{kaldi2011}.
+    \item \textbf{Triphone 2 (tri2):} a triphone model with LDA+MLLT transforms trained using \texttt{train\_lda\_mllt.sh} \parencite{kaldi2011}.
+    \item \textbf{Triphone 3 (tri3):} a speaker-adaptive training (SAT) model trained using \texttt{train\_sat.sh} \parencite{kaldi2011}.
 \end{itemize}
 
-Between each stage, the training set was aligned using \texttt{align\_si.sh} to produce improved alignments for the next model. This staged approach was important in Kaldi because better alignments usually led to better acoustic models. Below was the snippet of the bash script used to run the training receipe from Kaldi library.
+Between each stage, the training set was aligned using \texttt{align\_si.sh} to produce improved alignments for the next model \parencite{kaldi2011}. This staged approach was important in Kaldi because better alignments usually led to better acoustic models \parencite{kaldi2011}. Below was the snippet of the bash script used to run the training receipe from Kaldi library.
 
 \begin{lstlisting}[language=Bash, caption={Audio resampling to 16 kHz}, label={lst:kaldi-train-stages}]
 echo "=== Training mono ==="
@@ -557,10 +558,10 @@ steps/train_sat.sh 3500 20000 \
 
 
 \subsubsection{Language Model Construction and Decoding Graph}
-For decoding using a 3-gram,  a language model was created using KenLM. An external language model from wikipedia dump was used because it had a huge number of vocabluary to cover huge amount of language pattern. After that  \texttt{lmplz} was used to produce an ARPA LM, and Kaldi tools were used to convert the ARPA file into \texttt{G.fst}.
+For decoding using a 3-gram,  a language model was created using KenLM \parencite{kenlm}. An external language model from wikipedia dump was used because it had a huge number of vocabluary to cover huge amount of language pattern \parencite{TODO_wikipedia_lm_reference}. After that  \texttt{lmplz} was used to produce an ARPA LM, and Kaldi tools were used to convert the ARPA file into \texttt{G.fst} \parencite{kenlm, kaldi2011}.
 
 
-Finally, decoding graphs were created for each acoustic model using \texttt{utils/mkgraph.sh}. This produced graphs such as \texttt{exp/mono/graph}, \texttt{exp/tri1/graph}, and so on, which were used for decoding the test set.
+Finally, decoding graphs were created for each acoustic model using \texttt{utils/mkgraph.sh} \parencite{kaldi2011}. This produced graphs such as \texttt{exp/mono/graph}, \texttt{exp/tri1/graph}, and so on, which were used for decoding the test set \parencite{kaldi2011}.
 
 
 \begin{lstlisting}[language=Bash, caption={Audio resampling to 16 kHz}, label={lst:kaldi-mkgraph}]
@@ -605,7 +606,7 @@ utils/mkgraph.sh data/lang exp/tri3 exp/tri3/graph
 
 
 \subsection{CRDNN--CTC Training (SpeechBrain)}
-The second family model was from neural network model and CRDNNCTC model has been choosen based on the literature review. This model was trained using SpeechBrain framework with the goal was to learn the direct mapping from acoustic feature and output character sequesnce. For the decoder setup, CTC was used because Japanese transcripts could be handled naturally as a sequence of characters, and it avoided the need for word segmentation.
+The second family model was from neural network model and CRDNNCTC model has been choosen based on the literature review \parencite{chen2020streaming, ravanelli2021speechbraingeneralpurposespeechtoolkit}. This model was trained using SpeechBrain framework with the goal was to learn the direct mapping from acoustic feature and output character sequesnce \parencite{speechbrain_v1}. For the decoder setup, CTC was used because Japanese transcripts could be handled naturally as a sequence of characters, and it avoided the need for word segmentation \parencite{chen2020streaming}.
 
 \vspace{1em}
 \begin{figure}[H]
@@ -616,10 +617,10 @@ The second family model was from neural network model and CRDNNCTC model has bee
 \end{figure}
 
 \subsubsection{Manifest Preparation}
-Similar to GMM-HMM setup earlier, CRDNN-CTC setup also utilized the same  CSV manifests that included \texttt{ID}, \texttt{wav}, \texttt{duration}, and \texttt{transcript}. The manifests were generated from the prepared wav directory and transcript mapping file. The same 80/10/10 split strategy train/valid/test was used.
+Similar to GMM-HMM setup earlier, CRDNN-CTC setup also utilized the same  CSV manifests that included \texttt{ID}, \texttt{wav}, \texttt{duration}, and \texttt{transcript} \parencite{TODO_manifest_best_practice}. The manifests were generated from the prepared wav directory and transcript mapping file. The same 80/10/10 split strategy train/valid/test was used \parencite{TODO_dataset_splitting_reference}.
 
 \subsubsection{Character Vocabulary (CTC Token Set)}
-Next step was to create a character vocabuluary from the training script by scanning all characters in the training set and writing them into a charset file. The vocabulary file began with a special \texttt{<blank>} token to represent the CTC blank symbol. After that this charset was loaded into SpeechBrain using \texttt{CTCTextEncoder}.  This step was important because CTC required a fixed label set, and the model output layer size depended directly on the number of characters in this vocabulary. By generating the charset from the training transcripts, the label set stayed consistent with the dataset and reduced unexpected errors when unseen symbols appeared during training.
+Next step was to create a character vocabuluary from the training script by scanning all characters in the training set and writing them into a charset file \parencite{TODO_ctc_vocab_reference}. The vocabulary file began with a special \texttt{<blank>} token to represent the CTC blank symbol \parencite{graves2013}. After that this charset was loaded into SpeechBrain using \texttt{CTCTextEncoder} \parencite{speechbrain_v1}.  This step was important because CTC required a fixed label set, and the model output layer size depended directly on the number of characters in this vocabulary \parencite{graves2013}. By generating the charset from the training transcripts, the label set stayed consistent with the dataset and reduced unexpected errors when unseen symbols appeared during training \parencite{TODO_ctc_vocab_reference}.
 
 
 
@@ -643,10 +644,10 @@ with open("tokenizer/charset.txt", "w", encoding="utf-8") as f:
 \end{adjustwidth}
 
 \subsubsection{Model Configuration and Hyperparameters}
-The CRDNN model hyperparameters were defined in \texttt{hyperparams.yaml}. In this experiment, filterbank (FBank) features with mean-variance normalization were used. The architecture consisted of CNN blocks, followed by bidirectional LSTM layers, and a DNN block before a final linear layer that projected to the CTC vocabulary size. The optimizer used was Adam with a learning rate of $1\times10^{-3}$, and learning rate scheduling was handled using NewBob scheduling based on validation improvement. Dropout was also applied to reduce overfitting because the dataset size was limited compared to large-scale ASR corpora. In addition, batch sizes for training and validation were configured separately to make sure validation could run stably under limited GPU memory.
+The CRDNN model hyperparameters were defined in \texttt{hyperparams.yaml} \parencite{speechbrain_v1}. In this experiment, filterbank (FBank) features with mean-variance normalization were used \parencite{speechbrain_v1, TODO_fbank_reference}. The architecture consisted of CNN blocks, followed by bidirectional LSTM layers, and a DNN block before a final linear layer that projected to the CTC vocabulary size \parencite{speechbrain_v1}. The optimizer used was Adam with a learning rate of $1\times10^{-3}$, and learning rate scheduling was handled using NewBob scheduling based on validation improvement \parencite{speechbrain_v1, TODO_newbob_reference}. Dropout was also applied to reduce overfitting because the dataset size was limited compared to large-scale ASR corpora \parencite{TODO_regularization_reference}. In addition, batch sizes for training and validation were configured separately to make sure validation could run stably under limited GPU memory \parencite{TODO_batch_size_reference}.
 
 \subsubsection{Training Procedure and Checkpointing}
-A custom SpeechBrain \texttt{Brain} class (\texttt{ASRBrain}) was implemented to define forward computation, CTC loss, and CER tracking during validation. During training, checkpoints were saved using SpeechBrain checkpointer so that the best model could be recovered and used during evaluation. The model was trained for a fixed number of epochs, and validation CER was monitored across epochs. The learning rate was automatically adjusted when validation improvement became small, which helped stabilize training and avoided over-updating the model. At the end of training, the best checkpoint was selected based on validation performance
+A custom SpeechBrain \texttt{Brain} class (\texttt{ASRBrain}) was implemented to define forward computation, CTC loss, and CER tracking during validation \parencite{speechbrain_v1}. During training, checkpoints were saved using SpeechBrain checkpointer so that the best model could be recovered and used during evaluation \parencite{speechbrain_v1}. The model was trained for a fixed number of epochs, and validation CER was monitored across epochs. The learning rate was automatically adjusted when validation improvement became small, which helped stabilize training and avoided over-updating the model \parencite{speechbrain_v1, TODO_lr_schedule_reference}. At the end of training, the best checkpoint was selected based on validation performance \parencite{speechbrain_v1}.
 
 
 
@@ -656,7 +657,7 @@ A custom SpeechBrain \texttt{Brain} class (\texttt{ASRBrain}) was implemented to
 
 
 \subsection{Whisper Fine-Tuning (Transformer Encoder--Decoder)}
-The third model family was Whisper, a transformer encoder--decoder ASR model from OpenAI. In this research, multiple Whisper variants were fine tuned (tiny, base, small, medium, and large-turbo). Whisper was fine tuned using supervised learning by providing audio features as inputs and reference transcripts as labels.
+The third model family was Whisper, a transformer encoder--decoder ASR model from OpenAI \parencite{radford2023robust}. In this research, multiple Whisper variants were fine tuned (tiny, base, small, medium, and large-turbo) \parencite{radford2023robust}. Whisper was fine tuned using supervised learning by providing audio features as inputs and reference transcripts as labels \parencite{radford2023robust}.
 
 \vspace{1em}
 \begin{figure}[H]
@@ -667,13 +668,13 @@ The third model family was Whisper, a transformer encoder--decoder ASR model fro
 \end{figure}
 
 \subsubsection{Dataset Preparation for Fine-Tuning}
-The dataset was prepared by converting \texttt{transcript\_utf8.txt} into a DataFrame that mapped each utterance ID to its corresponding \texttt{.wav} path and transcript. The data was shuffled using a fixed random seed for reproducibility and split into training, validation, and testing sets. Each split was stored as CSV files (\texttt{train.csv}, \texttt{valid.csv}, \texttt{test.csv}) and later loaded using HuggingFace \texttt{datasets}.
+The dataset was prepared by converting \texttt{transcript\_utf8.txt} into a DataFrame that mapped each utterance ID to its corresponding \texttt{.wav} path and transcript. The data was shuffled using a fixed random seed for reproducibility and split into training, validation, and testing sets \parencite{TODO_dataset_splitting_reference}. Each split was stored as CSV files (\texttt{train.csv}, \texttt{valid.csv}, \texttt{test.csv}) and later loaded using HuggingFace \texttt{datasets} \parencite{wolf2020huggingfacestransformersstateoftheartnatural}.
 
 \subsubsection{Feature Extraction and Label Encoding}
-Whisper used log-Mel filterbank features extracted by the Whisper feature extractor. In preprocessing, each audio sample was resampled to 16\,kHz if needed and converted into \texttt{input\_features}. The transcript text was tokenized using Whisper tokenizer to generate \texttt{labels}. To avoid extremely long samples affecting training stability, audio longer than a fixed threshold (example: 30 seconds) was filtered out before training.
+Whisper used log-Mel filterbank features extracted by the Whisper feature extractor \parencite{radford2023robust}. In preprocessing, each audio sample was resampled to 16\,kHz if needed and converted into \texttt{input\_features} \parencite{radford2023robust}. The transcript text was tokenized using Whisper tokenizer to generate \texttt{labels} \parencite{radford2023robust}. To avoid extremely long samples affecting training stability, audio longer than a fixed threshold (example: 30 seconds) was filtered out before training \parencite{TODO_long_sample_filter_reference}.
 
 \subsubsection{Fine-Tuning Configuration}
-For fine tuning, a pretrained Whisper checkpoint (example: \texttt{openai/whisper-base}) was loaded. The decoder was configured with Japanese language prompts using forced decoder IDs (\texttt{language="japanese", task="transcribe"}). Gradient checkpointing-related settings were applied by setting \texttt{use\_cache=False}. Training used AdamW optimizer with a small learning rate (example: $1\times10^{-5}$) and cosine learning rate scheduling with warmup. Mixed precision (FP16) training was enabled when running on GPU to speed up training and reduce memory usage.
+For fine tuning, a pretrained Whisper checkpoint (example: \texttt{openai/whisper-base}) was loaded \parencite{radford2023robust}. The decoder was configured with Japanese language prompts using forced decoder IDs (\texttt{language="japanese", task="transcribe"}) \parencite{wolf2020huggingfacestransformersstateoftheartnatural}. Gradient checkpointing-related settings were applied by setting \texttt{use\_cache=False} \parencite{wolf2020huggingfacestransformersstateoftheartnatural}. Training used AdamW optimizer with a small learning rate (example: $1\times10^{-5}$) and cosine learning rate scheduling with warmup \parencite{TODO_adamw_cosine_reference}. Mixed precision (FP16) training was enabled when running on GPU to speed up training and reduce memory usage \parencite{TODO_fp16_reference}.
 
 
 \begin{adjustwidth}{-1.5cm}{-1.5cm}
@@ -698,15 +699,15 @@ model.config.use_cache = False      # must be False for gradient checkpointing
 \end{adjustwidth}
 
 \subsubsection{Training Loop and Validation}
-Training was performed for 10 epochs using mini-batch gradient updates. During training, the loss value was monitored at each step and average loss was computed at the end of each epoch. After training, validation decoding was performed using \texttt{model.generate()} and metrics were computed using WER and CER. The model and processor were then saved for later decoding and test evaluation.
+Training was performed for 10 epochs using mini-batch gradient updates \parencite{TODO_training_loop_reference}. During training, the loss value was monitored at each step and average loss was computed at the end of each epoch. After training, validation decoding was performed using \texttt{model.generate()} and metrics were computed using WER and CER \parencite{wolf2020huggingfacestransformersstateoftheartnatural, jiwer_2025}. The model and processor were then saved for later decoding and test evaluation \parencite{wolf2020huggingfacestransformersstateoftheartnatural}.
 
 \subsubsection{Model Saving and Inference Check}
-After fine-tuning completed, the model weights and processor configuration were saved using \texttt{save\_pretrained}. A quick inference check was performed by decoding a sample from the test split and comparing the predicted transcription against the ground truth reference. This step was important to confirm that the model and tokenizer were saved correctly and could be loaded again for the evaluation phase.
+After fine-tuning completed, the model weights and processor configuration were saved using \texttt{save\_pretrained} \parencite{wolf2020huggingfacestransformersstateoftheartnatural}. A quick inference check was performed by decoding a sample from the test split and comparing the predicted transcription against the ground truth reference. This step was important to confirm that the model and tokenizer were saved correctly and could be loaded again for the evaluation phase \parencite{wolf2020huggingfacestransformersstateoftheartnatural}.
 
 
 
 \section{Evaluation Phase}
-\Cref{tab:Evaluation} showed the fifth phase of this project where all trained models were evaluated using the same test split and the same scoring protocol. The main objective of this phase was to measure transcription accuracy and decoding efficiency in a consistent and reproducible way so that comparisons across the three model families were fair. The activities carried out and the outcome deliverables were described in the table shown below.
+\Cref{tab:Evaluation} showed the fifth phase of this project where all trained models were evaluated using the same test split and the same scoring protocol. The main objective of this phase was to measure transcription accuracy and decoding efficiency in a consistent and reproducible way so that comparisons across the three model families were fair \parencite{jiwer_2025, TODO_rtf_reference, TODO_controlled_comparison_reference}. The activities carried out and the outcome deliverables were described in the table shown below.
 \vspace{1em}
 
 \begin{table}[H]
@@ -739,22 +740,22 @@ Chapter 4
 \end{tabular}}
 \end{table}
 
-In this phase, each trained system produced hypotheses on the test split and those hypotheses were scored against the same reference transcripts. The evaluation used three metrics that matched the research objectives that is character error rate (CER), word error rate (WER), and real-time factor (RTF). 
+In this phase, each trained system produced hypotheses on the test split and those hypotheses were scored against the same reference transcripts. The evaluation used three metrics that matched the research objectives that is character error rate (CER), word error rate (WER), and real-time factor (RTF) \parencite{jiwer_2025, TODO_rtf_reference}. 
 
 \subsection{Decoding and Hypothesis Generation}
-For the Kaldi GMM--HMM systems, decoding was performed using the test set features and the corresponding decoding graphs created earlier. Hypotheses were produced for each acoustic model stage (mono, tri1, tri2, tri3) using the standard Kaldi decoding pipeline. For the CRDNN--CTC system, decoding was performed using CTC decoding and hypotheses were generated for the test set, including the beam decoding variant when configured. For Whisper variants, hypotheses were generated using the HuggingFace \texttt{model.generate()} decoding procedure, and the output token sequences were converted back into Japanese text using the Whisper tokenizer.
+For the Kaldi GMM--HMM systems, decoding was performed using the test set features and the corresponding decoding graphs created earlier. Hypotheses were produced for each acoustic model stage (mono, tri1, tri2, tri3) using the standard Kaldi decoding pipeline \parencite{kaldi2011}. For the CRDNN--CTC system, decoding was performed using CTC decoding and hypotheses were generated for the test set, including the beam decoding variant when configured \parencite{speechbrain_v1, graves2013}. For Whisper variants, hypotheses were generated using the HuggingFace \texttt{model.generate()} decoding procedure, and the output token sequences were converted back into Japanese text using the Whisper tokenizer \parencite{wolf2020huggingfacestransformersstateoftheartnatural}.
 
 \subsection{Scoring Protocol (CER and WER)}
-After hypotheses were generated, each prediction was aligned against the reference transcripts and scored using CER and WER. CER was computed by measuring the normalized Levenshtein distance between predicted and reference character sequences. WER was computed using the same edit distance approach but applied at the word level after tokenization. The scoring protocol was applied consistently across all three model families so that differences in results reflected model performance rather than differences in evaluation handling.
+After hypotheses were generated, each prediction was aligned against the reference transcripts and scored using CER and WER \parencite{jiwer_2025}. CER was computed by measuring the normalized Levenshtein distance between predicted and reference character sequences \parencite{jiwer_2025, TODO_levenshtein_reference}. WER was computed using the same edit distance approach but applied at the word level after tokenization \parencite{jiwer_2025}. The scoring protocol was applied consistently across all three model families so that differences in results reflected model performance rather than differences in evaluation handling \parencite{jiwer_2025, TODO_controlled_comparison_reference}.
 
 \subsection{Speed Measurement (RTF)}
-Decoding speed was evaluated using real-time factor (RTF), where total decoding wall time was divided by total audio duration. RTF values below 1.0 indicated faster-than-real-time decoding, while values above 1.0 indicated slower-than-real-time decoding. RTF was recorded for each system to compare computational efficiency, and the same measurement approach was applied across models under the same hardware environment to support fair comparisons.
+Decoding speed was evaluated using real-time factor (RTF), where total decoding wall time was divided by total audio duration \parencite{TODO_rtf_reference}. RTF values below 1.0 indicated faster-than-real-time decoding, while values above 1.0 indicated slower-than-real-time decoding \parencite{TODO_rtf_reference}. RTF was recorded for each system to compare computational efficiency, and the same measurement approach was applied across models under the same hardware environment to support fair comparisons \parencite{TODO_rtf_reference}.
 
 
 
 
 \section{Discussion Phase}
-\Cref{tab:Discussion} showed the sixth phase of this project where the evaluation outcomes were interpreted and discussed in relation to the research questions and prior work. The main objective of this phase was to analyze the trends observed across the three model families, explain the trade-offs between accuracy and speed, and outline the limitations and future improvements. The activities carried out and the outcome deliverables were described in the table shown below.
+\Cref{tab:Discussion} showed the sixth phase of this project where the evaluation outcomes were interpreted and discussed in relation to the research questions and prior work. The main objective of this phase was to analyze the trends observed across the three model families, explain the trade-offs between accuracy and speed, and outline the limitations and future improvements \parencite{TODO_discussion_method_reference}. The activities carried out and the outcome deliverables were described in the table shown below.
 \vspace{1em}
 
 \begin{table}[H]
@@ -790,7 +791,9 @@ Chapter 5
 \end{tabular}}
 \end{table}
 
-In this phase, the results from CER, WER, and RTF were analyzed to explain how each model family behaved under the same dataset and evaluation setup. The discussion compared classical and neural approaches by focusing on how performance improved from mono to tri3 in the Kaldi pipeline, how CRDNN--CTC handled Japanese character sequences under end-to-end training, and how Whisper variants achieved different accuracy and speed trade-offs depending on model size. The outcomes were linked back to prior work to show whether observed trends matched or differed from findings in the literature, especially regarding the advantages of pretrained transformer-based models for low-resource or domain-mismatched settings.
+In this phase, the results from CER, WER, and RTF were analyzed to explain how each model family behaved under the same dataset and evaluation setup \parencite{TODO_discussion_method_reference}. The discussion compared classical and neural approaches by focusing on how performance improved from mono to tri3 in the Kaldi pipeline, how CRDNN--CTC handled Japanese character sequences under end-to-end training, and how Whisper variants achieved different accuracy and speed trade-offs depending on model size \parencite{kaldi2011, speechbrain_v1, radford2023robust}. The outcomes were linked back to prior work to show whether observed trends matched or differed from findings in the literature, especially regarding the advantages of pretrained transformer-based models for low-resource or domain-mismatched settings \parencite{radford2023robust, bajo2024efficient, TODO_domain_mismatch_reference}.
 
 \section{Summary}
-This chapter described the methodology for comparing Japanese ASR across three model families. The study followed six phases (planning, prior work, data preparation, training, evaluation, and discussion) and used a single, consistent dataset pipeline to ensure fair comparison. Japanese TEDx talks with manual subtitles were collected, transcripts were cleaned, audio was standardised to 16\,kHz mono, and long recordings were segmented using WebRTC VAD, with low-quality non-speech clips filtered out. All models were trained on the same 80/10/10 splits and evaluated on the same test set using CER, WER, and RTF to compare accuracy and decoding speed.
+This chapter described the methodology for comparing Japanese ASR across three model families. The study followed six phases (planning, prior work, data preparation, training, evaluation, and discussion) and used a single, consistent dataset pipeline to ensure fair comparison \parencite{TODO_controlled_comparison_reference}. Japanese TEDx talks with manual subtitles were collected, transcripts were cleaned, audio was standardised to 16\,kHz mono, and long recordings were segmented using WebRTC VAD, with low-quality non-speech clips filtered out \parencite{yt-dlp, mcfee_2025_15006942, soundfile, webrtc, clap, TODO_pyannote_reference}. All models were trained on the same 80/10/10 splits and evaluated on the same test set using CER, WER, and RTF to compare accuracy and decoding speed \parencite{jiwer_2025, TODO_rtf_reference}.
+
+

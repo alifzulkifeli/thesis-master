@@ -59,6 +59,22 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepackage{CJKutf8}
+\newcommand{\jp}[1]{{\begin{CJK*}{UTF8}{ipxm}#1\end{CJK*}}}
+
+\usepackage{xcolor}
+\usepackage{textcomp} % for \textvisiblespace
+
+% If you already have \jp{...} defined in your class, keep using it.
+% Otherwise, you can temporarily do:
+% \newcommand{\jp}[1]{#1}
+
+\newcommand{\vsp}{\textvisiblespace} % show "space" in diffs
+
+% Diff markers (match your script)
+\newcommand{\ins}[1]{\textcolor{green!55!black}{[+#1+]}}
+\newcommand{\del}[1]{\textcolor{red!70!black}{[-#1-]}}
+\newcommand{\rep}[2]{\textcolor{yellow!85!black}{[#1$\rightarrow$#2]}}
+
 
 \lstset{
     language=Python,            % Language of the code

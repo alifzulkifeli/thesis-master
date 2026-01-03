@@ -1,7 +1,7 @@
 \chapter{LITERATURE REVIEW}
 
 \section{Introduction}
-The technology for Automatic Speech Recognition (ASR) has advanced rapidly in these years. Starting from traditional models like GMM and HMM into more sophisticated deep learning approaches such as DNN, CNN, RNN, and Transformer-based architectures. 
+The technology for Automatic Speech Recognition (ASR) has advanced rapidly in these years. Early traditional models like GMM and HMM into more sophisticated deep learning approaches such as DNN, CNN, RNN, and Transformer-based architectures. 
 
 \begin{figure}[H]
     \centering
@@ -19,50 +19,92 @@ A single character of kanji may have a few ways to pronounce it because each cha
 
 
 \section{Traditional Speech Detection Models } 
+
 \subsection{Gaussian Mixture Models (GMM)}
-GMM have been the earliest technology used for developing Japanese speech detection and recognition systems because of their capability in capturing the statistical distribution of speech features very well \parencite{Imaishi2022Examination}. Because of the absence of word boundaries and the nuances of pitch accent in the Japanese language, it is really complicated to understand the context of the spoken words. However, GMM would be useful by employing probabilities to manage and characterize intricate patterns \parencite{sun2020subspace}. For example, \textcite{povey2011subspace} were able to use GMM to model phoneme-based acoustic features, and this approach led to a good performance of speech recognition systems.
+GMM have been the earliest technology used for developing Japanese speech detection and recognition systems because of their capability in capturing the statistical distribution of speech features very well \parencite{Imaishi2022Examination}. Because of the absence of word boundaries and the nuances of pitch accent in the Japanese language, it is really complicated to understand the context of the spoken words. However, GMM would be useful by using probabilities to manage and characterize intricate patterns \parencite{sun2020subspace}. For example, \textcite{povey2011subspace} were able to use GMM to model phoneme-based acoustic features, and this approach led to a good performance of speech recognition systems.
 
- \textcite{Imaishi2022Examination} developed an approach within the EM algorithm that leads to the stabilization of the GMM parameters as well as increasing the discriminative power of the model in cases where there is not much evaluation data available. In other work, \textcite{povey2011subspace} point out that it is possible to represent the distribution of speech features in GMM mode by employing a combination of several Gaussian components. This way the GMM ca n account for the phonetic or speaker variability which is known to be present during word is being pronounce.
-
-\textcite{Takami2020Performance} emphasized a different direction which starts with the creation of the Universal Background Model, which is a Gaussian Mixture Model calculated from the collection of a large number of speech samples. To develop a model of the characteristics of a given UBM, the UBM is modified through Maximum A Posteriori (MAP) Adaptation. This method adjusts parameters of the UBM such as mean vectors, covariance matrices, and mixture weights depending on the individual’s data \parencite{dehak2009support}. Studies also  have shown that the use of speaker factor space constructed in the GMM and Joint Factor Analysis (JFA) can greatly improves the accuracy and efficiency of GMM systems \parencite{matrouf2011modeling}.
+ \textcite{Imaishi2022Examination} developed an approach within the EM algorithm that leads to the stabilization of the GMM parameters as well as increasing the discriminative power of the model in cases where there is not much evaluation data available. In other work, \textcite{povey2011subspace} point out that it is possible to represent the distribution of speech features in GMM mode by employing a combination of several Gaussian components. \textcite{Takami2020Performance} emphasized a different direction which starts with the creation of the Universal Background Model, which is a Gaussian Mixture Model calculated from the collection of a large number of speech samples. 
 
 \subsection{Hidden Markov Models (HMM)}
-HMM is working quite well with Japanese speech detection because of the incorporation of the acoustic and temporal characteristics of speech, including the difficulties found in the encoding of Japanese speech \parencite{Tokuda1999Application}. Moreover, HMM is so useful in ASR because they are very efficient in the representation of time varying systems by a succession of discrete time states. A unique segment of the speech signal is represented in each state, and the segment is described using a specific set of acoustic features \parencite{juang1991hidden}. ASR systems incorporated with HMM are more superior in portraying Japanese speech characteristics’ rhythm and tone including essential features like pitch accent and moraic timing which features will enhance the performance of the systems on the phonology aspects of the language \parencite{Tokuda2000HMM}.
+HMM is working quite well with Japanese speech detection because of the incorporation of the acoustic and temporal characteristics of speech, including the difficulties found in the encoding of Japanese speech \parencite{Tokuda1999Application}. ASR systems incorporated with HMM are more superior in portraying Japanese speech characteristics’ rhythm and tone including essential features like pitch accent and moraic timing which features will enhance the performance of the systems on the phonology aspects of the language \parencite{Tokuda2000HMM}.
 
-ASR systems based on HMMs give quite satisfactory results especially on languages like Japanese because it is a possible to interpolate between a discrete set of states, where each state stands for a segment of the speech signal that has distinct acoustic features like pitch, duration, and phoneme quality \parencite{juang1991hidden}. To further Increase Japanese ASR project, few other models is used along with HMM which is context-sensitive such as Tri-phone method. Tri-phone method is a phonetic expansion that employs phonetics of the neighbor sounds to the phoneme as context in order to increase the recognition accuracy by taking into account the co-articulation that takes place during fast speech production \parencite{Tokuda2000HMM}. Other models by \textcite{gales2008application} were used together with HMM are Maximum Mutual Information and Minimum Phone Error which are useful for optimizing the parameters of the HMM and improve the recognition performance. 
+To further Increase Japanese ASR capability, few other models is used along with HMM which is context-sensitive such as Tri-phone method. Tri-phone method is a phonetic expansion that employs phonetics of the neighbor sounds to the phoneme as context in order to increase the recognition accuracy by taking into account the co-articulation that takes place during fast speech production \parencite{Tokuda2000HMM}. 
 
 
 \subsection{The GMM-HMM Combination}
-The GMM-HMM model uses GMM for the observation probabilities corresponding to each state of the HMM. Each state of an HMM is assumed to have a library of Gaussian mixtures with which the state’s acoustic feature is pooled. Because transition probabilities of each state are determined by the HMM, temporal dependency of speech is well modelled. This combination allows the system to account for some of the variations in speech signals, such as those related to accent and the differences in the pronunciation of words in the Japanese language \parencite{taheri2006fuzzy}. While HMMs trained with large datasets under maximum likelihood criteria may have limited discriminative power, incorporating GMMs as observation models captures a broader range of acoustic variations. This method works really well for Japanese language, which are sensitive to the duration of phonemes in the context of the language.
+In the Kaldi framework, Japanese large-vocabulary ASR has commonly been implemented as a GMM--HMM pipeline where HMM states capture temporal dynamics and GMMs model frame-level acoustic likelihoods, typically paired with context-dependent decision-tree clustered triphones. Classic Kaldi recipes also report stepwise gains when moving from simpler triphone systems to stronger feature-space modeling. For example, the Kaldi CSJ recipe reports that performance improves from early triphone stages to later stages, with eval1 WER decreasing from 22.67\% (tri1) to 21.49\% (tri2) and further to 17.49\% (tri3) and 15.26\% (tri4), demonstrating the typical benefit of successive refinements in the conventional HMM-based pipeline. \parencite{KaldiCSJResults2015}
 
-Furthermore, the integration of GMM and HMM eliminates the need for applying state-of-the-art feature extraction techniques like Mel-Frequency Cepstral Coefficients (MFCC), hence increasing recognition performance \parencite{nicita1}. This hybrid approach has been successful in speaker-dependent as well as in speaker-independent systems. When fuzzy clustering and the expectation-maximisation algorithm are used, lower error rates are usually obtained by GMM-HMM than the methods used in isolation. For example, in a paper on speech data collected in a noisy environment, it was demonstrated that GMM-HMM provided much improvement in recognition performance over the conventional HMM scheme \parencite{taheri2006fuzzy, nicita1}.
+More recently, \textcite{ando2021} evaluated Kaldi-style HMM-based systems using the official CSJ recipe as a baseline training procedure and reported CER on both an out-of-domain TEDx-style test set and the standard CSJ evaluation sets. On the TEDxJP-10K evaluation set, their best reported configuration achieved 17.92\% CER, while simpler configurations such as CSJ acoustic model with CSJ language model achieved 23.41\% CER. These results provide concrete reference points for conventional HMM-based Japanese ASR performance under both matched (CSJ) and more realistic, diverse conditions (TEDxJP-10K). \parencite{ando2021}
+
+\begin{table}[H]
+\centering
+\caption{ASR decoding results (CER\%) on the TEDxJP-10K dataset (adapted from \textcite{ando2021}).}
+\label{tab:tedxjp10k_cer}
+{\small
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lccc}
+\hline
+\textbf{LM} & \textbf{CSJ} & \textbf{TV} & \textbf{CSJ+TV} \\
+\hline
+CSJ        & 23.41 & 21.83 & 20.61 \\
+TV         & 22.14 & 18.98 & 18.22 \\
+OSCAR      & 23.52 & 19.28 & 18.71 \\
+TV+OSCAR   & 21.89 & 18.29 & 17.92 \\
+\hline
+\end{tabular}}
+\end{table}
+
 
 
 \section{Modern Deep Learning Approaches}
 \subsection{Deep Neural Networks (DNN)}
-The use of DNN in conjunction with HMM, also known as DNN-HMM has been shown to improve performance in Japanese speech recognition tasks. \textcite{seki2014comparison} compared syllable-based and phoneme-based DNN-HMM and found that the syllable-based DNN-HMM was better, as its parameter space is less coupled with the context of the syllables. They reported that an 11\% relative decrease in the WER for triphone DNN-HMMs over syllable-based DNN-HMMs when used on large databases such as ASJ+JNAS. The multilayered structure of DNNs makes it much suitable for developing models of contextual dependencies for speech signals \parencite{hojo2018dnn}. GMM-HMM models are less effective compared to DNN when the task involves the estimation of posterior probabilities. In particular, pre-training with restricted Boltzmann machines has been quite useful for weight initialization, the vanishing gradient problem, and overall performance \parencite{Mimura2013CSJ}.
+The use of DNN in conjunction with HMM, also known as DNN-HMM has been shown to improve performance in Japanese ASR. \textcite{seki2014comparison} compared syllable-based and phoneme-based DNN-HMM and found that the syllable-based DNN-HMM was better, as its parameter space is less coupled with the context of the syllables. They reported that an 11\% relative decrease in the WER for triphone DNN-HMMs over syllable-based DNN-HMMs when used on large databases such as ASJ+JNAS. The multilayered structure of DNNs makes it much suitable for developing models of contextual dependencies for speech signals \parencite{hojo2018dnn}. 
 
-\textcite{mu2020japanese} developed a double-deep neural network for the evaluation of Japanese pronunciation to address the problems of text-to-speech alignment and scoring. The DDNN integrated CNN and RNNs with attention and it is effective for detecting pronunciation mistakes. \textcite{lin2017dnn} noted the importance of addressing the particular problem of the lack of annotated Japanese speech corpora by emphasizing the use of transfer learning with DNN. First, pre-training on large universal datasets increases the generalization ability. Then, fine-tuning on Japanese databases enhances the performance that is critical in low-resource applications. The authors were also able to use CNN and recurrent architectures to attend to the granularity features of the Japanese language.
+\textcite{mu2020japanese} developed a double-deep neural network for the evaluation of Japanese pronunciation to address the problems of text-to-speech alignment and scoring. The DDNN integrated CNN and RNNs with attention and it is effective for detecting pronunciation mistakes. \textcite{lin2017dnn} noted the importance of addressing the particular problem of the lack of annotated Japanese speech corpora by emphasizing the use of transfer learning with DNN. 
 
 \subsection{Convolutional Neural Networks (CNN)}
-There is difficulties in the visual speech recognition areas and specifically within lipreading because a limitation for the use of CNNs for phoneme recognition tasks was considered to be the number of training datasets \parencite{noda2014lipreading}. The research was conducted using elastic net regression on a seven-layer CNN structure and 58\% of phoneme recognition accuracy was obtained for Japanese datasets. Building upon this work, \textcite{yalta2019cnn} constructed a functional speech recognition framework inclusive of several types of words spoken intended for tight spots like houses. There are more focused methods for connecting microphones such as incorporating residual connections and batch denormalization. 
+\parencite{noda2014lipreading} conducted a research using elastic net regression on a seven-layer CNN structure and 58\% of phoneme recognition accuracy was obtained for Japanese datasets. Building upon this work, \textcite{yalta2019cnn} constructed a functional speech recognition framework inclusive of several types of words spoken intended for tight spots like houses. 
 
-\textcite{noda2014lipreading} investigated the use of CNNs for solving the problem of creating a Japanese speech acoustic model. CNN used to encode the frequency-time domain images and properly exploit the spatial and temporal aspects. The C-nets employed in this model aided in recognizing fine speech traits that improved performance in terms of recognition in contrast to the prevalent GMMs and HMMs methods. The combination of CNNs with attention mechanisms has yielded some results in the accurate detection of Japanese speech. This integration has been beneficial in increasing accuracy and interoperability during the detection of long utterances and multi-speaker datasets \parencite{Mukohara2015Emotion}.
+\textcite{noda2014lipreading} investigated the use of CNNs for solving the problem of creating a Japanese speech acoustic model. CNN used to encode the frequency-time domain audio and properly exploit the spatial and temporal aspects. The combination of CNNs with attention mechanisms has been beneficial in increasing accuracy and interoperability during the detection of long utterances and multi-speaker datasets \parencite{Mukohara2015Emotion}.
 
 
 \subsection{Recurrent Neural Networks (RNN)}
-In the work of \textcite{takeuchi2020real}, a novel design of the RNN is introduced, which enables the processing of input speech while removing noise caused by the room impulse response. This network mitigates the vanishing and exploding gradient problems often seen in RNNs while also keeping the parameter count low, making it very suitable for real-time applications. \textcite{Kida2016LSTM} investigated linear prediction filters based on LSTM. Their method trained an LSTM which did not require direct access to raw information and thus can extract features from distorted signals, as an LSTM estimated linear prediction coefficients. 
+In the work of \textcite{takeuchi2020real}, RNN is introduced, which enables the processing of input speech while removing noise and help to reduce exploding gradient problems often seen in RNNs. \textcite{Kida2016LSTM} investigated linear prediction filters based on LSTM which did not require direct access to raw information and thus can extract features from distorted signals, as an LSTM estimated linear prediction coefficients. 
 
-\textcite{Kubo2014DeepLearning} broadened approaches incorporating RNNs into synthesizing speech for Japanese, particularly focusing on improving prosody and intonation. Their work underscored the necessity to consider the sequential modelling features of RNNs units, especially LSTMs, techniques for natural voice synthesis of Japanese language sounds. \textcite{takeuchi2020real} took advantage of the RNN-based architectures for the acoustic modelling for Japanese ASR. They showed that even though GRUs have a simpler gating strategy than LSTMs, they could achieve a similar level of classification accuracy with lower compute requirements. Then, the studies on bidirectional LSTMs (BLSTMs). \textcite{imaizumi2022} revealed that they could utilise the past context and the future context of the signal for better performance of the speech recognition device. Many applications of automatic speech recognition in which the Japanese language is used have demonstrated that BLSTMs are particularly helpful for modelling complex phonological and prosodic structures of the Japanese language.
+\textcite{Kubo2014DeepLearning} broadened approaches incorporating RNNs into synthesizing speech for Japanese, focusing on improving prosody and intonation. \textcite{takeuchi2020real} took advantage of the RNN-based architectures for the acoustic modelling for Japanese ASR showed that even though GRUs have a simpler gating strategy than LSTMs, they could achieve a similar level of classification accuracy with lower compute requirements. Then, the studies on bidirectional LSTMs (BLSTMs) by \textcite{imaizumi2022} revealed that the past context and the future context of the signal can be utilized for better performance of ASR. 
+
+
+
 
 \subsection{Convolutional-Recurrent DNN with Connectionist Temporal Classification (CRDNN-CTC)}
-The CRDNN-CTC architecture combines a convolutional front end, a recurrent middle block, and fully connected layers at the output, and is trained using the Connectionist Temporal Classification (CTC) objective. In this setup, the convolutional layers operate directly on spectral features such as MFCC or log-Mel filterbanks and learn local time-frequency patterns that are robust to small shifts due to noise or channel variation \parencite{ravanelli2019pytorch}. The recurrent layers (typically bidirectional LSTM or GRU) then model longer-range temporal dependencies and phonotactic structure across frames, capturing context that spans multiple morae or syllables in continuous Japanese speech \parencite{ravanelli2019pytorch, takeuchi2020real}. The final fully connected layers project these sequence representations to label posteriors (characters, kana, or subword units), and CTC is used to align the predictions to the transcription without requiring frame-level labels \parencite{fujita2024lvctcnonautoregressiveasrctc}.
+The CRDNN-CTC family is part of the broader end-to-end ASR direction that replaces the conventional lexicon-driven alignment pipeline with direct sequence learning. In this approach, acoustic features are mapped to output symbols using a neural encoder, and the Connectionist Temporal Classification (CTC) objective provides a monotonic alignment between the input frames and the target transcription without requiring frame-level labels. This has been used in Japanese ASR because Japanese can be transcribed naturally at the character or kana level, while word boundaries are not explicitly marked in continuous speech, making forced alignment and word-level tokenization less straightforward \parencite{watanabe2017hybrid, watanabe2018espnetendtoendspeechprocessing}.
 
+A consistent finding in prior work is that CTC-based models can achieve strong Japanese recognition accuracy while maintaining a simple training pipeline. For example, \textcite{chen2020streaming} proposed an end-to-end streaming Japanese speech recognition method that combines CTC with local attention and reported a best CER of 9.87\%, demonstrating that competitive character-level performance is possible even under streaming constraints where future context is limited. This line of work also supports the practicality of CTC-style training for Japanese, where stable alignments can be learned directly from paired audio-transcript data without the needs of pronunciation dictionaries \parencite{chen2020streaming}.
 
-A key property of CRDNN-CTC is that it removes the need for an explicit pronunciation lexicon or an HMM-based alignment stage during training. Instead, the model directly learns to map acoustic frames to symbol sequences under a monotonic alignment constraint enforced by CTC \parencite{fujita2024lvctcnonautoregressiveasrctc}. This is especially attractive for Japanese ASR because Japanese can be transcribed at the character or kana level, and word boundaries are often not explicitly marked in continuous speech. The CTC formulation avoids manual segmentation of long utterances and is tolerant of small timing mismatches, which simplifies data preparation for large-scale or semi-supervised corpora where detailed alignments are expensive to obtain \parencite{watanabe2018espnetendtoendspeechprocessing}.
- 
-CRDNN-CTC has also proven effective in settings where compute and latency matter. Compared to purely recurrent systems, the convolutional front end reduces redundancy by downsampling in time, which lowers the number of recurrent steps and thus reduces inference cost \parencite{ravanelli2019pytorch}. At the same time, compared to purely convolutional encoders, the recurrent block helps preserve long-span prosodic cues and coarticulation effects that are important in Japanese, such as vowel length and pitch accent, which affect meaning \parencite{takeuchi2020real}. Toolkits such as PyTorch-Kaldi and SpeechBrain have standardized CRDNN-CTC style models as strong, lightweight baselines for character-level ASR in multiple languages, including Japanese broadcast and read speech, where they report competitive character error rates without resorting to very large transformer encoders \parencite{ravanelli2019pytorch, ravanelli2021speechbraingeneralpurposespeechtoolkit, watanabe2018espnetendtoendspeechprocessing}. 
-
+\begin{table}[H]
+\centering
+\caption{Streaming Japanese ASR results (Avg. CER\% and latency) using CTC and local attention (from \textcite{chen2020streaming}).}
+\label{tab:chen2020_streaming_avgcer_latency}
+{\small
+\setlength{\tabcolsep}{7pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{c c c c r}
+\hline
+\textbf{Model no.} & \textbf{CNN} & \textbf{Attn.} & \textbf{Latency (ms)} & \textbf{Avg. CER (\%)} \\
+\hline
+1 &  &  &  40  & 12.60 \\
+2 &  &  &  60  & 13.67 \\
+3 &  & $\checkmark$ & 240  & 10.37 \\
+4 &  & $\checkmark$ & 360  & 10.40 \\
+5 & $\checkmark$ &  &  40  & 10.03 \\
+6 & $\checkmark$ &  &  60  & 12.27 \\
+7 & $\checkmark$ & $\checkmark$ & 240  &  9.87 \\
+8 & $\checkmark$ & $\checkmark$ & 360  & 10.27 \\
+9 & $\checkmark$ & $\checkmark$ & 360  & 10.23 \\
+\hline
+\end{tabular}}
+\end{table}
 
 \section{Transformers Models in Japanese Speech Recognition}
 \subsection{Transformer-based Models}  
@@ -73,15 +115,9 @@ A wide range of datasets for source text and simultaneous interpretation speech 
 \subsection{Whisper by OpenAI}
 Large scale weak supervision has emerged as one of the major approaches in speech recognition as noted by \textcite{radford2023robust} in their development of whisper model that has been trained on multilingual and multitask audio datasets that has a combined duration of 680,000 hours. This work is a continuation to the self-supervised methods such as Wav2Vec 2.0 \parencite{baevski2020wav2vec}, which demonstrated learning without supervision from audio without any human-provided labels. However, dataset-specific fine-tuning is often necessary to obtain good performance, whereas with Whisper such reliance is reduced because of the efficacy of weak supervision. 
 
-By scaling weak supervision across diverse datasets, Whisper able to bypass the need for dataset-specific adaptation while able offer a robust zero-shot performance across languages and tasks. The authors also mentioned that by using this method, it will ensure the generalization and the robustness of the model while at the same time addressing main limitation in traditional models that is struggled to transcribe unfamiliar audio. This method also resulting in the models to have similar trends with other state of the art model in machine learning where a large, diverse datasets will improve model resilience which is align the with the advancements in computer vision \parencite{kolesnikov2020big} and NLP \parencite{radford2019language}.The Whisper model’s architecture, a simple encoder-decoder Transformer, reinforces the effectiveness of minimal preprocessing and sequence-to-sequence training, simplifying the transcription pipeline while achieving near-human-level accuracy.
+By scaling weak supervision across diverse datasets, Whisper able to bypass the need for dataset-specific adaptation while able offer a robust zero-shot performance across languages and tasks. This method also resulting in the models to have similar trends with other state of the art model in machine learning where a large, diverse datasets will improve model resilience which is align the with the advancements in computer vision \parencite{kolesnikov2020big} and NLP \parencite{radford2019language}.The Whisper model’s architecture, a simple encoder-decoder Transformer, reinforces the effectiveness of minimal preprocessing and sequence-to-sequence training, simplifying the transcription pipeline.
 
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[width=.9\textwidth]{mainmatter//images/image.png}
-    \caption{Whisper WER cited from \cite{radford2023robust}}
-\end{figure}
-
-Based on the work of \textcite{radford2023robust}, there is further research that seeks to improve the performance of multilingual models on tasks that involve a japanese language. \textcite{bajo2024efficient} detail their work on adapting OpenAI’s Whisper model to enhance its performance in ASR for the Japanese language. The research draws attention to the dilemma faced in balancing the multilingual being and the accuracy of an English-only product, ReazonSpeech, that seeks to maximize on the Japanese language ASR, which is monolingual in nature. By using a Japanese dataset while utilizing Low-Rank Adaptation (LoRA) and fine-tuning methods, they were able to lower Whisper-Tiny’s Cumulative Expenditure Rate (CER) from 32.7\% to 14.7\%. This fine tuning method showed that smaller multilingual models give more promising result, after being tuned for the desired language outperform their larger baseline models, for example the case of the Whisper-Base model \parencite{bajo2024efficient}.
+\textcite{bajo2024efficient} detail their work on adapting OpenAI’s Whisper model to enhance its performance in ASR for the Japanese language. The research draws attention to the dilemma faced in balancing the multilingual being and the accuracy of an English-only product, ReazonSpeech, that seeks to maximize on the Japanese language ASR, which is monolingual in nature. By using a Japanese dataset while utilizing Low-Rank Adaptation (LoRA) and fine-tuning methods, they were able to lower Whisper-Tiny’s CER from 32.7\% to 14.7\%. This fine tuning method showed that smaller multilingual models give more promising result, after being tuned for the desired language outperform their larger baseline models, for example the case of the Whisper-Base model \parencite{bajo2024efficient}.
 
 
 \begin{table}[ht]
@@ -105,47 +141,8 @@ Based on the work of \textcite{radford2023robust}, there is further research tha
     \end{table}
     
   
-\subsection{wav2vec 2.0 by Facebook AI Research}
-The research conducted by \textcite{baevski2020wav2vec} proved that self-supervised learning greatly reduces the dependency on large amounts of labeled data in speech recognition. They achieved this by using a technique called wav2vec 2.0. With this method, models are trained over a significant set of unlabeled speech data by masking the raw audio inputs and then treating a contrastive task. Thereafter, a model can be fine tuned using a limited set of labeled data which enables it to perform better when compared to semi-supervised techniques. Furthermore, according to \textcite{baevski2020wav2vec}, while their approach performed well with all the available labeled data by raising the WER to 1.8\% for clean data and 3.3\% for other data, it went even better with 10 mins of labeled and 53k hours of unlabeled data which had WER rates of 4.8\% and 8.2\%.
-\begin{table}[h!]
-    \centering
-    \caption{WER on Librispeech dev/test sets using 10 minutes of labeled data and different unlabeled data setups.}
-    \begin{tabular}{@{}lcccc@{}}
-    \toprule
-    \textbf{Model}      & \textbf{Unlabeled Data} & \textbf{LM} & \textbf{dev (clean)} & \textbf{test (other)} \\ \midrule
-    Discrete BERT  & LS-960                 & 4-gram  & 15.7           & 25.2           \\
-    BASE                                     & LS-960                 & 4-gram+Transf. & 8.9            & 15.6           \\
-                                             &                        & Transf.        & 6.6            & 12.9           \\
-    LARGE                                    & LS-960                 & Transf.        & 5.0            & 10.0           \\
-                                             & LV-60k                 & Transf.        & \textbf{4.6}   & \textbf{8.2}   \\ \midrule
-    \textbf{Highlighted Result}     & LV-60k (53k hours)     & Transf.        & \textbf{4.8}   & \textbf{8.2}   \\ \bottomrule
-    \end{tabular}
-    \end{table}
-
-In Japanese speech recognition, self-supervised learning (SSL) has emerged as one of the major tools for tackling the problems of dialectal diversity and low-resourced datasets. \textcite{miwa2023dialect} showcased what they refer to as successful adaptation of the wav2vec 2.0-based XLSR model to the Corpus of Japanese Dialects (COJADS), a collection of data capturing various dialects from different regions of Japan. They reported significant gains in ASR metrics for dialectal speech, achieving CER reductions of as much as 8.9\% relatively to the models only trained on tagged data. 
-
-
-\subsection{ChirpV2: an Universal speech model from Google}
-\textcite{zhang2023google} demonstrated a novel technique that scales ASR to more than a hundred languages, this is achieved with the aid of large multilingual datasets with self-supervised learning, they refer to their model as the Universal speech model. The model was pretrained on 12 million hours of unlabelled audio data collection of 300 languages, in addition to 90 thousand hours of multilingual labelled audio data. One of the crucial innovations is BEST-RQ (BERT-based Speech pretraining with Random-projection Quantizer) because it improves the performance of speech representation without complicated quantization modules. 
-
-The model also outperformed specialized models including Whisper that have previously been trained with more data. In addition to this, chunk-wise attention is used to solve the performance drop-off problem that USM has with long audio, allowing USM to transcribe long audio. Other language resource enabling techniques such as noisy student training and adapter modules have enhanced USM performance with low resource and unseen languages considerably, as it did with low resource languages ensuring a robust ASR system \parencite{zhang2023google}. USM proves the efficacy of self-supervised models in minimizing multilingualism and far supersedes existing standards for ASR systems.
-\begin{table}[H]
-    \centering
-    \caption{Word Error Rate (WER) Comparison of ASR Models}
-    \begin{tabular}{|l|c|c|c|}
-    \hline
-    \textbf{Dataset}        & \textbf{USM-CTC (\%)} & \textbf{USM-LAS (\%)} & \textbf{Whisper (\%)} \\ \hline
-    YouTube (en-US)         & 13.7                  & 14.4                  & 17.7                 \\ \hline
-    YouTube (CORAAL)        & 18.7                  & 19.0                  & 27.8                 \\ \hline
-    SpeechStew (en-US)      & 26.7                  & 29.8                  & -                    \\ \hline
-    FLEURS (62 languages)   & 12.1                  & 11.2                  & 13.2                 \\ \hline
-    Multilingual (YouTube)  & 15.5                  & 12.5                  & 23.9                 \\ \hline
-    \end{tabular}
-    \label{tab:wer_comparison}
-    \end{table}
-
 \section{Current Comparative Analysis of Japanese ASR Models}
-A comparative analysis that carried out by \textcite{Karita2021} shows that Conformer-based models perform better than Conformer BLSTM architectures, as they obtained 4.1, 3.2, and 3.5 character error rates for CSJ in eval1, eval2, and eval3 tasks respectively. It is noted that both the BLSTM and Conformer models have character error rates below 7\% and the character error rate is lower when using Conformer Itself. Conformer encoders also offer increased accuracy and efficiency, with a throughput of 628.4 utterances processed per second and 430.0 for the BLSTM models. The scope of the work also emphasizes the importance of the analysis of the specific problem of training parameters optimization, noting the importance of the implementation of SpecAugment, exponential moving average (EMA) and variational noise (VN). The SpecAugment technique results in the largest shifts which affect the performance. The integration of the Conformer transducers with the described set of training approaches surpasses all existing solutions in Japanese ASR and open the path for further development \parencite{Karita2021}.
+A comparative analysis that carried out by \textcite{Karita2021} shows that Conformer-based models perform better than Conformer BLSTM architectures, as they obtained 4.1, 3.2, and 3.5 character error rates for CSJ in eval1, eval2, and eval3 tasks respectively. It is noted that both the BLSTM and Conformer models have character error rates below 7\% and the character error rate is lower when using Conformer Itself. Conformer encoders also offer increased accuracy and efficiency, with a throughput of 628.4 utterances processed per second and 430.0 for the BLSTM models \parencite{Karita2021}.
 
 \begin{table}[h!]
     \centering
@@ -163,9 +160,8 @@ A comparative analysis that carried out by \textcite{Karita2021} shows that Conf
     \label{tab:cer_comparison}
     \end{table}
 
-Another comparative analysis in the domain of the Japanese language is presented by \textcite{takahashi2024comparison}, focusing on the accuracy of speech recognition for different dialects. The study evaluates three models: Whisper, XLSR, and XLS-R, which are self-supervised learning frameworks. The Whisper model significantly underperformed for any Japanese outside of standard Japanese, recording a 4.1\% CER only after it has gone through fine tuning. However, when the accuracy is low when the language identification marker is absent where some instances of being higher than 100\%.This marks the weakness of Whisper in terms of its application for wide ranging applications in different dialects of Japanese. However, Whisperer and XLS-R both of which were trained on multilingual speech data show improvement in the recognition of Japanese dialects. These models apply multi-task learning paradigms such as DID and ASR to increase their efficiency. Multi tasking adds significantly to the dialect accuracy and a three-step efficient training of the models reduce the CER by 3-4\% relative to conventional transfer learning. Some dialects, especially those from Kyushu and Chubu, have larger CER than those spoken in Kanto, where there is a greater linguistic affinity \parencite{takahashi2024comparison}.
+Another comparative analysis in ASR for Japanese is presented by \textcite{takahashi2024comparison}, focusing on the accuracy of speech recognition for different dialects. The study evaluates three models: Whisper, XLSR, and XLS-R, which are self-supervised learning frameworks. The Whisper model significantly underperformed for any Japanese outside of standard Japanese, recording a 4.1\% CER only after it has gone through fine tuning. However, when the accuracy is low when the language identification marker is absent where some instances of being higher than 100\%.This marks the weakness of Whisper in terms of its application for wide ranging applications in different dialects of Japanese \parencite{takahashi2024comparison}.
 
-Current comparative analysis from these studies shows that several challenges need to be addressed. A study to compare the existing models in Japanese ASR is needed because of the unique characteristics of the Japanese language. The comparative analysis from \textcite{Karita2021} and \textcite{takahashi2024comparison} shows that while models like Conformer and Whisper have made significant strides in ASR, they still face challenges in handling the complexities of Japanese. The results indicate that while Conformer-based models excel in standard Japanese. Similarly, Whisper's performance is notably affected by the presence or absence of language identification markers. These findings underscore the need for further research and development to enhance the adaptability and accuracy of ASR systems in Japanese language contexts.
 
 \begin{table}[H]
     \centering
@@ -186,28 +182,70 @@ Current comparative analysis from these studies shows that several challenges ne
     \label{tab:asr_comparison}
 \end{table}
 
-\section{ Datasets and Tools }
+\section{Current Comparative Analysis of Japanese ASR Models}
+A recent comparative study by \textcite{hono2024integratingpretrainedspeechlanguage} proposed an end-to-end Japanese ASR framework that integrates a pre-trained speech encoder (HuBERT) with a decoder-only large language model (GPT-NeoX) via a bridge network, aiming to avoid explicit LM-fusion and keep decoding simple. The evaluation compared the proposed model against publicly available baselines across several Japanese corpora. For efficiency, the authors reported that applying DeepSpeed-Inference improved inference speed by about $1.4\times$ while keeping recognition accuracy unchanged. In terms of CER, the proposed model outperformed reazonspeech-espnet-v1 across all beam settings on the ReazonSpeech test set (in-domain), while showing mixed outcomes on JSUT and CV8.0 compared to larger-beam decoding. 
+
+\begin{table}[H]
+\centering
+\caption{ASR results reported by \textcite{hono2024integratingpretrainedspeechlanguage} on ReazonSpeech, JSUT, CV8.0, and CSJ eval sets (beam size 1 = greedy decoding).}
+\label{tab:hono_asr_comparison}
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l|r|r|c|c|c|c|c|c}
+\hline
+\textbf{Model} & \textbf{Params} & \textbf{Beam} & \textbf{Reazon} & \textbf{JSUT} & \textbf{CV8.0} & \textbf{CSJ E3} \\
+\hline
+reazonspeech-espnet-v1 & 90M   & 1  & 12.0 & 8.7 & 10.5 &  15.3 \\
+reazonspeech-espnet-v1 & 90M   & 20 & 8.7  & 7.5 & 8.9  &  15.5 \\
+Whisper-large-v3       & 1,541M& 1  & 12.4 & 7.1 & 8.2  &  14.8 \\
+Proposed (w/o DS-Inf.) & 3,708M& 1  & 8.4  & 8.6 & 9.1  &  22.9 \\
+Proposed (w/ DS-Inf.)  & 3,708M& 1  & 8.4  & 8.6 & 9.2  &  22.9 \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+
+Current comparative analysis from these studies shows that several challenges need to be addressed. A study to compare the existing models in Japanese ASR is needed because of the unique characteristics of the Japanese language. The comparative analysis from \textcite{Karita2021} and \textcite{takahashi2024comparison} shows that while models like Conformer and Whisper have made significant strides in ASR, they still face challenges in handling the complexities of Japanese. Additionally, there is still lack of study that comparing the model from different model families because most of the existing comparative analysis only focusing on models from the same family.
+
+
+\section{Datasets and Tools}
 \subsection{Datasets}
-Dataset is a crucial component in training and evaluating ASR models. In this study, the dataset that will be used is JSUT, which is a large-scale Japanese speech corpus that contains over 10 hours of read speech from 100 speakers \parencite{sonobe2017jsut}. The dataset includes a variety of speech styles, such as formal and informal speech, and covers a wide range of topics. The JSUT dataset is suitable for training ASR models because it provides a diverse set of speech samples that can help improve the model's ability to generalize to different speakers and speech styles.
+Dataset is a crucial component in training and evaluating ASR models. In this study, a curated dataset collected from Japanese TEDx talks on YouTube with manual Japanese subtitles is used. TEDx talks is a rich source of diverse speech data, covering a wide range of topics and speakers, making it suitable for training ASR models. The talks are delivered by various speakers with different accents, speaking styles, and speech rates, which helps in creating a comprehensive dataset that captures the variability in real-world Japanese speech \parencite{ando2021}.
 
 \subsection{Python}
-Python is a popular programming language that is widely used in the field of machine learning and natural language processing. It provides a variety of libraries and frameworks that can be used to develop ASR models, such as TensorFlow, PyTorch, and Keras \parencite{boishakhi2021multi}. Python also has a large community of developers who contribute to open-source projects, making it easy to find resources and support for developing ASR models. In this study, Python will be used to implement the ASR models and to preprocess the dataset.
+Python was used as the main programming language to implement the data pipeline, training utilities, and evaluation scripts. It supported preprocessing tasks such as transcript cleaning, manifest generation, and training split preparation \parencite{python3.14documentation_2025}. In addition, Python libraries were used to support ASR-related workflows such as audio processing, metadata handling, diarization-based filtering, and evaluation.
 
 \subsection{yt-dlp}
-yt-dlp is a command-line tool that allows users to download videos from various websites, including YouTube. It is a fork of the popular youtube-dl tool and provides additional features and improvements \parencite{yt-dlp}. In this study, yt-dlp will be used to download TED talk videos that will be used as part of the dataset for training and evaluating the ASR models. The audio from the downloaded videos will be extracted and processed to create a suitable dataset for ASR model training.
+Yt-dlp is a command-line tool and Python library that allows downloading videos, audio, and subtitle tracks from YouTube. In this study, yt-dlp was used to query YouTube metadata to verify the availability of manual Japanese subtitles before downloading. Then, audio and subtitle files were downloaded for selected Japanese TEDx talks to form a consistent dataset for ASR training and evaluation \parencite{yt-dlp}.
+
+\subsection{Audio Processing Tools}
+To standardize the dataset and ensure compatibility across model families, audio was converted into a consistent format (16\,kHz, mono, 16-bit PCM). Audio resampling and waveform writing were performed using Python audio libraries \texttt{librosa} and \texttt{soundfile} \parencite{mcfee_2025_15006942,soundfile}. In addition, WebRTC voice activity detection was used to segment long TEDx recordings into shorter utterances suitable for training and evaluation \parencite{webrtc}.
+
+\subsection{Automatic Audio Filtering Tools}
+A filtering step was applied to remove non-speaker or low-quality segments such as applause and laughter. Speaker structure filtering used \texttt{pyannote.audio} diarization to prefer clips with a dominant speaker. Acoustic event filtering used a Hugging Face zero-shot audio classification pipeline with the CLAP model (\texttt{laion/clap-htsat-fused}) to identify and remove segments with high confidence of applause or laughter \parencite{clap}.
 
 \subsection{Kaldi}
-Kaldi is an open-source toolkit for speech recognition that provides a wide range of tools and algorithms for developing ASR models \parencite{povey2011kaldi}. It includes tools for feature extraction, acoustic modeling, and decoding, as well as support for various machine learning algorithms. Kaldi is widely used in the research community and has been used to develop state-of-the-art ASR models for various languages. In this study, Kaldi will be used to implement and evaluate the ASR models for Japanese speech recognition.
+Kaldi is an open-source toolkit for speech recognition that provides a complete pipeline for feature extraction, acoustic modeling, and decoding \parencite{kaldi2011}. In this study, Kaldi was used to implement the traditional GMM--HMM baseline system. The workflow included MFCC feature extraction with CMVN normalization, staged acoustic model training (mono, tri1, tri2, tri3), alignment between stages, and decoding graph generation for evaluation.
 
-\subsection{speechbrain}
-SpeechBrain is an open-source toolkit for speech processing that provides a wide range of tools and algorithms for developing ASR models \parencite{ravanelli2021speechbraingeneralpurposespeechtoolkit}. It includes tools for feature extraction, acoustic modeling, and decoding, as well as support for various machine learning algorithms. SpeechBrain is designed to be easy to use and provides a modular architecture that allows users to easily customize and extend the toolkit. In this study, SpeechBrain will be used to implement and evaluate the ASR models for Japanese speech recognition.
+\subsection{KenLM}
+KenLM was used to build an external $n$-gram language model to support decoding in the Kaldi GMM--HMM systems. In this work, \texttt{lmplz} was used to produce an ARPA-format language model, which was then converted into decoding resources within the Kaldi graph construction pipeline \parencite{kenlm}.
+
+\subsection{Lexicon Generation Tools}
+A grapheme-based lexicon was generated using a custom Python script. The script extracted vocabulary items from transcripts and converted Japanese tokens into Hepburn romanisation using \texttt{pykakasi}. The romanised output was normalized and mapped into character-level pronunciation units used to build Kaldi language resources \parencite{pykakasi}.
+
+\subsection{SpeechBrain}
+SpeechBrain is an open-source toolkit for speech processing that supports end-to-end ASR training and evaluation \parencite{ravanelli2021speechbraingeneralpurposespeechtoolkit}. In this study, SpeechBrain was used to implement the CRDNN--CTC model. It used the prepared CSV manifests and a character-level vocabulary, and training checkpoints were managed using SpeechBrain's checkpointer mechanism \parencite{speechbrain_v1}.
 
 \subsection{Hugging Face}
-Hugging Face is a platform that provides a wide range of pre-trained models for natural language processing tasks, including speech recognition. It offers a variety of models that can be fine-tuned on custom datasets to improve performance on specific tasks \parencite{boishakhi2021multi}. In this study, Hugging Face will be used to access pre-trained models for Japanese ASR. These model will be downloaded from Hugging Face and analyze the performance of the models based on the dataset used in this study.
+Hugging Face was used to access pretrained Whisper models and supporting utilities for fine-tuning. The Transformers library was used to load Whisper checkpoints, configure Japanese decoding prompts, and generate hypotheses using \texttt{model.generate()}. Hugging Face Datasets was used to load train/validation/test CSV splits efficiently and support reproducible fine-tuning experiments \parencite{wolf2020huggingfacestransformersstateoftheartnatural}.
+
+\subsection{Evaluation Tools}
+Model evaluation used character error rate (CER), word error rate (WER), and real-time factor (RTF). CER and WER were computed using normalized edit distance between hypothesis and reference transcripts. In this study, the \texttt{jiwer} Python library was used to compute WER and to support consistent error-rate scoring across systems. RTF was computed by dividing total decoding wall time by total audio duration to measure decoding efficiency and latency behaviour \parencite{jiwer_2025}.
 
 \section{Gaps in Literature}
-Based on the literature review, shows that there is several gaps in the research on Japanese ASR. One of the area is the insufficient exploration of how state-of-the-art models can be adapted to the specific nuances of the Japanese language. Although there is few study that evaluate the performance of these model, but there is no notable research that focusing on evaluating the state of the art models in Japanese ASR. Another research gap from the literature review is the lack of focus on the performance of these models when dealing with dialectical variations of Japanese. Although research has been conducted on their effectiveness with standard Japanese, there is a clear need for further work on how these newly developed models perform when handling dialectical speech. Lastly, another gap identified is the underexplored area of these models application in real-time environments. Despite some investigations into their use in real-time scenarios, additional research is required to optimize these models for applications where quick response times are essential.
+Based on the literature review, shows that there is several gaps in the research on Japanese ASR. First, while there has been significant progress in ASR models, there is still a lack of comprehensive comparative studies that evaluate different model architectures specifically for Japanese. Most existing studies focus on individual models or specific families of models, making it difficult to draw broad conclusions about the best approaches for Japanese ASR. Second, many studies are using datasets that already being throughly studied, such as CSJ, which has been cleaned and preprocessed extensively. There is a need for more research using diverse and real-world datasets, such as TEDx talks, to better understand model performance in practical scenarios.
 
 \section{Conclusion}
-This chapter highlighted the evolution of traditional ASR model to the cutting-edge technologies also has been highlighted in this chapter. Despite the advancements of the model and ASR framework, there is still a gap in adapting these models to Japanese-specific contexts. There is still work to be done to further refine the accuracy, speed, and dataset availability to advance Japanese ASR. This result can be used as a foundation for developing more effective and inclusive speech-to-text solutions tailored for Japanese language. For the dataset and tools, TED talks, CSJ, and COJADS are the most commonly used datasets for Japanese ASR research. To extract audio from video files, Python Moviepy is used and to access pre-trained models for Japanese ASR, the model will be obtain from Hugging Face.
-
+This chapter has reviewed the existing literature on Japanese ASR, covering traditional models like GMM--HMM and modern deep learning approaches including CRDNN-CTC, and Transformer-based models like Whisper. The unique challenges posed by the Japanese language, such as its complex writing system and character pronunciations, were discussed. Tools and datasets commonly used in Japanese ASR research were also highlighted and gaps in the literature were also being identified.
