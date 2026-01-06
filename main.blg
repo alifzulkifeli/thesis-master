@@ -1,9 +1,74 @@
-[1] Config.pm:328> INFO - This is Biber 2.21
-[2] Config.pm:331> INFO - Logfile is 'main.blg'
-[194] biber-darwin:342> INFO - === Sun Jan  4, 2026, 00:49:42
-[230] Biber.pm:421> INFO - Reading 'main.bcf'
-[1185] Biber.pm:1002> INFO - Found 94 citekeys in bib section 0
-[1254] Biber.pm:4487> INFO - Processing section 0
-[1287] Biber.pm:4678> INFO - Looking for bibtex file 'references/myref.bib' for section 0
-[1296] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1553] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
+[0] Config.pm:328> INFO - This is Biber 2.21
+[1] Config.pm:331> INFO - Logfile is 'main.blg'
+[141] biber-darwin:342> INFO - === Sun Jan  4, 2026, 01:00:48
+[173] Biber.pm:421> INFO - Reading 'main.bcf'
+[541] Biber.pm:1002> INFO - Found 93 citekeys in bib section 0
+[588] Biber.pm:4487> INFO - Processing section 0
+[609] Biber.pm:4678> INFO - Looking for bibtex file 'references/myref.bib' for section 0
+[615] bibtex.pm:1713> INFO - LaTeX decoding ...
+[770] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
+[1864] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1864] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1864] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1864] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[2257] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2258] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2258] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[2258] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[2421] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[2724] bbl.pm:779> INFO - Output to main.bbl
+[2724] Biber.pm:132> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
+[2724] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'webrtc' is not an integer - this will probably not sort properly.
+[2724] Biber.pm:132> WARN - legacy month field 'Jun' in entry 'jiwer_2025' is not an integer - this will probably not sort properly.
+[2724] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 6, warning: 113 characters of junk seen at toplevel
+[2724] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 22, warning: 5 characters of junk seen at toplevel
+[2724] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 43, warning: 117 characters of junk seen at toplevel
+[2724] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 66, warning: 224 characters of junk seen at toplevel
+[2724] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 108, warning: 3 characters of junk seen at toplevel
+[2724] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 278, warning: 5 characters of junk seen at toplevel
+[2725] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 337, warning: 5 characters of junk seen at toplevel
+[2725] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 638, warning: 3 characters of junk seen at toplevel
+[2725] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 649, warning: 3 characters of junk seen at toplevel
+[2725] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 813, warning: 3 characters of junk seen at toplevel
+[2725] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 835, warning: 3 characters of junk seen at toplevel
+[2725] Biber.pm:132> WARN - BibTeX subsystem: /var/folders/rm/f12tqjtn3gs6h7vt6y0scvnh0000gn/T/biber_tmp_SZbx/791e559347c7f027f49328e019ff3066_86692.utf8, line 859, warning: 3 characters of junk seen at toplevel
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'huang2001' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'graves2013' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'radford2022robust' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_planning_methodology' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_literature_review_method' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_rtf_reference' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_dataset_pipeline_reference' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_manifest_best_practice' (section 0)
+[2725] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_reference_transcript_selection' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_text_normalization_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_alignment_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_standardization_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_end2end_frontend_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_long_utterance_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_vad_threshold_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_audio_filtering_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_pyannote_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_dataset_splitting_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_sklearn_train_test_split' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_controlled_comparison_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_mfcc_cmvn_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_grapheme_lexicon_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_oov_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_mfcc_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_cmvn_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_wikipedia_lm_reference' (section 0)
+[2726] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_ctc_vocab_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_fbank_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_newbob_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_regularization_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_batch_size_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_lr_schedule_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_long_sample_filter_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_adamw_cosine_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_fp16_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_training_loop_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_levenshtein_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_discussion_method_reference' (section 0)
+[2727] Biber.pm:132> WARN - I didn't find a database entry for 'TODO_domain_mismatch_reference' (section 0)
+[2727] Biber.pm:134> INFO - WARNINGS: 54

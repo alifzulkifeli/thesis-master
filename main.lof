@@ -1,8 +1,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Literature Review Mind Map}}{6}{figure.caption.4}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Placeholder: End-to-end data collection and preprocessing pipeline for TEDx Japanese talks (YouTube $\rightarrow $ cleaned transcripts $\rightarrow $ VAD chunks $\rightarrow $ manifests).}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Placeholder: End-to-end data collection and preprocessing pipeline for TEDx Japanese talks (YouTube $\rightarrow $ cleaned transcripts $\rightarrow $ VAD chunks $\rightarrow $ manifests).}}{25}{figure.caption.15}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Placeholder: Model training workflow for GMMHMM}}{31}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Placeholder: Model training workflow for CRDNN}}{35}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Placeholder: Model training workflow for CRDNN}}{36}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Placeholder: Model training workflow for Whisper}}{38}{figure.caption.19}%
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Raw vs cleaned transcript after preprocesing}}{45}{figure.caption.23}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Example of audio standardization via resampling (44.1\,kHz to 16\,kHz).}}{46}{figure.caption.24}%

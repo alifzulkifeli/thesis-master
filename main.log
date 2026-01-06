@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2026.1.4)  4 JAN 2026 00:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2026.1.4)  4 JAN 2026 08:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1555,7 +1555,281 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
+ (main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_adamw_cosine_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_alignment_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_audio_filtering_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_batch_size_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_cmvn_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_controlled_comparison_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_ctc_vocab_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_dataset_pipeline_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_dataset_splitting_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_discussion_method_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_domain_mismatch_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_end2end_frontend_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_fbank_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_fp16_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_grapheme_lexicon_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_levenshtein_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_literature_review_method
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_long_sample_filter_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_long_utterance_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_lr_schedule_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_manifest_best_practice
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_mfcc_cmvn_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_mfcc_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_newbob_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_oov_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_planning_methodology
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_pyannote_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_reference_transcript_selection
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_regularization_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_rtf_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_sklearn_train_test_split
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_standardization_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_text_normalization_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_training_loop_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_vad_threshold_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TODO_wikipedia_lm_reference
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                graves2013
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                huang2001
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                radford2022robust
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 6.
 Package biblatex Info: Reference segment=0 on input line 6.
 Package hyperref Info: Link coloring OFF on input line 6.
@@ -1622,33 +1896,8 @@ Underfull \hbox (badness 2735) in paragraph at lines 27--27
 [3])
 
 [4] (main.lot
-
-LaTeX Warning: Citation '' on page 5 undefined on input line 2.
-
-
 Underfull \hbox (badness 1394) in paragraph at lines 2--2
  [][] []\T1/ptm/m/n/12 Ta-ble []ASR de-cod-ing re-sults (CER%) on the TEDxJP-10K dataset 
- []
-
-
-LaTeX Warning: Citation '' on page 5 undefined on input line 3.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--6
- [][] []\T1/ptm/m/n/12 Ta-ble []Comparison of ASR ac-cu-racy on two datasets, Stan- 
- []
-
-
-Underfull \hbox (badness 2012) in paragraph at lines 6--6
- \T1/ptm/m/n/12 dard Japanese (CSJ) and Japanese di-alects (CO-JADS) cited from 
- []
-
-
-LaTeX Warning: Citation '' on page 5 undefined on input line 7.
-
-
-Overfull \hbox (121.83168pt too wide) in paragraph at lines 7--7
- [][] []\T1/ptm/m/n/12 Ta-ble []ASR re-sults re-ported by [][] 
  []
 
 
@@ -1668,21 +1917,6 @@ Underfull \hbox (badness 2150) in paragraph at lines 3--3
 
 ] (mainmatter/chapIntro.tex
 Chapter 1.
-
-LaTeX Warning: Citation 'Xu' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'Koenecke2020' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'xu2023recent' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'latif2020' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'ando2021' on page 1 undefined on input line 10.
-
 
 
 
@@ -1704,12 +1938,6 @@ LaTeX Warning: Citation 'graves2013' on page 2 undefined on input line 16.
 LaTeX Warning: Citation 'radford2022robust' on page 2 undefined on input line 16.
 
 
-LaTeX Warning: Citation 'ando2021' on page 2 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'xu2023recent' on page 2 undefined on input line 16.
-
-
 Underfull \hbox (badness 2103) in paragraph at lines 19--20
 []\T1/ptm/m/n/12 This study ad-dresses that gap by con-duct-ing a con-trolled, apples-to-
  []
@@ -1729,7 +1957,7 @@ Underfull \hbox (badness 2042) in paragraph at lines 25--26
 
 [5]
 Chapter 2.
-<mainmatter//images/mindmap.png, id=388, 613.29124pt x 843.15pt>
+<mainmatter//images/mindmap.png, id=411, 613.29124pt x 843.15pt>
 File: mainmatter//images/mindmap.png Graphic file (type png)
 <use mainmatter//images/mindmap.png>
 Package pdftex.def Info: mainmatter//images/mindmap.png  used on input line 8.
@@ -1740,114 +1968,9 @@ Package pdftex.def Info: mainmatter//images/mindmap.png  used on input line 8.
 
  <./mainmatter//images/mindmap.png>]
 
-LaTeX Warning: Citation 'rose2019unique' on page 7 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'Ito2016End-to-end' on page 7 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'ito2017' on page 7 undefined on input line 16.
-
-
-LaTeX Warning: Citation '' on page 7 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'curtin2020japanese' on page 7 undefined on input line 18.
-
-
-LaTeX Warning: Citation 'Ito2016End-to-end' on page 7 undefined on input line 18.
-
-
-LaTeX Warning: Citation 'ito2017' on page 7 undefined on input line 18.
-
-
-LaTeX Warning: Citation 'Imaishi2022Examination' on page 7 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'sun2020subspace' on page 7 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'povey2011subspace' on page 7 undefined on input line 24.
-
-
-LaTeX Warning: Citation '' on page 7 undefined on input line 24.
-
-
-Underfull \hbox (badness 1082) in paragraph at lines 24--25
-[]\T1/ptm/m/n/12 GMM have been the ear-li-est tech-nol-ogy used for de-vel-op-ing Japanese
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 24--25
-\T1/ptm/m/n/12 Be-cause of the ab-sence of word bound-aries and the nu-ances of pitch ac-cent
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 24--25
-\T1/ptm/m/n/12 man-age and char-ac-ter-ize in-tri-cate pat-terns ([]). For ex-am-ple,
- []
-
-
-
 [7]
 
-LaTeX Warning: Citation 'Imaishi2022Examination' on page 8 undefined on input line 26.
-
-
-LaTeX Warning: Citation '' on page 8 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'povey2011subspace' on page 8 undefined on input line 26.
-
-
-LaTeX Warning: Citation '' on page 8 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'Takami2020Performance' on page 8 undefined on input line 26.
-
-
-LaTeX Warning: Citation '' on page 8 undefined on input line 26.
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 26--27
-\T1/ptm/m/n/12 point out that it is pos-si-ble to rep-re-sent the dis-tri-bu-tion of speech fea-tures
- []
-
-
-LaTeX Warning: Citation 'Tokuda1999Application' on page 8 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'Tokuda2000HMM' on page 8 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'Tokuda2000HMM' on page 8 undefined on input line 31.
-
-
-LaTeX Warning: Citation 'KaldiCSJResults2015' on page 8 undefined on input line 35.
-
-
-
 [8]
-
-LaTeX Warning: Citation 'ando2021' on page 9 undefined on input line 37.
-
-
-LaTeX Warning: Citation '' on page 9 undefined on input line 37.
-
-
-LaTeX Warning: Citation 'ando2021' on page 9 undefined on input line 37.
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 37--38
-[]\T1/ptm/m/n/12 More re-cently, [][] eval-u-ated Kaldi-style HMM-
- []
-
-
-LaTeX Warning: Citation 'ando2021' on page 9 undefined on input line 41.
-
-
-LaTeX Warning: Citation '' on page 9 undefined on input line 41.
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
@@ -1855,356 +1978,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
 
-LaTeX Warning: Citation 'seki2014comparison' on page 9 undefined on input line 62.
-
-
-LaTeX Warning: Citation '' on page 9 undefined on input line 62.
-
-
-LaTeX Warning: Citation 'hojo2018dnn' on page 9 undefined on input line 62.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-[]\T1/ptm/m/n/12 The use of DNN in con-junc-tion with HMM, also known as
- []
-
-
-Underfull \hbox (badness 5985) in paragraph at lines 62--63
-\T1/ptm/m/n/12 DNN-HMM has been shown to im-prove per-for-mance in Japanese ASR.
- []
-
-
-Underfull \hbox (badness 3417) in paragraph at lines 62--63
-[][] \T1/ptm/m/n/12 com-pared syllable-based and phoneme-
- []
-
-
 
 [9]
 
-LaTeX Warning: Citation 'mu2020japanese' on page 10 undefined on input line 64.
-
-
-LaTeX Warning: Citation '' on page 10 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'lin2017dnn' on page 10 undefined on input line 64.
-
-
-LaTeX Warning: Citation '' on page 10 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'noda2014lipreading' on page 10 undefined on input line 67.
-
-
-LaTeX Warning: Citation 'yalta2019cnn' on page 10 undefined on input line 67.
-
-
-LaTeX Warning: Citation '' on page 10 undefined on input line 67.
-
-
-LaTeX Warning: Citation 'noda2014lipreading' on page 10 undefined on input line 69.
-
-
-LaTeX Warning: Citation '' on page 10 undefined on input line 69.
-
-
-LaTeX Warning: Citation 'Mukohara2015Emotion' on page 10 undefined on input line 69.
-
-
-LaTeX Warning: Citation 'takeuchi2020real' on page 10 undefined on input line 73.
-
-
-LaTeX Warning: Citation '' on page 10 undefined on input line 73.
-
-
-LaTeX Warning: Citation 'Kida2016LSTM' on page 10 undefined on input line 73.
-
-
-LaTeX Warning: Citation '' on page 10 undefined on input line 73.
-
-
-
 [10]
-
-LaTeX Warning: Citation 'Kubo2014DeepLearning' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation '' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'takeuchi2020real' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation '' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'imaizumi2022' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation '' on page 11 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'watanabe2017hybrid' on page 11 undefined on input line 81.
-
-
-LaTeX Warning: Citation 'watanabe2018espnetendtoendspeechprocessing' on page 11 undefined on input line 81.
-
-
-LaTeX Warning: Citation 'chen2020streaming' on page 11 undefined on input line 83.
-
-
-LaTeX Warning: Citation '' on page 11 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'chen2020streaming' on page 11 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'chen2020streaming' on page 11 undefined on input line 87.
-
-
-LaTeX Warning: Citation '' on page 11 undefined on input line 87.
-
-
 
 [11]
 
-LaTeX Warning: Citation 'taniguchi2022transformer' on page 12 undefined on input line 111.
-
-
-LaTeX Warning: Citation '' on page 12 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'Futami2020Bidirectional' on page 12 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'taniguchi2022transformer' on page 12 undefined on input line 111.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-[][][] \T1/ptm/m/n/12 pro-pose a se-ries of
- []
-
-
-LaTeX Warning: Citation 'taniguchi2022transformer' on page 12 undefined on input line 113.
-
-
-LaTeX Warning: Citation 'Taniguchi2024Pretraining' on page 12 undefined on input line 113.
-
-
-LaTeX Warning: Citation 'Futami2020Bidirectional' on page 12 undefined on input line 113.
-
-
-
 [12]
 
-LaTeX Warning: Citation 'radford2023robust' on page 13 undefined on input line 116.
-
-
-LaTeX Warning: Citation '' on page 13 undefined on input line 116.
-
-
-LaTeX Warning: Citation 'baevski2020wav2vec' on page 13 undefined on input line 116.
-
-
-LaTeX Warning: Citation 'kolesnikov2020big' on page 13 undefined on input line 118.
-
-
-LaTeX Warning: Citation 'radford2019language' on page 13 undefined on input line 118.
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 118--119
-\T1/ptm/m/n/12 in com-puter vi-sion ([]) and NLP ([]).The
- []
-
-
-LaTeX Warning: Citation 'bajo2024efficient' on page 13 undefined on input line 120.
-
-
-LaTeX Warning: Citation '' on page 13 undefined on input line 120.
-
-
-LaTeX Warning: Citation 'bajo2024efficient' on page 13 undefined on input line 120.
-
-
-
 [13]
-
-LaTeX Warning: Citation 'bajo2024efficient' on page 14 undefined on input line 125.
-
-
-LaTeX Warning: Citation 'Karita2021' on page 14 undefined on input line 145.
-
-
-LaTeX Warning: Citation '' on page 14 undefined on input line 145.
-
-
-LaTeX Warning: Citation 'Karita2021' on page 14 undefined on input line 145.
-
-
-LaTeX Warning: Citation 'Karita2021' on page 14 undefined on input line 149.
-
-
-LaTeX Warning: Citation 'takahashi2024comparison' on page 14 undefined on input line 163.
-
-
-LaTeX Warning: Citation '' on page 14 undefined on input line 163.
-
-
-LaTeX Warning: Citation 'takahashi2024comparison' on page 14 undefined on input line 163.
-
-
-Underfull \hbox (badness 3449) in paragraph at lines 163--164
-[]\T1/ptm/m/n/12 Another com-par-a-tive anal-y-sis in ASR for Japanese is pre-sented by
+Overfull \hbox (13.51857pt too wide) in paragraph at lines 169--183
+ [][] 
  []
 
 
 
 [14]
 
-LaTeX Warning: Citation 'takahashi2024comparison' on page 15 undefined on input line 168.
-
-
-Overfull \hbox (13.51857pt too wide) in paragraph at lines 169--183
- [][] 
- []
-
-
-LaTeX Warning: Citation 'hono2024integratingpretrainedspeechlanguage' on page 15 undefined on input line 186.
-
-
-LaTeX Warning: Citation '' on page 15 undefined on input line 186.
-
-
-Overfull \hbox (102.14201pt too wide) in paragraph at lines 186--187
-[]\T1/ptm/m/n/12 A re-cent com-par-a-tive study by [][]
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 186--187
-\T1/ptm/m/n/12 DeepSpeed-Inference im-proved in-fer-ence speed by about $\OT1/ztmcm/m/n/12 1\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 4\OMS/ztmcm/m/n/12 ^^B$ \T1/ptm/m/n/12 while keep-ing
- []
-
-
-LaTeX Warning: Citation 'hono2024integratingpretrainedspeechlanguage' on page 15 undefined on input line 190.
-
-
-LaTeX Warning: Citation '' on page 15 undefined on input line 190.
-
-
-
 [15]
 
-LaTeX Warning: Citation 'Karita2021' on page 16 undefined on input line 210.
-
-
-LaTeX Warning: Citation '' on page 16 undefined on input line 210.
-
-
-LaTeX Warning: Citation 'takahashi2024comparison' on page 16 undefined on input line 210.
-
-
-LaTeX Warning: Citation '' on page 16 undefined on input line 210.
-
-
-Underfull \hbox (badness 1728) in paragraph at lines 210--211
-\T1/ptm/m/n/12 lenges need to be ad-dressed. A study to com-pare the ex-ist-ing mod-els in
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 210--211
-\T1/ptm/m/n/12 lan-guage. The com-par-a-tive anal-y-sis from [][] and
- []
-
-
-LaTeX Warning: Citation 'ando2021' on page 16 undefined on input line 215.
-
-
-LaTeX Warning: Citation 'python3.14documentation_2025' on page 16 undefined on input line 218.
-
-
-
 [16]
-
-LaTeX Warning: Citation 'yt-dlp' on page 17 undefined on input line 221.
-
-
-LaTeX Warning: Citation 'mcfee_2025_15006942' on page 17 undefined on input line 224.
-
-
-LaTeX Warning: Citation 'soundfile' on page 17 undefined on input line 224.
-
-
-LaTeX Warning: Citation 'webrtc' on page 17 undefined on input line 224.
-
-
-LaTeX Warning: Citation 'clap' on page 17 undefined on input line 227.
-
-
 Underfull \hbox (badness 1005) in paragraph at lines 227--228
 \T1/ptm/m/n/12 a Hug-ging Face zero-shot au-dio clas-si-fi-ca-tion pipeline with the CLAP model
  []
 
 
-LaTeX Warning: Citation 'kaldi2011' on page 17 undefined on input line 230.
-
-
 
 [17]
 
-LaTeX Warning: Citation 'kenlm' on page 18 undefined on input line 233.
-
-
-LaTeX Warning: Citation 'pykakasi' on page 18 undefined on input line 236.
-
-
-LaTeX Warning: Citation 'ravanelli2021speechbraingeneralpurposespeechtoolkit' on page 18 undefined on input line 239.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 18 undefined on input line 239.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-[]\T1/ptm/m/n/12 SpeechBrain is an open-source toolkit for speech pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-\T1/ptm/m/n/12 cess-ing that sup-ports end-to-end ASR train-ing and eval-u-a-tion
- []
-
-
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 18 undefined on input line 242.
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 242--243
-\T1/ptm/m/n/12 port-ing util-i-ties for fine-tuning. The Trans-form-ers li-brary was used to load
- []
-
-
-Underfull \hbox (badness 1173) in paragraph at lines 242--243
-\T1/ptm/m/n/12 Whis-per check-points, con-fig-ure Japanese de-cod-ing prompts, and gen-er-ate hy-
- []
-
-
-
-[18]
-
-LaTeX Warning: Citation 'jiwer_2025' on page 19 undefined on input line 245.
-
-) (mainmatter/chapMethodology.tex
+[18]) (mainmatter/chapMethodology.tex
 
 [19]
 Chapter 3.
-
-LaTeX Warning: Citation 'kaldi2011' on page 20 undefined on input line 4.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 20 undefined on input line 4.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 20 undefined on input line 4.
-
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 25.
 (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -2273,18 +2079,6 @@ LaTeX Warning: Citation 'TODO_literature_review_method' on page 23 undefined on 
 LaTeX Warning: Citation 'TODO_literature_review_method' on page 23 undefined on input line 222.
 
 
-LaTeX Warning: Citation 'kaldi2011' on page 23 undefined on input line 222.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 23 undefined on input line 222.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 23 undefined on input line 222.
-
-
-LaTeX Warning: Citation 'jiwer_2025' on page 23 undefined on input line 222.
-
-
 LaTeX Warning: Citation 'TODO_rtf_reference' on page 23 undefined on input line 222.
 
 
@@ -2319,69 +2113,53 @@ Overfull \hbox (9.26717pt too wide) in paragraph at lines 238--266
 
 [23]
 
-LaTeX Warning: Citation 'ando2021' on page 24 undefined on input line 268.
-
-
 LaTeX Warning: Citation 'TODO_dataset_pipeline_reference' on page 24 undefined on input line 268.
-
-
-LaTeX Warning: Citation 'yt-dlp' on page 24 undefined on input line 268.
-
-
-LaTeX Warning: Citation 'yt-dlp' on page 24 undefined on input line 268.
-
-
-LaTeX Warning: Citation 'mcfee_2025_15006942' on page 24 undefined on input line 268.
-
-
-LaTeX Warning: Citation 'soundfile' on page 24 undefined on input line 268.
-
-
-LaTeX Warning: Citation 'webrtc' on page 24 undefined on input line 268.
 
 
 LaTeX Warning: Citation 'TODO_manifest_best_practice' on page 24 undefined on input line 268.
 
 
-LaTeX Warning: Citation 'ando2021' on page 24 undefined on input line 279.
-
-
-LaTeX Warning: Citation 'TODO_reference_transcript_selection' on page 24 undefined on input line 279.
-
-
-LaTeX Warning: Citation 'TODO_reference_transcript_selection' on page 24 undefined on input line 279.
-
-
 
 [24]
 
-LaTeX Warning: Citation 'yt-dlp' on page 25 undefined on input line 281.
+LaTeX Warning: Citation 'TODO_reference_transcript_selection' on page 25 undefined on input line 279.
 
 
-LaTeX Warning: Citation 'yt-dlp' on page 25 undefined on input line 281.
+LaTeX Warning: Citation 'TODO_reference_transcript_selection' on page 25 undefined on input line 279.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 283.
-
-LaTeX Warning: Citation 'yt-dlp' on page 25 undefined on input line 297.
-
 
 
 [25]
 
-LaTeX Warning: Citation 'ando2021' on page 26 undefined on input line 311.
+LaTeX Warning: Citation 'TODO_text_normalization_reference' on page 26 undefined on input line 311.
 
 
 LaTeX Warning: Citation 'TODO_text_normalization_reference' on page 26 undefined on input line 311.
 
 
-LaTeX Warning: Citation 'ando2021' on page 26 undefined on input line 311.
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+[]\T1/ptm/m/n/12 After the tran-script was down-loaded, the tran-script needed to
+ []
 
 
-LaTeX Warning: Citation 'TODO_text_normalization_reference' on page 26 undefined on input line 311.
+Underfull \hbox (badness 7558) in paragraph at lines 311--313
+\T1/ptm/m/n/12 be cleaned since it could not be di-rectly used as ref-er-ence tran-script
+ []
 
 
-Underfull \hbox (badness 5939) in paragraph at lines 311--313
-[]\T1/ptm/m/n/12 After the tran-script was down-loaded, the tran-script needed to be
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+\T1/ptm/m/n/12 ([]; []Ando & Fu-ji-hara, []2021[]). The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+\T1/ptm/m/n/12 raw down-loaded trasncriptt con-tained non-speech mark-ers, for-mat-ting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+\T1/ptm/m/n/12 tags, and ar-ti-facts in-tro-duced for read-abil-ity rather than ASR train-ing
  []
 
 
@@ -2395,10 +2173,13 @@ Underfull \hbox (badness 1931) in paragraph at lines 316--317
  []
 
 
-LaTeX Warning: Citation 'TODO_alignment_reference' on page 26 undefined on input line 320.
+
+[26]
+
+LaTeX Warning: Citation 'TODO_alignment_reference' on page 27 undefined on input line 320.
 
 
-LaTeX Warning: Citation 'TODO_alignment_reference' on page 26 undefined on input line 320.
+LaTeX Warning: Citation 'TODO_alignment_reference' on page 27 undefined on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2410,46 +2191,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removed on input line 323.
 
 
-LaTeX Warning: Citation 'mcfee_2025_15006942' on page 26 undefined on input line 324.
+LaTeX Warning: Citation 'TODO_standardization_reference' on page 27 undefined on input line 324.
 
 
-LaTeX Warning: Citation 'soundfile' on page 26 undefined on input line 324.
-
-
-LaTeX Warning: Citation 'TODO_standardization_reference' on page 26 undefined on input line 324.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 26 undefined on input line 324.
-
-
-LaTeX Warning: Citation 'TODO_end2end_frontend_reference' on page 26 undefined on input line 324.
-
-
-
-[26]
-
-LaTeX Warning: Citation 'webrtc' on page 27 undefined on input line 340.
+LaTeX Warning: Citation 'TODO_end2end_frontend_reference' on page 27 undefined on input line 324.
 
 
 LaTeX Warning: Citation 'TODO_long_utterance_reference' on page 27 undefined on input line 340.
 
 
-LaTeX Warning: Citation 'webrtc' on page 27 undefined on input line 340.
+
+[27]
+
+LaTeX Warning: Citation 'TODO_vad_threshold_reference' on page 28 undefined on input line 345.
 
 
-LaTeX Warning: Citation 'webrtc' on page 27 undefined on input line 342.
-
-
-LaTeX Warning: Citation 'webrtc' on page 27 undefined on input line 343.
-
-
-LaTeX Warning: Citation 'webrtc' on page 27 undefined on input line 344.
-
-
-LaTeX Warning: Citation 'TODO_vad_threshold_reference' on page 27 undefined on input line 345.
-
-
-LaTeX Warning: Citation 'TODO_vad_threshold_reference' on page 27 undefined on input line 346.
+LaTeX Warning: Citation 'TODO_vad_threshold_reference' on page 28 undefined on input line 346.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 346--347
@@ -2457,16 +2214,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 346--347
  []
 
 
-
-[27]
-
 LaTeX Warning: Citation 'TODO_audio_filtering_reference' on page 28 undefined on input line 359.
 
 
 LaTeX Warning: Citation 'TODO_audio_filtering_reference' on page 28 undefined on input line 359.
-
-
-LaTeX Warning: Citation 'clap' on page 28 undefined on input line 359.
 
 
 LaTeX Warning: Citation 'TODO_audio_filtering_reference' on page 28 undefined on input line 359.
@@ -2500,9 +2251,6 @@ Underfull \hbox (badness 1237) in paragraph at lines 362--363
  []
 
 
-LaTeX Warning: Citation 'clap' on page 28 undefined on input line 363.
-
-
 
 [28]
 
@@ -2515,14 +2263,14 @@ LaTeX Warning: Citation 'TODO_alignment_reference' on page 29 undefined on input
 LaTeX Warning: Citation 'TODO_alignment_reference' on page 29 undefined on input line 399.
 
 
-LaTeX Warning: Citation 'TODO_dataset_splitting_reference' on page 29 undefined on input line 408.
-
-
-LaTeX Warning: Citation 'TODO_sklearn_train_test_split' on page 29 undefined on input line 408.
-
-
 
 [29]
+
+LaTeX Warning: Citation 'TODO_dataset_splitting_reference' on page 30 undefined on input line 408.
+
+
+LaTeX Warning: Citation 'TODO_sklearn_train_test_split' on page 30 undefined on input line 408.
+
 
 LaTeX Warning: Citation 'TODO_dataset_splitting_reference' on page 30 undefined on input line 413.
 
@@ -2558,57 +2306,10 @@ Overfull \hbox (9.26717pt too wide) in paragraph at lines 429--453
  []
 
 
-LaTeX Warning: Citation 'kaldi2011' on page 30 undefined on input line 454.
-
-
-LaTeX Warning: Citation 'ravanelli2021speechbraingeneralpurposespeechtoolkit' on page 30 undefined on input line 454.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 30 undefined on input line 454.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 30 undefined on input line 454.
-
-
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 30 undefined on input line 454.
-
-
-Underfull \hbox (badness 2608) in paragraph at lines 454--455
-\T1/ptm/m/n/12 Kaldi GMM--HMM, an end-to-end CRDNN--CTC us-ing Speech-Brain frame-
- []
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 454--455
-\T1/ptm/m/n/12 work that was trained from zero while a trans-former encoder--decoder Whis-
- []
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 454--455
-\T1/ptm/m/n/12 per model from Ope-nAI was fine tuned us-ing the same dataset ([];
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
-[]\T1/ptm/m/n/12 ; [];
- []
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 30 undefined on input line 457.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 30 undefined on input line 457.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 30 undefined on input line 457.
-
-
-LaTeX Warning: Citation 'TODO_mfcc_cmvn_reference' on page 30 undefined on input line 457.
-
-
 
 [30]
 
-LaTeX Warning: Citation 'pykakasi' on page 31 undefined on input line 468.
+LaTeX Warning: Citation 'TODO_mfcc_cmvn_reference' on page 31 undefined on input line 457.
 
 
 LaTeX Warning: Citation 'TODO_grapheme_lexicon_reference' on page 31 undefined on input line 468.
@@ -2620,19 +2321,10 @@ LaTeX Warning: Citation 'TODO_grapheme_lexicon_reference' on page 31 undefined o
 LaTeX Warning: Citation 'TODO_oov_reference' on page 32 undefined on input line 488.
 
 
-LaTeX Warning: Citation 'kaldi2011' on page 32 undefined on input line 488.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 32 undefined on input line 488.
-
-
 LaTeX Warning: Citation 'TODO_mfcc_reference' on page 32 undefined on input line 492.
 
 
 LaTeX Warning: Citation 'TODO_mfcc_reference' on page 32 undefined on input line 492.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 32 undefined on input line 492.
 
 
 Underfull \hbox (badness 1990) in paragraph at lines 492--493
@@ -2645,13 +2337,13 @@ Underfull \hbox (badness 2181) in paragraph at lines 492--493
  []
 
 
-LaTeX Warning: Citation 'kaldi2011' on page 32 undefined on input line 494.
+
+[32]
+
+LaTeX Warning: Citation 'TODO_cmvn_reference' on page 33 undefined on input line 494.
 
 
-LaTeX Warning: Citation 'TODO_cmvn_reference' on page 32 undefined on input line 494.
-
-
-LaTeX Warning: Citation 'TODO_cmvn_reference' on page 32 undefined on input line 494.
+LaTeX Warning: Citation 'TODO_cmvn_reference' on page 33 undefined on input line 494.
 
 (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
@@ -2659,53 +2351,16 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 
-[32]
-
-LaTeX Warning: Citation 'kaldi2011' on page 33 undefined on input line 518.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 33 undefined on input line 520.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 33 undefined on input line 521.
-
-
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 521--522
 []\T1/ptm/b/n/12 Triphone 1 (tri1): \T1/ptm/m/n/12 a delta-based tri-phone model trained us-ing
  []
 
 
-LaTeX Warning: Citation 'kaldi2011' on page 33 undefined on input line 522.
 
+[34]
 
-LaTeX Warning: Citation 'kaldi2011' on page 33 undefined on input line 523.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 33 undefined on input line 526.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 33 undefined on input line 526.
-
-
-
-[33]
-
-LaTeX Warning: Citation 'kenlm' on page 34 undefined on input line 561.
-
-
-LaTeX Warning: Citation 'TODO_wikipedia_lm_reference' on page 34 undefined on input line 561.
-
-
-LaTeX Warning: Citation 'kenlm' on page 34 undefined on input line 561.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 34 undefined on input line 561.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 34 undefined on input line 564.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 34 undefined on input line 564.
+LaTeX Warning: Citation 'TODO_wikipedia_lm_reference' on page 35 undefined on input line 561.
 
 
 Underfull \hbox (badness 1769) in paragraph at lines 564--565
@@ -2713,30 +2368,18 @@ Underfull \hbox (badness 1769) in paragraph at lines 564--565
  []
 
 
-
-[34]
-
-LaTeX Warning: Citation 'chen2020streaming' on page 35 undefined on input line 609.
-
-
-LaTeX Warning: Citation 'ravanelli2021speechbraingeneralpurposespeechtoolkit' on page 35 undefined on input line 609.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 35 undefined on input line 609.
-
-
-LaTeX Warning: Citation 'chen2020streaming' on page 35 undefined on input line 609.
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 609--610
-\T1/ptm/m/n/12 model has been choosen based on the lit-er-a-ture re-view ([];
+Underfull \hbox (badness 1810) in paragraph at lines 564--565
+\T1/cmtt/m/n/12 utils/mkgraph.sh \T1/ptm/m/n/12 ([]Ghoshal et al., []2011[]). This pro-duced graphs such as
  []
 
 
-LaTeX Warning: Citation 'TODO_manifest_best_practice' on page 35 undefined on input line 620.
+
+[35]
+
+LaTeX Warning: Citation 'TODO_manifest_best_practice' on page 36 undefined on input line 620.
 
 
-LaTeX Warning: Citation 'TODO_dataset_splitting_reference' on page 35 undefined on input line 620.
+LaTeX Warning: Citation 'TODO_dataset_splitting_reference' on page 36 undefined on input line 620.
 
 
 Underfull \hbox (badness 1072) in paragraph at lines 620--621
@@ -2744,103 +2387,54 @@ Underfull \hbox (badness 1072) in paragraph at lines 620--621
  []
 
 
-
-[35]
-
 LaTeX Warning: Citation 'TODO_ctc_vocab_reference' on page 36 undefined on input line 623.
 
 
 LaTeX Warning: Citation 'graves2013' on page 36 undefined on input line 623.
 
 
-LaTeX Warning: Citation 'speechbrain_v1' on page 36 undefined on input line 623.
-
-
 LaTeX Warning: Citation 'graves2013' on page 36 undefined on input line 623.
 
 
 LaTeX Warning: Citation 'TODO_ctc_vocab_reference' on page 36 undefined on input line 623.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation 'TODO_fbank_reference' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation 'TODO_newbob_reference' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation 'TODO_regularization_reference' on page 36 undefined on input line 647.
-
-
-LaTeX Warning: Citation 'TODO_batch_size_reference' on page 36 undefined on input line 647.
 
 
 
 [36]
 
-LaTeX Warning: Citation 'speechbrain_v1' on page 37 undefined on input line 650.
+LaTeX Warning: Citation 'TODO_fbank_reference' on page 37 undefined on input line 647.
 
 
-LaTeX Warning: Citation 'speechbrain_v1' on page 37 undefined on input line 650.
+LaTeX Warning: Citation 'TODO_newbob_reference' on page 37 undefined on input line 647.
 
 
-LaTeX Warning: Citation 'speechbrain_v1' on page 37 undefined on input line 650.
+LaTeX Warning: Citation 'TODO_regularization_reference' on page 37 undefined on input line 647.
+
+
+LaTeX Warning: Citation 'TODO_batch_size_reference' on page 37 undefined on input line 647.
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 647--648
+\T1/ptm/m/n/12 al., []2024[]). The ar-chi-tec-ture con-sisted of CNN blocks, fol-lowed by bidi-rec-
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 647--648
+\T1/ptm/m/n/12 tional LSTM lay-ers, and a DNN block be-fore a fi-nal lin-ear layer that pro-
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 647--648
+\T1/ptm/m/n/12 jected to the CTC vo-cab-u-lary size ([]Ra-vanelli et al., []2024[]). The op-ti-mizer
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 647--648
+\T1/ptm/m/n/12 ing was han-dled us-ing New-Bob schedul-ing based on val-i-da-tion im-prove-ment
+ []
 
 
 LaTeX Warning: Citation 'TODO_lr_schedule_reference' on page 37 undefined on input line 650.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 37 undefined on input line 650.
-
-
-Underfull \hbox (badness 2318) in paragraph at lines 650--651
-[]\T1/ptm/m/n/12 A cus-tom Speech-Brain \T1/cmtt/m/n/12 Brain \T1/ptm/m/n/12 class (\T1/cmtt/m/n/12 ASRBrain\T1/ptm/m/n/12 ) was im-ple-mented to
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 650--651
-\T1/ptm/m/n/12 de-fine for-ward com-pu-ta-tion, CTC loss, and CER track-ing dur-ing val-i-da-tion
- []
-
-
-Underfull \hbox (badness 2503) in paragraph at lines 650--651
-\T1/ptm/m/n/12 ([]). Dur-ing train-ing, check-points were saved us-ing Speech-
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 650--651
-\T1/ptm/m/n/12 Brain check-pointer so that the best model could be re-cov-ered and used dur-
- []
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 37 undefined on input line 660.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 37 undefined on input line 660.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 37 undefined on input line 660.
-
-
-Underfull \hbox (badness 2035) in paragraph at lines 660--661
-[]\T1/ptm/m/n/12 The third model fam-ily was Whis-per, a trans-former encoder--decoder
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 660--661
-\T1/ptm/m/n/12 ASR model from Ope-nAI ([]). In this re-search, mul-ti-ple
- []
 
 
 
@@ -2849,166 +2443,57 @@ Underfull \hbox (badness 1997) in paragraph at lines 660--661
 LaTeX Warning: Citation 'TODO_dataset_splitting_reference' on page 38 undefined on input line 671.
 
 
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 38 undefined on input line 671.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 671--672
-[]\T1/ptm/m/n/12 The dataset was pre-pared by con-vert-ing \T1/cmtt/m/n/12 transcript_utf8.txt
- []
-
-
-Underfull \hbox (badness 7740) in paragraph at lines 671--672
-\T1/ptm/m/n/12 into a DataFrame that mapped each ut-ter-ance ID to its cor-re-spond-ing
- []
-
-
-Underfull \hbox (badness 3407) in paragraph at lines 671--672
-\T1/cmtt/m/n/12 .wav \T1/ptm/m/n/12 path and tran-script. The data was shuf-fled us-ing a fixed ran-dom
- []
-
-
-Underfull \hbox (badness 2644) in paragraph at lines 671--672
-\T1/ptm/m/n/12 seed for re-pro-ducibil-ity and split into train-ing, val-i-da-tion, and test-ing sets
- []
-
-
-Underfull \hbox (badness 2951) in paragraph at lines 671--672
-\T1/ptm/m/n/12 ([]). Each split was stored as CSV files
- []
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 38 undefined on input line 674.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 38 undefined on input line 674.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 38 undefined on input line 674.
-
-
-LaTeX Warning: Citation 'TODO_long_sample_filter_reference' on page 38 undefined on input line 674.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 38 undefined on input line 677.
-
-
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 38 undefined on input line 677.
-
-
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 38 undefined on input line 677.
-
-
-LaTeX Warning: Citation 'TODO_adamw_cosine_reference' on page 38 undefined on input line 677.
-
-
-LaTeX Warning: Citation 'TODO_fp16_reference' on page 38 undefined on input line 677.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-[]\T1/ptm/m/n/12 For fine tun-ing, a pre-trained Whis-per check-point (ex-am-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-\T1/ptm/m/n/12 ple: \T1/cmtt/m/n/12 openai/whisper-base\T1/ptm/m/n/12 ) was loaded ([]). The
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-\T1/ptm/m/n/12 de-coder was con-fig-ured with Japanese lan-guage prompts us-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-\T1/ptm/m/n/12 forced de-coder IDs (\T1/cmtt/m/n/12 language="japanese", task="transcribe"\T1/ptm/m/n/12 )
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-\T1/ptm/m/n/12 ([]). Gra-di-ent
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-\T1/ptm/m/n/12 checkpointing-related set-tings were ap-plied by set-ting \T1/cmtt/m/n/12 use_cache=False
+Underfull \hbox (badness 1033) in paragraph at lines 671--672
+[]\T1/ptm/m/n/12 The dataset was pre-pared by con-vert-ing \T1/cmtt/m/n/12 transcript_utf8.txt \T1/ptm/m/n/12 into a
  []
 
 
 
 [38]
 
-LaTeX Warning: Citation 'TODO_training_loop_reference' on page 39 undefined on input line 702.
+LaTeX Warning: Citation 'TODO_long_sample_filter_reference' on page 39 undefined on input line 674.
 
 
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 39 undefined on input line 702.
+LaTeX Warning: Citation 'TODO_adamw_cosine_reference' on page 39 undefined on input line 677.
 
 
-LaTeX Warning: Citation 'jiwer_2025' on page 39 undefined on input line 702.
+LaTeX Warning: Citation 'TODO_fp16_reference' on page 39 undefined on input line 677.
 
 
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 39 undefined on input line 702.
-
-
-Underfull \hbox (badness 1838) in paragraph at lines 702--703
-[]\T1/ptm/m/n/12 Training was per-formed for 10 epochs us-ing mini-batch gra-di-ent up-
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
+[]\T1/ptm/m/n/12 For fine tun-ing, a pre-trained Whis-per check-point (ex-am-ple:
  []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 702--703
-\T1/ptm/m/n/12 dates ([]). Dur-ing train-ing, the loss value
+Underfull \hbox (badness 2970) in paragraph at lines 677--678
+\T1/cmtt/m/n/12 openai/whisper-base\T1/ptm/m/n/12 ) was loaded ([]Rad-ford et al., []2023[]). The de-coder
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 702--703
-\T1/ptm/m/n/12 was mon-i-tored at each step and av-er-age loss was com-puted at the end
+Underfull \hbox (badness 3407) in paragraph at lines 677--678
+\T1/ptm/m/n/12 was con-fig-ured with Japanese lan-guage prompts us-ing forced de-coder IDs
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 702--703
-\T1/ptm/m/n/12 of each epoch. Af-ter train-ing, val-i-da-tion de-cod-ing was per-formed us-
+Underfull \hbox (badness 2158) in paragraph at lines 677--678
+\T1/ptm/m/n/12 (\T1/cmtt/m/n/12 language="japanese", task="transcribe"\T1/ptm/m/n/12 ) ([]Wolf et al., []2020[]). Gra-di-
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 702--703
-\T1/ptm/m/n/12 ing \T1/cmtt/m/n/12 model.generate() \T1/ptm/m/n/12 and met-rics were com-puted us-ing WER and CER
+Underfull \hbox (badness 2285) in paragraph at lines 677--678
+\T1/ptm/m/n/12 ent checkpointing-related set-tings were ap-plied by set-ting \T1/cmtt/m/n/12 use_cache=False
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 702--703
-\T1/ptm/m/n/12 ([]; []). The
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 702--703
-\T1/ptm/m/n/12 model and pro-ces-sor were then saved for later de-cod-ing and test eval-u-a-tion
+Underfull \hbox (badness 1728) in paragraph at lines 677--678
+\T1/ptm/m/n/12 rate (ex-am-ple: $\OT1/ztmcm/m/n/12 1 \OMS/ztmcm/m/n/12 ^^B \OT1/ztmcm/m/n/12 10[]$\T1/ptm/m/n/12 ) and co-sine learn-ing rate schedul-ing with warmup
  []
 
 
 
 [39]
 
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 40 undefined on input line 705.
-
-
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 40 undefined on input line 705.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
-[]\T1/ptm/m/n/12 After fine-tuning com-pleted, the model weights and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
-\T1/ptm/m/n/12 pro-ces-sor con-fig-u-ra-tion were saved us-ing \T1/cmtt/m/n/12 save_pretrained
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 705--706
-\T1/ptm/m/n/12 ([]). A quick in-fer-ence
- []
-
-
-LaTeX Warning: Citation 'jiwer_2025' on page 40 undefined on input line 710.
+LaTeX Warning: Citation 'TODO_training_loop_reference' on page 40 undefined on input line 702.
 
 
 LaTeX Warning: Citation 'TODO_rtf_reference' on page 40 undefined on input line 710.
@@ -3017,76 +2502,36 @@ LaTeX Warning: Citation 'TODO_rtf_reference' on page 40 undefined on input line 
 LaTeX Warning: Citation 'TODO_controlled_comparison_reference' on page 40 undefined on input line 710.
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 710--712
-\T1/ptm/m/n/12 els were eval-u-ated us-ing the same test split and the same scor-ing pro-to-col.
- []
 
-
-Underfull \hbox (badness 1242) in paragraph at lines 710--712
-\T1/ptm/m/n/12 The main ob-jec-tive of this phase was to mea-sure tran-scrip-tion ac-cu-racy and
- []
-
-
+[40]
 Overfull \hbox (9.26717pt too wide) in paragraph at lines 721--741
  [][] 
  []
 
 
-LaTeX Warning: Citation 'jiwer_2025' on page 40 undefined on input line 743.
-
-
-LaTeX Warning: Citation 'TODO_rtf_reference' on page 40 undefined on input line 743.
-
-
-
-[40]
-
-LaTeX Warning: Citation 'kaldi2011' on page 41 undefined on input line 746.
-
-
-LaTeX Warning: Citation 'speechbrain_v1' on page 41 undefined on input line 746.
+LaTeX Warning: Citation 'TODO_rtf_reference' on page 41 undefined on input line 743.
 
 
 LaTeX Warning: Citation 'graves2013' on page 41 undefined on input line 746.
 
 
-LaTeX Warning: Citation 'wolf2020huggingfacestransformersstateoftheartnatural' on page 41 undefined on input line 746.
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 746--747
-\T1/ptm/m/n/12 er-ated for the test set, in-clud-ing the beam de-cod-ing vari-ant when con-fig-ured
- []
-
-
-LaTeX Warning: Citation 'jiwer_2025' on page 41 undefined on input line 749.
-
-
-LaTeX Warning: Citation 'jiwer_2025' on page 41 undefined on input line 749.
-
-
 LaTeX Warning: Citation 'TODO_levenshtein_reference' on page 41 undefined on input line 749.
-
-
-LaTeX Warning: Citation 'jiwer_2025' on page 41 undefined on input line 749.
-
-
-LaTeX Warning: Citation 'jiwer_2025' on page 41 undefined on input line 749.
 
 
 LaTeX Warning: Citation 'TODO_controlled_comparison_reference' on page 41 undefined on input line 749.
 
 
-LaTeX Warning: Citation 'TODO_rtf_reference' on page 41 undefined on input line 752.
-
-
-LaTeX Warning: Citation 'TODO_rtf_reference' on page 41 undefined on input line 752.
-
-
-LaTeX Warning: Citation 'TODO_rtf_reference' on page 41 undefined on input line 752.
-
-
 
 [41]
+
+LaTeX Warning: Citation 'TODO_rtf_reference' on page 42 undefined on input line 752.
+
+
+LaTeX Warning: Citation 'TODO_rtf_reference' on page 42 undefined on input line 752.
+
+
+LaTeX Warning: Citation 'TODO_rtf_reference' on page 42 undefined on input line 752.
+
 
 LaTeX Warning: Citation 'TODO_discussion_method_reference' on page 42 undefined on input line 758.
 
@@ -3096,119 +2541,61 @@ Overfull \hbox (9.26717pt too wide) in paragraph at lines 769--792
  []
 
 
-LaTeX Warning: Citation 'TODO_discussion_method_reference' on page 42 undefined on input line 794.
+
+[42]
+
+LaTeX Warning: Citation 'TODO_discussion_method_reference' on page 43 undefined on input line 794.
 
 
-LaTeX Warning: Citation 'kaldi2011' on page 42 undefined on input line 794.
+LaTeX Warning: Citation 'TODO_domain_mismatch_reference' on page 43 undefined on input line 794.
 
 
-LaTeX Warning: Citation 'speechbrain_v1' on page 42 undefined on input line 794.
+LaTeX Warning: Citation 'TODO_controlled_comparison_reference' on page 43 undefined on input line 797.
 
 
-LaTeX Warning: Citation 'radford2023robust' on page 42 undefined on input line 794.
+LaTeX Warning: Citation 'TODO_pyannote_reference' on page 43 undefined on input line 797.
 
 
-LaTeX Warning: Citation 'radford2023robust' on page 42 undefined on input line 794.
+LaTeX Warning: Citation 'TODO_rtf_reference' on page 43 undefined on input line 797.
 
 
-LaTeX Warning: Citation 'bajo2024efficient' on page 42 undefined on input line 794.
-
-
-LaTeX Warning: Citation 'TODO_domain_mismatch_reference' on page 42 undefined on input line 794.
-
-
-LaTeX Warning: Citation 'TODO_controlled_comparison_reference' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'yt-dlp' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'mcfee_2025_15006942' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'soundfile' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'webrtc' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'clap' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'TODO_pyannote_reference' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'jiwer_2025' on page 42 undefined on input line 797.
-
-
-LaTeX Warning: Citation 'TODO_rtf_reference' on page 42 undefined on input line 797.
-
-
-Underfull \hbox (badness 1776) in paragraph at lines 797--798
-\T1/ptm/m/n/12 us-ing We-bRTC VAD, with low-quality non-speech clips fil-tered out ([];
+Underfull \hbox (badness 2205) in paragraph at lines 797--798
+\T1/ptm/m/n/12 Japanese TEDx talks with man-ual sub-ti-tles were col-lected, tran-scripts were
  []
 
 
+Underfull \hbox (badness 1521) in paragraph at lines 797--798
+\T1/ptm/m/n/12 cleaned, au-dio was stan-dard-ised to 16kHz mono, and long record-ings were
+ []
 
-[42]) (mainmatter/chapResults.tex
+) (mainmatter/chapResults.tex
 
 [43]
 Chapter 4.
-
-LaTeX Warning: Citation 'ando2021' on page 44 undefined on input line 9.
-
 
 
 [44
 
 ]
-
-LaTeX Warning: Citation 'Koenecke2020' on page 45 undefined on input line 40.
-
-<mainmatter//images/clean_sub.png, id=701, 598.48593pt x 509.65407pt>
+<mainmatter//images/clean_sub.png, id=946, 598.48593pt x 509.65407pt>
 File: mainmatter//images/clean_sub.png Graphic file (type png)
 <use mainmatter//images/clean_sub.png>
 Package pdftex.def Info: mainmatter//images/clean_sub.png  used on input line 47.
 (pdftex.def)             Requested size: 285.59875pt x 243.20804pt.
 
-LaTeX Warning: Citation 'ando2021' on page 45 undefined on input line 53.
-
-
 
 [45 <./mainmatter//images/clean_sub.png>]
-
-LaTeX Warning: Citation 'kaldi2011' on page 46 undefined on input line 57.
-
-
-LaTeX Warning: Citation 'mcfee_2025_15006942' on page 46 undefined on input line 57.
-
-
-LaTeX Warning: Citation 'xu2023recent' on page 46 undefined on input line 57.
-
-<mainmatter//images/bitrate.png, id=709, 1429.59094pt x 592.46344pt>
+<mainmatter//images/bitrate.png, id=958, 1429.59094pt x 592.46344pt>
 File: mainmatter//images/bitrate.png Graphic file (type png)
 <use mainmatter//images/bitrate.png>
 Package pdftex.def Info: mainmatter//images/bitrate.png  used on input line 62.
 (pdftex.def)             Requested size: 285.59875pt x 118.35498pt.
 
-LaTeX Warning: Citation 'webrtc' on page 46 undefined on input line 69.
-
-
 
 [46 <./mainmatter//images/bitrate.png>]
 
-LaTeX Warning: Citation 'latif2020' on page 47 undefined on input line 94.
-
-
-LaTeX Warning: Citation 'ando2021' on page 47 undefined on input line 115.
-
-
-
 [47]
-
-LaTeX Warning: Citation 'ravanelli2021speechbraingeneralpurposespeechtoolkit' on page 48 undefined on input line 119.
-
-<mainmatter//images/manifest_data.png, id=721, 762.59906pt x 493.0922pt>
+<mainmatter//images/manifest_data.png, id=974, 762.59906pt x 493.0922pt>
 File: mainmatter//images/manifest_data.png Graphic file (type png)
 <use mainmatter//images/manifest_data.png>
 Package pdftex.def Info: mainmatter//images/manifest_data.png  used on input line 123.
@@ -3217,41 +2604,21 @@ Package pdftex.def Info: mainmatter//images/manifest_data.png  used on input lin
 
 [48 <./mainmatter//images/manifest_data.png>]
 
-LaTeX Warning: Citation 'ando2021' on page 49 undefined on input line 152.
-
-
-LaTeX Warning: Citation 'Karita2021' on page 49 undefined on input line 152.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 49 undefined on input line 159.
-
-
-LaTeX Warning: Citation 'KaldiCSJResults2015' on page 49 undefined on input line 159.
-
-
-LaTeX Warning: Citation 'kaldi2011' on page 49 undefined on input line 184.
-
-
-
 [49]
-<mainmatter//images/kaldi_obj_impr_curve_linear.png, id=733, 650.43pt x 375.804pt>
+<mainmatter//images/kaldi_obj_impr_curve_linear.png, id=991, 650.43pt x 375.804pt>
 File: mainmatter//images/kaldi_obj_impr_curve_linear.png Graphic file (type png)
 <use mainmatter//images/kaldi_obj_impr_curve_linear.png>
 Package pdftex.def Info: mainmatter//images/kaldi_obj_impr_curve_linear.png  used on input line 188.
 (pdftex.def)             Requested size: 408.0pt x 235.73706pt.
 
 
-LaTeX Warning: Citation 'watanabe2018espnetendtoendspeechprocessing' on page 50 undefined on input line 195.
-
-
-
 [50 <./mainmatter//images/kaldi_obj_impr_curve_linear.png>]
-<mainmatter//images/loss_curves.png, id=741, 614.295pt x 361.35pt>
+<mainmatter//images/loss_curves.png, id=1000, 614.295pt x 361.35pt>
 File: mainmatter//images/loss_curves.png Graphic file (type png)
 <use mainmatter//images/loss_curves.png>
 Package pdftex.def Info: mainmatter//images/loss_curves.png  used on input line 229.
 (pdftex.def)             Requested size: 285.59875pt x 167.99844pt.
-<mainmatter//images/cer_curve.png, id=742, 614.295pt x 361.35pt>
+<mainmatter//images/cer_curve.png, id=1001, 614.295pt x 361.35pt>
 File: mainmatter//images/cer_curve.png Graphic file (type png)
 <use mainmatter//images/cer_curve.png>
 Package pdftex.def Info: mainmatter//images/cer_curve.png  used on input line 235.
@@ -3260,38 +2627,21 @@ Package pdftex.def Info: mainmatter//images/cer_curve.png  used on input line 23
 
 [51 <./mainmatter//images/loss_curves.png>]
 
-LaTeX Warning: Citation 'radford2023robust' on page 52 undefined on input line 240.
-
-
-LaTeX Warning: Citation 'bajo2024efficient' on page 52 undefined on input line 240.
-
-
-LaTeX Warning: Citation '' on page 52 undefined on input line 240.
-
-
-
 [52 <./mainmatter//images/cer_curve.png>]
-<mainmatter//images/whisper_epochs.png, id=754, 570.933pt x 317.0244pt>
+<mainmatter//images/whisper_epochs.png, id=1015, 570.933pt x 317.0244pt>
 File: mainmatter//images/whisper_epochs.png Graphic file (type png)
 <use mainmatter//images/whisper_epochs.png>
 Package pdftex.def Info: mainmatter//images/whisper_epochs.png  used on input line 272.
-(pdftex.def)             Requested size: 285.59875pt x 158.5892pt.
-
-
-LaTeX Warning: Citation 'xu2023recent' on page 53 undefined on input line 283.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 53 undefined on input line 283.
-
+(pdftex.def)             Requested size: 408.0pt x 226.55946pt.
 
 
 [53 <./mainmatter//images/whisper_epochs.png>]
-<mainmatter//images/cer_wer_all.png, id=761, 794.97pt x 397.485pt>
+<mainmatter//images/cer_wer_all.png, id=1024, 794.97pt x 397.485pt>
 File: mainmatter//images/cer_wer_all.png Graphic file (type png)
 <use mainmatter//images/cer_wer_all.png>
 Package pdftex.def Info: mainmatter//images/cer_wer_all.png  used on input line 313.
 (pdftex.def)             Requested size: 408.0pt x 204.00653pt.
-<mainmatter//images/rtf_vs_cer_tradeoff_labeled.png, id=762, 607.068pt x 389.0535pt>
+<mainmatter//images/rtf_vs_cer_tradeoff_labeled.png, id=1025, 607.068pt x 389.0535pt>
 File: mainmatter//images/rtf_vs_cer_tradeoff_labeled.png Graphic file (type png)
 <use mainmatter//images/rtf_vs_cer_tradeoff_labeled.png>
 Package pdftex.def Info: mainmatter//images/rtf_vs_cer_tradeoff_labeled.png  used on input line 319.
@@ -3302,88 +2652,17 @@ Package pdftex.def Info: mainmatter//images/rtf_vs_cer_tradeoff_labeled.png  use
 
 [55 <./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png>]
 
-LaTeX Warning: Citation 'kaldi2011' on page 56 undefined on input line 348.
-
-
-LaTeX Warning: Citation 'KaldiCSJResults2015' on page 56 undefined on input line 348.
-
-
 LaTeX Warning: Citation 'graves2013' on page 56 undefined on input line 371.
-
-
-LaTeX Warning: Citation 'chen2020streaming' on page 56 undefined on input line 371.
 
 
 
 [56]
 
-LaTeX Warning: Citation 'radford2023robust' on page 57 undefined on input line 399.
-
-
-LaTeX Warning: Citation 'bajo2024efficient' on page 57 undefined on input line 399.
-
-
-
 [57]
-
-LaTeX Warning: Citation 'Koenecke2020' on page 58 undefined on input line 409.
-
-
-LaTeX Warning: Citation 'ando2021' on page 58 undefined on input line 409.
-
-
-LaTeX Warning: Citation 'xu2023recent' on page 58 undefined on input line 409.
-
-
-LaTeX Warning: Citation 'ando2021' on page 58 undefined on input line 417.
-
-
-LaTeX Warning: Citation 'KaldiCSJResults2015' on page 58 undefined on input line 417.
-
-
 
 [58]
 
-LaTeX Warning: Citation 'chen2020streaming' on page 59 undefined on input line 422.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 59 undefined on input line 428.
-
-
-LaTeX Warning: Citation '' on page 59 undefined on input line 428.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
-[]\T1/ptm/m/n/12 The re-sult is in line with the past study by
- []
-
-
-Underfull \hbox (badness 1609) in paragraph at lines 428--429
-[][] \T1/ptm/m/n/12 where us-ing a struc-tured en-vi-ron-ment of
- []
-
-
-LaTeX Warning: Reference `tab:qual_examples' on page 1 undefined on input line 432.
-
-
-
-[59]
-
-LaTeX Warning: Citation 'curtin2020japanese' on page 60 undefined on input line 434.
-
-
-LaTeX Warning: Citation 'Ito2016End-to-end' on page 60 undefined on input line 434.
-
-
-LaTeX Warning: Citation 'ito2017' on page 60 undefined on input line 434.
-
-
-LaTeX Warning: Citation 'ando2021' on page 60 undefined on input line 434.
-
-
-LaTeX Warning: Citation 'radford2023robust' on page 60 undefined on input line 436.
-
-(/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.bdg
+[59] (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
@@ -3399,9 +2678,17 @@ File: c70ipxm.fdx 2018/05/05 v0.5
 File: UTF8.enc 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 452--452
-[]|\T1/ptm/m/n/10.95 CRDNN--CTC
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 445--458
+ [][] 
  []
 
 (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
@@ -3412,8 +2699,16 @@ File: UTF8.chr 2021/10/16 4.8.5
 File: UTF8.enc 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (48.48178pt too wide) in paragraph at lines 445--458
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 467--480
  [][] 
  []
 
@@ -3426,8 +2721,8 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 474--474
-[]|\T1/ptm/m/n/10.95 CRDNN--CTC
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
+[]|\C70/ipxm/m/n/10.95/89 ^^81 \C70/ipxm/m/n/10.95/30 Y ^^8b k[]\T1/ptm/m/n/10.95 [\C70/ipxm/m/n/10.95/30 ^^A$\OMS/ztmcm/m/n/10.95 !$\T1/ptm/m/n/10.95  ][]\C70/ipxm/m/n/10.95/79 ^^c1 \C70/ipxm/m/n/10.95/30 _ a o \C70/ipxm/m/n/10.95/59 1 \C70/ipxm/m/n/10.95/65 W \C70/ipxm/m/n/10.95/30 K ^^89 \C70/ipxm/m/n/10.95/5b f
  []
 
 (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
@@ -3439,7 +2734,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (48.48178pt too wide) in paragraph at lines 467--480
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 489--502
  [][] 
  []
 
@@ -3453,17 +2748,7 @@ File: UTF8.chr 2021/10/16 4.8.5
 File: UTF8.enc 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
-)
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
-[]|\C70/ipxm/m/n/10.95/89 ^^81 \C70/ipxm/m/n/10.95/30 Y ^^8b k[]\T1/ptm/m/n/10.95 [\C70/ipxm/m/n/10.95/30 ^^A$\OMS/ztmcm/m/n/10.95 !$\T1/ptm/m/n/10.95  ][]\C70/ipxm/m/n/10.95/79 ^^c1 \C70/ipxm/m/n/10.95/30 _ a o \C70/ipxm/m/n/10.95/59 1 \C70/ipxm/m/n/10.95/65 W \C70/ipxm/m/n/10.95/30 K ^^89 \C70/ipxm/m/n/10.95/5b f
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 496--496
-[]|\T1/ptm/m/n/10.95 CRDNN--CTC
- []
-
-(/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
+) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -3472,61 +2757,29 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (48.48178pt too wide) in paragraph at lines 489--502
- [][] 
- []
-
-(/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
-[]|\T1/ptm/m/n/10.95 CRDNN--CTC
- []
-
-(/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.enc
-File: UTF8.enc 2021/10/16 4.8.5
-) (/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cjk/UTF8/UTF8.chr
-File: UTF8.chr 2021/10/16 4.8.5
-)
-Overfull \hbox (48.48178pt too wide) in paragraph at lines 511--524
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 511--524
  [][] 
  []
 
 
-LaTeX Warning: Citation 'latif2020' on page 61 undefined on input line 527.
 
-
-LaTeX Warning: Citation 'ando2021' on page 61 undefined on input line 527.
-
-
-LaTeX Warning: Citation 'TOKENIZATION_PLACEHOLDER' on page 61 undefined on input line 529.
-
-
-
-[61]
-
-LaTeX Warning: Citation 'ando2021' on page 62 undefined on input line 531.
-
-
-LaTeX Warning: Citation 'TOKENIZATION_PLACEHOLDER' on page 62 undefined on input line 536.
-
-)
-
-LaTeX Warning: Empty bibliography on input line 41.
-
-
+[61])
 
 [62]
+
+[63
+
+]
+
+[64]
+
+[65]
+
+[66]
+
+[67]
+
+[68]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -3543,32 +2796,24 @@ L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53684 strings out of 467875
- 1154438 string characters out of 5415543
- 2399358 words of memory out of 5000000
- 81290 multiletter control sequences out of 15000+600000
+ 54292 strings out of 467875
+ 1172648 string characters out of 5415543
+ 2446847 words of memory out of 5000000
+ 81835 multiletter control sequences out of 15000+600000
  702672 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,15n,111p,1481b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u56.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u53.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u52.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u88.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u5e.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u5f.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u65.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u79.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u89.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u6c.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u98.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u62.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u6b.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u7d.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u6f.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u8b.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u60.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u51.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u5b.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u59.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u4e.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u90.enc}{/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/ipaex-type1/ipxt1-u67.enc} </Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk> </Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk> </Users/aliff/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk>{/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}</Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u4e.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u51.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u52.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u53.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u56.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u59.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5b.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5e.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u5f.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u60.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u62.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u65.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u67.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6b.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6c.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u6f.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u79.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u7d.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u88.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u89.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u8b.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u90.pfb></Users/aliff/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ipaex-type1/ipxm-r-u98.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmb8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (71 pages, 1708648 bytes).
+Output written on main.pdf (77 pages, 1791787 bytes).
 PDF statistics:
- 1623 PDF objects out of 1728 (max. 8388607)
- 362 named destinations out of 1000 (max. 500000)
- 1023 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1980 PDF objects out of 2073 (max. 8388607)
+ 425 named destinations out of 1000 (max. 500000)
+ 1031 words of extra memory for PDF output out of 10000 (max. 10000000)
 

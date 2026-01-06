@@ -4,14 +4,14 @@
 \contentsline {table}{\numberline {2.3}{\ignorespaces WER and CER performance of Whisper models. Reproduced from \blx@tocontentsinit {0}\cite {bajo2024efficient}.}}{14}{table.caption.7}%
 \contentsline {table}{\numberline {2.4}{\ignorespaces Character error rates on CSJ dev/eval1/eval2/eval3 sets cited from \blx@tocontentsinit {0}\cite {Karita2021}.}}{14}{table.caption.8}%
 \contentsline {table}{\numberline {2.5}{\ignorespaces Comparison of ASR accuracy on two datasets, Standard Japanese (CSJ) and Japanese dialects (COJADS) cited from \blx@tocontentsinit {0}\cite {takahashi2024comparison}.}}{15}{table.caption.9}%
-\contentsline {table}{\numberline {2.6}{\ignorespaces ASR results reported by \blx@tocontentsinit {0}\textcite {hono2024integratingpretrainedspeechlanguage} on ReazonSpeech, JSUT, CV8.0, and CSJ eval sets (beam size 1 = greedy decoding).}}{16}{table.caption.10}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces ASR results reported by \blx@tocontentsinit {0}\textcite {hono2024integratingpretrainedspeechlanguage} on ReazonSpeech, JSUT, CV8.0, and CSJ eval sets (beam size 1 = greedy decoding).}}{15}{table.caption.10}%
 \contentsline {table}{\numberline {3.1}{\ignorespaces Overview of Research Project}}{21}{table.caption.11}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Planning Phase}}{22}{table.caption.12}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Prior Work Phase}}{23}{table.caption.13}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Data Collection and preprocessing Phase}}{24}{table.caption.14}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Model Training and Fine Tune Phase}}{30}{table.caption.16}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Evaluation Phase}}{40}{table.caption.20}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Discussion Phase}}{42}{table.caption.21}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Model Training and Fine Tune Phase}}{31}{table.caption.16}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Evaluation Phase}}{41}{table.caption.20}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Discussion Phase}}{43}{table.caption.21}%
 \contentsline {table}{\numberline {4.1}{\ignorespaces Video selection outcomes for TEDx Japanese data collection.}}{44}{table.caption.22}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces VAD segmentation results.}}{47}{table.caption.25}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Audio filtering outcomes (diarization + CLAP).}}{47}{table.caption.26}%
@@ -24,6 +24,6 @@
 \contentsline {table}{\numberline {4.10}{\ignorespaces CRDNN--CTC results on the test split (greedy vs beam).}}{56}{table.caption.40}%
 \contentsline {table}{\numberline {4.11}{\ignorespaces Whisper fine-tuning results by model size on the test split.}}{57}{table.caption.41}%
 \contentsline {table}{\numberline {4.12}{\ignorespaces Qualitative transcription example 1: Wording errors.}}{60}{table.caption.42}%
-\contentsline {table}{\numberline {4.13}{\ignorespaces Qualitative transcription example 2: Polite-form variation.}}{61}{table.caption.43}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Qualitative transcription example 2: Polite-form variation.}}{60}{table.caption.43}%
 \contentsline {table}{\numberline {4.14}{\ignorespaces Qualitative transcription example 3: Paraphrase.}}{61}{table.caption.44}%
 \contentsline {table}{\numberline {4.15}{\ignorespaces Qualitative transcription example 4: Numbering format.}}{61}{table.caption.45}%

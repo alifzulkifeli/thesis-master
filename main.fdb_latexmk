@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1767458978.5647 "main.bcf" "main.bbl" "main" 1767458983.85261 2
-  "main.bcf" 1767458977.33191 156374 4b734d804f1d679d6a337d073de985b0 "pdflatex"
+["biber main"] 1767459644.95361 "main.bcf" "main.bbl" "main" 1767485520.37749 0
+  "main.bcf" 1767485518.41035 158535 bc722a45c40f158019ecb2bee02e2662 "pdflatex"
   "references/myref.bib" 1767458668.95876 35340 2366e0ee38c77124e97da84ae58da910 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1767458963.17785 "/Users/aliff/Documents/thesis-master/main.tex" "main.pdf" "main" 1767458983.85288 0
+["pdflatex"] 1767485499.8781 "/Users/aliff/Documents/thesis-master/main.tex" "main.pdf" "main" 1767485520.3791 0
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc" 1766381174.19858 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/symbol/psyr.tfm" 1136743454 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/adobe/times/psyro.tfm" 1136743454 1544 23a042a74981a3e4b6ce2e350e390409 ""
@@ -371,13 +371,13 @@
   "/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1766381090.94604 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/setspace/setspace.sty" 1766381035.38995 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "/Users/aliff/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xpatch/xpatch.sty" 1766381004.0382 8510 9829c50ab36366d4da41fdc87e7d0699 ""
-  "main.aux" 1767458977.16266 121528 b18d9df295ff8b94d02e37daff02284a "pdflatex"
-  "main.bbl" 1767458983.35145 0 d41d8cd98f00b204e9800998ecf8427e "biber main"
-  "main.lof" 1767458977.33582 1894 996b707e35f50e293364ae2b182c92b7 "pdflatex"
-  "main.lot" 1767458977.33571 4198 6dca956fcf6ec8524d5318305009a28c "pdflatex"
-  "main.run.xml" 1767458977.33513 2433 44a7483994886dd31734f7f50fdf9ac1 "pdflatex"
+  "main.aux" 1767485518.09672 133975 c15f4c1b54cb47b0f0a7d5aee944130a "pdflatex"
+  "main.bbl" 1767459651.3399 267987 78dc844a996e10d8004d3660b2db6ba9 "biber main"
+  "main.lof" 1767485518.41594 1894 3413ffe38635bbee48a2a8e7465153c4 "pdflatex"
+  "main.lot" 1767485518.41583 4198 832d56ad2c5a010ee5c160d30358bcb7 "pdflatex"
+  "main.run.xml" 1767485518.4145 2433 9615c3ec793d1eb17de43f4d372b1c50 "pdflatex"
   "main.tex" 1767458854.33004 1378 8bd741a55e46b6dcb679df6bc5cbc9d8 ""
-  "main.toc" 1767458977.33557 10452 78ecd7dca94f06cf98b24ae8f11c8b5c "pdflatex"
+  "main.toc" 1767485518.41504 10472 39b5c8be7ac514d3f97a1453aa9dcda4 "pdflatex"
   "mainmatter//images/bitrate.png" 1762132538.52204 30582 3999692f74393ccb057a2cc51946688c ""
   "mainmatter//images/cer_curve.png" 1766711678.46589 117345 6f2face8b266a5df58edbf1315315030 ""
   "mainmatter//images/cer_wer_all.png" 1766711678.47318 216376 fc6e09bba7aae09f62a4ec6b3ae3c43b ""
@@ -391,7 +391,7 @@
   "mainmatter/chapIntro.tex" 1767153121.30859 8965 d7af5b316722946d10ecb70c9a969052 ""
   "mainmatter/chapLiterature.tex" 1767191912.68508 29867 70a093a0fb6ac6d74ae86eab9c3ab931 ""
   "mainmatter/chapMethodology.tex" 1767457270.83959 48388 5c9b494d2a0d8996dbd174bfd52fe2ac ""
-  "mainmatter/chapResults.tex" 1767458921.41383 36115 0888a55efde079eed24580690e285ed8 ""
+  "mainmatter/chapResults.tex" 1767485497.31868 35988 172bb560a45f96911fa312ff11d63450 ""
   "settings.tex" 1766718113.01054 5551 0072f158bcddb69e145656f87042f8dc ""
   "uitmthesis.cls" 1762132538.53017 19856 9d2d71378150e4d2d867c4628383a887 ""
   (generated)
