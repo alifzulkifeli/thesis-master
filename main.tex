@@ -1,6 +1,10 @@
 \documentclass[a4paper,12pt,oneside]{uitmthesis}
 
 \input{settings}
+\AtBeginDocument{%
+  \captionsetup[table]{labelsep=quad} % adds wider space (optional look)
+}
+
 \DeclareUnicodeCharacter{2014}{\textemdash}
 
 \begin{document}
@@ -10,28 +14,28 @@
 \frontmatter
 % \theconfirmation 
 % \input{frontmatter/frontAuthorsDeclaration}
-% \input{frontmatter/frontAbstract}
+\input{frontmatter/frontAbstract}
 % \input{frontmatter/frontAcknowledgement} 
 
 \tableofcontents 
 {%% Adding word 'Table' before each entry in list of tables 
     \let\oldnumberline\numberline%  
     \renewcommand{\numberline}{\tablename~\oldnumberline}%
-    \listoftables%
+    \listoftables%  
 } 
 {%% Adding word 'Figure' before each entry in list of figures
     \let\oldnumberline\numberline%
-    \renewcommand{\numberline}{\figurename~\oldnumberline}%
-    \listoffigures%
+    \renewcommand{\numberline}{\figurename~\oldnumberline}%  
+    \listoffigures% 
 }
 % \input{frontmatter/listofsymbols}
 % \input{frontmatter/listofabbreviations} 
 % \input{frontmatter/listofnomenclatures}
 
 \mainmatter
-\input{mainmatter/chapIntro}
-\input{mainmatter/chapLiterature}
-\input{mainmatter/chapMethodology}
+% \input{mainmatter/chapIntro}
+% \input{mainmatter/chapLiterature}
+% \input{mainmatter/chapMethodology}
 \input{mainmatter/chapResults}
 % \input{mainmatter/chapConclusion}
 

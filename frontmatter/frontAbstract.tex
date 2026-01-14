@@ -1,3 +1,7 @@
 \begin{abstract}
-% The summary of everything. Master-minimum 200 words. PhD-minimum 250 words. Limit to one(1) page only. Font: Times New Roman - 12pt. Single spacing.
+
+Automatic speech recognition for formal Japanese remained challenging due to script variation and sensitivity to front-end processing, and comparative evidence across model families was limited under matched conditions. This study aimed to determine which ASR model family performed best for formal Japanese transcription when preprocessing, feature extraction, and evaluation were standardized. A Japanese TEDx dataset with manual subtitles was collected, cleaned, resampled to 16 kHz mono, segmented using VAD, filtered to remove low-quality or non-speaker segments, and split into 80/10/10 train/validation/test sets. Three model families were trained and evaluated on the same splits. A Kaldi GMM–HMM pipeline (mono→tri3) with MFCC+CMVN, a SpeechBrain CRDNN–CTC system using log-Mel features with greedy and beam decoding, and fine-tuned Whisper variants from tiny to turbo. Performance was measured using CER as primary metrics, WER, and RTF. Fine-tuned Whisper achieved the best accuracy, reaching 4.28\% CER (turbo) and 4.22\% WER (medium), while CRDNN–CTC achieved the fastest decoding with 0.0129 RTF and 15.23\% CER. The best Kaldi stage (tri3) achieved 19.48\% CER with 0.251 RTF. These results provided an actionable accuracy–latency trade-off guide for selecting Japanese ASR pipelines for formal transcription.
+
+\vspace{1em}
+Keywords: Japanese ASR, formal speech transcription, GMM–HMM, CRDNN–CTC, Whisper fine-tuning
 \end{abstract}

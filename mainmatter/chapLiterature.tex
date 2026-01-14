@@ -9,7 +9,7 @@ The technology for Automatic Speech Recognition (ASR) has advanced rapidly in th
     \caption{Literature Review Mind Map}
 \end{figure}
 
-However, to apply these technologies to the Japanese language may pose few challenges due to its complex writing systems. In this chapter, the challenges of Japanese speech detection and the traditional and modern ASR models will be reviewed. The state-of-the-art model like Whisper, wav2vec, and Chirp will also be discussed based on their applicability to Japanese. By identifying the key challenges and gaps in existing research, this chapter prepared for a focused analysis of Japanese-specific ASR systems.
+However, to apply these technologies to the Japanese language may pose few challenges due to its complex writing systems. In this chapter, the challenges of Japanese speech detection and the traditional and modern ASR models will be reviewed. By identifying the key challenges and gaps in existing research, this chapter prepared for a focused analysis of Japanese-specific ASR systems.
 
 \section{Challenges in Japanese Speech Detection}
 \subsection{Complexity of Japanese Writing System and Characters}
@@ -209,40 +209,6 @@ Proposed (w/ DS-Inf.)  & 3,708M& 1  & 8.4  & 8.6 & 9.2  &  22.9 \\
 
 Current comparative analysis from these studies shows that several challenges need to be addressed. A study to compare the existing models in Japanese ASR is needed because of the unique characteristics of the Japanese language. The comparative analysis from \textcite{Karita2021} and \textcite{takahashi2024comparison} shows that while models like Conformer and Whisper have made significant strides in ASR, they still face challenges in handling the complexities of Japanese. Additionally, there is still lack of study that comparing the model from different model families because most of the existing comparative analysis only focusing on models from the same family.
 
-
-\section{Datasets and Tools}
-\subsection{Datasets}
-Dataset is a crucial component in training and evaluating ASR models. In this study, a curated dataset collected from Japanese TEDx talks on YouTube with manual Japanese subtitles is used. TEDx talks is a rich source of diverse speech data, covering a wide range of topics and speakers, making it suitable for training ASR models. The talks are delivered by various speakers with different accents, speaking styles, and speech rates, which helps in creating a comprehensive dataset that captures the variability in real-world Japanese speech \parencite{ando2021}.
-
-\subsection{Python}
-Python was used as the main programming language to implement the data pipeline, training utilities, and evaluation scripts. It supported preprocessing tasks such as transcript cleaning, manifest generation, and training split preparation \parencite{python3.14documentation_2025}. In addition, Python libraries were used to support ASR-related workflows such as audio processing, metadata handling, diarization-based filtering, and evaluation.
-
-\subsection{yt-dlp}
-Yt-dlp is a command-line tool and Python library that allows downloading videos, audio, and subtitle tracks from YouTube. In this study, yt-dlp was used to query YouTube metadata to verify the availability of manual Japanese subtitles before downloading. Then, audio and subtitle files were downloaded for selected Japanese TEDx talks to form a consistent dataset for ASR training and evaluation \parencite{yt-dlp}.
-
-\subsection{Audio Processing Tools}
-To standardize the dataset and ensure compatibility across model families, audio was converted into a consistent format (16\,kHz, mono, 16-bit PCM). Audio resampling and waveform writing were performed using Python audio libraries \texttt{librosa} and \texttt{soundfile} \parencite{mcfee_2025_15006942,soundfile}. In addition, WebRTC voice activity detection was used to segment long TEDx recordings into shorter utterances suitable for training and evaluation \parencite{webrtc}.
-
-\subsection{Automatic Audio Filtering Tools}
-A filtering step was applied to remove non-speaker or low-quality segments such as applause and laughter. Speaker structure filtering used \texttt{pyannote.audio} diarization to prefer clips with a dominant speaker. Acoustic event filtering used a Hugging Face zero-shot audio classification pipeline with the CLAP model (\texttt{laion/clap-htsat-fused}) to identify and remove segments with high confidence of applause or laughter \parencite{clap}.
-
-\subsection{Kaldi}
-Kaldi is an open-source toolkit for speech recognition that provides a complete pipeline for feature extraction, acoustic modeling, and decoding \parencite{kaldi2011}. In this study, Kaldi was used to implement the traditional GMM--HMM baseline system. The workflow included MFCC feature extraction with CMVN normalization, staged acoustic model training (mono, tri1, tri2, tri3), alignment between stages, and decoding graph generation for evaluation.
-
-\subsection{KenLM}
-KenLM was used to build an external $n$-gram language model to support decoding in the Kaldi GMM--HMM systems. In this work, \texttt{lmplz} was used to produce an ARPA-format language model, which was then converted into decoding resources within the Kaldi graph construction pipeline \parencite{kenlm}.
-
-\subsection{Lexicon Generation Tools}
-A grapheme-based lexicon was generated using a custom Python script. The script extracted vocabulary items from transcripts and converted Japanese tokens into Hepburn romanisation using \texttt{pykakasi}. The romanised output was normalized and mapped into character-level pronunciation units used to build Kaldi language resources \parencite{pykakasi}.
-
-\subsection{SpeechBrain}
-SpeechBrain is an open-source toolkit for speech processing that supports end-to-end ASR training and evaluation \parencite{ravanelli2021speechbraingeneralpurposespeechtoolkit}. In this study, SpeechBrain was used to implement the CRDNN--CTC model. It used the prepared CSV manifests and a character-level vocabulary, and training checkpoints were managed using SpeechBrain's checkpointer mechanism \parencite{speechbrain_v1}.
-
-\subsection{Hugging Face}
-Hugging Face was used to access pretrained Whisper models and supporting utilities for fine-tuning. The Transformers library was used to load Whisper checkpoints, configure Japanese decoding prompts, and generate hypotheses using \texttt{model.generate()}. Hugging Face Datasets was used to load train/validation/test CSV splits efficiently and support reproducible fine-tuning experiments \parencite{wolf2020huggingfacestransformersstateoftheartnatural}.
-
-\subsection{Evaluation Tools}
-Model evaluation used character error rate (CER), word error rate (WER), and real-time factor (RTF). CER and WER were computed using normalized edit distance between hypothesis and reference transcripts. In this study, the \texttt{jiwer} Python library was used to compute WER and to support consistent error-rate scoring across systems. RTF was computed by dividing total decoding wall time by total audio duration to measure decoding efficiency and latency behaviour \parencite{jiwer_2025}.
 
 \section{Gaps in Literature}
 Based on the literature review, shows that there is several gaps in the research on Japanese ASR. First, while there has been significant progress in ASR models, there is still a lack of comprehensive comparative studies that evaluate different model architectures specifically for Japanese. Most existing studies focus on individual models or specific families of models, making it difficult to draw broad conclusions about the best approaches for Japanese ASR. Second, many studies are using datasets that already being throughly studied, such as CSJ, which has been cleaned and preprocessed extensively. There is a need for more research using diverse and real-world datasets, such as TEDx talks, to better understand model performance in practical scenarios.

@@ -53,7 +53,7 @@
 %\miscule       7pt
 %\tiny          8pt
 %\scriptsize    9pt
-%\footnotesize  10pt
+%\footnotesize  10pt  
 %\small         11pt
 %\normalsize    12pt
 %\large         14pt
@@ -479,7 +479,7 @@
 %% Sections font size 12pt
 \setsecheadstyle{\normalsize\bfseries}
 \setsubsecheadstyle{\normalsize\bfseries}
-\setsubsubsecheadstyle{\normalsize\bfseries}
+\setsubsubsecheadstyle{\normalsize\itshape}
 % \setparaheadstyle{\large\bfseries}
 % \setsubparaheadstyle{\large\bfseries}
 
