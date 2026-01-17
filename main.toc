@@ -108,5 +108,5 @@
 \contentsline {section}{\numberline {5.2}Recommendation}{63}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Summary}{64}{section.5.3}%
 \contentsline {section}{Part A: Entrepreneurial Reflection Statement}{65}{section*.53}%
-\contentsline {section}{\numberline {5.4}Part C: Self-Evaluation \& Value Proposition Checklist}{68}{section.5.4}%
-\contentsline {chapter}{REFERENCES}{70}{section*.57}%
+\contentsline {section}{\numberline {5.4}Part C: Self-Evaluation \& Value Proposition Checklist}{67}{section.5.4}%
+\contentsline {chapter}{REFERENCES}{69}{section*.57}%
