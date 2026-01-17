@@ -1,35 +1,36 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[89] biber-MSWIN64:342> INFO - === 
-[126] Biber.pm:421> INFO - Reading 'main.bcf'
-[232] Biber.pm:1002> INFO - Found 17 citekeys in bib section 0
-[246] Biber.pm:4487> INFO - Processing section 0
-[255] Biber.pm:4678> INFO - Looking for bibtex file 'references/myref.bib' for section 0
-[374] bibtex.pm:1713> INFO - LaTeX decoding ...
-[469] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
-[712] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[713] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[713] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[713] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[755] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[755] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[755] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[755] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[776] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[817] bbl.pm:779> INFO - Output to main.bbl
-[817] Biber.pm:132> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
-[817] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'webrtc' is not an integer - this will probably not sort properly.
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 6, warning: 113 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 22, warning: 5 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 43, warning: 117 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 66, warning: 224 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 108, warning: 3 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 278, warning: 5 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 337, warning: 5 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 638, warning: 3 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 649, warning: 3 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 813, warning: 3 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 835, warning: 3 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 859, warning: 3 characters of junk seen at toplevel
-[818] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_W2od\791e559347c7f027f49328e019ff3066_41016.utf8, line 921, warning: 3 characters of junk seen at toplevel
-[818] Biber.pm:134> INFO - WARNINGS: 15
+[277] biber-MSWIN64:342> INFO - === 
+[404] Biber.pm:421> INFO - Reading 'main.bcf'
+[575] Biber.pm:1002> INFO - Found 55 citekeys in bib section 0
+[590] Biber.pm:4487> INFO - Processing section 0
+[613] Biber.pm:4678> INFO - Looking for bibtex file 'references/myref.bib' for section 0
+[725] bibtex.pm:1713> INFO - LaTeX decoding ...
+[812] bibtex.pm:1519> INFO - Found BibTeX data source 'references/myref.bib'
+[1357] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1357] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1357] Biber.pm:4307> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1357] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1481] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1481] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1481] Biber.pm:4307> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[1481] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1595] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1733] bbl.pm:779> INFO - Output to main.bbl
+[1733] Biber.pm:132> WARN - Duplicate entry key: 'Zhu2004Multilingual' in file 'references/myref.bib', skipping ...
+[1734] Biber.pm:132> WARN - legacy month field 'Jul' in entry 'webrtc' is not an integer - this will probably not sort properly.
+[1734] Biber.pm:132> WARN - legacy month field 'Jun' in entry 'jiwer_2025' is not an integer - this will probably not sort properly.
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 6, warning: 113 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 22, warning: 5 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 43, warning: 117 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 66, warning: 224 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 108, warning: 3 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 278, warning: 5 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 337, warning: 5 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 638, warning: 3 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 649, warning: 3 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 813, warning: 3 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 835, warning: 3 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 859, warning: 3 characters of junk seen at toplevel
+[1734] Biber.pm:132> WARN - BibTeX subsystem: C:\Users\aliff\AppData\Local\Temp\biber_tmp_DJhN\791e559347c7f027f49328e019ff3066_7812.utf8, line 921, warning: 3 characters of junk seen at toplevel
+[1734] Biber.pm:134> INFO - WARNINGS: 16

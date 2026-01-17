@@ -1,10 +1,18 @@
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Raw vs cleaned transcript after preprocesing}}{2}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Example of audio standardization via resampling (44.1\,kHz to 16\,kHz).}}{3}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Data after mapping audio and transcript into manifest format}}{5}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Kaldi GMM-HMM training dynamics in linear scale}}{7}{figure.caption.14}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Training vs validation loss}}{8}{figure.caption.16}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces CER over Epochs}}{9}{figure.caption.17}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Whisper Fine-tuning loss over Epochs}}{10}{figure.caption.19}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces CER and WER comparison across all system}}{11}{figure.caption.21}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Accuracy speed trade-off}}{12}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Literature Review Mind Map}}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Simplified research methodology flow.}}{17}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Data preprocessing pipeline}}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Model training workflow for GMM-HMM}}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Model training workflow for GMM-HMM}}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Placeholder: Model training workflow for CRDNN-CTC}}{33}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Placeholder: Model training workflow for Whisper}}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Model training workflow for Whisper}}{37}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Raw vs cleaned transcript after preprocesing}}{41}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of audio standardization via resampling (44.1\,kHz to 16\,kHz).}}{42}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Data after mapping audio and transcript into manifest format}}{44}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Kaldi GMM-HMM training dynamics in linear scale}}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Training vs validation loss}}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces CER over Epochs}}{48}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Whisper Fine-tuning loss over Epochs}}{49}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CER and WER comparison across all system}}{50}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Accuracy speed trade-off}}{52}{figure.caption.41}%

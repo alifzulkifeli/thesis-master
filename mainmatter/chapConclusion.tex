@@ -1,4 +1,24 @@
-\chapter{CONCLUSION AND RECOMMENDATIONS}
-\label{ch:conclusion} 
+\chapter{CONCLUSION AND RECOMMENDATION}
+\label{ch:conclusion}
 
-\lipsum[6-7]
+\section{Conclusion}
+As the conclusion, there is 3 objective that needs to be fulfilled throughout this research project which are (1) To identify the key requirements for constructing speech-to-text model within the context of Japanese language,
+(2) To analyze speech-to-text models to determine the most effective pre-processing and training setup to reduce CER, WER and RTF in Japanese language processing, and
+(3) To evaluate the CER, WER and the transcription latency using RTF of different speech-to-text model when transcribing Japanese speech.
+
+\subsection*{Recap on objective 1: To identify the key requirements for constructing speech-to-text model within the context of Japanese language}
+Based on objective 1, to identify the key requirements for constructing speech-to-text model within the context of Japanese language, several requirement is identified during prelimenary study phase and then implemented when preparing the dataset. First, the audio must be standardized into a consistent format (16\,kHz, mono, PCM16) so that it can be used fairly across Kaldi, SpeechBrain, and Whisper. Second, raw downloaded audio must be splitted onto chunks to increase model stability and prevent memory error. Third, noise audio must be filtered and cleaned to reduce transcript-to-audio mismatch. Finally in postprocessing, tokenization is need to calculate WER fairly. Since the requirements for constructing speech-to-text model within the context of Japanese language is identified, the first objective is achieved.
+
+\subsection*{Recap on objective 2: To analyze speech-to-text models to determine the most effective pre-processing and training setup}
+Based on objective 2, the study analyzed three model families under controlled preprocessing and evaluation conditions. The models used was the traditional Kaldi GMM--HMM, the hybrid CRDNN--CTC, and fine-tuned Whisper. For kaldi, most effective preprocessing is MFCC with CMVN and training setup is using staged training from mono into triphone model. For CRDNN--CTC, the model was trained using the prepared manifest and evaluated using CTC decoding, including beam decoding for better output quality. For Whisper, multiple sizes were fine-tuned (tiny, base, small, medium, turbo) to observe the trade-off between accuracy and decoding speed. From the analysis, the most effective overall setup for highest transcription accuracy was the fine-tuned Whisper models, while the most effective setup for lowest latency was CRDNN--CTC. By sucessfully determine the most effective pre-processing and training setup for each models. the second objective is achieved.
+
+\subsection*{Recap on objective 3: To evaluate the CER, WER and transcription latency (RTF) of different speech-to-text model}
+Based on objective 3, the performance of all systems was evaluated using CER, WER, and RTF. As shown in Chapter 4, fine-tuned Whisper achieved the best transcription accuracy, where the best WER was 4.22\% (Whisper-medium) and the best CER was 4.28\% (Whisper-turbo), with practical RTF values (Whisper-turbo RTF 0.0959 and Whisper-medium RTF 0.1605). CRDNN--CTC achieved the fastest decoding speed, with RTF around 0.013, but the accuracy was mid-range compared to Whisper (CER 15.12\% and WER 22.70\%). Kaldi GMM--HMM models were real-time capable but trailed behind neural models in accuracy, where the best GMM-HMM tri3 achieved WER 23.57\%. In addition, the evaluation showed that Japanese WER is sensitive to tokenization, and without tokenization, WER can be inflated and misleading. Since the CER, WER, and RTF of different speech-to-text models when transcribing Japanese speech is evaluated, the third objective is achieved. 
+
+\section{Recommendation}
+For the recommendation and future work, this research project can be improved by using more diverse dataset to give better generalization, such as conversational Japanese, noisy recordings, overlapping speech, and different speaking styles. More experiment can be done by chnaging the preprocessing parameters such as the VAD aggressiveness levels, different filtering thresholds, and additional normalization rules to investigate their impact on transcription accuracy. For Kaldi--GMM, more advanced acoustic modelscan be explored to improve accuracy while maintaining real-time decoding. For CRDNN--CTC, stronger decoding settings can be explored, such as different beam widths and language model variants, because these can potentially reduce CER and WER. For Whisper, larger variants and additional domain adaptation can be evaluated if resources allow, and inference optimization such as quantization and streaming can be added to make training more efficient.
+
+
+\section{Summary}
+To summarize, Chapter 5 focus on conclusion and recommendation.
+The conclusion focus more on the objective achieved based on the implemented pipeline and the evaluation results. The recommendation gives several ideas on things that might be improved in future research project.

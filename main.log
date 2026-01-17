@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.11)  14 JAN 2026 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.11)  17 JAN 2026 20:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1400,7 +1400,26 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (main.aux)
+ (main.aux
+
+LaTeX Warning: Label `fig:pipeline_placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:pipeline_placeholder@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:pipeline_placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:pipeline_placeholder@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:pipeline_placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:pipeline_placeholder@cref' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -1602,86 +1621,296 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
  [2
 
-]) [3] (main.lot) [4
+]
+Underfull \hbox (badness 2735) in paragraph at lines 28--28
+ [][] [][]\T1/ptm/m/n/12 Convolutional-Recurrent DNN with Con-nec-tion-ist Tem-po-ral 
+ []
 
-] (main.lof) [5
+[3] [4]) [5] (main.lot
+Underfull \hbox (badness 1394) in paragraph at lines 2--2
+ [][] []\T1/ptm/m/n/12 Ta-ble []ASR de-cod-ing re-sults (CER%) on the TEDxJP-10K dataset 
+ []
 
-] (mainmatter/chapResults.tex
+[6
+
+]) [7] (main.lof) [8
+
+] (mainmatter/chapIntro.tex
 Chapter 1.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 
+l.15 
       [1
 
 
 ]
-<mainmatter//images/clean_sub.png, id=181, 598.48593pt x 509.65407pt>
+Underfull \hbox (badness 2042) in paragraph at lines 23--24
+[]\T1/ptm/m/n/12 To an-a-lyze speech-to-text mod-els to de-ter-mine the most ef-fec-tive pre-
+ []
+
+[2] [3]) (mainmatter/chapLiterature.tex [4] [5]
+Chapter 2.
+<mainmatter//images/mindmap.png, id=419, 613.29124pt x 843.15pt>
+File: mainmatter//images/mindmap.png Graphic file (type png)
+<use mainmatter//images/mindmap.png>
+Package pdftex.def Info: mainmatter//images/mindmap.png  used on input line 8.
+(pdftex.def)             Requested size: 306.0pt x 420.68625pt.
+[6
+
+ <./mainmatter//images/mindmap.png>] [7] [8]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
+ [9] [10] [11] [12] [13]
+Overfull \hbox (13.51857pt too wide) in paragraph at lines 169--183
+ [][] 
+ []
+
+[14] [15]) (mainmatter/chapMethodology.tex [16]
+Chapter 3.
+<mainmatter/images/overall.png, id=564, 763.85374pt x 589.20125pt>
+File: mainmatter/images/overall.png Graphic file (type png)
+<use mainmatter/images/overall.png>
+Package pdftex.def Info: mainmatter/images/overall.png  used on input line 10.
+(pdftex.def)             Requested size: 285.59875pt x 220.29361pt.
+[17
+
+ <./mainmatter/images/overall.png>]
+Underfull \hbox (badness 1005) in paragraph at lines 29--30
+\T1/ptm/m/n/12 a Hug-ging Face zero-shot au-dio clas-si-fi-ca-tion pipeline with the CLAP model
+ []
+
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\T1/ptm/b/n/10.95 Preliminary
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 66.
+(C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 7667) in paragraph at lines 109--109
+[]|\T1/ptm/b/n/10.95 Data Col-lec-tion
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 109--109
+\T1/ptm/b/n/10.95 and pre-pro-cess-
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 113--114
+[]\T1/ptm/m/n/10.95 Cleaned and nor-mal-ized tran-
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 114--115
+[]\T1/ptm/m/n/10.95 Resampled au-dio to 16 kHz
+ []
+
+
+Underfull \hbox (badness 6348) in paragraph at lines 131--131
+[]|\T1/ptm/b/n/10.95 Model Train-ing
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 149--149
+[]|\T1/ptm/b/n/10.95 Result and Dis-
+ []
+
+
+Overfull \hbox (9.26717pt too wide) in paragraph at lines 59--171
+ [][] 
+ []
+
+[20]
+Overfull \hbox (9.26717pt too wide) in paragraph at lines 186--222
+ [][] 
+ []
+
+[21] [22]
+Underfull \hbox (badness 7667) in paragraph at lines 247--247
+[]|\T1/ptm/b/n/10.95 Data Col-lec-tion
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 247--247
+\T1/ptm/b/n/10.95 and pre-pro-cess-
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 251--252
+[]\T1/ptm/m/n/10.95 Cleaned and nor-mal-ized tran-
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 252--253
+[]\T1/ptm/m/n/10.95 Resampled au-dio to 16 kHz
+ []
+
+
+Overfull \hbox (9.26717pt too wide) in paragraph at lines 242--270
+ [][] 
+ []
+
+<mainmatter/images/31.png, id=623, 1750.54pt x 482.80376pt>
+File: mainmatter/images/31.png Graphic file (type png)
+<use mainmatter/images/31.png>
+Package pdftex.def Info: mainmatter/images/31.png  used on input line 278.
+(pdftex.def)             Requested size: 489.59875pt x 135.02942pt.
+[23]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 289.
+ [24 <./mainmatter/images/31.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 324.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.00043pt
+(hyperref)                removed on input line 324.
+
+[25] [26] [27]
+Underfull \hbox (badness 6348) in paragraph at lines 422--422
+[]|\T1/ptm/b/n/10.95 Model Train-ing
+ []
+
+
+Overfull \hbox (9.26717pt too wide) in paragraph at lines 417--441
+ [][] 
+ []
+
+[28]
+<mainmatter/images/simple.png, id=689, 1669.73813pt x 848.67062pt>
+File: mainmatter/images/simple.png Graphic file (type png)
+<use mainmatter/images/simple.png>
+Package pdftex.def Info: mainmatter/images/simple.png  used on input line 449.
+(pdftex.def)             Requested size: 408.0pt x 207.36281pt.
+<mainmatter/images/flow-GMM.png, id=691, 1673.25125pt x 424.58624pt>
+File: mainmatter/images/flow-GMM.png Graphic file (type png)
+<use mainmatter/images/flow-GMM.png>
+Package pdftex.def Info: mainmatter/images/flow-GMM.png  used on input line 462.
+(pdftex.def)             Requested size: 408.0pt x 103.52892pt.
+ [29 <./mainmatter/images/simple.png> <./mainmatter/images/flow-GMM.png>] (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) [30]
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+[]\T1/ptm/m/n/12 Triphone 1 (tri1): a delta-based tri-phone model trained us-ing
+ []
+
+[31]
+Underfull \hbox (badness 3547) in paragraph at lines 541--542
+[]\T1/ptm/m/n/12 Finally, de-cod-ing graphs were cre-ated for each acous-tic model us-
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 541--542
+\T1/ptm/m/n/12 ing \T1/cmtt/m/n/12 utils/mkgraph.sh\T1/ptm/m/n/12 . This pro-duced graphs such as \T1/cmtt/m/n/12 exp/mono/graph\T1/ptm/m/n/12 ,
+ []
+
+<mainmatter/images/flow-CRDNN.png, id=737, 1498.09688pt x 509.905pt>
+File: mainmatter/images/flow-CRDNN.png Graphic file (type png)
+<use mainmatter/images/flow-CRDNN.png>
+Package pdftex.def Info: mainmatter/images/flow-CRDNN.png  used on input line 592.
+(pdftex.def)             Requested size: 489.59875pt x 166.64304pt.
+[32] [33 <./mainmatter/images/flow-CRDNN.png>]
+<mainmatter/images/flow-Whisper.png, id=770, 1670.24pt x 535.50063pt>
+File: mainmatter/images/flow-Whisper.png Graphic file (type png)
+<use mainmatter/images/flow-Whisper.png>
+Package pdftex.def Info: mainmatter/images/flow-Whisper.png  used on input line 638.
+(pdftex.def)             Requested size: 489.59875pt x 156.96626pt.
+ [34]
+Underfull \hbox (badness 1033) in paragraph at lines 645--646
+[]\T1/ptm/m/n/12 The dataset was pre-pared by con-vert-ing \T1/cmtt/m/n/12 transcript_utf8.txt \T1/ptm/m/n/12 into a
+ []
+
+[35 <./mainmatter/images/flow-Whisper.png>] [36]
+Underfull \hbox (badness 1377) in paragraph at lines 694--694
+[]|\T1/ptm/b/n/10.95 Result and Dis-
+ []
+
+
+Overfull \hbox (9.26717pt too wide) in paragraph at lines 689--718
+ [][] 
+ []
+
+<mainmatter/images/evaluate.png, id=801, 1337.99875pt x 326.21875pt>
+File: mainmatter/images/evaluate.png Graphic file (type png)
+<use mainmatter/images/evaluate.png>
+Package pdftex.def Info: mainmatter/images/evaluate.png  used on input line 729.
+(pdftex.def)             Requested size: 489.59875pt x 119.37pt.
+[37 <./mainmatter/images/evaluate.png>] [38]) (mainmatter/chapResults.tex [39]
+Chapter 4.
+[40
+
+]
+<mainmatter//images/clean_sub.png, id=832, 598.48593pt x 509.65407pt>
 File: mainmatter//images/clean_sub.png Graphic file (type png)
 <use mainmatter//images/clean_sub.png>
-Package pdftex.def Info: mainmatter//images/clean_sub.png  used on input line 44.
+Package pdftex.def Info: mainmatter//images/clean_sub.png  used on input line 42.
 (pdftex.def)             Requested size: 285.59875pt x 243.20804pt.
- [2 <./mainmatter//images/clean_sub.png>]
-<mainmatter//images/bitrate.png, id=196, 1429.59094pt x 592.46344pt>
+ [41 <./mainmatter//images/clean_sub.png>]
+<mainmatter//images/bitrate.png, id=843, 1429.59094pt x 592.46344pt>
 File: mainmatter//images/bitrate.png Graphic file (type png)
 <use mainmatter//images/bitrate.png>
-Package pdftex.def Info: mainmatter//images/bitrate.png  used on input line 59.
+Package pdftex.def Info: mainmatter//images/bitrate.png  used on input line 57.
 (pdftex.def)             Requested size: 285.59875pt x 118.35498pt.
- [3 <./mainmatter//images/bitrate.png>] [4]
-<mainmatter//images/manifest_data.png, id=217, 762.59906pt x 493.0922pt>
+ [42 <./mainmatter//images/bitrate.png>] [43]
+<mainmatter//images/manifest_data.png, id=858, 762.59906pt x 493.0922pt>
 File: mainmatter//images/manifest_data.png Graphic file (type png)
 <use mainmatter//images/manifest_data.png>
-Package pdftex.def Info: mainmatter//images/manifest_data.png  used on input line 120.
+Package pdftex.def Info: mainmatter//images/manifest_data.png  used on input line 118.
 (pdftex.def)             Requested size: 285.59875pt x 184.66083pt.
- [5 <./mainmatter//images/manifest_data.png>]
-<mainmatter//images/kaldi_obj_impr_curve_linear.png, id=231, 650.43pt x 375.804pt>
+ [44 <./mainmatter//images/manifest_data.png>]
+<mainmatter//images/kaldi_obj_impr_curve_linear.png, id=869, 650.43pt x 375.804pt>
 File: mainmatter//images/kaldi_obj_impr_curve_linear.png Graphic file (type png)
 <use mainmatter//images/kaldi_obj_impr_curve_linear.png>
-Package pdftex.def Info: mainmatter//images/kaldi_obj_impr_curve_linear.png  used on input line 185.
+Package pdftex.def Info: mainmatter//images/kaldi_obj_impr_curve_linear.png  used on input line 183.
 (pdftex.def)             Requested size: 408.0pt x 235.73706pt.
- [6] [7 <./mainmatter//images/kaldi_obj_impr_curve_linear.png>]
-<mainmatter//images/loss_curves.png, id=249, 614.295pt x 361.35pt>
+ [45] [46 <./mainmatter//images/kaldi_obj_impr_curve_linear.png>]
+<mainmatter//images/loss_curves.png, id=883, 614.295pt x 361.35pt>
 File: mainmatter//images/loss_curves.png Graphic file (type png)
 <use mainmatter//images/loss_curves.png>
-Package pdftex.def Info: mainmatter//images/loss_curves.png  used on input line 226.
+Package pdftex.def Info: mainmatter//images/loss_curves.png  used on input line 224.
 (pdftex.def)             Requested size: 285.59875pt x 167.99844pt.
-<mainmatter//images/cer_curve.png, id=250, 614.295pt x 361.35pt>
+<mainmatter//images/cer_curve.png, id=884, 614.295pt x 361.35pt>
 File: mainmatter//images/cer_curve.png Graphic file (type png)
 <use mainmatter//images/cer_curve.png>
-Package pdftex.def Info: mainmatter//images/cer_curve.png  used on input line 232.
+Package pdftex.def Info: mainmatter//images/cer_curve.png  used on input line 233.
 (pdftex.def)             Requested size: 285.59875pt x 167.99844pt.
- [8 <./mainmatter//images/loss_curves.png>]
-<mainmatter//images/whisper_epochs.png, id=258, 570.933pt x 317.0244pt>
+ [47 <./mainmatter//images/loss_curves.png>]
+<mainmatter//images/whisper_epochs.png, id=892, 570.933pt x 317.0244pt>
 File: mainmatter//images/whisper_epochs.png Graphic file (type png)
 <use mainmatter//images/whisper_epochs.png>
-Package pdftex.def Info: mainmatter//images/whisper_epochs.png  used on input line 269.
+Package pdftex.def Info: mainmatter//images/whisper_epochs.png  used on input line 270.
 (pdftex.def)             Requested size: 408.0pt x 226.55946pt.
- [9 <./mainmatter//images/cer_curve.png>] [10 <./mainmatter//images/whisper_epochs.png>]
-<mainmatter//images/cer_wer_all.png, id=274, 794.97pt x 397.485pt>
+ [48 <./mainmatter//images/cer_curve.png>] [49 <./mainmatter//images/whisper_epochs.png>]
+<mainmatter//images/cer_wer_all.png, id=905, 794.97pt x 397.485pt>
 File: mainmatter//images/cer_wer_all.png Graphic file (type png)
 <use mainmatter//images/cer_wer_all.png>
-Package pdftex.def Info: mainmatter//images/cer_wer_all.png  used on input line 310.
+Package pdftex.def Info: mainmatter//images/cer_wer_all.png  used on input line 312.
 (pdftex.def)             Requested size: 408.0pt x 204.00653pt.
-<mainmatter//images/rtf_vs_cer_tradeoff_labeled.png, id=275, 607.068pt x 389.0535pt>
+ [50 <./mainmatter//images/cer_wer_all.png>]
+<mainmatter//images/rtf_vs_cer_tradeoff_labeled.png, id=918, 607.068pt x 389.0535pt>
 File: mainmatter//images/rtf_vs_cer_tradeoff_labeled.png Graphic file (type png)
 <use mainmatter//images/rtf_vs_cer_tradeoff_labeled.png>
-Package pdftex.def Info: mainmatter//images/rtf_vs_cer_tradeoff_labeled.png  used on input line 316.
+Package pdftex.def Info: mainmatter//images/rtf_vs_cer_tradeoff_labeled.png  used on input line 333.
 (pdftex.def)             Requested size: 408.0pt x 261.47778pt.
- [11 <./mainmatter//images/cer_wer_all.png>] [12 <./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png>] [13] [14] [15] [16] [17] [18] [19] (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.bdg
+ [51] [52 <./mainmatter//images/rtf_vs_cer_tradeoff_labeled.png>] [53] [54] [55] [56] [57] (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-LaTeX Font Info:    Trying to load font information for C70+ipxm on input line 514.
+LaTeX Font Info:    Trying to load font information for C70+ipxm on input line 481.
  (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/ipaex-type1\c70ipxm.fd
 File: c70ipxm.fd 2018/05/05 v0.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/ipaex-type1\c70ipxm.fdx
@@ -1699,7 +1928,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (31.41039pt too wide) in paragraph at lines 510--523
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 477--490
  [][] 
  []
 
@@ -1720,11 +1949,11 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (31.41039pt too wide) in paragraph at lines 532--545
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 499--512
  [][] 
  []
 
-[20{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u67.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u90.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u4e.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u59.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u5b.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u51.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u60.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u8b.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u6f.enc}] (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+(C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -1733,7 +1962,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
 []|\C70/ipxm/m/n/10.95/89 Å \C70/ipxm/m/n/10.95/30 Y ã k[]\T1/ptm/m/n/10.95 [\C70/ipxm/m/n/10.95/30 ^^A$\OMS/ztmcm/m/n/10.95 !$\T1/ptm/m/n/10.95  ][]\C70/ipxm/m/n/10.95/79 ¡ \C70/ipxm/m/n/10.95/30 _ a o \C70/ipxm/m/n/10.95/59 1 \C70/ipxm/m/n/10.95/65 W \C70/ipxm/m/n/10.95/30 K â \C70/ipxm/m/n/10.95/5b f
  []
 
@@ -1746,11 +1975,11 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (31.41039pt too wide) in paragraph at lines 554--567
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 521--534
  [][] 
  []
 
-(C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
+[58{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u67.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u90.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u30.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u4e.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u59.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u5b.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u51.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u60.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u8b.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u6f.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u7d.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u6b.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u62.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u98.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u6c.enc}] (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
@@ -1767,13 +1996,17 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (C:\Users\aliff\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Overfull \hbox (31.41039pt too wide) in paragraph at lines 576--589
+Overfull \hbox (31.41039pt too wide) in paragraph at lines 543--556
  [][] 
  []
 
-[21{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u7d.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u6b.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u62.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u98.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u6c.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u89.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u79.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u65.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u5f.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u5e.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u88.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u52.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u53.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u56.enc}] [22]) [23] [24
+[59{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u89.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u79.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u65.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u5f.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u5e.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u88.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u52.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u53.enc}{C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/ipaex-type1/ipxt1-u56.enc}] [60]) (mainmatter/chapConclusion.tex [61]
+Chapter 5.
+[62
 
-] [25]
+] [63]) (mainmatter/report3.tex [64] [65] [66] [67]) [68] [69] [70
+
+] [71] [72] [73] [74] [75]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1788,22 +2021,26 @@ Overfull \hbox (31.41039pt too wide) in paragraph at lines 576--589
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52859 strings out of 467871
- 1141655 string characters out of 5418376
- 2271601 words of memory out of 5000000
- 80710 multiletter control sequences out of 15000+600000
- 684790 words of font info for 146 fonts, out of 8000000 for 9000
+ 54296 strings out of 467871
+ 1167785 string characters out of 5418376
+ 2388408 words of memory out of 5000000
+ 81843 multiletter control sequences out of 15000+600000
+ 704873 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,12n,111p,1451b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\aliff\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\aliff\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\aliff\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u4e.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u51.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u52.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u53.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u56.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u59.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u5b.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u5e.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u5f.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u60.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u62.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u65.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u67.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u6b.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u6c.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u6f.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u79.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u7d.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u88.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u89.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u8b.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u90.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u98.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (32 pages, 1422957 bytes).
+ 104i,15n,111p,1451b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\aliff\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\aliff\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\aliff\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\aliff\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u30.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u4e.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u51.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u52.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u53.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u56.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u59.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u5b.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u5e.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u5f.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u60.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u62.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u65.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u67.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u6b.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u6c.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u6f.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u79.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u7d.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u88.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u89.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u8b.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u90.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/ipaex-type1/ipxm-r-u98.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/aliff/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (85 pages, 2388334 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 474 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1893 PDF objects out of 2073 (max. 8388607)
+ 381 named destinations out of 1000 (max. 500000)
+ 1066 words of extra memory for PDF output out of 10000 (max. 10000000)
 
