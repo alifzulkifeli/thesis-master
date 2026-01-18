@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1768652836.61602 "main.bcf" "main.bbl" "main" 1768664149.99201 0
-  "main.bcf" 1768664149 148271 8f89535034192e0d559e1156afdd626f "pdflatex"
+["biber main"] 1768652836.61602 "main.bcf" "main.bbl" "main" 1768745021.75678 0
+  "main.bcf" 1768745021 148271 8f89535034192e0d559e1156afdd626f "pdflatex"
   "references/myref.bib" 1767713478 36236 ebf8167cc3cf54ff0bd02c3d4411394d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1768664141.75366 "c:/Users/aliff/Documents/thesis-master/main.tex" "main.pdf" "main" 1768664149.99272 0
-  "C:/Users/aliff/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768649784 191319 a7dfea463f03736852103dd04597438f ""
+["pdflatex"] 1768744998.5612 "c:/Users/aliff/Documents/thesis-master/main.tex" "main.pdf" "main" 1768745021.75845 0
+  "C:/Users/aliff/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768665608 191319 a7dfea463f03736852103dd04597438f ""
   "C:/Users/aliff/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1768137075 20028 371981b5d93436379c6ced3da691f447 ""
   "C:/Users/aliff/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1768137074 21972 e7359884c7237c2919e33fd494368541 ""
   "C:/Users/aliff/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1768137076 24152 65da22d7c5ce5e57f7466aa764cf15b6 ""
@@ -376,13 +376,13 @@
   "C:/Users/aliff/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "c:/Users/aliff/Documents/thesis-master/main.tex" 1768641344 1501 6b36de07468d924a46278b1defaaaeb0 ""
   "frontmatter/frontAbstract.tex" 1768124468 1479 78b6586931c58eadb95d290ebc612e41 ""
-  "main.aux" 1768664149 118099 5e710d65040b9a9783b47d882071fba8 "pdflatex"
-  "main.bbl" 1768652846 276127 91bb50c2ab26f8774713bd059ce046f1 "biber main"
-  "main.lof" 1768664149 2079 1caf1b85397c00072f4e18c377532f00 "pdflatex"
-  "main.lot" 1768664149 4137 642aac28a479b8b023775376c468793b "pdflatex"
-  "main.run.xml" 1768664149 2433 9615c3ec793d1eb17de43f4d372b1c50 "pdflatex"
+  "main.aux" 1768745021 118099 5e710d65040b9a9783b47d882071fba8 "pdflatex"
+  "main.bbl" 1768728695 276127 91bb50c2ab26f8774713bd059ce046f1 "biber main"
+  "main.lof" 1768745021 2079 1caf1b85397c00072f4e18c377532f00 "pdflatex"
+  "main.lot" 1768745021 4137 642aac28a479b8b023775376c468793b "pdflatex"
+  "main.run.xml" 1768745021 2433 9615c3ec793d1eb17de43f4d372b1c50 "pdflatex"
   "main.tex" 1768641344 1501 6b36de07468d924a46278b1defaaaeb0 ""
-  "main.toc" 1768664149 10426 2ae1d15347f6b351a590da38fcff629d "pdflatex"
+  "main.toc" 1768745021 10426 2ae1d15347f6b351a590da38fcff629d "pdflatex"
   "mainmatter//images/bitrate.png" 1766132914 30582 512df1ffa38c5bd0f65f05b8ef1d1e5a ""
   "mainmatter//images/cer_curve.png" 1766639360 117345 62e8bd4ee63982cd190dd3cf23d6c9ba ""
   "mainmatter//images/cer_wer_all.png" 1766640972 216376 7d8cb843b3a87946cecb8b1b8b5af8d2 ""
@@ -394,9 +394,9 @@
   "mainmatter//images/rtf_vs_cer_tradeoff_labeled.png" 1766640972 153243 9f9cd2bc1d6abc8e72a2a5dddda9b5dc ""
   "mainmatter//images/whisper_epochs.png" 1766642574 171801 a2a55063db4c6e5d4676a83021e93239 ""
   "mainmatter/chapConclusion.tex" 1768650718 5040 bb501fc6ab96cfb5da2c7b05fcd81e16 ""
-  "mainmatter/chapIntro.tex" 1767862452 8185 8d24fbb3425ddfcf1b615824ca32be04 ""
+  "mainmatter/chapIntro.tex" 1768728617 8239 8d24fbb3425ddfcf1b615824ca32be04 ""
   "mainmatter/chapLiterature.tex" 1768088011 24560 ca6691386e255672c29c0424be3884e1 ""
-  "mainmatter/chapMethodology.tex" 1768398135 46961 680a6da383fb8c826a1282d3b65ddc86 ""
+  "mainmatter/chapMethodology.tex" 1768744997 46961 680a6da383fb8c826a1282d3b65ddc86 ""
   "mainmatter/chapResults.tex" 1768557770 42929 18d5f94d35d4099c033b5f791abf1eb3 ""
   "mainmatter/images/31.png" 1768381154 105396 c5b32ecec2e294c24bbdffc2f08d0da7 ""
   "mainmatter/images/evaluate.png" 1768382088 45065 e9d09f580ef810c7b71462165aefbebc ""
@@ -405,7 +405,7 @@
   "mainmatter/images/flow-Whisper.png" 1768381992 112898 a8b9f0f25d2ecc32aa2b0eff6cb20225 ""
   "mainmatter/images/overall.png" 1768381877 48840 626c013c1c1a2648722bd45d65c72e4d ""
   "mainmatter/images/simple.png" 1768382598 218833 6e000d51d1836ad0412a54649727ff32 ""
-  "mainmatter/report3.tex" 1768664141 9057 5347afcaa73187063c21c571658401ad ""
+  "mainmatter/report3.tex" 1768728617 9057 5347afcaa73187063c21c571658401ad ""
   "settings.tex" 1768378609 5593 fb8ba1f7147cbf374f4f7908e3693c78 ""
   "uitmthesis.cls" 1768397048 19857 4b696053c12bab63604df20bb10d9870 ""
   (generated)
