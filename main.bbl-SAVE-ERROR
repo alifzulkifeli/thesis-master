@@ -1579,18 +1579,18 @@
     \endentry
     \entry{pykakasi}{misc}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f60e875cad35c8e62829eb6c28b21c9b}{%
-           family={Pykakasi},
+        {{un=0,uniquepart=base,hash=47f57c5d23b84e2e42c4269ff1ccded8}{%
+           family={Pykakshi},
            familyi={P\bibinitperiod}}}%
       }
-      \strng{namehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{fullhash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{fullhashraw}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{bibnamehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authorbibnamehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authornamehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authorfullhash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authorfullhashraw}{f60e875cad35c8e62829eb6c28b21c9b}
+      \strng{namehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{fullhash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{fullhashraw}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{bibnamehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authorbibnamehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authornamehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authorfullhash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authorfullhashraw}{47f57c5d23b84e2e42c4269ff1ccded8}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -2249,7 +2249,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{2023 International Conference on Computer Science and Emerging Technologies (CSET)}
-      \field{title}{An Enhanced Version of YouTube Video Downloader Using Python}
+      \field{title}{An Enhance Version of YouTube Video Downloader Using Python}
       \field{year}{2023}
       \field{pages}{1\bibrangedash 6}
       \range{pages}{6}
@@ -2527,7 +2527,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
-      \field{title}{Real-time speech enhancement using equilibrated RNN}
+      \field{title}{Real-time speech enhancement using equilibriated RNN}
       \field{year}{2020}
       \field{pages}{851\bibrangedash 855}
       \range{pages}{5}
@@ -2892,6 +2892,53 @@
       \verb 10.21437/Interspeech.2018-1456
       \endverb
     \endentry
+    \entry{Xu}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=359e4c7c9a1c1fc06599f5a2fc24295a}{%
+           family={Wei\bibnamedelima Xu},
+           familyi={W\bibinitperiod\bibinitdelim X\bibinitperiod},
+           given={Liezhong\bibnamedelima Ge},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0,
+           suffix={Marvin\bibnamedelimb J.\bibnamedelimi Dainoff},
+           suffixi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           suffixun=0}}%
+        {{un=0,uniquepart=base,hash=e2ce00ca0fde8d43b6298029c44983bd}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Zaifeng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{fullhash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{fullhashraw}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{bibnamehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authorbibnamehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authornamehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authorfullhash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authorfullhashraw}{b52df5175c9fb476e7dada06f26790d6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human–Computer Interaction}
+      \field{number}{3}
+      \field{title}{Transitioning to Human Interaction with AI Systems: New Challenges and Opportunities for HCI Professionals to Enable Human-Centered AI}
+      \field{volume}{39}
+      \field{year}{2023}
+      \field{pages}{494\bibrangedash 518}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/10447318.2022.2041900
+      \endverb
+    \endentry
     \entry{wolf2020huggingfacestransformersstateoftheartnatural}{misc}{}{}
       \name{author}{22}{}{%
         {{un=0,uniquepart=base,hash=c34c67badfd5b3624027e9c8c77a69f6}{%
@@ -3130,12 +3177,12 @@
     \endentry
     \entry{xu2023recent}{article}{}{}
       \name{author}{8}{}{%
-        {{un=1,uniquepart=given,hash=3d46dc554749beb726f383a678f5e798}{%
+        {{un=0,uniquepart=base,hash=3d46dc554749beb726f383a678f5e798}{%
            family={Xu},
            familyi={X\bibinitperiod},
            given={Chen},
            giveni={C\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=559e1a8ba90e285dfc44dfe76e6aa579}{%
            family={Ye},
            familyi={Y\bibinitperiod},
@@ -3191,66 +3238,12 @@
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2306.11646}
       \field{title}{Recent advances in direct speech-to-text translation}
       \field{year}{2023}
-    \endentry
-    \entry{Xu}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=1,uniquepart=given,hash=b1dd1a9ff59cc6aeba590fc68bcc39cf}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Wei},
-           giveni={W\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=ff2da1294b89a4df36ae93b6cf9c3473}{%
-           family={Dainoff},
-           familyi={D\bibinitperiod},
-           given={Marvin\bibnamedelima J.},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=64c5dc8d2f1aa5064bef899468b46f3f}{%
-           family={Ge},
-           familyi={G\bibinitperiod},
-           given={Liezhong},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e2ce00ca0fde8d43b6298029c44983bd}{%
-           family={Gao},
-           familyi={G\bibinitperiod},
-           given={Zaifeng},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{fd08904658d79d66387382803b131d84}
-      \strng{fullhash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{fullhashraw}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{bibnamehash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{authorbibnamehash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{authornamehash}{fd08904658d79d66387382803b131d84}
-      \strng{authorfullhash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{authorfullhashraw}{e0d68193bb270f9e75f858fa1c977ee2}
-      \field{sortinit}{X}
-      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Human–Computer Interaction}
-      \field{number}{3}
-      \field{title}{Transitioning to Human Interaction with AI Systems: New Challenges and Opportunities for HCI Professionals to Enable Human-Centered AI}
-      \field{volume}{39}
-      \field{year}{2023}
-      \field{pages}{494\bibrangedash 518}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1080/10447318.2022.2041900
-      \endverb
     \endentry
     \entry{yalta2019cnn}{article}{}{}
       \name{author}{5}{}{%
@@ -4905,18 +4898,18 @@
     \endentry
     \entry{pykakasi}{misc}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f60e875cad35c8e62829eb6c28b21c9b}{%
-           family={Pykakasi},
+        {{un=0,uniquepart=base,hash=47f57c5d23b84e2e42c4269ff1ccded8}{%
+           family={Pykakshi},
            familyi={P\bibinitperiod}}}%
       }
-      \strng{namehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{fullhash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{fullhashraw}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{bibnamehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authorbibnamehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authornamehash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authorfullhash}{f60e875cad35c8e62829eb6c28b21c9b}
-      \strng{authorfullhashraw}{f60e875cad35c8e62829eb6c28b21c9b}
+      \strng{namehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{fullhash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{fullhashraw}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{bibnamehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authorbibnamehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authornamehash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authorfullhash}{47f57c5d23b84e2e42c4269ff1ccded8}
+      \strng{authorfullhashraw}{47f57c5d23b84e2e42c4269ff1ccded8}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -5575,7 +5568,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{2023 International Conference on Computer Science and Emerging Technologies (CSET)}
-      \field{title}{An Enhanced Version of YouTube Video Downloader Using Python}
+      \field{title}{An Enhance Version of YouTube Video Downloader Using Python}
       \field{year}{2023}
       \field{pages}{1\bibrangedash 6}
       \range{pages}{6}
@@ -5853,7 +5846,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}
-      \field{title}{Real-time speech enhancement using equilibrated RNN}
+      \field{title}{Real-time speech enhancement using equilibriated RNN}
       \field{year}{2020}
       \field{pages}{851\bibrangedash 855}
       \range{pages}{5}
@@ -6218,6 +6211,53 @@
       \verb https://doi.org/10.1109/JSTSP.2017.2763455
       \endverb
     \endentry
+    \entry{Xu}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=359e4c7c9a1c1fc06599f5a2fc24295a}{%
+           family={Wei\bibnamedelima Xu},
+           familyi={W\bibinitperiod\bibinitdelim X\bibinitperiod},
+           given={Liezhong\bibnamedelima Ge},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0,
+           suffix={Marvin\bibnamedelimb J.\bibnamedelimi Dainoff},
+           suffixi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           suffixun=0}}%
+        {{un=0,uniquepart=base,hash=e2ce00ca0fde8d43b6298029c44983bd}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Zaifeng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{fullhash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{fullhashraw}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{bibnamehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authorbibnamehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authornamehash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authorfullhash}{b52df5175c9fb476e7dada06f26790d6}
+      \strng{authorfullhashraw}{b52df5175c9fb476e7dada06f26790d6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human–Computer Interaction}
+      \field{number}{3}
+      \field{title}{Transitioning to Human Interaction with AI Systems: New Challenges and Opportunities for HCI Professionals to Enable Human-Centered AI}
+      \field{volume}{39}
+      \field{year}{2023}
+      \field{pages}{494\bibrangedash 518}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/10447318.2022.2041900
+      \endverb
+    \endentry
     \entry{wolf2020huggingfacestransformersstateoftheartnatural}{misc}{}{}
       \name{author}{22}{}{%
         {{un=0,uniquepart=base,hash=c34c67badfd5b3624027e9c8c77a69f6}{%
@@ -6456,12 +6496,12 @@
     \endentry
     \entry{xu2023recent}{article}{}{}
       \name{author}{8}{}{%
-        {{un=1,uniquepart=given,hash=3d46dc554749beb726f383a678f5e798}{%
+        {{un=0,uniquepart=base,hash=3d46dc554749beb726f383a678f5e798}{%
            family={Xu},
            familyi={X\bibinitperiod},
            given={Chen},
            giveni={C\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=559e1a8ba90e285dfc44dfe76e6aa579}{%
            family={Ye},
            familyi={Y\bibinitperiod},
@@ -6517,66 +6557,12 @@
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2306.11646}
       \field{title}{Recent advances in direct speech-to-text translation}
       \field{year}{2023}
-    \endentry
-    \entry{Xu}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=1,uniquepart=given,hash=b1dd1a9ff59cc6aeba590fc68bcc39cf}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Wei},
-           giveni={W\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=ff2da1294b89a4df36ae93b6cf9c3473}{%
-           family={Dainoff},
-           familyi={D\bibinitperiod},
-           given={Marvin\bibnamedelima J.},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=64c5dc8d2f1aa5064bef899468b46f3f}{%
-           family={Ge},
-           familyi={G\bibinitperiod},
-           given={Liezhong},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e2ce00ca0fde8d43b6298029c44983bd}{%
-           family={Gao},
-           familyi={G\bibinitperiod},
-           given={Zaifeng},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{fd08904658d79d66387382803b131d84}
-      \strng{fullhash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{fullhashraw}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{bibnamehash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{authorbibnamehash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{authornamehash}{fd08904658d79d66387382803b131d84}
-      \strng{authorfullhash}{e0d68193bb270f9e75f858fa1c977ee2}
-      \strng{authorfullhashraw}{e0d68193bb270f9e75f858fa1c977ee2}
-      \field{sortinit}{X}
-      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Human–Computer Interaction}
-      \field{number}{3}
-      \field{title}{Transitioning to Human Interaction with AI Systems: New Challenges and Opportunities for HCI Professionals to Enable Human-Centered AI}
-      \field{volume}{39}
-      \field{year}{2023}
-      \field{pages}{494\bibrangedash 518}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1080/10447318.2022.2041900
-      \endverb
     \endentry
     \entry{yalta2019cnn}{article}{}{}
       \name{author}{5}{}{%

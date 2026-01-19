@@ -1,28 +1,28 @@
 \babel@toc {english}{}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces ASR decoding results (CER\%) on the TEDxJP-10K dataset (adapted from \blx@tocontentsinit {0}\textcite {ando2021}).}}{9}{table.caption.7}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Streaming Japanese ASR results (Avg. CER\% and latency) using CTC and local attention (from \blx@tocontentsinit {0}\textcite {chen2020streaming}).}}{12}{table.caption.8}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces WER and CER performance of Whisper models. Reproduced from \blx@tocontentsinit {0}\cite {bajo2024efficient}.}}{14}{table.caption.9}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Character error rates on CSJ dev/eval1/eval2/eval3 sets cited from \blx@tocontentsinit {0}\cite {Karita2021}.}}{14}{table.caption.10}%
-\contentsline {table}{\numberline {2.5}{\ignorespaces Comparison of ASR accuracy on two datasets, Standard Japanese (CSJ) and Japanese dialects (COJADS) cited from \blx@tocontentsinit {0}\cite {takahashi2024comparison}.}}{15}{table.caption.11}%
-\contentsline {table}{\numberline {2.6}{\ignorespaces ASR results reported by \blx@tocontentsinit {0}\textcite {hono2024integratingpretrainedspeechlanguage} on ReazonSpeech, JSUT, CV8.0, and CSJ eval sets (beam size 1 = greedy decoding).}}{15}{table.caption.12}%
-\contentsline {table}{\numberline {3.1}{\ignorespaces Research Design}}{21}{table.caption.14}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Preliminary Study Phase}}{22}{table.caption.15}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Data Collection and preprocessing Phase}}{23}{table.caption.16}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Model Training and Fine Tune Phase}}{28}{table.caption.18}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Result and Discussion Phase}}{37}{table.caption.23}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Video selection outcomes for TEDx Japanese data collection.}}{40}{table.caption.25}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces VAD segmentation results.}}{43}{table.caption.28}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Audio filtering outcomes (diarization + CLAP).}}{43}{table.caption.29}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Dataset statistics and train/validation/test split summary.}}{45}{table.caption.31}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Kaldi GMM--HMM training dynamics based on objective function improvement per frame. Peak improvements occur early and decrease toward near-zero values, indicating convergence.}}{45}{table.caption.32}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces CRDNN--CTC training metrics across epochs.}}{47}{table.caption.34}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Whisper fine-tuning loss across epochs (lower is better).}}{48}{table.caption.37}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Overall comparison of ASR systems on the test split (lower is better for CER/WER/RTF).}}{50}{table.caption.39}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Kaldi GMM--HMM results across training stages on the test split.}}{53}{table.caption.42}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces CRDNN--CTC results on the test split (greedy vs beam).}}{54}{table.caption.43}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Whisper fine-tuning results by model size on the test split.}}{55}{table.caption.44}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Qualitative transcription example 1: Wording errors.}}{58}{table.caption.45}%
-\contentsline {table}{\numberline {4.13}{\ignorespaces Qualitative transcription example 2: Polite-form variation.}}{58}{table.caption.46}%
-\contentsline {table}{\numberline {4.14}{\ignorespaces Qualitative transcription example 3: Paraphrase.}}{59}{table.caption.47}%
-\contentsline {table}{\numberline {4.15}{\ignorespaces Qualitative transcription example 4: Numbering format.}}{59}{table.caption.48}%
-\contentsline {table}{\numberline {4.16}{\ignorespaces WER result before and after tokenization.}}{59}{table.caption.49}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces ASR decoding results (CER\%) on the TEDxJP-10K dataset adapted from \blx@tocontentsinit {0}\cite {ando2021}.}}{8}{table.caption.7}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Streaming Japanese ASR results using CTC and local attention from \blx@tocontentsinit {0}\cite {chen2020streaming}.}}{11}{table.caption.8}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces WER and CER performance of Whisper models. Reproduced from \blx@tocontentsinit {0}\cite {bajo2024efficient}.}}{13}{table.caption.9}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Character error rates on CSJ dev/eval1/eval2/eval3 sets cited from \blx@tocontentsinit {0}\cite {Karita2021}.}}{13}{table.caption.10}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Comparison of ASR accuracy on two datasets, Standard Japanese (CSJ) and Japanese dialects (COJADS) cited from \blx@tocontentsinit {0}\cite {takahashi2024comparison}.}}{14}{table.caption.11}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces ASR results reported by \blx@tocontentsinit {0}\cite {hono2024integratingpretrainedspeechlanguage} on ReazonSpeech, JSUT, CV8.0, and CSJ eval sets (beam size 1 = greedy decoding).}}{14}{table.caption.12}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Research Design}}{20}{table.caption.14}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Preliminary Study Phase}}{21}{table.caption.15}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Data Collection and Preprocessing Phase}}{22}{table.caption.16}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Model Training and Fine-Tuning Phase}}{27}{table.caption.18}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Result and Discussion Phase}}{36}{table.caption.23}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Video selection outcomes for TEDx Japanese data collection.}}{39}{table.caption.25}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces VAD segmentation results.}}{42}{table.caption.28}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Audio filtering outcomes.}}{42}{table.caption.29}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Dataset split statistics.}}{44}{table.caption.31}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Kaldi GMM--HMM objective improvement summary.}}{44}{table.caption.32}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces CRDNN--CTC training metrics across epochs.}}{46}{table.caption.34}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Whisper fine-tuning loss across epochs.}}{47}{table.caption.37}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Overall comparison of ASR systems on the test split (lower is better).}}{49}{table.caption.39}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Kaldi GMM--HMM results on the test split.}}{52}{table.caption.42}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces CRDNN--CTC results on the test split.}}{53}{table.caption.43}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Whisper fine-tuning results on the test split.}}{54}{table.caption.44}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Common error 1: Wording error.}}{57}{table.caption.45}%
+\contentsline {table}{\numberline {4.13}{\ignorespaces Common error 2: Polite-form variation.}}{57}{table.caption.46}%
+\contentsline {table}{\numberline {4.14}{\ignorespaces Common error 3: Paraphrase.}}{58}{table.caption.47}%
+\contentsline {table}{\numberline {4.15}{\ignorespaces Common error 4: Numbering format.}}{58}{table.caption.48}%
+\contentsline {table}{\numberline {4.16}{\ignorespaces WER result before and after tokenization.}}{58}{table.caption.49}%
